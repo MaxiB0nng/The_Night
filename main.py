@@ -9,7 +9,7 @@ pygame.mixer.init()
 screen_width = 320
 screen_height = 240
 
-scale = 3.4
+scale = 3
 
 # Farver (RGB)
 black = (15, 25, 15)
@@ -29,12 +29,7 @@ story_visible = False  # Om historietekst er synlig
 music_playing = False  # Om musikken spiller i baggrunden
 
 # Cutscene-status
-cutsceen_1_S = False
-skove_2_S = False
-skove_2_1_S = False
-skove_camp_S = False
-campfire_S = False
-
+state = "-"
 
 # Genstandsstatus
 gren_I = False  # Status for, om spilleren har fået/fundet grenen
@@ -185,6 +180,11 @@ def valg_update():
     text_valg_4 = font.render(valg_4, True, green)
     text_valg_b_4 = font.render(valg_4, True, black)
 
+def story_update(text1, text2):
+    global text_story, text_story_2
+    text_story = font.render(text1, True, green)
+    text_story_2 = font.render(text2, True, green)
+
 
 def text_print():
     global selected_valg
@@ -251,6 +251,31 @@ def text_print():
             story_visible = False
 
 
+
+def redraw():
+
+    if state == "skove_2":
+        main_canvas.blit(skove_2_img, (image_x, image_y))
+
+
+    if state == "skove_2_1":
+        main_canvas.blit(skove_2_1_img, (image_x, image_y))
+
+    if state == "skove_camp":
+        if campfire_I:
+            main_canvas.blit(skove_camp_img, (image_x, image_y))
+        else:
+            main_canvas.blit(skove_camp_2_img, (image_x, image_y))
+
+    if state == "campfire":
+        if campfire_I:
+            main_canvas.blit(camp_fire_img, (image_x, image_y))
+        else:
+            main_canvas.blit(camp_fire_img_2, (image_x, image_y))
+
+redraw()
+
+
 # Spil-loop
 running = True
 while running:
@@ -272,50 +297,33 @@ while running:
 
             elif event.key == pygame.K_DOWN:
                 text_selected += 1
+                if text_selected > 4:
+                    text_selected = 1  # Wrap to the first option
             elif event.key == pygame.K_UP:
                 text_selected -= 1
+                if text_selected < 1:
+                    text_selected = 4  # Wrap to the last option
+
 
         # Håndter KEYUP tastetryk
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_SPACE:  # Space tasten blev sluppet
                     enter_pressed = False
 
-    # -------valg selection-------
 
-    # Ensure text_selected stays within bounds
-    if text_selected > 4:
-        text_selected = 1  # Wrap to the first option
-    elif text_selected < 1:
-        text_selected = 4  # Wrap to the last option
+    # ------story------
 
-    #------canvas---------------
+        # Tøm det primære canvas (grøn ramme + sort baggrund)
 
-    # Tøm det primære canvas (grøn ramme + sort baggrund)
-    canvas.fill(black)
+      # Fyld baggrunden sort
+    story_canvas.fill(black)
     pygame.draw.rect(canvas, green, (1, 1, 318, 238))  # Grøn kant
-
-    #------main canvas---------------
-
     # Tøm det sorte hoved-canvas, og tegn noget indeni
-    main_canvas.fill(black)  # Ryd det sorte canvas
+    main_canvas.fill(black) # Ryd det sorte canvas
     main_canvas.blit(start_front, (image_x, image_y))
 
-    if started:
-        main_canvas.fill(green)
-
-    if game:
-        if cutsceen_y > -114:
-            cutsceen_y -= cutsceen_speed
-            pygame.time.delay(250)
-        else:
-            cutsceen_1_S = True
-        main_canvas.blit(start_cutsceen, (image_x, cutsceen_y))
-
-    # ------story canvas and text canvas---------------
-
-    story_canvas.fill(black)  # Fyld baggrunden sort
-    # Ryd text_canvas, tilføj tekst
     if not start_front_selected:
+        story_canvas.fill(black)
         pygame.draw.rect(story_canvas, green, (0, 22, 318, 13))
         story_canvas.blit(text_black, (text_x, text_y))  # Tegn teksten midt på tekst-canvas
     else:
@@ -327,27 +335,39 @@ while running:
         if current_time - last_blink_time > blink_interval:  # Skift tekstfarve efter interval
             start_front_selected = not start_front_selected  # Skift mellem grøn (True) og sort (False)
             last_blink_time = current_time  # Opdatér sidste blinktid
-    if enter_pressed:
-        started = True
 
     if started:
-        story_canvas.fill(green)
+        main_canvas.fill(green)
+
+    if game:
+        main_canvas.blit(start_cutsceen, (image_x, cutsceen_y))
+
+    if state == "cutsceen_1":
+        story_canvas.blit(text_story, (valg_x, story_y))
+        story_canvas.blit(text_story_2, (valg_x, story_y_2))
+  
+
+
+    if enter_pressed:
+        started = True
+    
+    if started:
+        story_canvas.fill(black)
         game = True
 
     if game:
-        story_canvas.fill(black)
+        redraw()
+        if cutsceen_y > -114:
+            cutsceen_y -= cutsceen_speed
+            pygame.time.delay(250)
+        else:
+            state = "cutsceen_1"
 
-    if cutsceen_1_S:
-        story_canvas.blit(text_story, (valg_x, story_y))
-        story_canvas.blit(text_story_2, (valg_x, story_y_2))
+
+    if state == "cutsceen_1":
         text_print_on = True
         text_print()
-
-    if cutsceen_1_S:
-        story = "Du er i en skov."
-        text_story = font.render(story, True, green)
-        story_2 = "Det er nat."
-        text_story_2 = font.render(story_2, True, green)
+        story_update("Du er i en skov", "det er nat")
 
         valg_1 = "gå henned til et træ"
         valg_2 = "gå vidre igennem skoven"
@@ -355,20 +375,17 @@ while running:
         valg_update()
 
         if selected_valg == valg_1: #gå henfra start til et træ
-            skove_2_S = True
-            cutsceen_1_S = False
+            state = "skove_2"
+            redraw()
+
 
         if selected_valg == valg_2: #gå virder igennem skoven
-            skove_camp_S = True
-            cutsceen_1_S = False
+            state = "skove_camp"
+            redraw()
 
-    if skove_2_S:
-        story = "du gå vider i gennem skoven ."
-        text_story = font.render(story, True, green)
-        story_2 = "du ser en gren."
-        text_story_2 = font.render(story_2, True, green)
 
-        main_canvas.blit(skove_2_img, (image_x, image_y))
+    if state == "skove_2":
+        story_update("du gå vider i gennem skoven." ,"du ser en gren")
         valg_1 = "gå vidre igennem skoven"
         if campfire_I == False or nøgle_I:
             valg_2 = "-"
@@ -379,21 +396,18 @@ while running:
         valg_update()
 
         if selected_valg == valg_1:
-            skove_camp_S = True
-            skove_2_S = False
+            state = "skove_camp"
+            redraw()
 
-        if campfire_I or nøgle_I == False:
-            if selected_valg == valg_2:
-                skove_2_1_S = True
+        if selected_valg == valg_2:
+            if campfire_I or nøgle_I == False:
+                state = "skove_2_1"
                 gren_I = True
-                skove_2_S = False
+                redraw()
+                
 
-    if skove_2_1_S:
-        story = "du tog grenen af treet."
-        text_story = font.render(story, True, green)
-        story_2 = "du har nu en gren."
-        text_story_2 = font.render(story_2, True, green)
-        main_canvas.blit(skove_2_1_img, (image_x, image_y))
+    if state == "skove_2_1":
+        story_update("du toh en grenen af treet" , "du her nu en gren")
 
         valg_1 = "gå vidre igennem skoven"
         valg_2 = "-"
@@ -402,18 +416,13 @@ while running:
         valg_update()
 
         if selected_valg == valg_1:
-            skove_camp_S = True
-            skove_2_1_S = False
+            state = "skove_camp"
+            redraw()
+            
 
-    if skove_camp_S:
-        story = "du kommer til en lille lejersted."
-        text_story = font.render(story, True, green)
-        story_2 = "det er et bål som lyser."
-        text_story_2 = font.render(story_2, True, green)
-        if campfire_I:
-            main_canvas.blit(skove_camp_img, (image_x, image_y))
-        else:
-            main_canvas.blit(skove_camp_2_img, (image_x, image_y))
+    if state == "skove_camp":
+        story_update("du kommer til en lille lejersted" , "det er et bål som lyser klart")
+
 
         valg_1 = "gå tilbage til skoven"
         valg_2 = "gå vider i gennem skoven til en hytte"
@@ -423,25 +432,26 @@ while running:
 
         if selected_valg == valg_1:
             if gren_I or campfire_I == False or nøgle_I:
-                skove_2_1_S = True
+                state = "skove_2_1"
+                redraw()
             else:
-                skove_2_S = True
+                state = "skove_2"
+                redraw()
 
-            skove_camp_S = False
+
+
+        if selected_valg == valg_3:
+            state = "telt"
+            redraw()
+
 
         if selected_valg == valg_4:
-            campfire_S = True
-            skove_camp_S = False
+            state = "campfire"
+            redraw()
+  
 
-    if campfire_S:
-        story = "du gå tætter på ilden."
-        text_story = font.render(story, True, green)
-        story_2 = "den er varm"
-        text_story_2 = font.render(story_2, True, green)
-        if campfire_I:
-            main_canvas.blit(camp_fire_img, (image_x, image_y))
-        else:
-            main_canvas.blit(camp_fire_img_2, (image_x, image_y))
+    if state == "campfire":
+        story_update("du gå tætter på ilden" , "den er varm")
 
         valg_1 = "gå tilbage til lejeren"
 
@@ -461,21 +471,19 @@ while running:
         valg_update()
 
         if selected_valg == valg_1:
-            skove_camp_S = True
-            campfire_S = False
+            state = "skove_camp"
+            redraw()
 
         if selected_valg == valg_2:
             if gren_I:
                 campfire_I = False
                 gren_I = False
+                redraw()
 
         if selected_valg == valg_3:
             if campfire_I == False:
                 nøgle_I = True
-                story = "du har nu en nøgle."
-                text_story = font.render(story, True, green)
-                story_2 = "-"
-                text_story_2 = font.render(story_2, True, green)
+                story_update("du har en en nøgle" , "-")
 
     #------mucik ----
 
