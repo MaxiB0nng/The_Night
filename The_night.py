@@ -14,10 +14,20 @@ green = (10, 142, 10)
 
 
 
+# TIDSRELATEREDE VARIABLER
+
+blink_interval = 500  # Intervallet mellem tekstblink i millisekunder
+last_blink_time = 0  # Det tidspunkt, hvor den sidste blinkning opstod
+show_story_timer = 0  # Tidspunktet, hvor historieteksten blev startet
+show_story_duration = 1000  # Hvor længe historieteksten skal vises (i ms)
+valg_cooldown = 1000
+last_enter_time = 0  # Tidspunkt for sidste ENTER
+
+
+
 valg = int(1) #de valg som spiler har max 4 
 need_redraw = True #hvis den er sand så opdatere den skærmen 
-
-
+story_visible = False  #bestemer om text 3 vises eller ej
 
 # Endelig skærmstørrelse beregnes
 scaled_width = screen_width * scale
@@ -100,23 +110,73 @@ text_story_3 = font.render(story_3, True, black)
 
 
 # Indlæs billede
-start_front = pygame.image.load("img/start_screen.png").convert_alpha()
-start_cutsceen = pygame.image.load("img/start_cut_sceen.png").convert_alpha()
-skove_2_img = pygame.image.load("img/skove_2_0.png").convert_alpha()
-skove_2_1_img = pygame.image.load("img/skove_2_1.png").convert_alpha()
-skove_camp_img = pygame.image.load("img/skove_camp.png").convert_alpha()
-skove_camp_2_img = pygame.image.load("img/skove_camp_2.png").convert_alpha()
-camp_fire_img = pygame.image.load("img/camp_fire.png").convert_alpha()
-camp_fire_img_2 = pygame.image.load("img/camp_fire_2.png").convert_alpha()
-foran_telt_img = pygame.image.load("img/foran_telt.png").convert_alpha()
-
+start_front = pygame.image.load("img/start_screen.png")
+start_cutsceen = pygame.image.load("img/start_cut_sceen.png")
+skove_1_img = pygame.image.load("img/skove_1.png")
+skove_2_img = pygame.image.load("img/skove_2_0.png")
+skove_2_1_img = pygame.image.load("img/skove_2_1.png")
+skove_camp_img = pygame.image.load("img/skove_camp.png")
+skove_camp_2_img = pygame.image.load("img/skove_camp_2.png")
+camp_fire_img = pygame.image.load("img/camp_fire.png")
+camp_fire_img_2 = pygame.image.load("img/camp_fire_2.png")
+foran_telt_img = pygame.image.load("img/foran_telt.png")
 
 image_x = 0
 image_y = 0
 
 
-def text_redraw():
+def valg_update(valg_1 ,valg_2, valg_3, valg_4):
+    global text_valg_1, text_valg_2, text_valg_3, text_valg_4
+    global text_valg_b_1, text_valg_b_2, text_valg_b_3, text_valg_b_4
 
+    text_valg_1 = font.render(valg_1, True, green)
+    text_valg_b_1 = font.render(valg_1, True, black)
+
+    text_valg_2 = font.render(valg_2, True, green)
+    text_valg_b_2 = font.render(valg_2, True, black)
+
+    text_valg_3 = font.render(valg_3, True, green)
+    text_valg_b_3 = font.render(valg_3, True, black)
+
+    text_valg_4 = font.render(valg_4, True, green)
+    text_valg_b_4 = font.render(valg_4, True, black)
+
+def story_update(text1, text2):
+    global text_story, text_story_2
+
+    text_story = font.render(text1, True, green)
+    text_story_2 = font.render(text2, True, green)
+
+def text_valg():
+    global story_visible, show_story_timer, show_story_duration, text_story_3, enter_pressed
+    
+    # Opdater teksten baseret på valget
+    if text_selected == 1:
+        selected_valg = valg_1
+    elif text_selected == 2:
+        selected_valg = valg_2
+    elif text_selected == 3:
+        selected_valg = valg_3
+    elif text_selected == 4:
+        selected_valg = valg_4
+
+    # Opdater historetekst (story_3) og indstil flag til at vise teksten
+    story_3 = f"Du valgte {selected_valg}"
+    text_story_3 = font.render(story_3, True, green)
+    story_visible = True  # Aktiver visning af teksten
+    show_story_timer = pygame.time.get_ticks()  # Start timeren
+    enter_pressed = False # Stop enter_pressed for at undgå gentagelse
+
+    if story_visible:
+        current_time = pygame.time.get_ticks()  # Hent nuværende tidspunkt
+        if current_time - show_story_timer < show_story_duration:
+            # Viser den valgte tekst
+            story_canvas.blit(text_story_3, (valg_x, story_y_3))
+        else:
+            # Skjul teksten efter tiden er gået
+            story_visible = False
+
+def text_redraw():
     text_canvas.fill(black)
     if valg == 1:
         pygame.draw.rect(text_canvas, green, (0, valg_1_y, 318, 13))
@@ -173,6 +233,7 @@ while running:
                 if event.key == pygame.K_SPACE or event.key == pygame.K_RETURN:  # Space/enter tast blev trykke
                     enter_pressed = True
                     need_redraw = True
+                    text_valg()
                     print("enter pressed")
 
                 elif event.key == pygame.K_DOWN:
