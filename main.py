@@ -36,7 +36,6 @@ gren_I = False  # Status for, om spilleren har fået/fundet grenen
 campfire_I = True  # Aktivt lejrbål - angiver om lejrbålet er tændt
 nøgle_I = False
 
-
 # -----------------------------------------
 # TIDSRELATEREDE VARIABLER
 # Disse bruges til at holde styr på tidspunkter og tidsintervaller
@@ -314,7 +313,7 @@ while running:
     # ------story------
 
         # Tøm det primære canvas (grøn ramme + sort baggrund)
-
+    print("drawing")
       # Fyld baggrunden sort
     story_canvas.fill(black)
     pygame.draw.rect(canvas, green, (1, 1, 318, 238))  # Grøn kant
