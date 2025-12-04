@@ -10,8 +10,8 @@ screen_height = 240
 scale = 3
 
 # Farver (RGB)
-black = (15, 25, 15)
-green = (10, 142, 10)
+black = (15, 25, 15) #0F190E
+green = (10, 142, 10) #0A8E0A
 
 
 #player variabler
@@ -37,6 +37,32 @@ story_visible = False
 
 
 # Endelig skærmstørrelse beregnes
+startup_sequence = [
+    ("Opening", "The_Night", "-", 1000),
+    ("Running simulation", "-", "-", 1000),
+    ("Running simulation", "December 12th", "-", 1000),
+    ("Running simulation", "December 12th", "23:34", 500),
+    ("Loading", "-", "-", 500),
+    ("Loading", "camp_fire_2.png", "---------- 0%", None),
+    ("Loading", "camp_fire.png", "#--------- 10%", None),
+    ("Loading", "front_tent.png", "##-------- 20%", None),
+    ("Loading", "forest_1.png", "###------- 30%", None),
+    ("Loading", "forest_2.png", "###------ 30%", None),
+    ("Loading", "forest_2_1.png", "####------ 40%", None),
+    ("Loading", "forest_camp.png", "#####----- 50%", None),
+    ("Loading", "forest_camp_2.png", "######---- 60%", None),
+    ("Loading", "start_cut_sceen.png", "#######--- 70%", None),
+    ("Loading", "logo.png", "########-- 80%", None),
+    ("Loading", "The_Night.py", "#########- 90%", 400),
+    ("Opening", "-", "########## 100%", 1000),
+    ("Welcome", "Mr.############", "-", 1000),
+    ("-","-","-", 1500)
+]
+
+# Index and timer for non-blocking startup sequence
+startup_index = 0
+startup_next_time = 0
+
 scaled_width = screen_width * scale
 scaled_height = screen_height * scale
 
@@ -80,12 +106,12 @@ text_canvas.fill(black)
 valg_x = 4
 
 valg_1_y = 2
-valg_1 = "gå henned til en skove"
+valg_1 = "-"
 text_valg_1 = font.render(valg_1, True, green)
 text_valg_b_1 = font.render(valg_1, True, black)
 
 valg_2_y = valg_1_y + 14
-valg_2 = "gå vidre igennem skoven"
+valg_2 = "-"
 text_valg_2 = font.render(valg_2, True, green)
 text_valg_b_2 = font.render(valg_2, True, black)
 
@@ -104,19 +130,19 @@ selected_valg = None
 
 #laver story text 
 story_y = 3
-story = "Du er i en skov."
+story = "-"
 text_story = font.render(story, True, green)
 
 story_y_2 = 19
-story_2 =  "Det er nat."
+story_2 =  "-"
 text_story_2 = font.render(story_2, True, green)
 
 story_y_3 = 36
-story_3 =  "test"
+story_3 =  "-"
 text_story_3 = font.render(story_3, True, black)
 
-
-
+glitch = [pygame.image.load(f"img/start_up/glitch_{i}.png")
+          for i in range(1, 10)]
 
 # Indlæs billede
 start_front = pygame.image.load("img/start_screen.png")
@@ -150,6 +176,7 @@ def valg_update(valg_1 ,valg_2, valg_3, valg_4):
     text_valg_4 = font.render(valg_4, True, green)
     text_valg_b_4 = font.render(valg_4, True, black)
 
+
 def story_update(text1, text2, text3):
     global text_story, text_story_2
     story_canvas.fill(black)
@@ -159,6 +186,7 @@ def story_update(text1, text2, text3):
     story_canvas.blit(text_story, (valg_x, story_y))
     story_canvas.blit(text_story_2, (valg_x, story_y_2))
     story_canvas.blit(text_story_3, (valg_x, story_y_3))
+
 
 def text_valg():
     global  text_story_3, selected_valg
@@ -213,13 +241,32 @@ def text_redraw():
 
 
 def redraw():
+    global need_redraw
     print("drawing")
     
     text_redraw()
 
     if state == "running":
-        main_canvas.fill(green)
+        if startup_index == 1:
+            main_canvas.blit(glitch[0], (image_x, image_y))
+        elif startup_index == 2:
+            main_canvas.blit(glitch[1], (image_x, image_y))
+        elif startup_index == 3:
+            main_canvas.blit(glitch[2], (image_x, image_y))
+        elif startup_index == 5:
+            main_canvas.blit(glitch[3], (image_x, image_y))
+        elif startup_index == 7:
+            main_canvas.blit(glitch[4], (image_x, image_y))
+        elif startup_index == 10:
+            main_canvas.blit(glitch[5], (image_x, image_y))
+        elif startup_index == 13:
+            main_canvas.blit(glitch[6], (image_x, image_y))
+        elif startup_index == 15:
+            main_canvas.blit(glitch[7], (image_x, image_y))
+        elif startup_index == 17:
+            main_canvas.blit(glitch[8], (image_x, image_y))
         text_canvas.fill(green)
+
     
     if state == "menu":
         main_canvas.blit(start_front, (image_x, image_y))
@@ -268,53 +315,31 @@ while running:
                     need_redraw = True
 
 
-
-
-
-
     if state == "running":
-        # Define startup sequence as a list of tuples (text1, text2, text3, delay)
-        r_delay = random.randint(50,150)
-        startup_sequence = [
-            ("Opening", "The_Night", "-", 1000),
-            ("Running simulation", "-", "-", 1000),
-            ("Running simulation", "December 12th", "-", 1000),
-            ("Running simulation", "December 12th", "23:34", 500),
-            ("Loading", "-", "-", 500),
-            ("Loading", "camp_fire_2.png", "---------- 0%", None),
-            ("Loading", "camp_fire.png", "#--------- 10%", None),
-            ("Loading", "front_tent.png", "##-------- 20%", None),
-            ("Loading", "forest_1.png", "###------- 30%", None),
-            ("Loading", "forest_2.png", "###------ 30%", None),
-            ("Loading", "forest_2_1.png", "####------ 40%", None),
-            ("Loading", "forest_camp.png", "#####----- 50%", None),
-            ("Loading", "forest_camp_2.png", "######---- 60%", None),
-            ("Loading", "start_cut_sceen.png", "#######--- 70%", None),
-            ("Loading", "logo.png", "########-- 80%", None),
-            ("Loading", "The_Night.py", "#########- 90%", 400),
-            ("Opening", "-", "########## 100%", 1000),
-            ("Welcome", "Mr.########", "-", 1000),
-            ("-","-","-", 1500)
-        ]
-
-        # Execute the sequence
-        for text1, text2, text3, delay in startup_sequence:
-            if delay is None:
-                delay = random.randint(50,250)
-            redraw()
-            story_update(text1, text2, text3)
-            pygame.time.delay(delay)
-        
-        state = "menu"
-        redraw()
+        # Non-blocking startup sequence using pygame.time.get_ticks()
+        now = pygame.time.get_ticks()
+        if startup_index < len(startup_sequence):
+            text1, text2, text3, delay = startup_sequence[startup_index]
+            # When it's time to show the next step
+            if now >= startup_next_time:
+                story_update(text1, text2, text3)
+                redraw()
+                if delay is None:
+                    delay_ms = random.randint(50, 250)
+                else:
+                    delay_ms = delay
+                startup_next_time = now + delay_ms
+                startup_index += 1
+        else:
+            # Sequence finished — move to menu
+            need_redraw = True
+            state = "menu"
+            
 
     if state == "menu":
         story_update("Welcome to The Night Of", "December 12", "press enter to continue")
-        valg_update("continue","settings","-", "-")
+        valg_update("Continue","Settings","-", "-")
     
-
-        
-
     if need_redraw:
         redraw()
         need_redraw = False
