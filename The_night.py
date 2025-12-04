@@ -1,4 +1,5 @@
 import pygame
+import random
 
 pygame.init()
 pygame.mixer.init()
@@ -273,31 +274,33 @@ while running:
 
     if state == "running":
         # Define startup sequence as a list of tuples (text1, text2, text3, delay)
+        r_delay = random.randint(50,150)
         startup_sequence = [
             ("Opening", "The_Night", "-", 1000),
             ("Running simulation", "-", "-", 1000),
             ("Running simulation", "December 12th", "-", 1000),
             ("Running simulation", "December 12th", "23:34", 500),
             ("Loading", "-", "-", 500),
-            ("Loading", "camp_fire_2.png", "-", 100),
-            ("Loading", "camp_fire.png", "-", 100),
-            ("Loading", "front_tent.png", "-", 100),
-            ("Loading", "forest_1.png", "-", 100),
-            ("Loading", "forest_2.png", "-", 100),
-            ("Loading", "forest_2_1.png", "-", 100),
-            ("Loading", "forest_camp.png", "-", 100),
-            ("Loading", "forest_camp_2.png", "-", 100),
-            ("Loading", "start_cut_sceen.png", "-", 100),
-            ("Loading", "logo.png", "-", 100),
-            ("Loading", "The_Night.py", "-", 400),
-            ("Opening", "-", "-", 1000),
+            ("Loading", "camp_fire_2.png", "---------- 0%", None),
+            ("Loading", "camp_fire.png", "#--------- 10%", None),
+            ("Loading", "front_tent.png", "##-------- 20%", None),
+            ("Loading", "forest_1.png", "###------- 30%", None),
+            ("Loading", "forest_2.png", "###------ 30%", None),
+            ("Loading", "forest_2_1.png", "####------ 40%", None),
+            ("Loading", "forest_camp.png", "#####----- 50%", None),
+            ("Loading", "forest_camp_2.png", "######---- 60%", None),
+            ("Loading", "start_cut_sceen.png", "#######--- 70%", None),
+            ("Loading", "logo.png", "########-- 80%", None),
+            ("Loading", "The_Night.py", "#########- 90%", 400),
+            ("Opening", "-", "########## 100%", 1000),
             ("Welcome", "Mr.########", "-", 1000),
             ("-","-","-", 1500)
-
         ]
-        
+
         # Execute the sequence
         for text1, text2, text3, delay in startup_sequence:
+            if delay is None:
+                delay = random.randint(50,250)
             redraw()
             story_update(text1, text2, text3)
             pygame.time.delay(delay)
@@ -308,6 +311,7 @@ while running:
     if state == "menu":
         story_update("Welcome to The Night Of", "December 12", "press enter to continue")
         valg_update("continue","settings","-", "-")
+    
 
         
 
