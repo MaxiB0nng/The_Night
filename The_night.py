@@ -13,21 +13,27 @@ black = (15, 25, 15)
 green = (10, 142, 10)
 
 
+#player variabler
+state = "running" #den statien som spiler er på 
+valg = int(1) #de valg som spiler har max 4
+
 
 # TIDSRELATEREDE VARIABLER
 
-blink_interval = 500  # Intervallet mellem tekstblink i millisekunder
 last_blink_time = 0  # Det tidspunkt, hvor den sidste blinkning opstod
 show_story_timer = 0  # Tidspunktet, hvor historieteksten blev startet
 show_story_duration = 1000  # Hvor længe historieteksten skal vises (i ms)
-valg_cooldown = 1000
-last_enter_time = 0  # Tidspunkt for sidste ENTER
+
+startup_timer = int(0)
+startup_duration = int(1000)
 
 
-
-valg = int(1) #de valg som spiler har max 4 
+#alle flag variabler
 need_redraw = True #hvis den er sand så opdatere den skærmen 
 story_visible = False  #bestemer om text 3 vises eller ej
+startup_show = False #bruger til startup animation 
+story_visible = False
+
 
 # Endelig skærmstørrelse beregnes
 scaled_width = screen_width * scale
@@ -109,6 +115,8 @@ story_3 =  "test"
 text_story_3 = font.render(story_3, True, black)
 
 
+
+
 # Indlæs billede
 start_front = pygame.image.load("img/start_screen.png")
 start_cutsceen = pygame.image.load("img/start_cut_sceen.png")
@@ -141,14 +149,18 @@ def valg_update(valg_1 ,valg_2, valg_3, valg_4):
     text_valg_4 = font.render(valg_4, True, green)
     text_valg_b_4 = font.render(valg_4, True, black)
 
-def story_update(text1, text2):
+def story_update(text1, text2, text3):
     global text_story, text_story_2
-
+    story_canvas.fill(black)
     text_story = font.render(text1, True, green)
     text_story_2 = font.render(text2, True, green)
+    text_story_3 = font.render(text3, True, green)
+    story_canvas.blit(text_story, (valg_x, story_y))
+    story_canvas.blit(text_story_2, (valg_x, story_y_2))
+    story_canvas.blit(text_story_3, (valg_x, story_y_3))
 
 def text_valg():
-    global story_visible, show_story_timer, show_story_duration, text_story_3, enter_pressed
+    global  text_story_3, selected_valg
     
     # Opdater teksten baseret på valget
     if text_selected == 1:
@@ -160,23 +172,9 @@ def text_valg():
     elif text_selected == 4:
         selected_valg = valg_4
 
-    # Opdater historetekst (story_3) og indstil flag til at vise teksten
-    story_3 = f"Du valgte {selected_valg}"
-    text_story_3 = font.render(story_3, True, green)
-    story_visible = True  # Aktiver visning af teksten
-    show_story_timer = pygame.time.get_ticks()  # Start timeren
-    enter_pressed = False # Stop enter_pressed for at undgå gentagelse
-
-    if story_visible:
-        current_time = pygame.time.get_ticks()  # Hent nuværende tidspunkt
-        if current_time - show_story_timer < show_story_duration:
-            # Viser den valgte tekst
-            story_canvas.blit(text_story_3, (valg_x, story_y_3))
-        else:
-            # Skjul teksten efter tiden er gået
-            story_visible = False
 
 def text_redraw():
+    global need_redraw, story_visible
     text_canvas.fill(black)
     if valg == 1:
         pygame.draw.rect(text_canvas, green, (0, valg_1_y, 318, 13))
@@ -202,11 +200,30 @@ def text_redraw():
         text_canvas.blit(text_valg_2, (valg_x, valg_2_y))
         text_canvas.blit(text_valg_3, (valg_x, valg_3_y))
         text_canvas.blit(text_valg_b_4, (valg_x, valg_4_y))
+    elif valg == 6:
+        pygame.draw.rect(text_canvas, green, (0, valg_1_y, 318, 13))
+        pygame.draw.rect(text_canvas, green, (0, valg_2_y, 318, 13))
+        pygame.draw.rect(text_canvas, green, (0, valg_3_y, 318, 13))
+        pygame.draw.rect(text_canvas, green, (0, valg_4_y, 318, 13))
+        text_canvas.blit(text_valg_b_1, (valg_x, valg_1_y))
+        text_canvas.blit(text_valg_b_2, (valg_x, valg_2_y))
+        text_canvas.blit(text_valg_b_3, (valg_x, valg_3_y))
+        text_canvas.blit(text_valg_b_4, (valg_x, valg_4_y))
+
 
 def redraw():
     print("drawing")
-
+    
     text_redraw()
+
+    if state == "running":
+        main_canvas.fill(green)
+        text_canvas.fill(green)
+    
+    if state == "menu":
+        main_canvas.blit(start_front, (image_x, image_y))
+
+
     canvas.blit(main_canvas, (3, 3))  # Tegn hoved-canvas på det primære canvas
     canvas.blit(story_canvas, (3, 119))  # Tegn tekst-canvas nederst i det primære canvas
     canvas.blit(text_canvas, (3, 179))  # Tegn tekst-canvas nederst i det primære canvas
@@ -248,6 +265,51 @@ while running:
                          valg = 4
                     print(valg)
                     need_redraw = True
+
+
+
+
+
+
+    if state == "running":
+        # Define startup sequence as a list of tuples (text1, text2, text3, delay)
+        startup_sequence = [
+            ("Opening", "The_Night", "-", 1000),
+            ("Running simulation", "-", "-", 1000),
+            ("Running simulation", "December 12th", "-", 1000),
+            ("Running simulation", "December 12th", "23:34", 500),
+            ("Loading", "-", "-", 500),
+            ("Loading", "camp_fire_2.png", "-", 100),
+            ("Loading", "camp_fire.png", "-", 100),
+            ("Loading", "front_tent.png", "-", 100),
+            ("Loading", "forest_1.png", "-", 100),
+            ("Loading", "forest_2.png", "-", 100),
+            ("Loading", "forest_2_1.png", "-", 100),
+            ("Loading", "forest_camp.png", "-", 100),
+            ("Loading", "forest_camp_2.png", "-", 100),
+            ("Loading", "start_cut_sceen.png", "-", 100),
+            ("Loading", "logo.png", "-", 100),
+            ("Loading", "The_Night.py", "-", 400),
+            ("Opening", "-", "-", 1000),
+            ("Welcome", "Mr.########", "-", 1000),
+            ("-","-","-", 1500)
+
+        ]
+        
+        # Execute the sequence
+        for text1, text2, text3, delay in startup_sequence:
+            redraw()
+            story_update(text1, text2, text3)
+            pygame.time.delay(delay)
+        
+        state = "menu"
+        redraw()
+
+    if state == "menu":
+        story_update("Welcome to The Night Of", "December 12", "press enter to continue")
+        valg_update("continue","settings","-", "-")
+
+        
 
     if need_redraw:
         redraw()
