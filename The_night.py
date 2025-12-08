@@ -16,6 +16,7 @@ green = (10, 142, 10) #0A8E0A
 
 #player variabler
 state = "running" #den statien som spiler er på 
+#start på "running"
 valg = int(1) #de valg som spiler har max 4
 
 
@@ -43,10 +44,10 @@ selected_valg_4 = False
 
 # Endelig skærmstørrelse beregnes
 startup_sequence = [
-    ("Opening", "The_Night", "-", 1000),
-    ("Running simulation", "-", "-", 1000),
+    ("Opening", "The_Night", "Made By MaxiBonng", 1000),
+    ("Running simulation", "-", "Made By MaxiBonng", 1000),
     ("Running simulation", "December 12th", "-", 1000),
-    ("Running simulation", "December 12th", "23:34", 500),
+    ("Running simulation", "December 12th", "case #19981112", 500),
     ("Loading", "-", "-", 500),
     ("Loading", "camp_fire_2.png", "---------- 0%", None),
     ("Loading", "camp_fire.png", "#--------- 10%", None),
@@ -320,6 +321,10 @@ while running:
                          valg = 4
                     print(valg)
                     need_redraw = True
+                elif event.key == pygame.K_q:
+                    state = "menu"
+                    print("pressed q")
+                    need_redraw = True
 
 
     if state == "running":
@@ -346,6 +351,8 @@ while running:
             
 
     if state == "menu":
+        story_update("Welcome to The Night", "Case #19981112", "you can always press Q to return to the main menu")
+        valg_update("Continue","Settings","-", "-")
 
         if selected_valg_2:
             state = "settings"
@@ -364,12 +371,28 @@ while running:
 
 
     if state == "settings":
+        #story_update("Settings", "-", "-")
+        #valg_update("screen", "music", "credits", "back")
 
         if selected_valg_1:
             state = "screen"
             story_update("The screen is fixed at a 320x240 ratio", f"the screen is  {scaled_height}x{scaled_width}", "-")
             valg_update(f"scale = {scale}", "scale +", "scale -", "back")
             selected_valg_1 = False
+
+        if selected_valg_2:
+            state = "music"
+            story_update("music","-","-",)
+            valg_update("-","-","-","back",)
+            selected_valg_2 = False
+
+        if selected_valg_3:
+            state = "credits"
+            story_update("Programer -MaxiBonng"
+                        ,"Art -Maxibonng"
+                        ,"Music -MaxiBonng")
+            valg_update("-", "-", "-", "back")
+            selected_valg_3 = False
 
         if selected_valg_4:
             state = "menu"
@@ -378,6 +401,8 @@ while running:
             selected_valg_4 = False
     
     if state == "screen":
+        #story_update("The screen is fixed at a 320x240 ratio", f"the screen is  {scaled_height}x{scaled_width}", "-")
+        #valg_update(f"scale = {scale}", "scale +", "scale -", "back")
 
         if selected_valg_2:
             scale += 0.5
@@ -406,12 +431,35 @@ while running:
             need_redraw = True
             selected_valg_4 = False
 
+    if state == "credits":
+        
+        if selected_valg_4:
+            state = "settings"
+            story_update("Settings", "-", "-")
+            valg_update("screen", "music", "credits", "back")
+            need_redraw = True
+            selected_valg_4 = False
+
+    if state == "music":
+        #story_update("music","-","-",)
+        #valg_update("-","-","-","back",)
+
+
+        if selected_valg_4:
+            state = "settings"
+            story_update("Settings", "-", "-")
+            valg_update("screen", "music", "credits", "back")
+            need_redraw = True
+            selected_valg_4 = False
 #       _____                      
 #      / ____|                     
 #     | |  __  __ _ _ __ ___   ___ 
 #     | | |_ |/ _` | '_ ` _ \ / _ \
 #     | |__| | (_| | | | | | |  __/
 #      \_____|\__,_|_| |_| |_|\___|
+
+
+
 
 
     if need_redraw:
