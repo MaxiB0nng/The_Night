@@ -14,7 +14,7 @@ def screen():
     sf.valg_update(f"scale = {sf.scale}", "scale +", "scale -", "back")
 
 def choice():
-    sf.story_update("Here you can see your progress in from of a tree", "When moveing to the left you will loop back around" , "try to discover it all")
+    sf.story_update("Here you can see your progress in from of a tree", "-", "-")
     sf.valg_update("Up", "Down","Left","Back")
 
 

@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
   <diagram name="Side-1" id="u6lEDHs33NAlhhUbkCJO">
-    <mxGraphModel dx="1345" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1642" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,25 +23,55 @@
           <mxGeometry x="30" y="72.93" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KsyJlo4QITjawsJ5vBy0-1" value="ENDING 1&lt;div&gt;Under the law&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="29" y="1080" width="120" height="60" as="geometry" />
+          <mxGeometry x="-130" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KsyJlo4QITjawsJ5vBy0-4" value="ENDING 2&lt;div&gt;master detective&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="159" y="1080" width="120" height="60" as="geometry" />
+          <mxGeometry x="-130" y="82.92999999999995" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KsyJlo4QITjawsJ5vBy0-5" value="ENDING 4&lt;div&gt;failure is relative&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="419" y="1080" width="120" height="60" as="geometry" />
+          <mxGeometry x="-270" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KsyJlo4QITjawsJ5vBy0-6" value="ENDING 3&lt;div&gt;&amp;nbsp;Above the law&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="289" y="1080" width="120" height="60" as="geometry" />
+          <mxGeometry x="-130" y="160" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KsyJlo4QITjawsJ5vBy0-7" value="ENDING 5&lt;div&gt;The tale of the usless&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="549" y="1080" width="120" height="60" as="geometry" />
+          <mxGeometry x="-270" y="82.92999999999995" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KsyJlo4QITjawsJ5vBy0-8" value="ENDING 6&lt;div&gt;The &quot;True&quot; ending&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="679" y="1080" width="120" height="60" as="geometry" />
+          <mxGeometry x="-270" y="160" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="L6H_XOn5DojPOSL1ez4f-1" value="comes home from work at 18:00" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
-          <mxGeometry x="340" y="15.000000000000007" width="120" height="60" as="geometry" />
+        <mxCell id="x7gaONYOheFJwiIwdS-1-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="x7gaONYOheFJwiIwdS-1-14" target="x7gaONYOheFJwiIwdS-1-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="x7gaONYOheFJwiIwdS-1-14" target="x7gaONYOheFJwiIwdS-1-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="x7gaONYOheFJwiIwdS-1-14" target="x7gaONYOheFJwiIwdS-1-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-14" value="-&lt;div&gt;Home&lt;/div&gt;&lt;div&gt;0.0.0&lt;/div&gt;&lt;div&gt;try starting the game!&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="x7gaONYOheFJwiIwdS-1-15" target="x7gaONYOheFJwiIwdS-1-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="x7gaONYOheFJwiIwdS-1-15" target="x7gaONYOheFJwiIwdS-1-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-15" value="go to the kitchen&lt;div&gt;kitchen&lt;br&gt;&lt;div&gt;1.2.0&lt;/div&gt;&lt;div&gt;try going another place&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="276" y="117.07" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-16" value="go to the living room&lt;div&gt;&lt;div&gt;living room&lt;/div&gt;&lt;div&gt;1.2.1&lt;/div&gt;&lt;div&gt;try going another place&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="515" y="117.07" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-17" value="go to your room&lt;div&gt;your room&lt;br&gt;&lt;div&gt;&lt;div&gt;1.2.2&lt;/div&gt;&lt;div&gt;try going another place&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="740" y="117.07" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-22" value="look for food (bun)&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;kitchen&lt;/span&gt;&lt;div&gt;2.x.0&lt;/div&gt;&lt;div&gt;are you hungry?&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-23" value="search your kitchen (knife)&lt;br&gt;&lt;div&gt;kitchen&lt;/div&gt;&lt;div&gt;2.x.1&lt;/div&gt;&lt;div&gt;what are you looking for&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="258" y="210" width="166" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

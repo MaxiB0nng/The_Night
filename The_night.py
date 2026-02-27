@@ -108,7 +108,7 @@ while running:
         if sf.selected_valg_4:
             sf.state = "menu"
             sc.menu()
-            sf.selected_valg_3 = False
+            sf.selected_valg_4 = False
                                                                      
 
     if sf.state == "settings":
