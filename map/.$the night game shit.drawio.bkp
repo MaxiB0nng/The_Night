@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
   <diagram name="Side-1" id="u6lEDHs33NAlhhUbkCJO">
-    <mxGraphModel dx="1755" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1642" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -50,19 +50,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="x7gaONYOheFJwiIwdS-1-14" value="-&lt;div&gt;Home&lt;/div&gt;&lt;div&gt;0.0.0&lt;/div&gt;&lt;div&gt;try starting the game!&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="520" y="30" width="120" height="60" as="geometry" />
+          <mxGeometry x="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="x7gaONYOheFJwiIwdS-1-15" target="x7gaONYOheFJwiIwdS-1-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="x7gaONYOheFJwiIwdS-1-15" target="x7gaONYOheFJwiIwdS-1-23">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="x7gaONYOheFJwiIwdS-1-15" value="go to the kitchen&lt;div&gt;kitchen&lt;br&gt;&lt;div&gt;1.2.0&lt;/div&gt;&lt;div&gt;try going another place&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="360" y="117.07" width="130" height="60" as="geometry" />
+          <mxGeometry x="276" y="117.07" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="x7gaONYOheFJwiIwdS-1-16" value="go to the living room&lt;div&gt;&lt;div&gt;living room&lt;/div&gt;&lt;div&gt;1.2.1&lt;/div&gt;&lt;div&gt;try going another place&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="515" y="117.07" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="x7gaONYOheFJwiIwdS-1-17" value="go to your room&lt;div&gt;your room&lt;br&gt;&lt;div&gt;&lt;div&gt;1.2.2&lt;/div&gt;&lt;div&gt;try going another place&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="670" y="117.07" width="130" height="60" as="geometry" />
+          <mxGeometry x="740" y="117.07" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="x7gaONYOheFJwiIwdS-1-22" value="look for food&lt;div&gt;kitchen&lt;/div&gt;&lt;div&gt;2.0&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="190" width="120" height="60" as="geometry" />
+        <mxCell id="x7gaONYOheFJwiIwdS-1-22" value="look for food (bun)&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;kitchen&lt;/span&gt;&lt;div&gt;2.x.0&lt;/div&gt;&lt;div&gt;are you hungry?&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x7gaONYOheFJwiIwdS-1-23" value="search your kitchen (knife)&lt;br&gt;&lt;div&gt;kitchen&lt;/div&gt;&lt;div&gt;2.x.1&lt;/div&gt;&lt;div&gt;what are you looking for&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="258" y="210" width="166" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
