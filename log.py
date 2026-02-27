@@ -1,13 +1,11 @@
 from datetime import datetime
 
-
 state = None
 valg = None
 
 first_log = False
 running = False
 close = False
-
 
 def log(state ,valg, valg_log):
     time = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))

@@ -1,3 +1,19 @@
+import subprocess
+import sys
+import importlib
+
+def install_requirements():
+    with open("requirements.txt") as f:
+        packages = [line.strip() for line in f if line.strip()]
+    for package in packages:
+        try:
+            importlib.import_module(package)
+        except ImportError:
+            print(f"Installing {package}...")
+            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install_requirements()
+
 import pygame
 import random
 import log
