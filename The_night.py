@@ -1,24 +1,9 @@
-import subprocess
-import sys
-import importlib
-
-def install_requirements():
-    with open("requirements.txt") as f:
-        packages = [line.strip() for line in f if line.strip()]
-    for package in packages:
-        try:
-            importlib.import_module(package)
-        except ImportError:
-            print(f"Installing {package}...")
-            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-install_requirements()
-
 import pygame
 import random
 import log
 import story_functions as sf
 import short_cut as sc
+from choice_tree import choice_tree
 
 pygame.init()
 pygame.mixer.init()
@@ -27,6 +12,7 @@ pygame.mixer.init()
 
 #alle flag variabler
 need_redraw = True #hvis den er sand så opdatere den skærmen 
+choice = False
 
 
 sf.image_make()
@@ -119,7 +105,7 @@ while running:
             sf.selected_valg_3 = False
 
     if sf.state == "choice":
-        sc.choice()
+        choice = True
 
         if sf.selected_valg_4:
             sf.state = "menu"
@@ -212,6 +198,9 @@ while running:
 
 
     if need_redraw:
+        if choice:
+            choice_tree()
+            choice = False
         sf.redraw(sf.state)
         need_redraw = False
 

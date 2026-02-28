@@ -287,8 +287,6 @@ def redraw(state):
     if state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
 
-    if state == "choice":
-        main_canvas.fill(black)
 
     canvas.blit(main_canvas, (3, 3))  # Tegn hoved-canvas på det primære canvas
     canvas.blit(story_canvas, (3, 119))  # Tegn tekst-canvas nederst i det primære canvas
