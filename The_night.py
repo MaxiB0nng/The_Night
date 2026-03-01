@@ -3,7 +3,7 @@ import random
 import log
 import story_functions as sf
 import short_cut as sc
-from choice_tree import choice_tree
+import choice_tree as tree
 
 pygame.init()
 pygame.mixer.init()
@@ -56,6 +56,8 @@ while running:
                     sf.state = "menu"
                     print("pressed q")
                     sf.redraw(sf.state)
+                elif event.key == pygame.K_m:
+                    running = False
 
 
     if sf.state == "running":
@@ -107,8 +109,32 @@ while running:
     if sf.state == "choice":
         choice = True
 
+        if sf.selected_valg_1:
+            if tree.x_selceted:
+                tree.x_selceted = False
+                sc.choice()
+            else:
+                tree.x_selceted = True
+                sc.choice()
+            sf.selected_valg_1 = False
+
+        if sf.selected_valg_2:
+            if tree.x_selceted:
+                tree.moveing(1)
+            else:
+                tree.moveing(2)
+            sf.selected_valg_2 = False
+
+        if sf.selected_valg_3:
+            if tree.x_selceted:
+                tree.moveing(3)
+            else:
+                tree.moveing(4)
+            sf.selected_valg_3 = False
+
         if sf.selected_valg_4:
             sf.state = "menu"
+            choice = False
             sc.menu()
             sf.selected_valg_4 = False
                                                                      
@@ -199,7 +225,7 @@ while running:
 
     if need_redraw:
         if choice:
-            choice_tree()
+            tree.choice_tree()
             choice = False
         sf.redraw(sf.state)
         need_redraw = False

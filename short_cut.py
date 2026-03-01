@@ -1,4 +1,5 @@
 import story_functions as sf
+import choice_tree as tree
 
 
 def menu():
@@ -14,7 +15,10 @@ def screen():
     sf.valg_update(f"scale = {sf.scale}", "scale +", "scale -", "back")
 
 def choice():
-    sf.story_update("Here you can see your progress in from of a tree", "-", "-")
-    sf.valg_update("Up", "Down","Left","Back")
+    sf.story_update("Here you can see your progress in from of a tree", "-", f"{tree.hint}")
+    if tree.x_selceted:
+        sf.valg_update("switch to y", "Left","Right","Back")
+    else:
+        sf.valg_update("switch to x", "Up","Down","Back")
 
 
