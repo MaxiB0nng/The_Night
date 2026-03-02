@@ -1602,3 +1602,2660 @@ log starts at 2026-03-01 05:10:20.
 
 
 
+log starts at 2026-03-02 09:21:35.
+
+2026-03-02 09:21:35: running    1  1
+2026-03-02 09:21:35: running    1  1
+2026-03-02 09:21:36: running    1  1
+2026-03-02 09:21:37: running    1  1
+2026-03-02 09:21:38: running    1  1
+2026-03-02 09:21:39: running    1  1
+2026-03-02 09:21:39: running    1  1
+2026-03-02 09:21:39: running    1  1
+2026-03-02 09:21:40: running    1  1
+2026-03-02 09:21:40: running    1  1
+2026-03-02 09:21:40: running    1  1
+2026-03-02 09:21:40: running    1  1
+2026-03-02 09:21:40: running    1  1
+2026-03-02 09:21:40: running    1  1
+2026-03-02 09:21:41: running    1  1
+2026-03-02 09:21:41: running    1  1
+2026-03-02 09:21:41: running    1  1
+2026-03-02 09:21:41: running    1  1
+2026-03-02 09:21:42: running    1  1
+2026-03-02 09:21:43: running    1  1
+2026-03-02 09:21:43: menu    1  Continue
+2026-03-02 09:21:51: menu    4  -
+2026-03-02 09:21:51: menu    3  Choice Tree
+2026-03-02 09:21:51: choice    3  Down
+2026-03-02 09:21:53: choice    3  Down
+2026-03-02 09:21:53: choice    3  Down
+2026-03-02 09:21:53: choice    2  Up
+2026-03-02 09:21:54: choice    2  Up
+2026-03-02 09:21:54: choice    2  Up
+2026-03-02 09:21:54: choice    3  Down
+2026-03-02 09:21:54: choice    3  Down
+2026-03-02 09:21:55: choice    2  Up
+2026-03-02 09:21:55: choice    1  switch to x
+2026-03-02 09:21:55: choice    1  switch to y
+2026-03-02 09:21:55: choice    2  Left
+2026-03-02 09:21:55: choice    2  Left
+2026-03-02 09:21:56: choice    3  Right
+2026-03-02 09:21:56: choice    3  Right
+2026-03-02 09:21:56: choice    3  Right
+2026-03-02 09:21:56: choice    2  Left
+2026-03-02 09:21:57: choice    2  Left
+2026-03-02 09:21:58: choice    1  switch to y
+2026-03-02 09:21:58: choice    1  switch to x
+2026-03-02 09:21:58: choice    2  Up
+2026-03-02 09:21:59: choice    3  Down
+2026-03-02 09:21:59: choice    2  Up
+2026-03-02 09:21:59: choice    1  switch to x
+2026-03-02 09:21:59: choice    1  switch to y
+2026-03-02 09:22:00: choice    2  Left
+2026-03-02 09:22:00: choice    2  Left
+2026-03-02 09:22:00: choice    1  switch to y
+2026-03-02 09:22:01: choice    2  Left
+2026-03-02 09:22:01: choice    3  Right
+2026-03-02 09:22:01: choice    3  Right
+2026-03-02 09:22:01: choice    2  Left
+2026-03-02 09:22:01: choice    1  switch to y
+2026-03-02 09:22:02: choice    1  switch to x
+2026-03-02 09:22:02: choice    2  Up
+2026-03-02 09:22:02: choice    2  Up
+2026-03-02 09:22:03: choice    3  Down
+2026-03-02 09:22:03: choice    3  Down
+2026-03-02 09:22:03: choice    3  Down
+2026-03-02 09:22:05: choice    2  Up
+2026-03-02 09:22:05: choice    1  switch to x
+2026-03-02 09:22:05: choice    1  switch to y
+2026-03-02 09:22:05: choice    2  Left
+2026-03-02 09:22:06: choice    3  Right
+2026-03-02 09:22:06: choice    3  Right
+2026-03-02 09:22:06: choice    2  Left
+2026-03-02 09:22:06: choice    1  switch to y
+2026-03-02 09:22:07: choice    2  Left
+2026-03-02 09:22:07: choice    2  Left
+2026-03-02 09:22:07: choice    2  Left
+2026-03-02 09:22:07: choice    1  switch to y
+2026-03-02 09:22:08: choice    2  Left
+2026-03-02 09:22:08: choice    3  Right
+2026-03-02 09:22:08: choice    3  Right
+2026-03-02 09:22:09: choice    2  Left
+2026-03-02 09:22:09: choice    1  switch to y
+2026-03-02 09:22:09: choice    1  switch to x
+2026-03-02 09:22:09: choice    2  Up
+2026-03-02 09:22:10: choice    2  Up
+2026-03-02 09:22:10: choice    2  Up
+2026-03-02 09:22:10: choice    3  Down
+2026-03-02 09:22:11: choice    2  Up
+2026-03-02 09:23:18: choice    3  Down
+2026-03-02 09:23:18: choice    4  Back
+2026-03-02 09:23:18: choice    3  Down
+2026-03-02 09:23:19: choice    3  Down
+2026-03-02 09:23:19: choice    3  Down
+2026-03-02 09:23:20: choice    2  Up
+2026-03-02 09:23:20: choice    2  Up
+2026-03-02 09:23:20: choice    2  Up
+2026-03-02 09:23:20: choice    3  Down
+2026-03-02 09:23:20: choice    4  Back
+2026-03-02 09:23:20: menu    4  -
+2026-03-02 09:23:21: menu    3  Choice Tree
+2026-03-02 09:23:21: choice    3  Down
+2026-03-02 09:23:21: choice    2  Up
+2026-03-02 09:23:22: choice    3  Down
+2026-03-02 09:23:22: choice    3  Down
+2026-03-02 09:23:22: choice    2  Up
+2026-03-02 09:23:22: choice    1  switch to x
+2026-03-02 09:23:22: choice    1  switch to y
+2026-03-02 09:23:22: choice    2  Left
+2026-03-02 09:23:23: choice    2  Left
+2026-03-02 09:23:23: choice    2  Left
+2026-03-02 09:23:23: choice    3  Right
+2026-03-02 09:23:23: choice    3  Right
+2026-03-02 09:23:23: choice    3  Right
+2026-03-02 09:23:24: choice    3  Right
+2026-03-02 09:23:24: choice    3  Right
+2026-03-02 09:23:24: choice    3  Right
+2026-03-02 09:23:24: choice    3  Right
+2026-03-02 09:23:25: choice    3  Right
+2026-03-02 09:23:25: choice    3  Right
+2026-03-02 09:23:25: choice    3  Right
+2026-03-02 09:23:25: choice    3  Right
+2026-03-02 09:23:25: choice    3  Right
+2026-03-02 09:23:25: choice    3  Right
+2026-03-02 09:23:25: choice    2  Left
+2026-03-02 09:23:26: choice    2  Left
+2026-03-02 09:23:26: choice    2  Left
+2026-03-02 09:23:26: choice    2  Left
+2026-03-02 09:23:26: choice    2  Left
+2026-03-02 09:23:26: choice    3  Right
+2026-03-02 09:23:26: choice    3  Right
+2026-03-02 09:23:26: choice    3  Right
+2026-03-02 09:23:27: choice    3  Right
+2026-03-02 09:23:27: choice    3  Right
+2026-03-02 09:23:41: choice    3  Right
+2026-03-02 09:23:43: choice    2  Left
+2026-03-02 09:23:43: choice    2  Left
+2026-03-02 09:24:05  log closing
+=============================
+
+
+
+log starts at 2026-03-02 09:27:50.
+
+2026-03-02 09:27:50: running    1  1
+2026-03-02 09:27:50: running    1  1
+2026-03-02 09:27:51: running    1  1
+2026-03-02 09:27:52: running    1  1
+2026-03-02 09:27:53: running    1  1
+2026-03-02 09:27:54: running    1  1
+2026-03-02 09:27:54: running    1  1
+2026-03-02 09:27:54: running    1  1
+2026-03-02 09:27:54: running    1  1
+2026-03-02 09:27:55: running    1  1
+2026-03-02 09:27:55: running    1  1
+2026-03-02 09:27:55: running    1  1
+2026-03-02 09:27:55: running    1  1
+2026-03-02 09:27:55: running    1  1
+2026-03-02 09:27:55: running    1  1
+2026-03-02 09:27:56: running    1  1
+2026-03-02 09:27:56: running    1  1
+2026-03-02 09:27:56: running    1  1
+2026-03-02 09:27:57: running    1  1
+2026-03-02 09:27:58: running    1  1
+2026-03-02 09:27:58: menu    1  Continue
+2026-03-02 09:27:59: menu    2  Settings
+2026-03-02 09:27:59: menu    3  Choice Tree
+2026-03-02 09:28:01: choice    3  Down
+2026-03-02 09:28:05: choice    3  Down
+2026-03-02 09:28:06: choice    3  Down
+2026-03-02 09:28:07: choice    2  Up
+2026-03-02 09:28:07: choice    1  switch to x
+2026-03-02 09:28:07: choice    1  switch to y
+2026-03-02 09:28:07: choice    2  Left
+2026-03-02 09:28:07: choice    2  Left
+2026-03-02 09:28:08: choice    2  Left
+2026-03-02 09:28:08: choice    3  Right
+2026-03-02 09:28:08: choice    3  Right
+2026-03-02 09:28:08: choice    3  Right
+2026-03-02 09:28:09: choice    3  Right
+2026-03-02 09:28:09: choice    3  Right
+2026-03-02 09:28:09: choice    3  Right
+2026-03-02 09:28:09: choice    3  Right
+2026-03-02 09:28:09: choice    3  Right
+2026-03-02 09:28:09: choice    3  Right
+2026-03-02 09:28:10: choice    3  Right
+2026-03-02 09:28:10: choice    3  Right
+2026-03-02 09:28:10: choice    3  Right
+2026-03-02 09:28:10: choice    3  Right
+2026-03-02 09:28:10: choice    3  Right
+2026-03-02 09:28:10: choice    3  Right
+2026-03-02 09:28:10: choice    3  Right
+2026-03-02 09:28:10: choice    3  Right
+2026-03-02 09:28:11: choice    2  Left
+2026-03-02 09:28:11: choice    2  Left
+2026-03-02 09:28:11: choice    2  Left
+2026-03-02 09:28:12: choice    1  switch to y
+2026-03-02 09:28:12: choice    1  switch to x
+2026-03-02 09:28:12: choice    2  Up
+2026-03-02 09:28:13: choice    2  Up
+2026-03-02 09:28:14: choice    2  Up
+2026-03-02 09:28:15: choice    3  Down
+2026-03-02 09:28:16: choice    3  Down
+2026-03-02 09:28:16: choice    2  Up
+2026-03-02 09:28:17: choice    1  switch to x
+2026-03-02 09:28:17: choice    1  switch to y
+2026-03-02 09:28:17: choice    2  Left
+2026-03-02 09:28:17: choice    1  switch to y
+2026-03-02 09:28:18: choice    1  switch to x
+2026-03-02 09:28:18: choice    2  Up
+2026-03-02 09:28:18: choice    2  Up
+2026-03-02 09:28:19: choice    3  Down
+2026-03-02 09:28:20: choice    3  Down
+2026-03-02 09:28:21: choice    2  Up
+2026-03-02 09:28:21: choice    1  switch to x
+2026-03-02 09:28:21: choice    1  switch to y
+2026-03-02 09:28:22: choice    2  Left
+2026-03-02 09:28:22: choice    2  Left
+2026-03-02 09:28:22: choice    3  Right
+2026-03-02 09:28:23: choice    3  Right
+2026-03-02 09:28:31: choice    3  Right
+2026-03-02 09:28:31: choice    3  Right
+2026-03-02 09:28:31: choice    4  Back
+2026-03-02 09:28:32: choice    3  Right
+2026-03-02 09:28:32: choice    2  Left
+2026-03-02 09:28:32: choice    2  Left
+2026-03-02 09:28:32: choice    2  Left
+2026-03-02 09:28:33: choice    3  Right
+2026-03-02 09:28:33: choice    3  Right
+2026-03-02 09:28:33: choice    2  Left
+2026-03-02 09:28:33: choice    1  switch to y
+2026-03-02 09:28:34: choice    1  switch to x
+2026-03-02 09:28:34: choice    2  Up
+2026-03-02 09:28:34: choice    3  Down
+2026-03-02 09:28:34: choice    3  Down
+2026-03-02 09:28:35: choice    2  Up
+2026-03-02 09:28:35: choice    2  Up
+2026-03-02 09:28:36: choice    3  Down
+2026-03-02 09:28:36: choice    4  Back
+2026-03-02 09:28:37: menu    4  -
+2026-03-02 09:28:37: menu    3  Choice Tree
+2026-03-02 09:28:38: choice    3  Down
+2026-03-02 09:28:39: choice    3  Down
+2026-03-02 09:28:39: choice    2  Up
+2026-03-02 09:28:39: choice    3  Down
+2026-03-02 09:28:39: choice    4  Back
+2026-03-02 09:28:40: menu    4  -
+2026-03-02 09:28:40: menu    3  Choice Tree
+2026-03-02 09:28:41: choice    3  Down
+2026-03-02 09:28:41: choice    2  Up
+2026-03-02 09:28:41: choice    1  switch to x
+2026-03-02 09:28:42: choice    2  Up
+2026-03-02 09:28:43: choice    3  Down
+2026-03-02 09:28:43: choice    4  Back
+2026-03-02 09:28:43: menu    4  -
+2026-03-02 09:28:45: menu    3  Choice Tree
+2026-03-02 09:28:46: menu    2  Settings
+2026-03-02 09:28:46: settings    2  music
+2026-03-02 09:28:46: settings    3  credits
+2026-03-02 09:28:46: settings    2  music
+2026-03-02 09:28:46: settings    1  screen
+2026-03-02 09:28:47: screen    1  scale = 3
+2026-03-02 09:28:47: screen    2  scale +
+2026-03-02 09:28:47: screen    3  scale -
+2026-03-02 09:28:48: screen    3  scale -
+2026-03-02 09:28:48: screen    3  scale -
+2026-03-02 09:28:49: screen    4  back
+2026-03-02 09:28:49: settings    4  back
+2026-03-02 09:28:50: settings    3  credits
+2026-03-02 09:28:50: settings    4  back
+2026-03-02 09:28:50: menu    4  -
+2026-03-02 09:28:50: menu    3  Choice Tree
+2026-03-02 09:28:51: choice    3  Down
+2026-03-02 09:28:51: choice    4  Back
+2026-03-02 09:28:51: choice    3  Down
+2026-03-02 09:28:52: choice    2  Up
+2026-03-02 09:28:52: choice    2  Up
+2026-03-02 09:28:53: choice    2  Up
+2026-03-02 09:28:53: choice    3  Down
+2026-03-02 09:28:53: choice    3  Down
+2026-03-02 09:28:53: choice    3  Down
+2026-03-02 09:28:54: choice    2  Up
+2026-03-02 09:28:54: choice    1  switch to x
+2026-03-02 09:28:54: choice    2  Up
+2026-03-02 09:28:54: choice    2  Up
+2026-03-02 09:28:55: choice    3  Down
+2026-03-02 09:28:55: choice    4  Back
+2026-03-02 09:28:55: menu    4  -
+2026-03-02 09:28:55: menu    3  Choice Tree
+2026-03-02 09:28:55: menu    2  Settings
+2026-03-02 09:28:56: menu    3  Choice Tree
+2026-03-02 09:28:56: choice    3  Down
+2026-03-02 09:28:56: choice    2  Up
+2026-03-02 09:28:57: choice    2  Up
+2026-03-02 09:28:57: choice    2  Up
+2026-03-02 09:28:57: choice    3  Down
+2026-03-02 09:28:57: choice    3  Down
+2026-03-02 09:28:57: choice    3  Down
+2026-03-02 09:28:57: choice    2  Up
+2026-03-02 09:28:58: choice    1  switch to x
+2026-03-02 09:28:58: choice    1  switch to y
+2026-03-02 09:28:58: choice    2  Left
+2026-03-02 09:28:58: choice    2  Left
+2026-03-02 09:28:58: choice    2  Left
+2026-03-02 09:28:59: choice    2  Left
+2026-03-02 09:28:59: choice    3  Right
+2026-03-02 09:28:59: choice    3  Right
+2026-03-02 09:28:59: choice    3  Right
+2026-03-02 09:28:59: choice    3  Right
+2026-03-02 09:29:00: choice    2  Left
+2026-03-02 09:29:00: choice    2  Left
+2026-03-02 09:29:00: choice    2  Left
+2026-03-02 09:29:00: choice    3  Right
+2026-03-02 09:29:01: choice    3  Right
+2026-03-02 09:29:02  log closing
+=============================
+
+
+
+log starts at 2026-03-02 09:29:10.
+
+2026-03-02 09:29:10: running    1  1
+2026-03-02 09:29:10: running    1  1
+2026-03-02 09:29:11: running    1  1
+2026-03-02 09:29:12: running    1  1
+2026-03-02 09:29:13: running    1  1
+2026-03-02 09:29:14: running    1  1
+2026-03-02 09:29:14: running    1  1
+2026-03-02 09:29:14: running    1  1
+2026-03-02 09:29:14: running    1  1
+2026-03-02 09:29:15: running    1  1
+2026-03-02 09:29:15: running    1  1
+2026-03-02 09:29:15: running    1  1
+2026-03-02 09:29:15: running    1  1
+2026-03-02 09:29:15: running    1  1
+2026-03-02 09:29:15: running    1  1
+2026-03-02 09:29:15: running    1  1
+2026-03-02 09:29:16: running    1  1
+2026-03-02 09:29:16: running    1  1
+2026-03-02 09:29:17: running    1  1
+2026-03-02 09:29:18: running    1  1
+2026-03-02 09:29:18: menu    1  Continue
+2026-03-02 09:29:20: menu    2  Settings
+2026-03-02 09:29:20: menu    3  Choice Tree
+2026-03-02 09:29:20: choice    3  Down
+2026-03-02 09:29:22: choice    3  Down
+2026-03-02 09:29:31  log closing
+=============================
+
+
+
+log starts at 2026-03-02 09:40:12.
+
+2026-03-02 09:40:12: running    1  1
+2026-03-02 09:40:12: running    1  1
+2026-03-02 09:40:13: running    1  1
+2026-03-02 09:40:14: running    1  1
+2026-03-02 09:40:15: running    1  1
+2026-03-02 09:40:15: running    1  1
+2026-03-02 09:40:16: running    1  1
+2026-03-02 09:40:16: running    1  1
+2026-03-02 09:40:16: running    1  1
+2026-03-02 09:40:16: running    1  1
+2026-03-02 09:40:16: running    1  1
+2026-03-02 09:40:16: running    1  1
+2026-03-02 09:40:17: running    1  1
+2026-03-02 09:40:17: running    1  1
+2026-03-02 09:40:17: running    1  1
+2026-03-02 09:40:17: running    1  1
+2026-03-02 09:40:17: running    1  1
+2026-03-02 09:40:17: running    1  1
+2026-03-02 09:40:18: running    1  1
+2026-03-02 09:40:19: running    1  1
+2026-03-02 09:40:19: menu    1  Continue
+2026-03-02 09:40:20: menu    2  Settings
+2026-03-02 09:40:21: menu    3  Choice Tree
+2026-03-02 09:40:21: choice    3  Down
+2026-03-02 09:40:22: choice    3  Down
+2026-03-02 09:40:23: choice    3  Down
+2026-03-02 09:40:23: choice    2  Up
+2026-03-02 09:40:23: choice    2  Up
+2026-03-02 09:40:23: choice    3  Down
+2026-03-02 09:40:24: choice    3  Down
+2026-03-02 09:40:24: choice    3  Down
+2026-03-02 09:40:24: choice    3  Down
+2026-03-02 09:40:25: choice    3  Down
+2026-03-02 09:40:25: choice    3  Down
+2026-03-02 09:40:25: choice    3  Down
+2026-03-02 09:40:25: choice    3  Down
+2026-03-02 09:40:26: choice    3  Down
+2026-03-02 09:40:26: choice    2  Up
+2026-03-02 09:40:26: choice    2  Up
+2026-03-02 09:40:27: choice    3  Down
+2026-03-02 09:40:27: choice    2  Up
+2026-03-02 09:40:27: choice    1  switch to x
+2026-03-02 09:40:27: choice    1  switch to y
+2026-03-02 09:40:27: choice    2  Left
+2026-03-02 09:40:28: choice    3  Right
+2026-03-02 09:40:28: choice    3  Right
+2026-03-02 09:40:28: choice    3  Right
+2026-03-02 09:40:28: choice    2  Left
+2026-03-02 09:40:28: choice    1  switch to y
+2026-03-02 09:40:29: choice    2  Left
+2026-03-02 09:40:29: choice    2  Left
+2026-03-02 09:40:29: choice    2  Left
+2026-03-02 09:40:29: choice    1  switch to y
+2026-03-02 09:40:30: choice    1  switch to x
+2026-03-02 09:40:30: choice    2  Up
+2026-03-02 09:40:30: choice    3  Down
+2026-03-02 09:40:30: choice    3  Down
+2026-03-02 09:40:30: choice    2  Up
+2026-03-02 09:40:30: choice    1  switch to x
+2026-03-02 09:40:31: choice    1  switch to y
+2026-03-02 09:40:31: choice    2  Left
+2026-03-02 09:40:31: choice    2  Left
+2026-03-02 09:40:31: choice    2  Left
+2026-03-02 09:40:31: choice    3  Right
+2026-03-02 09:40:32: choice    3  Right
+2026-03-02 09:40:32: choice    3  Right
+2026-03-02 09:40:32: choice    3  Right
+2026-03-02 09:40:32: choice    2  Left
+2026-03-02 09:40:32: choice    2  Left
+2026-03-02 09:40:32: choice    2  Left
+2026-03-02 09:40:33: choice    3  Right
+2026-03-02 09:40:33: choice    3  Right
+2026-03-02 09:40:33: choice    3  Right
+2026-03-02 09:40:33: choice    2  Left
+2026-03-02 09:40:33: choice    2  Left
+2026-03-02 09:40:34: choice    3  Right
+2026-03-02 09:40:34: choice    3  Right
+2026-03-02 09:40:34: choice    2  Left
+2026-03-02 09:40:34: choice    2  Left
+2026-03-02 09:40:34: choice    3  Right
+2026-03-02 09:40:34: choice    3  Right
+2026-03-02 09:40:35: choice    2  Left
+2026-03-02 09:40:35: choice    2  Left
+2026-03-02 09:40:35: choice    3  Right
+2026-03-02 09:40:35: choice    3  Right
+2026-03-02 09:40:35: choice    2  Left
+2026-03-02 09:40:36: choice    2  Left
+2026-03-02 09:40:36: choice    1  switch to y
+2026-03-02 09:40:37: choice    2  Left
+2026-03-02 09:40:38: choice    2  Left
+2026-03-02 09:40:39: choice    1  switch to y
+2026-03-02 09:40:39: choice    1  switch to x
+2026-03-02 09:40:39: choice    2  Up
+2026-03-02 09:40:39: choice    2  Up
+2026-03-02 09:40:40: choice    3  Down
+2026-03-02 09:40:40: choice    3  Down
+2026-03-02 09:40:41: choice    2  Up
+2026-03-02 09:40:41: choice    2  Up
+2026-03-02 09:40:41: choice    1  switch to x
+2026-03-02 09:40:42: choice    1  switch to y
+2026-03-02 09:40:42: choice    2  Left
+2026-03-02 09:40:42: choice    3  Right
+2026-03-02 09:40:42: choice    3  Right
+2026-03-02 09:40:43: choice    2  Left
+2026-03-02 09:48:07  log closing
+=============================
+
+
+
+log starts at 2026-03-02 10:59:02.
+
+2026-03-02 10:59:02: running    1  1
+2026-03-02 10:59:02: running    1  1
+2026-03-02 10:59:03: running    1  1
+2026-03-02 10:59:04: running    1  1
+2026-03-02 10:59:05: running    1  1
+2026-03-02 10:59:06: running    1  1
+2026-03-02 10:59:06: running    1  1
+2026-03-02 10:59:06: running    1  1
+2026-03-02 10:59:06: running    1  1
+2026-03-02 10:59:07: running    1  1
+2026-03-02 10:59:07: running    1  1
+2026-03-02 10:59:07: running    1  1
+2026-03-02 10:59:07: running    1  1
+2026-03-02 10:59:07: running    1  1
+2026-03-02 10:59:08: running    1  1
+2026-03-02 10:59:08: running    1  1
+2026-03-02 10:59:08: running    1  1
+2026-03-02 10:59:08: running    1  1
+2026-03-02 10:59:09: running    1  1
+2026-03-02 10:59:10: running    1  1
+2026-03-02 10:59:10: menu    1  Continue
+2026-03-02 10:59:11: menu    4  -
+2026-03-02 10:59:11: menu    3  Choice Tree
+2026-03-02 10:59:12: choice    3  Down
+2026-03-02 10:59:12: choice    4  Back
+2026-03-02 10:59:13: choice    3  Down
+2026-03-02 10:59:13: choice    3  Down
+2026-03-02 10:59:14: choice    2  Up
+2026-03-02 10:59:14: choice    1  switch to x
+2026-03-02 10:59:15: choice    1  switch to y
+2026-03-02 10:59:15: choice    2  Left
+2026-03-02 10:59:16: choice    3  Right
+2026-03-02 10:59:17: choice    3  Right
+2026-03-02 10:59:18: choice    4  Back
+2026-03-02 10:59:18: choice    3  Right
+2026-03-02 10:59:18: choice    2  Left
+2026-03-02 10:59:18: choice    1  switch to y
+2026-03-02 10:59:18: choice    1  switch to x
+2026-03-02 10:59:19: choice    2  Up
+2026-03-02 10:59:19: choice    3  Down
+2026-03-02 10:59:19: choice    3  Down
+2026-03-02 10:59:19: choice    2  Up
+2026-03-02 10:59:20: choice    1  switch to x
+2026-03-02 10:59:20: choice    1  switch to y
+2026-03-02 10:59:20: choice    2  Left
+2026-03-02 10:59:20: choice    2  Left
+2026-03-02 10:59:21: choice    3  Right
+2026-03-02 10:59:21: choice    3  Right
+2026-03-02 10:59:21: choice    3  Right
+2026-03-02 10:59:22: choice    3  Right
+2026-03-02 10:59:22: choice    2  Left
+2026-03-02 10:59:28: choice    1  switch to y
+2026-03-02 10:59:28: choice    2  Left
+2026-03-02 10:59:28: choice    1  switch to y
+2026-03-02 10:59:29: choice    2  Left
+2026-03-02 10:59:30: choice    1  switch to y
+2026-03-02 10:59:30: choice    1  switch to x
+2026-03-02 10:59:30: choice    2  Up
+2026-03-02 10:59:31: choice    2  Up
+2026-03-02 10:59:31: choice    3  Down
+2026-03-02 10:59:32: choice    3  Down
+2026-03-02 10:59:32: choice    3  Down
+2026-03-02 10:59:32: choice    2  Up
+2026-03-02 10:59:32: choice    1  switch to x
+2026-03-02 10:59:32: choice    1  switch to y
+2026-03-02 10:59:33: choice    2  Left
+2026-03-02 10:59:33: choice    3  Right
+2026-03-02 10:59:33: choice    3  Right
+2026-03-02 10:59:34: choice    2  Left
+2026-03-02 10:59:34: choice    2  Left
+2026-03-02 10:59:34: choice    2  Left
+2026-03-02 10:59:35: choice    2  Left
+2026-03-02 10:59:36: choice    2  Left
+2026-03-02 10:59:36: choice    1  switch to y
+2026-03-02 10:59:37: choice    1  switch to x
+2026-03-02 10:59:37: choice    2  Up
+2026-03-02 10:59:57  log closing
+=============================
+
+
+
+log starts at 2026-03-02 11:00:00.
+
+2026-03-02 11:00:00: running    1  1
+2026-03-02 11:00:00: running    1  1
+2026-03-02 11:00:01: running    1  1
+2026-03-02 11:00:02: running    1  1
+2026-03-02 11:00:03: running    1  1
+2026-03-02 11:00:04: running    1  1
+2026-03-02 11:00:04: running    1  1
+2026-03-02 11:00:05: running    1  1
+2026-03-02 11:00:05: running    1  1
+2026-03-02 11:00:05: running    1  1
+2026-03-02 11:00:05: running    1  1
+2026-03-02 11:00:05: running    1  1
+2026-03-02 11:00:05: running    1  1
+2026-03-02 11:00:05: running    1  1
+2026-03-02 11:00:05: running    1  1
+2026-03-02 11:00:06: running    1  1
+2026-03-02 11:00:06: running    1  1
+2026-03-02 11:00:06: running    1  1
+2026-03-02 11:00:07: running    1  1
+2026-03-02 11:00:08: running    1  1
+2026-03-02 11:00:08: menu    1  Continue
+2026-03-02 11:00:09: menu    4  -
+2026-03-02 11:00:09: menu    3  Choice Tree
+2026-03-02 11:00:10: choice    3  Down
+2026-03-02 11:00:10: choice    4  Back
+2026-03-02 11:00:11: choice    3  Down
+2026-03-02 11:00:11: choice    3  Down
+2026-03-02 11:00:11: choice    2  Up
+2026-03-02 11:00:11: choice    2  Up
+2026-03-02 11:00:12: choice    3  Down
+2026-03-02 11:00:12: choice    3  Down
+2026-03-02 11:00:13: choice    2  Up
+2026-03-02 11:00:13: choice    1  switch to x
+2026-03-02 11:00:13: choice    1  switch to y
+2026-03-02 11:00:14: choice    2  Left
+2026-03-02 11:00:14: choice    3  Right
+2026-03-02 11:00:14: choice    3  Right
+2026-03-02 11:00:14: choice    3  Right
+2026-03-02 11:00:15: choice    2  Left
+2026-03-02 11:00:15: choice    1  switch to y
+2026-03-02 11:00:15: choice    2  Left
+2026-03-02 11:00:16: choice    1  switch to y
+2026-03-02 11:00:16: choice    1  switch to x
+2026-03-02 11:00:16: choice    2  Up
+2026-03-02 11:00:16: choice    2  Up
+log starts at 2026-03-02 11:02:17.
+
+2026-03-02 11:02:17: running    1  1
+2026-03-02 11:02:17: running    1  1
+2026-03-02 11:02:18: running    1  1
+2026-03-02 11:02:19: running    1  1
+2026-03-02 11:02:20: running    1  1
+2026-03-02 11:02:20: running    1  1
+2026-03-02 11:02:21: running    1  1
+2026-03-02 11:02:21: running    1  1
+2026-03-02 11:02:21: running    1  1
+2026-03-02 11:02:21: running    1  1
+2026-03-02 11:02:22: running    1  1
+2026-03-02 11:02:22: running    1  1
+2026-03-02 11:02:22: running    1  1
+2026-03-02 11:02:22: running    1  1
+2026-03-02 11:02:22: running    1  1
+2026-03-02 11:02:22: running    1  1
+2026-03-02 11:02:22: running    1  1
+2026-03-02 11:02:23: running    1  1
+2026-03-02 11:02:24: running    1  1
+2026-03-02 11:02:25: running    1  1
+2026-03-02 11:02:25: menu    1  Continue
+2026-03-02 11:02:26: menu    4  -
+2026-03-02 11:02:26: menu    3  Choice Tree
+2026-03-02 11:02:26: choice    3  Down
+2026-03-02 11:02:27: choice    4  Back
+2026-03-02 11:02:27: menu    4  -
+2026-03-02 11:02:28: menu    3  Choice Tree
+2026-03-02 11:02:28: choice    3  Down
+2026-03-02 11:02:29: choice    3  Down
+2026-03-02 11:02:29: choice    3  Down
+2026-03-02 11:02:30: choice    3  Down
+2026-03-02 11:02:30: choice    2  Up
+2026-03-02 11:02:30: choice    2  Up
+2026-03-02 11:02:30: choice    2  Up
+2026-03-02 11:02:31: choice    3  Down
+2026-03-02 11:02:31: choice    3  Down
+2026-03-02 11:02:31: choice    2  Up
+2026-03-02 11:02:31: choice    2  Up
+2026-03-02 11:02:58: choice    2  Up
+2026-03-02 11:30:20: choice    3  Down
+2026-03-02 11:30:20: choice    4  Back
+2026-03-02 11:30:20: menu    4  -
+2026-03-02 11:30:21: menu    3  Choice Tree
+2026-03-02 11:30:22: menu    4  -
+2026-03-02 11:30:27: menu    3  Choice Tree
+2026-03-02 11:30:27: menu    2  Settings
+2026-03-02 11:30:28: settings    2  music
+2026-03-02 11:30:28: settings    3  credits
+2026-03-02 11:30:28: settings    4  back
+2026-03-02 11:30:31: menu    4  -
+2026-03-02 11:30:31: menu    3  Choice Tree
+2026-03-02 11:30:31: choice    3  Down
+2026-03-02 11:30:32: choice    4  Back
+2026-03-02 11:30:32: menu    4  -
+2026-03-02 11:30:36  log closing
+=============================
+
+
+
+log starts at 2026-03-02 11:32:59.
+
+2026-03-02 11:32:59: running    1  1
+2026-03-02 11:32:59: running    1  1
+2026-03-02 11:33:00: running    1  1
+2026-03-02 11:33:01: running    1  1
+2026-03-02 11:33:02: running    1  1
+2026-03-02 11:33:03: running    1  1
+2026-03-02 11:33:03: running    1  1
+2026-03-02 11:33:03: running    1  1
+2026-03-02 11:33:04: running    1  1
+2026-03-02 11:33:04: running    1  1
+2026-03-02 11:33:04: running    1  1
+2026-03-02 11:33:04: running    1  1
+2026-03-02 11:33:04: running    1  1
+2026-03-02 11:33:04: running    1  1
+2026-03-02 11:33:05: running    1  1
+2026-03-02 11:33:05: running    1  1
+2026-03-02 11:33:05: running    1  1
+2026-03-02 11:33:05: running    1  1
+2026-03-02 11:33:06: running    1  1
+2026-03-02 11:33:07: running    1  1
+2026-03-02 11:33:07: menu    1  Continue
+2026-03-02 11:33:09: menu    4  -
+2026-03-02 11:33:11: quit    4  -
+log starts at 2026-03-02 11:33:26.
+
+2026-03-02 11:33:26: running    1  1
+2026-03-02 11:33:26: running    1  1
+2026-03-02 11:33:27: running    1  1
+2026-03-02 11:33:28: running    1  1
+2026-03-02 11:33:29: running    1  1
+2026-03-02 11:33:30: running    1  1
+2026-03-02 11:33:30: running    1  1
+2026-03-02 11:33:30: running    1  1
+2026-03-02 11:33:30: running    1  1
+2026-03-02 11:33:31: running    1  1
+2026-03-02 11:33:31: running    1  1
+2026-03-02 11:33:31: running    1  1
+2026-03-02 11:33:31: running    1  1
+2026-03-02 11:33:31: running    1  1
+2026-03-02 11:33:31: running    1  1
+2026-03-02 11:33:31: running    1  1
+2026-03-02 11:33:31: running    1  1
+2026-03-02 11:33:32: running    1  1
+2026-03-02 11:33:33: running    1  1
+2026-03-02 11:33:34: running    1  1
+2026-03-02 11:33:34: menu    1  Continue
+2026-03-02 11:34:02: menu    4  Quit
+2026-03-02 11:34:02: quit    4  Quit
+log starts at 2026-03-02 11:34:11.
+
+2026-03-02 11:34:11: running    1  1
+2026-03-02 11:34:11: running    1  1
+2026-03-02 11:34:12: running    1  1
+2026-03-02 11:34:13: running    1  1
+2026-03-02 11:34:14: running    1  1
+2026-03-02 11:34:14: running    1  1
+2026-03-02 11:34:15: running    1  1
+2026-03-02 11:34:15: running    1  1
+2026-03-02 11:34:15: running    1  1
+2026-03-02 11:34:15: running    1  1
+2026-03-02 11:34:15: running    1  1
+2026-03-02 11:34:15: running    1  1
+2026-03-02 11:34:15: running    1  1
+2026-03-02 11:34:16: running    1  1
+2026-03-02 11:34:16: running    1  1
+2026-03-02 11:34:16: running    1  1
+2026-03-02 11:34:16: running    1  1
+2026-03-02 11:34:16: running    1  1
+2026-03-02 11:34:17: running    1  1
+2026-03-02 11:34:18: running    1  1
+2026-03-02 11:34:18: menu    1  Continue
+2026-03-02 11:35:08: menu    2  Settings
+2026-03-02 11:35:09: menu    1  Continue
+2026-03-02 11:35:10: menu    4  Quit
+2026-03-02 11:35:22: menu    3  Choice Tree
+2026-03-02 11:35:22: menu    2  Settings
+2026-03-02 11:35:24: menu    1  Continue
+2026-03-02 11:35:25: menu    4  Quit
+2026-03-02 11:35:25: menu    3  Choice Tree
+2026-03-02 11:35:25: menu    4  Quit
+2026-03-02 11:35:26: menu    3  Choice Tree
+2026-03-02 11:35:27: menu    2  Settings
+2026-03-02 11:35:27: settings    2  music
+2026-03-02 11:35:28: settings    3  credits
+2026-03-02 11:35:31: settings    4  back
+2026-03-02 11:35:31: menu    4  Quit
+2026-03-02 11:35:31: menu    3  Choice Tree
+2026-03-02 11:35:31: choice    3  Down
+2026-03-02 11:35:32: choice    4  Back
+2026-03-02 11:35:32: menu    4  Quit
+2026-03-02 11:35:39: menu    3  Choice Tree
+2026-03-02 11:35:39: choice    3  Down
+2026-03-02 11:36:08: choice    2  Up
+2026-03-02 11:36:08: choice    1  switch to x
+2026-03-02 11:37:03: choice    2  Up
+2026-03-02 11:37:03: choice    2  Up
+2026-03-02 11:37:03: choice    3  Down
+2026-03-02 11:37:03: choice    3  Down
+2026-03-02 11:37:03: choice    3  Down
+2026-03-02 11:37:04: choice    2  Up
+2026-03-02 11:37:05: choice    1  switch to x
+2026-03-02 11:37:05: choice    1  switch to y
+2026-03-02 11:37:05: choice    2  Left
+2026-03-02 11:37:05: choice    3  Right
+2026-03-02 11:37:06: choice    3  Right
+2026-03-02 11:37:06: choice    3  Right
+2026-03-02 11:37:07: choice    2  Left
+2026-03-02 11:37:08: choice    1  switch to y
+2026-03-02 11:37:08: choice    1  switch to x
+2026-03-02 11:37:08: choice    2  Up
+2026-03-02 11:37:08: choice    3  Down
+2026-03-02 11:37:09: choice    2  Up
+2026-03-02 11:37:09: choice    1  switch to x
+2026-03-02 11:37:09: choice    1  switch to y
+2026-03-02 11:37:10: choice    2  Left
+2026-03-02 11:37:10: choice    2  Left
+2026-03-02 11:54:59: choice    3  Right
+2026-03-02 11:54:59: choice    4  Back
+2026-03-02 11:54:59: menu    4  Quit
+2026-03-02 11:55:00: quit    4  Quit
+log starts at 2026-03-02 12:06:07.
+
+2026-03-02 12:06:07: running    1  1
+2026-03-02 12:06:07: running    1  1
+2026-03-02 12:06:08: running    1  1
+2026-03-02 12:06:09: running    1  1
+2026-03-02 12:06:10: running    1  1
+2026-03-02 12:06:10: running    1  1
+2026-03-02 12:06:11: running    1  1
+2026-03-02 12:06:11: running    1  1
+2026-03-02 12:06:11: running    1  1
+2026-03-02 12:06:11: running    1  1
+2026-03-02 12:06:11: running    1  1
+2026-03-02 12:06:11: running    1  1
+2026-03-02 12:06:12: running    1  1
+2026-03-02 12:06:12: running    1  1
+2026-03-02 12:06:12: running    1  1
+2026-03-02 12:06:12: running    1  1
+2026-03-02 12:06:12: running    1  1
+2026-03-02 12:06:13: running    1  1
+2026-03-02 12:06:14: running    1  1
+2026-03-02 12:06:15: running    1  1
+2026-03-02 12:06:15: menu    1  Continue
+2026-03-02 12:06:16: menu    4  Quit
+2026-03-02 12:06:16: menu    3  Choice Tree
+log starts at 2026-03-02 12:07:35.
+
+2026-03-02 12:07:35: running    1  1
+2026-03-02 12:07:35: running    1  1
+2026-03-02 12:07:36: running    1  1
+2026-03-02 12:07:37: running    1  1
+2026-03-02 12:07:38: running    1  1
+2026-03-02 12:07:39: running    1  1
+2026-03-02 12:07:39: running    1  1
+2026-03-02 12:07:40: running    1  1
+2026-03-02 12:07:40: running    1  1
+2026-03-02 12:07:40: running    1  1
+2026-03-02 12:07:40: running    1  1
+2026-03-02 12:07:40: running    1  1
+2026-03-02 12:07:40: running    1  1
+2026-03-02 12:07:41: running    1  1
+2026-03-02 12:07:41: running    1  1
+2026-03-02 12:07:41: running    1  1
+2026-03-02 12:07:41: running    1  1
+2026-03-02 12:07:41: running    1  1
+2026-03-02 12:07:42: running    1  1
+2026-03-02 12:07:43: running    1  1
+2026-03-02 12:07:43: menu    1  Continue
+2026-03-02 12:07:44: menu    2  Settings
+2026-03-02 12:07:44: menu    3  Choice Tree
+2026-03-02 12:07:44: choice    3  Down
+2026-03-02 12:07:46: choice    3  Down
+2026-03-02 12:07:46: choice    2  Up
+2026-03-02 12:07:47: choice    3  Down
+2026-03-02 12:07:47: choice    3  Down
+2026-03-02 12:07:47: choice    2  Up
+2026-03-02 12:07:48: choice    1  switch to x
+2026-03-02 12:07:48: choice    1  switch to y
+2026-03-02 12:07:48: choice    2  Left
+2026-03-02 12:07:48: choice    2  Left
+2026-03-02 12:07:49: choice    1  switch to y
+2026-03-02 12:07:49: choice    1  switch to x
+2026-03-02 12:07:49: choice    2  Up
+2026-03-02 12:07:49: choice    3  Down
+2026-03-02 12:07:49: choice    3  Down
+2026-03-02 12:07:50: choice    3  Down
+2026-03-02 12:07:50: choice    4  Back
+2026-03-02 12:07:50: menu    4  Quit
+2026-03-02 12:07:50: menu    3  Choice Tree
+2026-03-02 12:07:50: choice    3  Down
+2026-03-02 12:07:51: choice    4  Back
+2026-03-02 12:07:51: menu    4  Quit
+2026-03-02 12:07:51: menu    3  Choice Tree
+2026-03-02 12:07:52: menu    4  Quit
+2026-03-02 12:07:52: menu    3  Choice Tree
+2026-03-02 12:07:52: choice    3  Down
+2026-03-02 12:07:53: choice    3  Down
+2026-03-02 12:07:53: choice    3  Down
+2026-03-02 12:07:53: choice    3  Down
+2026-03-02 12:07:53: choice    3  Down
+2026-03-02 12:07:53: choice    3  Down
+2026-03-02 12:07:54: choice    3  Down
+2026-03-02 12:07:54: choice    3  Down
+2026-03-02 12:07:54: choice    3  Down
+2026-03-02 12:07:54: choice    3  Down
+2026-03-02 12:07:56: choice    3  Down
+2026-03-02 12:07:57: choice    3  Down
+2026-03-02 12:07:57: choice    3  Down
+2026-03-02 12:07:57: choice    4  Back
+2026-03-02 12:07:57: menu    4  Quit
+2026-03-02 12:07:57: menu    3  Choice Tree
+2026-03-02 12:07:58: choice    3  Down
+2026-03-02 12:07:58: choice    4  Back
+2026-03-02 12:07:58: choice    3  Down
+2026-03-02 12:07:58: choice    3  Down
+2026-03-02 12:07:59: choice    3  Down
+2026-03-02 12:07:59: choice    3  Down
+2026-03-02 12:07:59: choice    3  Down
+2026-03-02 12:07:59: choice    3  Down
+2026-03-02 12:07:59: choice    3  Down
+2026-03-02 12:07:59: choice    3  Down
+2026-03-02 12:08:03  log closing
+=============================
+
+
+
+log starts at 2026-03-02 12:09:47.
+
+2026-03-02 12:09:47: running    1  1
+2026-03-02 12:09:47: running    1  1
+2026-03-02 12:09:48: running    1  1
+2026-03-02 12:09:49: running    1  1
+2026-03-02 12:09:50: running    1  1
+2026-03-02 12:09:50: running    1  1
+2026-03-02 12:09:51: running    1  1
+2026-03-02 12:09:51: running    1  1
+2026-03-02 12:09:51: running    1  1
+2026-03-02 12:09:51: running    1  1
+2026-03-02 12:09:51: running    1  1
+2026-03-02 12:09:51: running    1  1
+2026-03-02 12:09:52: running    1  1
+2026-03-02 12:09:52: running    1  1
+2026-03-02 12:09:52: running    1  1
+2026-03-02 12:09:52: running    1  1
+2026-03-02 12:09:52: running    1  1
+2026-03-02 12:09:53: running    1  1
+2026-03-02 12:09:54: running    1  1
+2026-03-02 12:09:55: running    1  1
+2026-03-02 12:09:55: menu    1  Continue
+2026-03-02 12:09:56: menu    2  Settings
+2026-03-02 12:09:56: menu    1  Continue
+2026-03-02 12:09:57: menu    4  Quit
+2026-03-02 12:09:57: menu    3  Choice Tree
+2026-03-02 12:09:58: choice    3  Down
+2026-03-02 12:10:01: choice    3  Down
+2026-03-02 12:10:07: choice    3  Down
+2026-03-02 12:10:08: choice    4  Back
+2026-03-02 12:10:09: menu    4  Quit
+2026-03-02 12:10:11  log closing
+=============================
+
+
+
+log starts at 2026-03-02 12:10:50.
+
+2026-03-02 12:10:50: running    1  1
+2026-03-02 12:10:50: running    1  1
+2026-03-02 12:10:51: running    1  1
+2026-03-02 12:10:52: running    1  1
+2026-03-02 12:10:53: running    1  1
+2026-03-02 12:10:53: running    1  1
+2026-03-02 12:10:54: running    1  1
+2026-03-02 12:10:54: running    1  1
+2026-03-02 12:10:54: running    1  1
+2026-03-02 12:10:54: running    1  1
+2026-03-02 12:10:55: running    1  1
+2026-03-02 12:10:55: running    1  1
+2026-03-02 12:10:55: running    1  1
+2026-03-02 12:10:55: running    1  1
+2026-03-02 12:10:55: running    1  1
+2026-03-02 12:10:55: running    1  1
+2026-03-02 12:10:55: running    1  1
+2026-03-02 12:10:56: running    1  1
+2026-03-02 12:10:57: running    1  1
+2026-03-02 12:10:58: running    1  1
+2026-03-02 12:10:58: menu    1  Continue
+2026-03-02 12:10:59: menu    2  Settings
+2026-03-02 12:10:59: menu    3  Choice Tree
+2026-03-02 12:10:59: choice    3  Down
+2026-03-02 12:11:07  log closing
+=============================
+
+
+
+log starts at 2026-03-02 12:12:42.
+
+2026-03-02 12:12:42: running    1  1
+2026-03-02 12:12:42: running    1  1
+2026-03-02 12:12:43: running    1  1
+2026-03-02 12:12:44: running    1  1
+2026-03-02 12:12:45: running    1  1
+2026-03-02 12:12:46: running    1  1
+2026-03-02 12:12:46: running    1  1
+2026-03-02 12:12:46: running    1  1
+2026-03-02 12:12:47: running    1  1
+2026-03-02 12:12:47: running    1  1
+2026-03-02 12:12:47: running    1  1
+2026-03-02 12:12:47: running    1  1
+2026-03-02 12:12:47: running    1  1
+2026-03-02 12:12:48: running    1  1
+2026-03-02 12:12:48: running    1  1
+2026-03-02 12:12:48: running    1  1
+2026-03-02 12:12:48: running    1  1
+2026-03-02 12:12:48: running    1  1
+2026-03-02 12:12:49: running    1  1
+2026-03-02 12:12:50: running    1  1
+2026-03-02 12:12:50: menu    1  Continue
+2026-03-02 12:12:51: menu    2  Settings
+2026-03-02 12:12:51: menu    3  Choice Tree
+2026-03-02 12:12:52: choice    3  Down
+2026-03-02 12:13:05: choice    4  Back
+log starts at 2026-03-02 12:13:09.
+
+2026-03-02 12:13:09: running    1  1
+2026-03-02 12:13:09: running    1  1
+2026-03-02 12:13:10: running    1  1
+2026-03-02 12:13:11: running    1  1
+2026-03-02 12:13:12: running    1  1
+2026-03-02 12:13:13: running    1  1
+2026-03-02 12:13:13: running    1  1
+2026-03-02 12:13:13: running    1  1
+2026-03-02 12:13:13: running    1  1
+2026-03-02 12:13:14: running    1  1
+2026-03-02 12:13:14: running    1  1
+2026-03-02 12:13:14: running    1  1
+2026-03-02 12:13:14: running    1  1
+2026-03-02 12:13:14: running    1  1
+2026-03-02 12:13:14: running    1  1
+2026-03-02 12:13:15: running    1  1
+2026-03-02 12:13:15: running    1  1
+2026-03-02 12:13:15: running    1  1
+2026-03-02 12:13:16: running    1  1
+2026-03-02 12:13:17: running    1  1
+2026-03-02 12:13:17: menu    1  Continue
+2026-03-02 12:13:18: menu    2  Settings
+2026-03-02 12:13:18: menu    3  Choice Tree
+2026-03-02 12:13:18: choice    3  Down
+2026-03-02 12:13:43  log closing
+=============================
+
+
+
+log starts at 2026-03-02 12:14:10.
+
+2026-03-02 12:14:10: running    1  1
+2026-03-02 12:14:10: running    1  1
+2026-03-02 12:14:11: running    1  1
+2026-03-02 12:14:12: running    1  1
+2026-03-02 12:14:13: running    1  1
+2026-03-02 12:14:14: running    1  1
+2026-03-02 12:14:14: running    1  1
+2026-03-02 12:14:14: running    1  1
+2026-03-02 12:14:14: running    1  1
+2026-03-02 12:14:15: running    1  1
+2026-03-02 12:14:15: running    1  1
+2026-03-02 12:14:15: running    1  1
+2026-03-02 12:14:15: running    1  1
+2026-03-02 12:14:15: running    1  1
+2026-03-02 12:14:15: running    1  1
+2026-03-02 12:14:16: running    1  1
+2026-03-02 12:14:16: running    1  1
+2026-03-02 12:14:16: running    1  1
+2026-03-02 12:14:17: running    1  1
+2026-03-02 12:14:18: running    1  1
+2026-03-02 12:14:18: menu    1  Continue
+2026-03-02 12:14:20: menu    2  Settings
+2026-03-02 12:14:20: menu    3  Choice Tree
+2026-03-02 12:14:20: choice    3  Down
+2026-03-02 12:14:31  log closing
+=============================
+
+
+
+log starts at 2026-03-02 12:14:43.
+
+2026-03-02 12:14:43: running    1  1
+2026-03-02 12:14:43: running    1  1
+2026-03-02 12:14:44: running    1  1
+2026-03-02 12:14:45: running    1  1
+2026-03-02 12:14:46: running    1  1
+2026-03-02 12:14:46: running    1  1
+2026-03-02 12:14:47: running    1  1
+2026-03-02 12:14:47: running    1  1
+2026-03-02 12:14:47: running    1  1
+2026-03-02 12:14:47: running    1  1
+2026-03-02 12:14:48: running    1  1
+2026-03-02 12:14:48: running    1  1
+2026-03-02 12:14:48: running    1  1
+2026-03-02 12:14:48: running    1  1
+2026-03-02 12:14:48: running    1  1
+2026-03-02 12:14:48: running    1  1
+2026-03-02 12:14:48: running    1  1
+2026-03-02 12:14:49: running    1  1
+2026-03-02 12:14:50: running    1  1
+2026-03-02 12:14:51: running    1  1
+2026-03-02 12:14:51: menu    1  Continue
+2026-03-02 12:14:52: menu    2  Settings
+2026-03-02 12:14:52: menu    3  Choice Tree
+2026-03-02 12:14:52: choice    3  Down
+2026-03-02 12:14:58  log closing
+=============================
+
+
+
+log starts at 2026-03-02 12:15:21.
+
+2026-03-02 12:15:21: running    1  1
+2026-03-02 12:15:21: running    1  1
+2026-03-02 12:15:22: running    1  1
+2026-03-02 12:15:23: running    1  1
+2026-03-02 12:15:24: running    1  1
+2026-03-02 12:15:25: running    1  1
+2026-03-02 12:15:25: running    1  1
+2026-03-02 12:15:25: running    1  1
+2026-03-02 12:15:25: running    1  1
+2026-03-02 12:15:25: running    1  1
+2026-03-02 12:15:26: running    1  1
+2026-03-02 12:15:26: running    1  1
+2026-03-02 12:15:26: running    1  1
+2026-03-02 12:15:26: running    1  1
+2026-03-02 12:15:26: running    1  1
+2026-03-02 12:15:26: running    1  1
+2026-03-02 12:15:26: running    1  1
+2026-03-02 12:15:27: running    1  1
+2026-03-02 12:15:28: running    1  1
+2026-03-02 12:15:29: running    1  1
+2026-03-02 12:15:29: menu    1  Continue
+2026-03-02 12:15:29: menu    2  Settings
+2026-03-02 12:15:29: menu    3  Choice Tree
+2026-03-02 12:15:29: choice    3  Down
+2026-03-02 12:15:37  log closing
+=============================
+
+
+
+log starts at 2026-03-02 12:24:10.
+
+2026-03-02 12:24:10: running    1  1
+2026-03-02 12:24:10: running    1  1
+2026-03-02 12:24:11: running    1  1
+2026-03-02 12:24:12: running    1  1
+2026-03-02 12:24:13: running    1  1
+2026-03-02 12:24:14: running    1  1
+2026-03-02 12:24:14: running    1  1
+2026-03-02 12:24:15: running    1  1
+2026-03-02 12:24:15: running    1  1
+2026-03-02 12:24:15: running    1  1
+2026-03-02 12:24:15: running    1  1
+2026-03-02 12:24:15: running    1  1
+2026-03-02 12:24:15: running    1  1
+2026-03-02 12:24:15: running    1  1
+2026-03-02 12:24:15: running    1  1
+2026-03-02 12:24:16: running    1  1
+2026-03-02 12:24:16: running    1  1
+2026-03-02 12:24:16: running    1  1
+2026-03-02 12:24:17: running    1  1
+2026-03-02 12:24:18: running    1  1
+2026-03-02 12:24:18: menu    1  Continue
+2026-03-02 12:24:19: menu    2  Settings
+2026-03-02 12:24:19: menu    3  Choice Tree
+2026-03-02 12:24:19: choice    3  Down
+2026-03-02 12:24:20: choice    3  Down
+2026-03-02 12:24:21: choice    3  Down
+2026-03-02 12:24:23  log closing
+=============================
+
+
+
+log starts at 2026-03-02 12:24:35.
+
+2026-03-02 12:24:35: running    1  1
+2026-03-02 12:24:35: running    1  1
+2026-03-02 12:24:36: running    1  1
+2026-03-02 12:24:37: running    1  1
+2026-03-02 12:24:38: running    1  1
+2026-03-02 12:24:38: running    1  1
+2026-03-02 12:24:39: running    1  1
+2026-03-02 12:24:39: running    1  1
+2026-03-02 12:24:39: running    1  1
+2026-03-02 12:24:39: running    1  1
+2026-03-02 12:24:39: running    1  1
+2026-03-02 12:24:39: running    1  1
+2026-03-02 12:24:39: running    1  1
+2026-03-02 12:24:40: running    1  1
+2026-03-02 12:24:40: running    1  1
+2026-03-02 12:24:40: running    1  1
+2026-03-02 12:24:40: running    1  1
+2026-03-02 12:24:40: running    1  1
+2026-03-02 12:24:41: running    1  1
+2026-03-02 12:24:42: running    1  1
+2026-03-02 12:24:42: menu    1  Continue
+2026-03-02 12:24:43: menu    4  Quit
+2026-03-02 12:24:43: menu    3  Choice Tree
+2026-03-02 12:24:43: choice    3  Down
+2026-03-02 12:24:44: choice    4  Back
+2026-03-02 12:24:44: choice    3  Down
+2026-03-02 12:24:45: choice    3  Down
+2026-03-02 12:24:45: choice    3  Down
+log starts at 2026-03-02 12:24:53.
+
+2026-03-02 12:24:53: running    1  1
+2026-03-02 12:24:53: running    1  1
+2026-03-02 12:24:54: running    1  1
+2026-03-02 12:24:55: running    1  1
+2026-03-02 12:24:56: running    1  1
+2026-03-02 12:24:56: running    1  1
+2026-03-02 12:24:57: running    1  1
+2026-03-02 12:24:57: running    1  1
+2026-03-02 12:24:57: running    1  1
+2026-03-02 12:24:57: running    1  1
+2026-03-02 12:24:57: running    1  1
+2026-03-02 12:24:58: running    1  1
+2026-03-02 12:24:58: running    1  1
+2026-03-02 12:24:58: running    1  1
+2026-03-02 12:24:58: running    1  1
+2026-03-02 12:24:58: running    1  1
+2026-03-02 12:24:58: running    1  1
+2026-03-02 12:24:59: running    1  1
+2026-03-02 12:25:00: running    1  1
+2026-03-02 12:25:01: running    1  1
+2026-03-02 12:25:01: menu    1  Continue
+2026-03-02 12:25:01: menu    4  Quit
+2026-03-02 12:25:01: menu    3  Choice Tree
+2026-03-02 12:25:02: choice    3  Down
+2026-03-02 12:25:02: choice    3  Down
+2026-03-02 12:25:03: choice    3  Down
+2026-03-02 12:25:03: choice    3  Down
+2026-03-02 12:25:03: choice    3  Down
+2026-03-02 12:25:03: choice    3  Down
+2026-03-02 12:25:04: choice    3  Down
+2026-03-02 12:25:04: choice    3  Down
+2026-03-02 12:25:04: choice    3  Down
+2026-03-02 12:25:04: choice    3  Down
+2026-03-02 12:25:04: choice    3  Down
+2026-03-02 12:25:04: choice    2  Up
+2026-03-02 12:25:04: choice    2  Up
+2026-03-02 12:25:05: choice    1  switch to x
+2026-03-02 12:25:05: choice    1  switch to y
+2026-03-02 12:25:05: choice    2  Left
+2026-03-02 12:25:05: choice    2  Left
+2026-03-02 12:25:05: choice    2  Left
+2026-03-02 12:25:05: choice    3  Right
+2026-03-02 12:25:05: choice    3  Right
+2026-03-02 12:25:06: choice    2  Left
+2026-03-02 12:25:06: choice    2  Left
+2026-03-02 12:25:06: choice    2  Left
+2026-03-02 12:25:06: choice    1  switch to y
+2026-03-02 12:25:06: choice    1  switch to x
+log starts at 2026-03-02 12:25:54.
+
+2026-03-02 12:25:54: running    1  1
+2026-03-02 12:25:54: running    1  1
+2026-03-02 12:25:55: running    1  1
+2026-03-02 12:25:56: running    1  1
+2026-03-02 12:25:57: running    1  1
+2026-03-02 12:25:58: running    1  1
+2026-03-02 12:25:58: running    1  1
+2026-03-02 12:25:58: running    1  1
+2026-03-02 12:25:58: running    1  1
+2026-03-02 12:25:59: running    1  1
+2026-03-02 12:25:59: running    1  1
+2026-03-02 12:25:59: running    1  1
+2026-03-02 12:25:59: running    1  1
+2026-03-02 12:25:59: running    1  1
+2026-03-02 12:25:59: running    1  1
+2026-03-02 12:25:59: running    1  1
+2026-03-02 12:26:00: running    1  1
+2026-03-02 12:26:00: running    1  1
+2026-03-02 12:26:01: running    1  1
+2026-03-02 12:26:02: running    1  1
+2026-03-02 12:26:02: menu    1  Continue
+2026-03-02 12:26:03: menu    4  Quit
+2026-03-02 12:26:03: menu    3  Choice Tree
+2026-03-02 12:26:03: menu    4  Quit
+2026-03-02 12:26:04: menu    3  Choice Tree
+2026-03-02 12:26:04: choice    3  Down
+2026-03-02 12:26:04: choice    3  Down
+2026-03-02 12:26:05: choice    3  Down
+log starts at 2026-03-02 12:26:12.
+
+2026-03-02 12:26:12: running    1  1
+2026-03-02 12:26:12: running    1  1
+2026-03-02 12:26:13: running    1  1
+2026-03-02 12:26:14: running    1  1
+2026-03-02 12:26:15: running    1  1
+2026-03-02 12:26:15: running    1  1
+2026-03-02 12:26:16: running    1  1
+2026-03-02 12:26:16: running    1  1
+2026-03-02 12:26:16: running    1  1
+2026-03-02 12:26:16: running    1  1
+2026-03-02 12:26:17: running    1  1
+2026-03-02 12:26:17: running    1  1
+2026-03-02 12:26:17: running    1  1
+2026-03-02 12:26:17: running    1  1
+2026-03-02 12:26:17: running    1  1
+2026-03-02 12:26:17: running    1  1
+2026-03-02 12:26:17: running    1  1
+2026-03-02 12:26:18: running    1  1
+2026-03-02 12:26:19: running    1  1
+2026-03-02 12:26:20: running    1  1
+2026-03-02 12:26:20: menu    1  Continue
+2026-03-02 12:26:20: menu    4  Quit
+2026-03-02 12:26:21: menu    3  Choice Tree
+2026-03-02 12:26:21: choice    3  Down
+log starts at 2026-03-02 12:27:19.
+
+2026-03-02 12:27:19: running    1  1
+2026-03-02 12:27:19: running    1  1
+2026-03-02 12:27:20: running    1  1
+2026-03-02 12:27:21: running    1  1
+2026-03-02 12:27:22: running    1  1
+2026-03-02 12:27:22: running    1  1
+2026-03-02 12:27:23: running    1  1
+2026-03-02 12:27:23: running    1  1
+2026-03-02 12:27:23: running    1  1
+2026-03-02 12:27:23: running    1  1
+2026-03-02 12:27:24: running    1  1
+2026-03-02 12:27:24: running    1  1
+2026-03-02 12:27:24: running    1  1
+2026-03-02 12:27:24: running    1  1
+2026-03-02 12:27:24: running    1  1
+2026-03-02 12:27:24: running    1  1
+2026-03-02 12:27:24: running    1  1
+2026-03-02 12:27:25: running    1  1
+2026-03-02 12:27:26: running    1  1
+2026-03-02 12:27:27: running    1  1
+2026-03-02 12:27:27: menu    1  Continue
+2026-03-02 12:27:28: menu    4  Quit
+2026-03-02 12:27:28: menu    3  Choice Tree
+2026-03-02 12:27:28: choice    3  Down
+log starts at 2026-03-02 12:27:59.
+
+2026-03-02 12:27:59: running    1  1
+2026-03-02 12:27:59: running    1  1
+2026-03-02 12:28:00: running    1  1
+2026-03-02 12:28:01: running    1  1
+2026-03-02 12:28:02: running    1  1
+2026-03-02 12:28:02: running    1  1
+2026-03-02 12:28:03: running    1  1
+2026-03-02 12:28:03: running    1  1
+2026-03-02 12:28:03: running    1  1
+2026-03-02 12:28:03: running    1  1
+2026-03-02 12:28:03: running    1  1
+2026-03-02 12:28:03: running    1  1
+2026-03-02 12:28:04: running    1  1
+2026-03-02 12:28:04: running    1  1
+2026-03-02 12:28:04: running    1  1
+2026-03-02 12:28:04: running    1  1
+2026-03-02 12:28:04: running    1  1
+2026-03-02 12:28:04: running    1  1
+2026-03-02 12:28:05: running    1  1
+2026-03-02 12:28:06: running    1  1
+2026-03-02 12:28:06: menu    1  Continue
+2026-03-02 12:28:07: menu    4  Quit
+2026-03-02 12:28:07: menu    3  Choice Tree
+2026-03-02 12:28:07: choice    3  Down
+2026-03-02 12:28:08: choice    3  Down
+2026-03-02 12:28:09: choice    3  Down
+2026-03-02 12:28:09: choice    3  Down
+2026-03-02 12:28:10: choice    3  Down
+2026-03-02 12:28:10: choice    3  Down
+2026-03-02 12:28:10: choice    3  Down
+2026-03-02 12:28:10: choice    3  Down
+2026-03-02 12:28:10: choice    3  Down
+2026-03-02 12:28:12: choice    2  Up
+2026-03-02 12:28:12: choice    2  Up
+2026-03-02 12:28:14  log closing
+=============================
+
+
+
+log starts at 2026-03-02 12:28:38.
+
+2026-03-02 12:28:38: running    1  1
+2026-03-02 12:28:38: running    1  1
+2026-03-02 12:28:39: running    1  1
+2026-03-02 12:28:40: running    1  1
+2026-03-02 12:28:41: running    1  1
+2026-03-02 12:28:41: running    1  1
+2026-03-02 12:28:42: running    1  1
+2026-03-02 12:28:42: running    1  1
+2026-03-02 12:28:42: running    1  1
+2026-03-02 12:28:42: running    1  1
+2026-03-02 12:28:43: running    1  1
+2026-03-02 12:28:43: running    1  1
+2026-03-02 12:28:43: running    1  1
+2026-03-02 12:28:43: running    1  1
+2026-03-02 12:28:43: running    1  1
+2026-03-02 12:28:43: running    1  1
+2026-03-02 12:28:44: running    1  1
+2026-03-02 12:28:44: running    1  1
+2026-03-02 12:28:45: running    1  1
+2026-03-02 12:28:46: running    1  1
+2026-03-02 12:28:46: menu    1  Continue
+2026-03-02 12:28:47: menu    4  Quit
+2026-03-02 12:28:47: menu    3  Choice Tree
+2026-03-02 12:28:47: choice    3  Down
+2026-03-02 12:28:48: choice    3  Down
+2026-03-02 12:28:49: choice    3  Down
+2026-03-02 12:28:49: choice    2  Up
+2026-03-02 12:28:49: choice    2  Up
+2026-03-02 12:28:49: choice    1  switch to x
+2026-03-02 12:28:50: choice    1  switch to y
+2026-03-02 12:28:50: choice    2  Left
+2026-03-02 12:28:50: choice    2  Left
+2026-03-02 12:28:50: choice    3  Right
+2026-03-02 12:28:50: choice    3  Right
+2026-03-02 12:28:51: choice    2  Left
+2026-03-02 12:28:51: choice    1  switch to y
+2026-03-02 12:28:51: choice    1  switch to x
+2026-03-02 12:28:51: choice    2  Up
+2026-03-02 12:28:52: choice    3  Down
+2026-03-02 12:28:52: choice    3  Down
+2026-03-02 12:28:52: choice    3  Down
+2026-03-02 12:28:52: choice    3  Down
+2026-03-02 12:28:52: choice    3  Down
+2026-03-02 12:28:52: choice    3  Down
+2026-03-02 12:28:53: choice    3  Down
+2026-03-02 12:28:53: choice    3  Down
+2026-03-02 12:28:53: choice    3  Down
+2026-03-02 12:28:53: choice    3  Down
+log starts at 2026-03-02 12:29:07.
+
+2026-03-02 12:29:07: running    1  1
+2026-03-02 12:29:07: running    1  1
+2026-03-02 12:29:08: running    1  1
+2026-03-02 12:29:09: running    1  1
+2026-03-02 12:29:10: running    1  1
+2026-03-02 12:29:11: running    1  1
+2026-03-02 12:29:11: running    1  1
+2026-03-02 12:29:11: running    1  1
+2026-03-02 12:29:12: running    1  1
+2026-03-02 12:29:12: running    1  1
+2026-03-02 12:29:12: running    1  1
+2026-03-02 12:29:12: running    1  1
+2026-03-02 12:29:12: running    1  1
+2026-03-02 12:29:12: running    1  1
+2026-03-02 12:29:13: running    1  1
+2026-03-02 12:29:13: running    1  1
+2026-03-02 12:29:13: running    1  1
+2026-03-02 12:29:13: running    1  1
+2026-03-02 12:29:14: running    1  1
+2026-03-02 12:29:15: running    1  1
+2026-03-02 12:29:15: menu    1  Continue
+2026-03-02 12:29:16: menu    2  Settings
+2026-03-02 12:29:16: menu    3  Choice Tree
+2026-03-02 12:29:16: choice    3  Down
+2026-03-02 12:29:17: choice    3  Down
+2026-03-02 12:29:17: choice    4  Back
+2026-03-02 12:29:18: menu    4  Quit
+log starts at 2026-03-02 12:29:33.
+
+2026-03-02 12:29:33: running    1  1
+2026-03-02 12:29:33: running    1  1
+2026-03-02 12:29:34: running    1  1
+2026-03-02 12:29:35: running    1  1
+2026-03-02 12:29:36: running    1  1
+2026-03-02 12:29:37: running    1  1
+2026-03-02 12:29:37: running    1  1
+2026-03-02 12:29:37: running    1  1
+2026-03-02 12:29:37: running    1  1
+2026-03-02 12:29:37: running    1  1
+2026-03-02 12:29:38: running    1  1
+2026-03-02 12:29:38: running    1  1
+2026-03-02 12:29:38: running    1  1
+2026-03-02 12:29:38: running    1  1
+2026-03-02 12:29:38: running    1  1
+2026-03-02 12:29:38: running    1  1
+2026-03-02 12:29:39: running    1  1
+2026-03-02 12:29:39: running    1  1
+2026-03-02 12:29:40: running    1  1
+2026-03-02 12:29:41: running    1  1
+2026-03-02 12:29:41: menu    1  Continue
+2026-03-02 12:29:58: menu    2  Settings
+2026-03-02 12:29:58: menu    3  Choice Tree
+2026-03-02 12:29:59: choice    3  Down
+log starts at 2026-03-02 12:30:08.
+
+2026-03-02 12:30:08: running    1  1
+2026-03-02 12:30:08: running    1  1
+2026-03-02 12:30:09: running    1  1
+2026-03-02 12:30:10: running    1  1
+2026-03-02 12:30:11: running    1  1
+2026-03-02 12:30:11: running    1  1
+2026-03-02 12:30:12: running    1  1
+2026-03-02 12:30:12: running    1  1
+2026-03-02 12:30:12: running    1  1
+2026-03-02 12:30:12: running    1  1
+2026-03-02 12:30:12: running    1  1
+2026-03-02 12:30:13: running    1  1
+2026-03-02 12:30:13: running    1  1
+2026-03-02 12:30:13: running    1  1
+2026-03-02 12:30:13: running    1  1
+2026-03-02 12:30:13: running    1  1
+2026-03-02 12:30:13: running    1  1
+2026-03-02 12:30:14: running    1  1
+2026-03-02 12:30:15: running    1  1
+2026-03-02 12:30:16: running    1  1
+2026-03-02 12:30:16: menu    1  Continue
+2026-03-02 12:30:17: menu    2  Settings
+2026-03-02 12:30:17: menu    3  Choice Tree
+2026-03-02 12:30:17: choice    3  Down
+2026-03-02 12:30:18: choice    3  Down
+2026-03-02 12:30:18: choice    3  Down
+2026-03-02 12:30:18: choice    3  Down
+2026-03-02 12:30:18: choice    4  Back
+2026-03-02 12:30:18: menu    4  Quit
+2026-03-02 12:30:19: quit    4  Quit
+log starts at 2026-03-02 12:31:21.
+
+2026-03-02 12:31:21: menu    1  Continue
+2026-03-02 12:31:25: menu    2  Settings
+2026-03-02 12:31:25: menu    3  Choice Tree
+2026-03-02 12:31:25: menu    4  Quit
+2026-03-02 12:31:25: quit    4  Quit
+log starts at 2026-03-02 12:31:27.
+
+2026-03-02 12:31:27: menu    1  Continue
+2026-03-02 12:31:28: menu    4  Quit
+2026-03-02 12:31:30: quit    4  Quit
+log starts at 2026-03-02 12:31:41.
+
+2026-03-02 12:31:41: choice    1  1
+2026-03-02 12:31:44: choice    2  2
+2026-03-02 12:31:45: choice    2  2
+2026-03-02 12:31:45: choice    3  3
+2026-03-02 12:31:45: choice    3  3
+2026-03-02 12:31:45: choice    4  4
+2026-03-02 12:31:45: menu    4  Quit
+2026-03-02 12:31:47: menu    3  Choice Tree
+2026-03-02 12:31:47: choice    3  Down
+2026-03-02 12:31:48: choice    4  Back
+2026-03-02 12:31:48: menu    4  Quit
+2026-03-02 12:31:49: quit    4  Quit
+log starts at 2026-03-02 12:31:57.
+
+2026-03-02 12:31:57: choice    1  1
+2026-03-02 12:31:58: choice    4  4
+log starts at 2026-03-02 12:32:06.
+
+2026-03-02 12:32:06: menu    1  Continue
+2026-03-02 12:32:08: menu    2  Settings
+2026-03-02 12:32:08: settings    2  music
+2026-03-02 12:32:09: settings    3  credits
+2026-03-02 12:32:09: settings    4  back
+2026-03-02 12:32:09: menu    4  Quit
+2026-03-02 12:32:09: menu    3  Choice Tree
+2026-03-02 12:32:09: choice    3  Down
+2026-03-02 12:32:10: choice    4  Back
+2026-03-02 12:32:10: choice    3  Down
+2026-03-02 12:32:10: choice    3  Down
+2026-03-02 12:32:10: choice    3  Down
+2026-03-02 12:32:11: choice    3  Down
+2026-03-02 12:32:11: choice    4  Back
+2026-03-02 12:32:11: menu    4  Quit
+2026-03-02 12:32:12: quit    4  Quit
+log starts at 2026-03-02 12:33:07.
+
+2026-03-02 12:33:07: menu    1  Continue
+2026-03-02 12:33:08: menu    2  Settings
+2026-03-02 12:33:08: menu    3  Choice Tree
+2026-03-02 12:33:08: choice    3  Down
+2026-03-02 12:33:14: choice    4  Back
+2026-03-02 12:33:14: menu    4  Quit
+2026-03-02 12:33:14: quit    4  Quit
+log starts at 2026-03-02 12:33:27.
+
+2026-03-02 12:33:27: menu    1  Continue
+2026-03-02 12:33:27: menu    2  Settings
+2026-03-02 12:33:28: menu    3  Choice Tree
+2026-03-02 12:33:28: choice    3  Down
+log starts at 2026-03-02 12:34:06.
+
+2026-03-02 12:34:06: menu    1  Continue
+2026-03-02 12:34:07: menu    1  Continue
+2026-03-02 12:34:07: menu    2  Settings
+2026-03-02 12:34:08: menu    3  Choice Tree
+2026-03-02 12:34:08: choice    3  Right
+2026-03-02 12:34:10: choice    2  Left
+2026-03-02 12:34:10: choice    1  switch to y
+2026-03-02 12:34:10: choice    1  switch to x
+2026-03-02 12:34:10: choice    2  Up
+2026-03-02 12:34:11: choice    3  Down
+2026-03-02 12:34:11: choice    3  Down
+2026-03-02 12:34:12: choice    3  Down
+2026-03-02 12:34:12: choice    3  Down
+2026-03-02 12:34:12: choice    3  Down
+2026-03-02 12:34:12: choice    3  Down
+2026-03-02 12:34:13: choice    3  Down
+2026-03-02 12:34:13: choice    3  Down
+2026-03-02 12:34:14: choice    4  Back
+2026-03-02 12:34:15: menu    4  Quit
+2026-03-02 12:34:15: quit    4  Quit
+log starts at 2026-03-02 12:34:50.
+
+2026-03-02 12:34:50: menu    1  Continue
+2026-03-02 12:34:51: menu    2  Settings
+2026-03-02 12:34:51: menu    3  Choice Tree
+2026-03-02 12:34:51: choice    3  Down
+2026-03-02 12:34:52: choice    3  Down
+2026-03-02 12:34:54: choice    3  Down
+2026-03-02 12:34:54: choice    3  Down
+2026-03-02 12:34:54: choice    3  Down
+log starts at 2026-03-02 12:35:23.
+
+2026-03-02 12:35:23: menu    1  Continue
+2026-03-02 12:35:24: menu    2  Settings
+2026-03-02 12:35:24: menu    3  Choice Tree
+2026-03-02 12:35:24: choice    3  Down
+2026-03-02 12:35:25: choice    4  Back
+2026-03-02 12:35:25: choice    3  Down
+2026-03-02 12:35:25: choice    3  Down
+log starts at 2026-03-02 12:36:40.
+
+2026-03-02 12:36:40: menu    1  Continue
+2026-03-02 12:36:41: menu    4  Quit
+2026-03-02 12:36:42: menu    3  Choice Tree
+2026-03-02 12:36:42: choice    3  Down
+2026-03-02 12:36:43: choice    3  Down
+2026-03-02 12:37:03: choice    2  Up
+2026-03-02 12:37:03: choice    2  Up
+2026-03-02 12:37:04: choice    2  Up
+2026-03-02 12:37:05: choice    2  Up
+2026-03-02 12:37:05: choice    2  Up
+2026-03-02 12:37:05: choice    2  Up
+2026-03-02 12:37:06: choice    2  Up
+2026-03-02 12:37:06: choice    2  Up
+2026-03-02 12:37:06: choice    2  Up
+2026-03-02 12:37:06: choice    2  Up
+2026-03-02 12:37:07: choice    2  Up
+2026-03-02 12:37:07: choice    2  Up
+2026-03-02 12:37:07: choice    3  Down
+2026-03-02 12:37:07: choice    3  Down
+2026-03-02 12:37:07: choice    3  Down
+2026-03-02 12:37:07: choice    4  Back
+2026-03-02 12:37:08: menu    4  Quit
+2026-03-02 12:37:08: quit    4  Quit
+log starts at 2026-03-02 12:37:38.
+
+2026-03-02 12:37:39: menu    1  Continue
+2026-03-02 12:37:39: menu    2  Settings
+2026-03-02 12:37:39: menu    3  Choice Tree
+2026-03-02 12:37:39: choice    3  Down
+2026-03-02 12:37:40: choice    2  Up
+2026-03-02 12:37:40: choice    2  Up
+2026-03-02 12:37:40: choice    3  Down
+2026-03-02 12:37:40: choice    3  Down
+2026-03-02 12:37:41: choice    3  Down
+2026-03-02 12:37:41: choice    3  Down
+2026-03-02 12:37:42: choice    3  Down
+2026-03-02 12:37:50: choice    4  Back
+2026-03-02 12:37:51: menu    4  Quit
+2026-03-02 12:37:51: quit    4  Quit
+log starts at 2026-03-02 12:39:04.
+
+2026-03-02 12:39:04: menu    1  Continue
+2026-03-02 12:39:05: menu    2  Settings
+2026-03-02 12:39:05: menu    3  Choice Tree
+2026-03-02 12:39:05: choice    3  Down
+2026-03-02 12:39:05: choice    3  Down
+2026-03-02 12:39:06: choice    3  Down
+2026-03-02 12:39:06: choice    3  Down
+2026-03-02 12:39:06: choice    3  Down
+2026-03-02 12:39:07: choice    2  Up
+2026-03-02 12:39:07: choice    2  Up
+2026-03-02 12:39:08: choice    3  Down
+2026-03-02 12:39:08: choice    3  Down
+2026-03-02 12:39:08: choice    2  Up
+2026-03-02 12:39:09: choice    2  Up
+2026-03-02 12:39:09: choice    2  Up
+2026-03-02 12:39:09: choice    3  Down
+2026-03-02 12:39:09: choice    4  Back
+2026-03-02 12:39:10: menu    4  Quit
+2026-03-02 12:39:10: quit    4  Quit
+log starts at 2026-03-02 12:39:12.
+
+2026-03-02 12:39:12: menu    1  Continue
+2026-03-02 12:39:13: menu    2  Settings
+2026-03-02 12:39:13: menu    3  Choice Tree
+2026-03-02 12:39:13: choice    3  Down
+2026-03-02 12:39:14: choice    3  Down
+2026-03-02 12:39:14: choice    3  Down
+2026-03-02 12:39:19: choice    3  Down
+2026-03-02 12:39:19: choice    3  Down
+2026-03-02 12:39:23: choice    3  Down
+2026-03-02 12:39:24: choice    2  Up
+2026-03-02 12:39:25: choice    2  Up
+2026-03-02 12:39:25: choice    3  Down
+2026-03-02 12:39:25: choice    3  Down
+2026-03-02 12:39:25: choice    2  Up
+2026-03-02 12:39:26: choice    2  Up
+2026-03-02 12:39:26: choice    2  Up
+2026-03-02 12:39:26: choice    2  Up
+2026-03-02 12:39:27: choice    3  Down
+2026-03-02 12:39:27: choice    3  Down
+2026-03-02 12:39:27: choice    3  Down
+2026-03-02 12:39:27: choice    3  Down
+2026-03-02 12:39:29: choice    4  Back
+2026-03-02 12:39:29: menu    4  Quit
+2026-03-02 12:39:30: quit    4  Quit
+log starts at 2026-03-02 13:35:27.
+
+2026-03-02 13:35:27: menu    1  Continue
+2026-03-02 13:35:27: menu    2  Settings
+2026-03-02 13:35:27: menu    3  Choice Tree
+2026-03-02 13:35:28: choice    3  Down
+2026-03-02 13:35:28: choice    3  Down
+2026-03-02 13:35:29: choice    3  Down
+2026-03-02 13:35:29: choice    3  Down
+2026-03-02 13:35:30: choice    2  Up
+2026-03-02 13:35:30: choice    2  Up
+2026-03-02 13:35:30: choice    3  Down
+2026-03-02 13:35:30: choice    3  Down
+2026-03-02 13:35:31: choice    3  Down
+2026-03-02 13:35:31: choice    2  Up
+2026-03-02 13:35:32: choice    2  Up
+2026-03-02 13:35:32: choice    2  Up
+2026-03-02 13:35:32: choice    2  Up
+2026-03-02 13:35:33: choice    3  Down
+2026-03-02 13:35:33: choice    3  Down
+2026-03-02 13:35:33: choice    3  Down
+2026-03-02 13:35:34: choice    3  Down
+2026-03-02 13:35:34: choice    2  Up
+2026-03-02 13:35:34: choice    2  Up
+2026-03-02 13:35:35: choice    2  Up
+2026-03-02 13:35:39: choice    3  Down
+2026-03-02 13:35:39: choice    3  Down
+2026-03-02 13:35:39: choice    3  Down
+2026-03-02 13:35:40: choice    2  Up
+2026-03-02 13:35:40: choice    3  Down
+2026-03-02 13:35:40: choice    3  Down
+2026-03-02 13:35:40: choice    3  Down
+2026-03-02 13:35:41: choice    2  Up
+2026-03-02 13:35:41: choice    2  Up
+2026-03-02 13:35:41: choice    2  Up
+2026-03-02 13:35:41: choice    3  Down
+2026-03-02 13:35:44: choice    2  Up
+2026-03-02 13:35:44: choice    2  Up
+2026-03-02 13:35:44: choice    2  Up
+2026-03-02 13:35:44: choice    3  Down
+2026-03-02 13:35:45: choice    4  Back
+2026-03-02 13:35:45: menu    4  Quit
+2026-03-02 13:35:45: menu    3  Choice Tree
+2026-03-02 13:35:45: choice    3  Down
+2026-03-02 13:35:46: choice    3  Down
+2026-03-02 13:37:16: choice    3  Down
+2026-03-02 13:37:16: choice    3  Down
+2026-03-02 13:37:16: choice    2  Up
+2026-03-02 13:37:16: choice    2  Up
+2026-03-02 13:37:17: choice    2  Up
+2026-03-02 13:37:17: choice    3  Down
+2026-03-02 13:37:17: choice    4  Back
+2026-03-02 13:37:17: menu    4  Quit
+2026-03-02 13:37:18: menu    3  Choice Tree
+2026-03-02 13:37:20: choice    3  Down
+2026-03-02 13:37:28: choice    2  Up
+2026-03-02 13:37:28: choice    2  Up
+2026-03-02 13:37:29: choice    3  Down
+2026-03-02 13:37:29: choice    3  Down
+2026-03-02 13:37:29: choice    3  Down
+2026-03-02 13:37:30: choice    2  Up
+2026-03-02 13:37:30: choice    1  switch to x
+2026-03-02 13:37:30: choice    1  switch to y
+2026-03-02 13:37:31: choice    2  Left
+2026-03-02 13:37:31: choice    1  switch to y
+2026-03-02 13:37:31: choice    1  switch to x
+2026-03-02 13:37:32: choice    2  Up
+2026-03-02 13:37:32: choice    3  Down
+2026-03-02 13:37:33: choice    2  Up
+2026-03-02 13:37:33: choice    2  Up
+2026-03-02 13:37:46: choice    3  Down
+2026-03-02 13:37:46: choice    3  Down
+2026-03-02 13:37:46: choice    2  Up
+2026-03-02 13:37:47: choice    2  Up
+2026-03-02 13:37:47: choice    3  Down
+2026-03-02 13:37:47: choice    3  Down
+2026-03-02 13:37:48: choice    2  Up
+2026-03-02 13:37:48: choice    1  switch to x
+2026-03-02 13:37:48: choice    1  switch to y
+2026-03-02 13:37:48: choice    2  Left
+2026-03-02 13:37:49: choice    3  Right
+2026-03-02 13:37:49: choice    3  Right
+2026-03-02 13:37:49: choice    2  Left
+2026-03-02 13:37:50: choice    1  switch to y
+2026-03-02 13:37:50: choice    2  Left
+2026-03-02 13:37:50: choice    2  Left
+2026-03-02 13:37:51: choice    3  Right
+2026-03-02 13:37:51: choice    2  Left
+2026-03-02 13:37:52: choice    1  switch to y
+2026-03-02 13:37:52: choice    1  switch to x
+2026-03-02 13:37:52: choice    2  Up
+2026-03-02 13:37:52: choice    3  Down
+2026-03-02 13:37:52: choice    3  Down
+2026-03-02 13:37:53: choice    3  Down
+2026-03-02 13:37:53: choice    2  Up
+2026-03-02 13:37:53: choice    2  Up
+2026-03-02 13:37:54: choice    2  Up
+2026-03-02 13:37:54: choice    3  Down
+2026-03-02 13:37:55: choice    3  Down
+2026-03-02 13:37:55: choice    3  Down
+2026-03-02 13:37:57: choice    2  Up
+2026-03-02 13:37:58: choice    2  Up
+2026-03-02 13:37:58: choice    2  Up
+2026-03-02 13:37:59: choice    3  Down
+2026-03-02 13:37:59: choice    4  Back
+2026-03-02 13:38:00: menu    4  Quit
+2026-03-02 13:38:00: menu    3  Choice Tree
+2026-03-02 13:38:01: menu    2  Settings
+2026-03-02 13:38:01: settings    2  music
+2026-03-02 13:38:01: settings    3  credits
+2026-03-02 13:38:01: settings    4  back
+2026-03-02 13:38:02: menu    4  Quit
+2026-03-02 13:38:56: menu    3  Choice Tree
+2026-03-02 13:38:56: choice    3  Down
+2026-03-02 13:38:58: choice    3  Down
+2026-03-02 13:38:58: choice    3  Down
+2026-03-02 13:38:58: choice    2  Up
+2026-03-02 13:38:59: choice    1  switch to x
+2026-03-02 13:38:59: choice    1  switch to y
+2026-03-02 13:38:59: choice    2  Left
+2026-03-02 13:39:00: choice    1  switch to y
+2026-03-02 13:39:00: choice    1  switch to x
+2026-03-02 13:39:00: choice    2  Up
+2026-03-02 13:39:00: choice    1  switch to x
+2026-03-02 13:39:01: choice    2  Up
+2026-03-02 13:39:01: choice    2  Up
+2026-03-02 13:39:01: choice    2  Up
+2026-03-02 13:39:01: choice    2  Up
+2026-03-02 13:39:02: choice    3  Down
+2026-03-02 13:39:02: choice    4  Back
+2026-03-02 13:39:03: menu    4  Quit
+2026-03-02 13:39:03: quit    4  Quit
+log starts at 2026-03-02 14:03:03.
+
+2026-03-02 14:03:03: menu    1  Continue
+2026-03-02 14:03:03: menu    2  Settings
+2026-03-02 14:03:03: menu    3  Choice Tree
+log starts at 2026-03-02 14:03:27.
+
+2026-03-02 14:03:27: menu    1  Continue
+2026-03-02 14:03:28: menu    2  Settings
+2026-03-02 14:03:28: menu    3  Choice Tree
+2026-03-02 14:03:28: choice    3  Down
+2026-03-02 14:03:41  log closing
+=============================
+
+
+
+log starts at 2026-03-02 14:05:19.
+
+2026-03-02 14:05:19: menu    1  Continue
+2026-03-02 14:05:21: menu    2  Settings
+2026-03-02 14:05:21: menu    3  Choice Tree
+2026-03-02 14:05:21: choice    3  Down
+2026-03-02 14:05:33: choice    4  Back
+2026-03-02 14:05:33: choice    3  Down
+2026-03-02 14:05:34: choice    3  Down
+2026-03-02 14:05:35: choice    3  Down
+2026-03-02 14:05:35: choice    2  Up
+2026-03-02 14:05:36: choice    2  Up
+2026-03-02 14:05:36: choice    2  Up
+2026-03-02 14:05:37: choice    3  Down
+2026-03-02 14:05:37: choice    3  Down
+2026-03-02 14:05:43  log closing
+=============================
+
+
+
+log starts at 2026-03-02 14:07:21.
+
+2026-03-02 14:07:21: menu    1  Continue
+2026-03-02 14:07:21: menu    2  Settings
+2026-03-02 14:07:22: menu    3  Choice Tree
+log starts at 2026-03-02 14:07:27.
+
+2026-03-02 14:07:27: menu    1  Continue
+2026-03-02 14:07:28: menu    2  Settings
+2026-03-02 14:07:28: menu    3  Choice Tree
+log starts at 2026-03-02 14:08:27.
+
+2026-03-02 14:08:27: menu    1  Continue
+2026-03-02 14:08:28: menu    2  Settings
+2026-03-02 14:08:28: menu    3  Choice Tree
+2026-03-02 14:08:28: choice    3  Down
+2026-03-02 14:08:34: choice    4  Back
+2026-03-02 14:08:34: choice    1  switch to x
+2026-03-02 14:08:35: choice    4  Back
+2026-03-02 14:08:35: choice    3  Down
+2026-03-02 14:08:35: choice    3  Down
+2026-03-02 14:08:36: choice    2  Up
+2026-03-02 14:08:37: choice    2  Up
+2026-03-02 14:08:38: choice    3  Down
+2026-03-02 14:08:38: choice    3  Down
+2026-03-02 14:08:41  log closing
+=============================
+
+
+
+log starts at 2026-03-02 14:08:45.
+
+2026-03-02 14:08:45: menu    1  Continue
+2026-03-02 14:08:46: menu    2  Settings
+2026-03-02 14:08:46: menu    3  Choice Tree
+2026-03-02 14:08:46: choice    3  Down
+2026-03-02 14:08:47: choice    4  Back
+2026-03-02 14:08:48: choice    3  Down
+2026-03-02 14:08:48: choice    3  Down
+2026-03-02 14:08:48: choice    2  Up
+2026-03-02 14:08:49: choice    2  Up
+2026-03-02 14:08:49: choice    3  Down
+2026-03-02 14:08:49: choice    3  Down
+2026-03-02 14:08:50: choice    2  Up
+2026-03-02 14:08:50: choice    2  Up
+2026-03-02 14:08:50: choice    3  Down
+2026-03-02 14:08:50: choice    3  Down
+2026-03-02 14:08:52  log closing
+=============================
+
+
+
+log starts at 2026-03-02 14:09:32.
+
+2026-03-02 14:09:32: menu    1  Continue
+2026-03-02 14:09:33: menu    2  Settings
+2026-03-02 14:09:33: menu    3  Choice Tree
+2026-03-02 14:09:33: choice    3  Down
+2026-03-02 14:13:18: choice    4  Back
+2026-03-02 14:13:19: menu    4  Quit
+2026-03-02 14:13:20: quit    4  Quit
+log starts at 2026-03-02 14:14:12.
+
+2026-03-02 14:14:12: menu    1  Continue
+2026-03-02 14:14:13: menu    2  Settings
+2026-03-02 14:14:13: menu    3  Choice Tree
+2026-03-02 14:14:13: choice    3  Down
+2026-03-02 14:14:29: choice    4  Back
+2026-03-02 14:14:29: choice    1  switch to x
+2026-03-02 14:14:29: choice    4  Back
+2026-03-02 14:14:30: menu    4  Quit
+2026-03-02 14:14:30: quit    4  Quit
+log starts at 2026-03-02 14:14:33.
+
+2026-03-02 14:14:33: menu    1  Continue
+2026-03-02 14:14:33: menu    2  Settings
+2026-03-02 14:14:33: menu    3  Choice Tree
+2026-03-02 14:14:34: choice    3  Down
+2026-03-02 14:14:36: choice    3  Down
+2026-03-02 14:14:37: choice    2  Up
+2026-03-02 14:14:37: choice    2  Up
+2026-03-02 14:14:37: choice    3  Down
+2026-03-02 14:14:38: choice    3  Down
+2026-03-02 14:14:39: choice    4  Back
+2026-03-02 14:14:39: menu    4  Quit
+2026-03-02 14:14:40: quit    4  Quit
+log starts at 2026-03-02 14:14:46.
+
+2026-03-02 14:14:46: menu    1  Continue
+2026-03-02 14:14:46: menu    2  Settings
+2026-03-02 14:14:46: menu    3  Choice Tree
+2026-03-02 14:14:47: choice    3  Down
+2026-03-02 14:14:47: choice    3  Down
+2026-03-02 14:14:48: choice    2  Up
+2026-03-02 14:14:48: choice    2  Up
+2026-03-02 14:14:50: choice    3  Down
+2026-03-02 14:14:50: choice    3  Down
+2026-03-02 14:14:51: choice    2  Up
+2026-03-02 14:14:52: choice    1  switch to x
+2026-03-02 14:14:52: choice    1  switch to y
+2026-03-02 14:14:52: choice    2  Left
+2026-03-02 14:14:53: choice    2  Left
+log starts at 2026-03-02 14:15:08.
+
+2026-03-02 14:15:08: menu    1  Continue
+2026-03-02 14:15:09: menu    2  Settings
+2026-03-02 14:15:09: menu    3  Choice Tree
+2026-03-02 14:15:09: choice    3  Down
+2026-03-02 14:15:11: choice    4  Back
+2026-03-02 14:15:12: choice    3  Down
+2026-03-02 14:15:12: choice    3  Down
+2026-03-02 14:15:12: choice    2  Up
+2026-03-02 14:15:13: choice    2  Up
+2026-03-02 14:15:20: choice    3  Down
+2026-03-02 14:15:20: choice    3  Down
+2026-03-02 14:15:32: choice    2  Up
+2026-03-02 14:15:32: choice    1  switch to x
+2026-03-02 14:15:32: choice    1  switch to y
+2026-03-02 14:15:33: choice    2  Left
+2026-03-02 14:15:33: choice    3  Right
+2026-03-02 14:15:33: choice    3  Right
+2026-03-02 14:15:33: choice    2  Left
+2026-03-02 14:15:34: choice    2  Left
+2026-03-02 14:15:35: choice    3  Right
+2026-03-02 14:15:35: choice    3  Right
+log starts at 2026-03-02 14:16:01.
+
+2026-03-02 14:16:01: menu    1  Continue
+2026-03-02 14:16:02: menu    2  Settings
+2026-03-02 14:16:02: menu    3  Choice Tree
+2026-03-02 14:16:02: choice    3  Down
+2026-03-02 14:16:04: choice    3  Down
+log starts at 2026-03-02 14:16:29.
+
+2026-03-02 14:16:29: menu    1  Continue
+2026-03-02 14:16:31: menu    2  Settings
+2026-03-02 14:16:31: menu    3  Choice Tree
+2026-03-02 14:16:31: choice    3  Down
+log starts at 2026-03-02 14:17:11.
+
+2026-03-02 14:17:11: menu    1  Continue
+2026-03-02 14:17:12: menu    2  Settings
+2026-03-02 14:17:12: menu    3  Choice Tree
+2026-03-02 14:17:12: choice    3  Down
+2026-03-02 14:17:13: choice    3  Down
+2026-03-02 14:17:17: choice    4  Back
+2026-03-02 14:17:17: menu    4  Quit
+2026-03-02 14:17:17: quit    4  Quit
+log starts at 2026-03-02 14:17:40.
+
+2026-03-02 14:17:40: running    1  1
+2026-03-02 14:17:40: running    1  1
+2026-03-02 14:17:41: running    1  1
+2026-03-02 14:17:42: running    1  1
+2026-03-02 14:17:43: running    1  1
+2026-03-02 14:17:43: running    1  1
+2026-03-02 14:17:44: running    1  1
+2026-03-02 14:17:44: running    1  1
+2026-03-02 14:17:44: running    1  1
+2026-03-02 14:17:44: running    1  1
+2026-03-02 14:17:44: running    1  1
+2026-03-02 14:17:44: running    1  1
+2026-03-02 14:17:45: running    1  1
+2026-03-02 14:17:45: running    1  1
+2026-03-02 14:17:45: running    1  1
+2026-03-02 14:17:45: running    1  1
+2026-03-02 14:17:45: running    1  1
+2026-03-02 14:17:46: running    1  1
+2026-03-02 14:17:47: running    1  1
+2026-03-02 14:17:48: running    1  1
+2026-03-02 14:17:48: menu    1  Continue
+2026-03-02 14:17:50: menu    2  Settings
+2026-03-02 14:17:50: settings    2  music
+2026-03-02 14:17:50: settings    3  credits
+2026-03-02 14:17:51: settings    2  music
+2026-03-02 14:17:51: settings    1  screen
+2026-03-02 14:17:51: screen    1  scale = 3
+2026-03-02 14:17:52: screen    2  scale +
+2026-03-02 14:17:52: screen    3  scale -
+2026-03-02 14:17:53: screen    3  scale -
+2026-03-02 14:17:53: screen    2  scale +
+2026-03-02 14:17:54: screen    2  scale +
+2026-03-02 14:17:54: screen    3  scale -
+2026-03-02 14:17:54: screen    4  back
+2026-03-02 14:17:54: settings    4  back
+2026-03-02 14:17:55: settings    3  credits
+2026-03-02 14:17:55: settings    4  back
+2026-03-02 14:17:56: menu    4  Quit
+2026-03-02 14:17:56: menu    3  Choice Tree
+2026-03-02 14:17:56: choice    3  Down
+2026-03-02 14:17:57: choice    4  Back
+2026-03-02 14:17:57: choice    3  Down
+2026-03-02 14:17:57: choice    3  Down
+2026-03-02 14:17:57: choice    3  Down
+2026-03-02 14:17:58: choice    2  Up
+2026-03-02 14:17:58: choice    1  switch to x
+2026-03-02 14:17:59: choice    1  switch to y
+2026-03-02 14:17:59: choice    2  Left
+2026-03-02 14:17:59: choice    2  Left
+2026-03-02 14:18:00: choice    3  Right
+2026-03-02 14:18:00: choice    3  Right
+2026-03-02 14:18:00: choice    2  Left
+2026-03-02 14:18:00: choice    2  Left
+2026-03-02 14:18:01: choice    2  Left
+2026-03-02 14:18:01: choice    3  Right
+2026-03-02 14:18:01: choice    3  Right
+2026-03-02 14:18:01: choice    3  Right
+2026-03-02 14:18:02: choice    3  Right
+2026-03-02 14:18:02: choice    3  Right
+2026-03-02 14:18:02: choice    3  Right
+2026-03-02 14:18:03: choice    2  Left
+2026-03-02 14:18:03: choice    2  Left
+2026-03-02 14:18:03: choice    1  switch to y
+2026-03-02 14:18:03: choice    1  switch to x
+2026-03-02 14:18:04: choice    2  Up
+2026-03-02 14:18:04: choice    2  Up
+2026-03-02 14:18:04: choice    3  Down
+2026-03-02 14:18:04: choice    3  Down
+2026-03-02 14:18:05: choice    2  Up
+2026-03-02 14:18:05: choice    1  switch to x
+2026-03-02 14:18:07: choice    2  Up
+2026-03-02 14:18:07: choice    3  Down
+2026-03-02 14:18:07: choice    4  Back
+2026-03-02 14:18:07: menu    4  Quit
+2026-03-02 14:18:08: menu    3  Choice Tree
+2026-03-02 14:18:08: menu    2  Settings
+2026-03-02 14:18:08: menu    1  Continue
+2026-03-02 14:18:08: menu    1  Continue
+2026-03-02 14:18:09: menu    1  Continue
+2026-03-02 14:18:09: menu    1  Continue
+2026-03-02 14:18:09: menu    2  Settings
+2026-03-02 14:18:09: screen    2  scale +
+2026-03-02 14:18:09: screen    3  scale -
+2026-03-02 14:18:10: screen    4  back
+2026-03-02 14:18:10: settings    4  back
+2026-03-02 14:18:10: settings    3  credits
+2026-03-02 14:18:10: credits    3  -
+2026-03-02 14:18:11: credits    4  back
+2026-03-02 14:18:11: settings    4  back
+2026-03-02 14:18:11: settings    3  credits
+2026-03-02 14:18:11: settings    2  music
+2026-03-02 14:18:12: settings    3  credits
+2026-03-02 14:18:12: credits    3  -
+2026-03-02 14:18:14: credits    4  back
+2026-03-02 14:18:14: settings    4  back
+2026-03-02 14:18:15: menu    4  Quit
+2026-03-02 14:18:15: menu    3  Choice Tree
+2026-03-02 14:18:16: choice    3  Down
+2026-03-02 14:18:16: choice    2  Up
+2026-03-02 14:18:17: choice    1  switch to x
+2026-03-02 14:18:18: choice    4  Back
+2026-03-02 14:18:18: choice    1  switch to x
+2026-03-02 14:18:18: choice    1  switch to y
+2026-03-02 14:18:18: choice    2  Left
+2026-03-02 14:18:19: choice    2  Left
+2026-03-02 14:18:19: choice    2  Left
+2026-03-02 14:18:20: choice    3  Right
+2026-03-02 14:18:20: choice    4  Back
+2026-03-02 14:18:20: menu    4  Quit
+2026-03-02 14:18:31: quit    4  Quit
+log starts at 2026-03-02 14:20:32.
+
+2026-03-02 14:20:32: running    1  1
+2026-03-02 14:20:32: running    1  1
+2026-03-02 14:20:33: running    1  1
+2026-03-02 14:20:34: running    1  1
+2026-03-02 14:20:35: running    1  1
+2026-03-02 14:20:36: running    1  1
+2026-03-02 14:20:36: running    1  1
+2026-03-02 14:20:36: running    1  1
+2026-03-02 14:20:36: running    1  1
+2026-03-02 14:20:36: running    1  1
+2026-03-02 14:20:37: running    1  1
+2026-03-02 14:20:37: running    1  1
+2026-03-02 14:20:37: running    1  1
+2026-03-02 14:20:37: running    1  1
+2026-03-02 14:20:37: running    1  1
+2026-03-02 14:20:37: running    1  1
+2026-03-02 14:20:37: running    1  1
+2026-03-02 14:20:38: running    1  1
+2026-03-02 14:20:39: running    1  1
+2026-03-02 14:20:40: running    1  1
+2026-03-02 14:20:40: menu    1  Continue
+2026-03-02 14:20:44: menu    2  Settings
+2026-03-02 14:20:44: menu    3  Choice Tree
+2026-03-02 14:20:44: choice    3  Down
+2026-03-02 14:20:51: choice    3  Down
+2026-03-02 14:20:53: choice    4  Back
+2026-03-02 14:20:53: menu    4  Quit
+2026-03-02 14:20:53: quit    4  Quit
+log starts at 2026-03-02 14:21:15.
+
+2026-03-02 14:21:15: menu    1  Continue
+2026-03-02 14:21:16: menu    2  Settings
+2026-03-02 14:21:16: menu    3  Choice Tree
+2026-03-02 14:21:16: choice    3  Down
+2026-03-02 14:24:40: choice    3  Down
+2026-03-02 14:24:40: choice    3  Down
+2026-03-02 14:24:41: choice    3  Down
+2026-03-02 14:25:00: choice    4  Back
+2026-03-02 14:25:01: menu    4  Quit
+log starts at 2026-03-02 14:28:58.
+
+2026-03-02 14:28:58: menu    1  Continue
+2026-03-02 14:28:59: menu    2  Settings
+2026-03-02 14:28:59: menu    3  Choice Tree
+2026-03-02 14:28:59: choice    3  Down
+2026-03-02 14:29:03: choice    3  Down
+2026-03-02 14:29:04: choice    3  Down
+2026-03-02 14:29:04: choice    3  Down
+2026-03-02 14:29:04: choice    3  Down
+2026-03-02 14:29:05: choice    2  Up
+2026-03-02 14:29:05: choice    2  Up
+2026-03-02 14:29:05: choice    2  Up
+2026-03-02 14:29:06: choice    2  Up
+2026-03-02 14:29:14: choice    3  Down
+2026-03-02 14:29:15: choice    4  Back
+2026-03-02 14:29:15: menu    4  Quit
+2026-03-02 14:29:15: quit    4  Quit
+log starts at 2026-03-02 14:29:53.
+
+2026-03-02 14:29:53: menu    1  Continue
+2026-03-02 14:29:54: menu    2  Settings
+2026-03-02 14:29:54: menu    3  Choice Tree
+2026-03-02 14:29:54: choice    3  Down
+2026-03-02 14:29:55: choice    3  Down
+2026-03-02 14:29:59: choice    3  Down
+2026-03-02 14:29:59: choice    2  Up
+2026-03-02 14:30:00: choice    2  Up
+log starts at 2026-03-02 14:30:14.
+
+2026-03-02 14:30:14: menu    1  Continue
+2026-03-02 14:30:15: menu    2  Settings
+2026-03-02 14:30:15: menu    3  Choice Tree
+log starts at 2026-03-02 14:30:25.
+
+2026-03-02 14:30:25: menu    1  Continue
+2026-03-02 14:30:26: menu    2  Settings
+2026-03-02 14:30:26: menu    3  Choice Tree
+log starts at 2026-03-02 14:30:38.
+
+2026-03-02 14:30:38: menu    1  Continue
+2026-03-02 14:30:39: menu    2  Settings
+2026-03-02 14:30:39: menu    3  Choice Tree
+2026-03-02 14:30:39: choice    3  Down
+log starts at 2026-03-02 14:31:57.
+
+2026-03-02 14:31:57: menu    1  Continue
+2026-03-02 14:31:59: menu    2  Settings
+2026-03-02 14:31:59: menu    3  Choice Tree
+2026-03-02 14:31:59: choice    3  Down
+2026-03-02 14:32:05: choice    3  Down
+2026-03-02 14:32:12: choice    3  Down
+2026-03-02 14:32:17: choice    2  Up
+2026-03-02 14:32:17: choice    2  Up
+2026-03-02 14:32:18: choice    3  Down
+2026-03-02 14:32:34: choice    4  Back
+2026-03-02 14:32:34: menu    4  Quit
+2026-03-02 14:32:34: quit    4  Quit
+log starts at 2026-03-02 14:34:08.
+
+2026-03-02 14:34:08: menu    1  Continue
+2026-03-02 14:34:09: menu    2  Settings
+2026-03-02 14:34:09: menu    3  Choice Tree
+2026-03-02 14:34:09: choice    3  Down
+2026-03-02 14:34:10: choice    3  Down
+2026-03-02 14:34:11: choice    3  Down
+log starts at 2026-03-02 14:34:44.
+
+2026-03-02 14:34:44: menu    1  Continue
+2026-03-02 14:34:44: menu    2  Settings
+2026-03-02 14:34:45: menu    3  Choice Tree
+2026-03-02 14:34:45: choice    3  Down
+2026-03-02 14:34:45: choice    3  Down
+2026-03-02 14:34:46: choice    3  Down
+log starts at 2026-03-02 14:34:52.
+
+2026-03-02 14:34:52: menu    1  Continue
+2026-03-02 14:34:53: menu    2  Settings
+2026-03-02 14:34:53: menu    3  Choice Tree
+2026-03-02 14:34:53: choice    3  Down
+2026-03-02 14:34:54: choice    3  Down
+2026-03-02 14:34:54: choice    3  Down
+2026-03-02 14:34:58: choice    3  Down
+2026-03-02 14:34:58: choice    3  Down
+2026-03-02 14:34:59: choice    2  Up
+2026-03-02 14:34:59: choice    2  Up
+2026-03-02 14:34:59: choice    2  Up
+2026-03-02 14:35:00: choice    3  Down
+2026-03-02 14:35:00: choice    3  Down
+2026-03-02 14:35:00: choice    2  Up
+2026-03-02 14:35:01: choice    2  Up
+2026-03-02 14:35:02: choice    2  Up
+2026-03-02 14:35:03: choice    3  Down
+2026-03-02 14:35:03: choice    3  Down
+2026-03-02 14:35:09: choice    3  Down
+2026-03-02 14:35:09: choice    2  Up
+2026-03-02 14:35:10: choice    2  Up
+2026-03-02 14:35:10: choice    2  Up
+2026-03-02 14:36:30: choice    3  Down
+2026-03-02 14:36:30: choice    4  Back
+2026-03-02 14:36:30: menu    4  Quit
+2026-03-02 14:36:36: quit    4  Quit
+log starts at 2026-03-02 14:38:12.
+
+2026-03-02 14:38:12: menu    1  Continue
+2026-03-02 14:38:12: menu    2  Settings
+2026-03-02 14:38:12: menu    3  Choice Tree
+2026-03-02 14:38:13: choice    3  Down
+2026-03-02 14:38:14: choice    3  Down
+2026-03-02 14:38:23  log closing
+=============================
+
+
+
+log starts at 2026-03-02 14:39:40.
+
+2026-03-02 14:39:40: menu    1  Continue
+2026-03-02 14:39:41: menu    2  Settings
+2026-03-02 14:39:41: menu    3  Choice Tree
+2026-03-02 14:39:41: choice    3  Down
+2026-03-02 14:39:42: choice    3  Down
+2026-03-02 14:39:42: choice    3  Down
+2026-03-02 14:39:43: choice    3  Down
+2026-03-02 14:39:45: choice    2  Up
+2026-03-02 14:39:45: choice    2  Up
+2026-03-02 14:39:46: choice    1  switch to x
+2026-03-02 14:39:46: choice    1  switch to y
+2026-03-02 14:39:46: choice    2  Left
+2026-03-02 14:39:47: choice    3  Right
+2026-03-02 14:39:47: choice    3  Right
+2026-03-02 14:39:47: choice    3  Right
+2026-03-02 14:39:48: choice    2  Left
+2026-03-02 14:39:49: choice    3  Right
+2026-03-02 14:39:49: choice    2  Left
+2026-03-02 14:39:49: choice    1  switch to y
+2026-03-02 14:39:49: choice    1  switch to x
+2026-03-02 14:39:50: choice    2  Up
+2026-03-02 14:39:50: choice    1  switch to x
+2026-03-02 14:39:50: choice    1  switch to y
+2026-03-02 14:39:50: choice    2  Left
+2026-03-02 14:39:51: choice    2  Left
+2026-03-02 14:39:51: choice    2  Left
+2026-03-02 14:39:51: choice    1  switch to y
+2026-03-02 14:39:52: choice    1  switch to x
+2026-03-02 14:39:52: choice    2  Up
+2026-03-02 14:39:52: choice    2  Up
+2026-03-02 14:39:52: choice    2  Up
+2026-03-02 14:39:55: choice    1  switch to x
+2026-03-02 14:39:55: choice    1  switch to y
+2026-03-02 14:39:57: choice    2  Left
+2026-03-02 14:39:58: choice    2  Left
+2026-03-02 14:39:58: choice    3  Right
+2026-03-02 14:39:58: choice    3  Right
+2026-03-02 14:43:07: choice    3  Right
+2026-03-02 14:43:08: choice    3  Right
+2026-03-02 14:43:08: choice    2  Left
+2026-03-02 14:43:09: choice    1  switch to y
+2026-03-02 14:43:09: choice    1  switch to x
+2026-03-02 14:43:09: choice    2  Up
+2026-03-02 14:43:09: choice    3  Down
+2026-03-02 14:43:09: choice    3  Down
+2026-03-02 14:43:10: choice    3  Down
+2026-03-02 14:43:11: choice    2  Up
+2026-03-02 14:43:11: choice    1  switch to x
+2026-03-02 14:43:12: choice    1  switch to y
+2026-03-02 14:43:12: choice    2  Left
+2026-03-02 14:43:12: choice    3  Right
+2026-03-02 14:43:12: choice    3  Right
+2026-03-02 14:43:13: choice    2  Left
+2026-03-02 14:43:17: choice    1  switch to y
+2026-03-02 14:43:17: choice    1  switch to x
+2026-03-02 14:43:17: choice    2  Up
+2026-03-02 14:43:18: choice    1  switch to x
+2026-03-02 14:43:18: choice    1  switch to y
+2026-03-02 14:43:18: choice    2  Left
+2026-03-02 14:43:18: choice    3  Right
+2026-03-02 14:43:18: choice    3  Right
+2026-03-02 14:43:19: choice    2  Left
+2026-03-02 14:43:19: choice    2  Left
+2026-03-02 14:43:19: choice    2  Left
+2026-03-02 14:43:20: choice    2  Left
+2026-03-02 14:43:22: choice    3  Right
+2026-03-02 14:43:22: choice    3  Right
+2026-03-02 14:43:26: choice    2  Left
+2026-03-02 14:43:26: choice    1  switch to y
+2026-03-02 14:43:26: choice    1  switch to x
+2026-03-02 14:43:27: choice    2  Up
+2026-03-02 14:43:27: choice    2  Up
+2026-03-02 14:43:28: choice    3  Down
+2026-03-02 14:43:28: choice    3  Down
+2026-03-02 14:43:28: choice    2  Up
+2026-03-02 14:43:29: choice    2  Up
+2026-03-02 14:43:32  log closing
+=============================
+
+
+
+log starts at 2026-03-02 14:52:41.
+
+2026-03-02 14:52:41: menu    1  Continue
+2026-03-02 14:52:42: menu    2  Settings
+2026-03-02 14:52:42: menu    3  Choice Tree
+2026-03-02 14:52:42: choice    3  Down
+2026-03-02 14:52:44: choice    3  Down
+2026-03-02 14:52:45: choice    2  Up
+2026-03-02 14:52:45: choice    2  Up
+2026-03-02 14:52:46: choice    3  Down
+2026-03-02 14:52:46: choice    3  Down
+2026-03-02 14:52:46: choice    3  Down
+2026-03-02 14:52:47: choice    2  Up
+2026-03-02 14:52:47: choice    1  switch to x
+2026-03-02 14:52:48: choice    1  switch to y
+2026-03-02 14:52:48: choice    2  Left
+2026-03-02 14:52:48: choice    2  Left
+2026-03-02 14:52:50: choice    2  Left
+2026-03-02 14:52:50: choice    3  Right
+2026-03-02 14:52:50: choice    3  Right
+2026-03-02 14:52:50: choice    3  Right
+2026-03-02 14:52:51: choice    3  Right
+2026-03-02 14:52:52: choice    3  Right
+2026-03-02 14:52:53: choice    3  Right
+2026-03-02 14:52:54: choice    2  Left
+2026-03-02 14:52:55: choice    3  Right
+2026-03-02 14:52:55: choice    3  Right
+2026-03-02 14:52:55: choice    2  Left
+2026-03-02 14:52:56: choice    2  Left
+2026-03-02 14:52:56: choice    3  Right
+2026-03-02 14:52:56: choice    3  Right
+2026-03-02 14:52:58: choice    4  Back
+2026-03-02 14:52:58: choice    3  Right
+2026-03-02 14:52:59: choice    3  Right
+2026-03-02 14:53:00: choice    4  Back
+2026-03-02 14:53:00: choice    3  Right
+2026-03-02 14:53:00: choice    2  Left
+2026-03-02 14:53:00: choice    2  Left
+2026-03-02 14:53:00: choice    3  Right
+2026-03-02 14:53:01: choice    2  Left
+2026-03-02 14:53:01: choice    3  Right
+2026-03-02 14:53:25  log closing
+=============================
+
+
+
+log starts at 2026-03-02 14:53:40.
+
+2026-03-02 14:53:40: menu    1  Continue
+2026-03-02 14:53:41: menu    2  Settings
+2026-03-02 14:53:41: menu    3  Choice Tree
+2026-03-02 14:53:41: choice    3  Down
+2026-03-02 14:53:42: choice    4  Back
+2026-03-02 14:53:42: choice    3  Down
+2026-03-02 14:53:42: choice    3  Down
+2026-03-02 14:53:42: choice    3  Down
+2026-03-02 14:53:43: choice    2  Up
+2026-03-02 14:53:43: choice    1  switch to x
+2026-03-02 14:53:43: choice    1  switch to y
+2026-03-02 14:53:43: choice    2  Left
+2026-03-02 14:53:44: choice    2  Left
+2026-03-02 14:53:44: choice    3  Right
+2026-03-02 14:53:44: choice    3  Right
+2026-03-02 14:53:44: choice    3  Right
+2026-03-02 14:53:45: choice    3  Right
+2026-03-02 14:53:46: choice    3  Right
+2026-03-02 14:53:46: choice    2  Left
+2026-03-02 14:53:47: choice    2  Left
+2026-03-02 14:53:47: choice    2  Left
+2026-03-02 14:53:47: choice    2  Left
+2026-03-02 14:53:48: choice    2  Left
+2026-03-02 14:53:48: choice    3  Right
+2026-03-02 14:53:48: choice    3  Right
+2026-03-02 14:53:48: choice    3  Right
+2026-03-02 14:53:49: choice    2  Left
+2026-03-02 14:53:49: choice    2  Left
+2026-03-02 14:53:50: choice    3  Right
+2026-03-02 14:53:50: choice    3  Right
+2026-03-02 14:53:50: choice    3  Right
+2026-03-02 14:53:51: choice    3  Right
+2026-03-02 14:53:54: choice    2  Left
+2026-03-02 14:53:54: choice    2  Left
+2026-03-02 14:53:57: choice    2  Left
+2026-03-02 14:53:57: choice    2  Left
+2026-03-02 14:53:58: choice    1  switch to y
+2026-03-02 14:53:58: choice    1  switch to x
+2026-03-02 14:53:59: choice    2  Up
+2026-03-02 14:53:59: choice    3  Down
+2026-03-02 14:53:59: choice    3  Down
+2026-03-02 14:54:01: choice    3  Down
+2026-03-02 14:54:01: choice    2  Up
+2026-03-02 14:54:03: choice    2  Up
+2026-03-02 14:54:03: choice    2  Up
+2026-03-02 14:54:03: choice    1  switch to x
+2026-03-02 14:54:04: choice    1  switch to y
+2026-03-02 14:54:04: choice    2  Left
+2026-03-02 14:54:04: choice    3  Right
+2026-03-02 14:54:04: choice    3  Right
+2026-03-02 14:54:04: choice    3  Right
+2026-03-02 14:54:05: choice    2  Left
+2026-03-02 14:54:06: choice    1  switch to y
+2026-03-02 14:54:06: choice    1  switch to x
+2026-03-02 14:54:06: choice    2  Up
+2026-03-02 14:54:07: choice    3  Down
+2026-03-02 14:54:07: choice    3  Down
+2026-03-02 14:54:07: choice    2  Up
+2026-03-02 14:54:08: choice    1  switch to x
+2026-03-02 14:54:08: choice    1  switch to y
+2026-03-02 14:54:08: choice    2  Left
+2026-03-02 14:54:09: choice    3  Right
+2026-03-02 14:54:09: choice    3  Right
+2026-03-02 14:54:09: choice    2  Left
+2026-03-02 14:54:10: choice    2  Left
+2026-03-02 14:54:10: choice    1  switch to y
+2026-03-02 14:54:10: choice    1  switch to x
+2026-03-02 14:54:10: choice    2  Up
+2026-03-02 14:54:11: choice    3  Down
+2026-03-02 14:54:11: choice    3  Down
+2026-03-02 14:54:11: choice    3  Down
+2026-03-02 14:54:11: choice    3  Down
+2026-03-02 14:54:12: choice    3  Down
+2026-03-02 14:54:12: choice    3  Down
+2026-03-02 14:54:13: choice    3  Down
+2026-03-02 14:54:13: choice    3  Down
+2026-03-02 14:54:13: choice    3  Down
+2026-03-02 14:54:13: choice    3  Down
+2026-03-02 14:54:13: choice    3  Down
+2026-03-02 14:54:14: choice    3  Down
+2026-03-02 14:54:14: choice    3  Down
+2026-03-02 14:54:14: choice    3  Down
+2026-03-02 14:54:14: choice    3  Down
+2026-03-02 14:54:14: choice    3  Down
+2026-03-02 14:54:15: choice    3  Down
+2026-03-02 14:54:15: choice    3  Down
+2026-03-02 14:54:15: choice    3  Down
+2026-03-02 14:54:16: choice    3  Down
+2026-03-02 14:54:16: choice    3  Down
+2026-03-02 14:54:16: choice    3  Down
+2026-03-02 14:54:17: choice    3  Down
+2026-03-02 14:54:17: choice    3  Down
+2026-03-02 14:54:18: choice    2  Up
+2026-03-02 14:54:18: choice    2  Up
+2026-03-02 14:54:18: choice    3  Down
+2026-03-02 14:54:18: choice    3  Down
+2026-03-02 14:54:19: choice    2  Up
+2026-03-02 14:54:19: choice    3  Down
+2026-03-02 14:54:20: choice    2  Up
+2026-03-02 14:54:20: choice    2  Up
+2026-03-02 14:54:21: choice    2  Up
+2026-03-02 14:54:22: choice    3  Down
+2026-03-02 14:54:22: choice    2  Up
+2026-03-02 14:54:22: choice    1  switch to x
+2026-03-02 14:54:23: choice    1  switch to y
+2026-03-02 14:54:23: choice    1  switch to x
+2026-03-02 14:54:24: choice    2  Up
+2026-03-02 14:54:24: choice    3  Down
+2026-03-02 14:54:24: choice    3  Down
+2026-03-02 14:54:25: choice    3  Down
+2026-03-02 14:54:36  log closing
+=============================
+
+
+
+log starts at 2026-03-02 14:58:45.
+
+2026-03-02 14:58:45: menu    1  Continue
+2026-03-02 14:58:45: menu    2  Settings
+2026-03-02 14:58:45: menu    3  Choice Tree
+2026-03-02 14:58:46: choice    3  Down
+2026-03-02 14:58:46: choice    3  Down
+2026-03-02 14:58:46: choice    3  Down
+2026-03-02 14:58:48: choice    2  Up
+2026-03-02 14:58:48: choice    1  switch to x
+2026-03-02 14:58:48: choice    1  switch to y
+2026-03-02 14:58:48: choice    2  Left
+2026-03-02 14:58:49: choice    3  Right
+2026-03-02 14:58:49: choice    3  Right
+2026-03-02 14:58:56: choice    3  Right
+2026-03-02 14:58:57: choice    2  Left
+2026-03-02 14:58:57: choice    1  switch to y
+2026-03-02 14:58:57: choice    1  switch to x
+2026-03-02 14:58:57: choice    2  Up
+2026-03-02 14:58:57: choice    3  Down
+2026-03-02 14:58:57: choice    3  Down
+2026-03-02 14:59:01  log closing
+=============================
+
+
+
+log starts at 2026-03-02 14:59:38.
+
+2026-03-02 14:59:38: menu    1  Continue
+2026-03-02 14:59:39: menu    2  Settings
+2026-03-02 14:59:39: menu    3  Choice Tree
+2026-03-02 14:59:39: choice    3  Down
+2026-03-02 14:59:39: choice    4  Back
+2026-03-02 14:59:40: choice    3  Down
+2026-03-02 14:59:40: choice    3  Down
+2026-03-02 14:59:40: choice    3  Down
+2026-03-02 14:59:41: choice    3  Down
+2026-03-02 14:59:42: choice    2  Up
+2026-03-02 14:59:42: choice    2  Up
+2026-03-02 14:59:43: choice    1  switch to x
+2026-03-02 14:59:43: choice    1  switch to y
+2026-03-02 14:59:44: choice    2  Left
+2026-03-02 14:59:44: choice    3  Right
+2026-03-02 14:59:44: choice    3  Right
+2026-03-02 14:59:44: choice    3  Right
+2026-03-02 14:59:45: choice    2  Left
+2026-03-02 14:59:45: choice    1  switch to y
+2026-03-02 14:59:46: choice    1  switch to x
+2026-03-02 14:59:46: choice    2  Up
+2026-03-02 14:59:46: choice    3  Down
+2026-03-02 14:59:46: choice    3  Down
+2026-03-02 14:59:48: choice    3  Down
+2026-03-02 14:59:48: choice    2  Up
+2026-03-02 14:59:49: choice    2  Up
+2026-03-02 14:59:49: choice    3  Down
+2026-03-02 14:59:49: choice    3  Down
+2026-03-02 14:59:50: choice    2  Up
+2026-03-02 14:59:51: choice    2  Up
+2026-03-02 14:59:51: choice    2  Up
+2026-03-02 14:59:52: choice    3  Down
+2026-03-02 14:59:52: choice    3  Down
+2026-03-02 14:59:52: choice    3  Down
+log starts at 2026-03-02 15:01:00.
+
+2026-03-02 15:01:00: menu    1  Continue
+2026-03-02 15:01:00: menu    2  Settings
+2026-03-02 15:01:01: menu    3  Choice Tree
+2026-03-02 15:01:01: choice    3  Down
+2026-03-02 15:01:02: choice    3  Down
+2026-03-02 15:01:02: choice    3  Down
+2026-03-02 15:01:03: choice    2  Up
+2026-03-02 15:01:03: choice    1  switch to x
+2026-03-02 15:01:03: choice    1  switch to y
+2026-03-02 15:01:04: choice    2  Left
+2026-03-02 15:01:04: choice    3  Right
+2026-03-02 15:01:04: choice    3  Right
+2026-03-02 15:01:05: choice    3  Right
+2026-03-02 15:01:05: choice    2  Left
+2026-03-02 15:01:05: choice    1  switch to y
+2026-03-02 15:01:06: choice    1  switch to x
+2026-03-02 15:01:06: choice    2  Up
+2026-03-02 15:01:06: choice    3  Down
+2026-03-02 15:01:06: choice    3  Down
+2026-03-02 15:01:08: choice    3  Down
+2026-03-02 15:01:09: choice    2  Up
+2026-03-02 15:01:09: choice    2  Up
+2026-03-02 15:01:09: choice    1  switch to x
+2026-03-02 15:01:10: choice    2  Up
+2026-03-02 15:01:10: choice    2  Up
+2026-03-02 15:01:12: choice    1  switch to x
+2026-03-02 15:01:12: choice    1  switch to y
+2026-03-02 15:01:12: choice    2  Left
+2026-03-02 15:01:12: choice    2  Left
+2026-03-02 15:01:14: choice    2  Left
+2026-03-02 15:01:15: choice    1  switch to y
+2026-03-02 15:01:15: choice    1  switch to x
+2026-03-02 15:01:16: choice    2  Up
+2026-03-02 15:01:16: choice    3  Down
+2026-03-02 15:01:16: choice    3  Down
+2026-03-02 15:01:18: choice    3  Down
+2026-03-02 15:01:18: choice    2  Up
+2026-03-02 15:01:18: choice    2  Up
+2026-03-02 15:01:19: choice    2  Up
+2026-03-02 15:01:19: choice    1  switch to x
+2026-03-02 15:01:20: choice    1  switch to y
+2026-03-02 15:01:20: choice    2  Left
+2026-03-02 15:01:21: choice    3  Right
+2026-03-02 15:01:21: choice    3  Right
+2026-03-02 15:01:21: choice    3  Right
+2026-03-02 15:01:22: choice    2  Left
+2026-03-02 15:01:22: choice    1  switch to y
+2026-03-02 15:01:22: choice    1  switch to x
+2026-03-02 15:01:22: choice    2  Up
+2026-03-02 15:01:23: choice    3  Down
+2026-03-02 15:01:23: choice    3  Down
+2026-03-02 15:01:24: choice    2  Up
+2026-03-02 15:01:24: choice    2  Up
+2026-03-02 15:01:25: choice    3  Down
+2026-03-02 15:01:25: choice    3  Down
+2026-03-02 15:01:25: choice    3  Down
+2026-03-02 15:01:26: choice    2  Up
+2026-03-02 15:01:26: choice    2  Up
+2026-03-02 15:01:26: choice    2  Up
+2026-03-02 15:01:27: choice    3  Down
+2026-03-02 15:01:27: choice    3  Down
+log starts at 2026-03-02 15:02:23.
+
+2026-03-02 15:02:23: menu    1  Continue
+2026-03-02 15:02:24: menu    2  Settings
+2026-03-02 15:02:25: menu    3  Choice Tree
+2026-03-02 15:02:25: choice    3  Down
+2026-03-02 15:02:25: choice    3  Down
+2026-03-02 15:02:26: choice    3  Down
+2026-03-02 15:02:26: choice    3  Down
+2026-03-02 15:02:26: choice    2  Up
+2026-03-02 15:02:26: choice    2  Up
+2026-03-02 15:02:27: choice    1  switch to x
+2026-03-02 15:02:27: choice    1  switch to y
+2026-03-02 15:02:27: choice    2  Left
+2026-03-02 15:02:27: choice    3  Right
+2026-03-02 15:02:27: choice    3  Right
+2026-03-02 15:02:28: choice    3  Right
+2026-03-02 15:02:28: choice    2  Left
+2026-03-02 15:02:29: choice    1  switch to y
+2026-03-02 15:02:29: choice    1  switch to x
+2026-03-02 15:02:29: choice    2  Up
+2026-03-02 15:02:29: choice    2  Up
+2026-03-02 15:02:30: choice    3  Down
+2026-03-02 15:02:30: choice    3  Down
+2026-03-02 15:02:30: choice    3  Down
+2026-03-02 15:03:00: choice    3  Down
+2026-03-02 15:03:00: choice    3  Down
+2026-03-02 15:03:01: choice    2  Up
+2026-03-02 15:03:01: choice    2  Up
+2026-03-02 15:03:01: choice    2  Up
+2026-03-02 15:03:02: choice    1  switch to x
+2026-03-02 15:03:02: choice    1  switch to y
+2026-03-02 15:03:02: choice    2  Left
+2026-03-02 15:03:03: choice    2  Left
+2026-03-02 15:03:03: choice    2  Left
+2026-03-02 15:03:06  log closing
+=============================
+
+
+

@@ -3,6 +3,7 @@ import log
 
 black = (15, 25, 15) #0F190E
 green = (10, 142, 10) #0A8E0A
+red = (162,8, 0) #A20800
 
 screen_width = 320
 screen_height = 240
@@ -26,7 +27,7 @@ image_y = 0
 log.first_log = True
 
 #player variabler
-state = "running" #den statien som spiler er på 
+state = "menu" #den statien som spiler er på 
 #start på "running"
 valg = int(1) #de valg som spiler har max 4
 
