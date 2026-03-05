@@ -41,7 +41,6 @@ ry = int((middel_y-(box_h/2))+((box_h+margin)*y))
 def choice_tree():   
     global rx , ry, box_list_1, hint,hint_list, block_type
     
-    
     sf.main_canvas.fill(sf.black)
     pygame.draw.rect(sf.main_canvas, sf.green, (2,2,310,110)) 
 
@@ -61,7 +60,6 @@ def choice_tree():
         to_y = int(middel_y+((box_h+margin)*(y_set_to-y))-1)
 
         pygame.draw.lines(sf.main_canvas,sf.black,False,[(from_x,from_y),(to_x,from_y),(to_x,to_y)],4)
- 
 
     for item in box_list_1:
         x_set, y_set, block_type = map(int, item.split(":"))
@@ -109,7 +107,6 @@ def choice_tree():
 
         else:
             hint = hint_list[0]
-   
     pygame.draw.circle(sf.main_canvas, sf.red, (middel_x,middel_y), 3)
 
 def check_out():
@@ -135,17 +132,12 @@ def moveing(move):
         x += 1
     if move == "s":
         y += 1
-    
 
     place = f"{x}:{y}"
-
-    print(place)
 
     check_out()
 
     if is_place == False:
-        print("nah")
-        print(move)
         if move == "a":
             x += 1
         if move == "w":

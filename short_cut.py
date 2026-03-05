@@ -1,7 +1,6 @@
 import story_functions as sf
 import choice_tree as tree
 
-
 def menu():
     sf.story_update("Welcome to The Night", "Case #19981112", "you can always press Q to return to the main menu")
     sf.valg_update("Continue","Settings","Choice Tree - saves", "Quit")
@@ -20,5 +19,3 @@ def choice():
         sf.valg_update("Move On", "load","saves","Back")
     else:
         sf.valg_update("Move Off", "load","saves","Back")
-
-

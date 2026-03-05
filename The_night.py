@@ -8,18 +8,13 @@ import choice_tree as tree
 pygame.init()
 pygame.mixer.init()
 
-
-
 #alle flag variabler
 need_redraw = True #hvis den er sand så opdatere den skærmen 
 choice = False
 
-
 sf.image_make()
 sf.make_canvas()
 sf.redraw(sf.state)
-
-
 
 # Spil-loop
 running = True
@@ -30,7 +25,6 @@ while running:
             log.close = True
             log.log(None,None,None)
             running = False
-            
 
         # Håndter KEYDOWN tastetryk
         if event.type == pygame.KEYDOWN:
@@ -38,7 +32,6 @@ while running:
                 if event.key == pygame.K_SPACE or event.key == pygame.K_RETURN:  # Space/enter tast blev trykke
                     sf.text_valg()
                     need_redraw = True
-
 
                 elif event.key == pygame.K_DOWN:
                     if tree.move_selceted:
@@ -73,7 +66,6 @@ while running:
                 elif event.key == pygame.K_m:
                     running = False
 
-
     if sf.state == "running":
         # Non-blocking startup sequence using pygame.time.get_ticks()
         now = pygame.time.get_ticks()
@@ -89,13 +81,11 @@ while running:
                     delay_ms = delay
                 sf.startup_next_time = now + delay_ms
                 sf.startup_index += 1
-            
         else:
             # Sequence finished — move to menu
             need_redraw = True
             sf.state = "menu"
             sc.menu()
-
 
 #     ▄▄▄  ▄▄▄                               
 #     ███  ███                               
@@ -105,7 +95,6 @@ while running:
 #     ██    ██  ▀██▄▄▄▄█  ██    ██  ██▄▄▄███ 
 #     ▀▀    ▀▀    ▀▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀ 
 
-
     if sf.state == "menu":
         sc.menu()
 
@@ -113,7 +102,6 @@ while running:
             sf.state = "settings"
             sc.settings()
             sf.selected_valg_2 = False
-
         
         if sf.selected_valg_3:
             sf.state = "choice"
@@ -186,7 +174,6 @@ while running:
         sf.story_update("music","-","-",)
         sf.valg_update("-","-","-","back",)
 
-
         if sf.selected_valg_4:
             sf.state = "settings"
             sc.settings()
@@ -222,14 +209,11 @@ while running:
             sf.state = "menu"
             choice = False
             sc.menu()
-            sf.selected_valg_4 = False
-                                                                     
+            sf.selected_valg_4 = False                                                          
 
     if sf.state == "quit":
         running = False
 
-
-#                                            
 #        ▄▄▄▄                                
 #      ██▀▀▀▀█                               
 #     ██         ▄█████▄  ████▄██▄   ▄████▄  
@@ -237,10 +221,6 @@ while running:
 #     ██  ▀▀██  ▄██▀▀▀██  ██ ██ ██  ██▀▀▀▀▀▀ 
 #      ██▄▄▄██  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█ 
 #        ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
-#                                            
-#                                            
-
-
 
     if need_redraw:
         if choice:
@@ -248,6 +228,5 @@ while running:
             choice = False
         sf.redraw(sf.state)
         need_redraw = False
-
 
 pygame.quit()

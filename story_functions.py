@@ -9,8 +9,6 @@ screen_width = 320
 screen_height = 240
 scale = 3
 
-
-
 # Index and timer for non-blocking startup sequence
 startup_index = 0
 startup_next_time = 0
@@ -19,7 +17,6 @@ selected_valg_1 = False
 selected_valg_2 = False
 selected_valg_3 = False
 selected_valg_4 = False
-
 
 image_x = 0
 image_y = 0
@@ -46,7 +43,7 @@ def make_canvas():
     global text_valg_3, text_valg_b_3, text_valg_4, text_valg_b_4
     global story_y, story_y_2, story_y_3, text_story, text_story_2, text_story_3
 
-        #main_canvas det der kommer bilder på
+    #main_canvas det der kommer bilder på
     main_canvas_width = 314
     main_canvas_height = 114
     main_canvas = pygame.Surface((main_canvas_width, main_canvas_height))
@@ -65,7 +62,6 @@ def make_canvas():
     text_canvas.fill(black)
 
     #laver valg til playerene
-
     valg_x = 4
 
     valg_1_y = 2
@@ -101,7 +97,6 @@ def make_canvas():
     story_3 =  "-"
     text_story_3 = font.render(story_3, True, black)
 
-
 def canvas_making():
     global font, story_canvas, text_canvas, main_canvas, canvas, scaled_width, scaled_height, SCREEN
     scaled_width = screen_width * scale
@@ -136,7 +131,6 @@ def valg_update(v1 ,v2, v3, v4):
     valg_3 = v3
     valg_4 = v4
     
-
     text_valg_1 = font.render(valg_1, True, green)
     text_valg_b_1 = font.render(valg_1, True, black)
 
@@ -223,8 +217,6 @@ def redraw(state):
     log.log(state ,valg, valg_log)
     log.first_log = False
 
-
-
     # Endelig skærmstørrelse beregnes
     startup_sequence = [
         ("Opening", "The_Night", "Made By MaxiBonng", 1000),
@@ -248,10 +240,8 @@ def redraw(state):
         ("-","-","-", 1500)
     ]
 
-
     glitch = [pygame.image.load(f"img/start_up/glitch_{i}.png")
             for i in range(1, 10)]
-
 
     if state == "running":
         if startup_index == 1:
@@ -274,10 +264,8 @@ def redraw(state):
             main_canvas.blit(glitch[8], (image_x, image_y))
         text_canvas.fill(green)
 
-    
     if state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
-
 
     canvas.blit(main_canvas, (3, 3))  # Tegn hoved-canvas på det primære canvas
     canvas.blit(story_canvas, (3, 119))  # Tegn tekst-canvas nederst i det primære canvas
