@@ -1,9 +1,7 @@
 from datetime import datetime
 
-
 state = None
 valg = None
-
 first_log = False
 running = False
 close = False
