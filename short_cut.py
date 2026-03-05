@@ -4,7 +4,7 @@ import choice_tree as tree
 
 def menu():
     sf.story_update("Welcome to The Night", "Case #19981112", "you can always press Q to return to the main menu")
-    sf.valg_update("Continue","Settings","Choice Tree", "Quit")
+    sf.valg_update("Continue","Settings","Choice Tree - saves", "Quit")
 
 def settings():
     sf.story_update("Settings", "-", "-")
@@ -16,9 +16,9 @@ def screen():
 
 def choice():
     sf.story_update("Here you can see your progress in from of a tree", "-", f"Hint: {tree.hint}")
-    if tree.x_selceted:
-        sf.valg_update("switch to y", "Left","Right","Back")
+    if tree.move_selceted:
+        sf.valg_update("Move On", "load","saves","Back")
     else:
-        sf.valg_update("switch to x", "Up","Down","Back")
+        sf.valg_update("Move Off", "load","saves","Back")
 
 

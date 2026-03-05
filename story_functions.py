@@ -27,7 +27,8 @@ image_y = 0
 log.first_log = True
 
 #player variabler
-state = "menu" #den statien som spiler er på 
+state = "menu"
+# state = "menu" #den statien som spiler er på 
 #start på "running"
 valg = int(1) #de valg som spiler har max 4
 
@@ -125,11 +126,6 @@ def canvas_making():
 
 canvas_making()
 
-
-
-
-
-
 def valg_update(v1 ,v2, v3, v4):
     global valg_1 ,valg_2, valg_3, valg_4
     global text_valg_1, text_valg_2, text_valg_3, text_valg_4
@@ -153,8 +149,6 @@ def valg_update(v1 ,v2, v3, v4):
     text_valg_4 = font.render(valg_4, True, green)
     text_valg_b_4 = font.render(valg_4, True, black)
 
-
-
 def story_update(text1, text2, text3):
     global text_story, text_story_2, text_story_3
     story_canvas.fill(black)
@@ -166,7 +160,6 @@ def story_update(text1, text2, text3):
     story_canvas.blit(text_story, (valg_x, story_y))
     story_canvas.blit(text_story_2, (valg_x, story_y_2))
     story_canvas.blit(text_story_3, (valg_x, story_y_3))
-
 
 def text_valg():
     global selected_valg_1, selected_valg_2,selected_valg_3 , selected_valg_4
@@ -180,8 +173,6 @@ def text_valg():
     elif valg == 4:
         selected_valg_4 = True
         
-
-
 def text_redraw():
     global valg_log
     
@@ -223,7 +214,6 @@ def text_redraw():
         text_canvas.blit(text_valg_b_2, (valg_x, valg_2_y))
         text_canvas.blit(text_valg_b_3, (valg_x, valg_3_y))
         text_canvas.blit(text_valg_b_4, (valg_x, valg_4_y))
-
 
 def redraw(state):
     global startup_sequence, startup_index,startup_next_time

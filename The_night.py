@@ -41,17 +41,31 @@ while running:
 
 
                 elif event.key == pygame.K_DOWN:
-                    sf.valg += 1
-                    if sf.valg  == 5:
-                         sf.valg = 1
-                    print(sf.valg) 
+                    if tree.move_selceted:
+                        tree.moveing("s")
+                    else:
+                        sf.valg += 1
+                        if sf.valg  == 5:
+                            sf.valg = 1
+                        print(sf.valg) 
                     need_redraw = True
                 elif event.key == pygame.K_UP:
-                    sf.valg -= 1
-                    if sf.valg == 0:
-                         sf.valg = 4
-                    print(sf.valg)
+                    if tree.move_selceted:
+                        tree.moveing("w")
+                    else:
+                        sf.valg -= 1
+                        if sf.valg == 0:
+                            sf.valg = 4
+                        print(sf.valg)
                     need_redraw = True
+                elif event.key == pygame.K_LEFT:
+                    if tree.move_selceted:
+                        tree.moveing("a")
+                        need_redraw = True
+                elif event.key == pygame.K_RIGHT:
+                    if tree.move_selceted:
+                        tree.moveing("d")
+                        need_redraw = True
                 elif event.key == pygame.K_q:
                     sf.state = "menu"
                     print("pressed q")
@@ -182,23 +196,23 @@ while running:
         choice = True
 
         if sf.selected_valg_1:
-            if tree.x_selceted:
-                tree.x_selceted = False
+            if tree.move_selceted:
+                tree.move_selceted = False
                 sc.choice()
             else:
-                tree.x_selceted = True
+                tree.move_selceted = True
                 sc.choice()
             sf.selected_valg_1 = False
 
         if sf.selected_valg_2:
-            if tree.x_selceted:
+            if tree.move_selceted:
                 tree.moveing(1)
             else:
                 tree.moveing(2)
             sf.selected_valg_2 = False
 
         if sf.selected_valg_3:
-            if tree.x_selceted:
+            if tree.move_selceted:
                 tree.moveing(3)
             else:
                 tree.moveing(4)
