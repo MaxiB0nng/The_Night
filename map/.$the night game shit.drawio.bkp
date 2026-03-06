@@ -162,6 +162,9 @@
         <mxCell id="VM9Mg6AjKVSFtYwH_7Vc-66" value="watch tv&lt;br&gt;&lt;div&gt;living room&lt;/div&gt;&lt;div&gt;0.3.1.1&lt;/div&gt;&lt;div&gt;go to sleep&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="x7-rhhTq39jbxAUwrzhq-35" vertex="1">
           <mxGeometry x="661.48" y="365" width="122.97" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="p7PGnqwDsL56kWNzkg_M-1" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FF0000;" vertex="1" parent="x7-rhhTq39jbxAUwrzhq-35">
+          <mxGeometry x="795" y="280" width="30" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="x7-rhhTq39jbxAUwrzhq-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="x7-rhhTq39jbxAUwrzhq-37" target="x7-rhhTq39jbxAUwrzhq-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>

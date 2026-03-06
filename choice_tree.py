@@ -19,7 +19,7 @@ block_type = 0
 chapter = 0
 
 #x y blocktype
-box_list_1 = [    "0:0:0",
+box_list_1 = [    "0:0:1",
          "-1:1:0","0:1:0",        "2:1:0",
 "-2:2:0","-1:2:0","0:2:0","1:2:0","2:2:0","3:2:0",
                   "0:3:0",        "2:3:0",
@@ -40,7 +40,7 @@ ry = int((middel_y-(box_h/2))+((box_h+margin)*y))
 
 def choice_tree():   
     global rx , ry, box_list_1, hint,hint_list, block_type
-    
+
     sf.main_canvas.fill(sf.black)
     pygame.draw.rect(sf.main_canvas, sf.green, (2,2,310,110)) 
 

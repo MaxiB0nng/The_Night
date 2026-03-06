@@ -24,7 +24,7 @@ image_y = 0
 log.first_log = True
 
 #player variabler
-state = "menu"
+state = "running"
 # state = "menu" #den statien som spiler er på 
 #start på "running"
 valg = int(1) #de valg som spiler har max 4
@@ -200,14 +200,7 @@ def text_redraw():
         text_canvas.blit(text_valg_b_4, (valg_x, valg_4_y))
         valg_log = valg_4
     elif valg == 6:
-        pygame.draw.rect(text_canvas, green, (0, valg_1_y, 318, 13))
-        pygame.draw.rect(text_canvas, green, (0, valg_2_y, 318, 13))
-        pygame.draw.rect(text_canvas, green, (0, valg_3_y, 318, 13))
-        pygame.draw.rect(text_canvas, green, (0, valg_4_y, 318, 13))
-        text_canvas.blit(text_valg_b_1, (valg_x, valg_1_y))
-        text_canvas.blit(text_valg_b_2, (valg_x, valg_2_y))
-        text_canvas.blit(text_valg_b_3, (valg_x, valg_3_y))
-        text_canvas.blit(text_valg_b_4, (valg_x, valg_4_y))
+        text_canvas.fill(green)
 
 def redraw(state):
     global startup_sequence, startup_index,startup_next_time
@@ -266,6 +259,8 @@ def redraw(state):
 
     if state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
+
+
 
     canvas.blit(main_canvas, (3, 3))  # Tegn hoved-canvas på det primære canvas
     canvas.blit(story_canvas, (3, 119))  # Tegn tekst-canvas nederst i det primære canvas

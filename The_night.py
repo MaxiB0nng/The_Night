@@ -4,6 +4,7 @@ import log
 import story_functions as sf
 import short_cut as sc
 import choice_tree as tree
+import game
 
 pygame.init()
 pygame.mixer.init()
@@ -97,6 +98,10 @@ while running:
 
     if sf.state == "menu":
         sc.menu()
+
+        if sf.selected_valg_1:
+            sf.state = "game"
+            sf.selected_valg_2 = False
 
         if sf.selected_valg_2:
             sf.state = "settings"
@@ -221,6 +226,11 @@ while running:
 #     ██  ▀▀██  ▄██▀▀▀██  ██ ██ ██  ██▀▀▀▀▀▀ 
 #      ██▄▄▄██  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█ 
 #        ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
+
+    if sf.state == "game":
+        game.game()
+
+
 
     if need_redraw:
         if choice:
