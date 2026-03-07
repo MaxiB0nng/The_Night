@@ -7,7 +7,7 @@ red = (162,8, 0) #A20800
 
 screen_width = 320
 screen_height = 240
-scale = 3
+scale = int(3)
 
 # Index and timer for non-blocking startup sequence
 startup_index = 0
@@ -23,11 +23,14 @@ image_y = 0
 
 log.first_log = True
 
+fullscreen = False
+
 #player variabler
 state = "running"
 # state = "menu" #den statien som spiler er på 
 #start på "running"
 valg = int(1) #de valg som spiler har max 4
+
 
 # Indlæs billede
 def image_make():
@@ -97,13 +100,33 @@ def make_canvas():
     story_3 =  "-"
     text_story_3 = font.render(story_3, True, black)
 
-def canvas_making():
-    global font, story_canvas, text_canvas, main_canvas, canvas, scaled_width, scaled_height, SCREEN
-    scaled_width = screen_width * scale
-    scaled_height = screen_height * scale
+def make_screen():
+    global font, story_canvas, text_canvas, main_canvas, canvas, scaled_width, scaled_height, SCREEN, scale, fullscreen, width_offset,height_offset,monitor_width, monitor_height
 
-    # Skab skærm og indstil ikon
-    SCREEN = pygame.display.set_mode((scaled_width, scaled_height))  # Endelig skærmstørrelse
+    if fullscreen:
+        SCREEN = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+        monitor_height = SCREEN.get_height()
+        monitor_width = SCREEN.get_width()
+
+        if monitor_height >= monitor_width:
+            scale = monitor_width/screen_width
+        if monitor_width >= monitor_height:
+            scale = monitor_height/screen_height
+
+
+        scaled_width = screen_width * scale
+        scaled_height = screen_height * scale
+
+        width_offset = (monitor_width - scaled_width )/2
+        height_offset = (monitor_height - scaled_height)/2
+
+        
+    else:
+        scaled_width = screen_width * scale
+        scaled_height = screen_height * scale
+
+        # Skab skærm og indstil ikon
+        SCREEN = pygame.display.set_mode((scaled_width, scaled_height))  # Endelig skærmstørrelse
 
     pygame.display.set_caption("The Night")
     the_night_logo = pygame.image.load("img/logo.png").convert_alpha()  # Indlæs dit ikonbillede
@@ -115,11 +138,12 @@ def canvas_making():
     font = pygame.font.FontType(font_path, 11)
 
     # Lav det primære canvas
+    print(scale)
     canvas = pygame.Surface((screen_width, screen_height))
     canvas.fill(black)
     pygame.draw.rect(canvas, green, (1, 1, 318, 238))  # Grøn kant
 
-canvas_making()
+make_screen()
 
 def valg_update(v1 ,v2, v3, v4):
     global valg_1 ,valg_2, valg_3, valg_4
@@ -203,7 +227,7 @@ def text_redraw():
         text_canvas.fill(green)
 
 def redraw(state):
-    global startup_sequence, startup_index,startup_next_time
+    global startup_sequence, startup_index,startup_next_time,  scaled_width, scaled_height 
     text_redraw()
     
     print(state)
@@ -268,7 +292,15 @@ def redraw(state):
 
     # Skalér det samled e canvas og tegn det på skærmen
     scaled_canvas = pygame.transform.scale(canvas, (scaled_width, scaled_height))
-    SCREEN.blit(scaled_canvas, (0, 0))
+    if fullscreen:
+        if monitor_height >= monitor_width:
+           SCREEN.blit(scaled_canvas, (0, height_offset))
+        if monitor_width >= monitor_height:
+            SCREEN.blit(scaled_canvas, (width_offset, 0))
+            
+        
+    else:
+        SCREEN.blit(scaled_canvas, (0, 0))
 
     # Opdater skærmen
     pygame.display.flip()

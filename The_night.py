@@ -4,7 +4,7 @@ import log
 import story_functions as sf
 import short_cut as sc
 import choice_tree as tree
-import game
+
 
 pygame.init()
 pygame.mixer.init()
@@ -12,6 +12,7 @@ pygame.mixer.init()
 #alle flag variabler
 need_redraw = True #hvis den er sand så opdatere den skærmen 
 choice = False
+
 
 sf.image_make()
 sf.make_canvas()
@@ -32,6 +33,13 @@ while running:
                 
                 if event.key == pygame.K_SPACE or event.key == pygame.K_RETURN:  # Space/enter tast blev trykke
                     sf.text_valg()
+                    need_redraw = True
+
+                elif event.key == pygame.K_F11:
+                    sf.fullscreen = not sf.fullscreen
+                    if not sf.fullscreen:
+                        sf.scale = 3
+                    sf.make_screen()
                     need_redraw = True
 
                 elif event.key == pygame.K_DOWN:
@@ -150,7 +158,7 @@ while running:
             sf.scale += 0.5
             if sf.scale >= 6:
                 sf.scale = 6
-            sf.canvas_making()
+            sf.make_screen()
             sc.screen()
             need_redraw = True
             sf.selected_valg_2 = False
@@ -159,7 +167,7 @@ while running:
             sf.scale -= 0.5
             if sf.scale <= 1:
                 sf.scale = 1
-            sf.canvas_making()
+            sf.make_screen()
             sc.screen()
             sf.selected_valg_3 = False
 
@@ -227,8 +235,6 @@ while running:
 #      ██▄▄▄██  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█ 
 #        ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
 
-    if sf.state == "game":
-        game.game()
 
 
 

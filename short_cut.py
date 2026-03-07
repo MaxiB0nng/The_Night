@@ -19,4 +19,3 @@ def choice():
         sf.valg_update("Move On", "load","saves","Back")
     else:
         sf.valg_update("Move Off", "load","saves","Back")
-

@@ -1,3 +1,4 @@
 import game
 
-def 
+def save():
+    log = open("log.txt", "a")
