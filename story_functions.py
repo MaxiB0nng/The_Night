@@ -297,8 +297,7 @@ def redraw(state):
            SCREEN.blit(scaled_canvas, (0, height_offset))
         if monitor_width >= monitor_height:
             SCREEN.blit(scaled_canvas, (width_offset, 0))
-            
-        
+              
     else:
         SCREEN.blit(scaled_canvas, (0, 0))
 
