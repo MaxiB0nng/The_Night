@@ -5,7 +5,6 @@ import story_functions as sf
 import short_cut as sc
 import choice_tree as tree
 
-
 pygame.init()
 pygame.mixer.init()
 
@@ -226,17 +225,6 @@ while running:
 
     if sf.state == "quit":
         running = False
-
-#        ▄▄▄▄                                
-#      ██▀▀▀▀█                               
-#     ██         ▄█████▄  ████▄██▄   ▄████▄  
-#     ██  ▄▄▄▄   ▀ ▄▄▄██  ██ ██ ██  ██▄▄▄▄██ 
-#     ██  ▀▀██  ▄██▀▀▀██  ██ ██ ██  ██▀▀▀▀▀▀ 
-#      ██▄▄▄██  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█ 
-#        ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
-
-
-
 
     if need_redraw:
         if choice:

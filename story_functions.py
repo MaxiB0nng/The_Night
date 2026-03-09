@@ -1,4 +1,5 @@
 import pygame
+import game
 import log
 
 black = (15, 25, 15) #0F190E
@@ -113,13 +114,11 @@ def make_screen():
         if monitor_width >= monitor_height:
             scale = monitor_height/screen_height
 
-
         scaled_width = screen_width * scale
         scaled_height = screen_height * scale
 
         width_offset = (monitor_width - scaled_width )/2
         height_offset = (monitor_height - scaled_height)/2
-
         
     else:
         scaled_width = screen_width * scale
@@ -284,7 +283,8 @@ def redraw(state):
     if state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
 
-
+    if state == "game":
+        game.game()
 
     canvas.blit(main_canvas, (3, 3))  # Tegn hoved-canvas på det primære canvas
     canvas.blit(story_canvas, (3, 119))  # Tegn tekst-canvas nederst i det primære canvas
