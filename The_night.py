@@ -31,7 +31,8 @@ while running:
         if event.type == pygame.KEYDOWN:
                 
                 if event.key == pygame.K_SPACE or event.key == pygame.K_RETURN:  # Space/enter tast blev trykke
-                    sf.text_valg()
+                    if not sf.state == "running":
+                        sf.text_valg()
                     need_redraw = True
 
                 elif event.key == pygame.K_F11:
@@ -50,6 +51,7 @@ while running:
                             sf.valg = 1
                         print(sf.valg) 
                     need_redraw = True
+
                 elif event.key == pygame.K_UP:
                     if tree.move_selceted:
                         tree.moveing("w")
@@ -59,14 +61,17 @@ while running:
                             sf.valg = 4
                         print(sf.valg)
                     need_redraw = True
+
                 elif event.key == pygame.K_LEFT:
                     if tree.move_selceted:
                         tree.moveing("a")
                         need_redraw = True
+
                 elif event.key == pygame.K_RIGHT:
                     if tree.move_selceted:
                         tree.moveing("d")
                         need_redraw = True
+                        
                 elif event.key == pygame.K_q:
                     sf.state = "menu"
                     print("pressed q")
@@ -225,6 +230,19 @@ while running:
 
     if sf.state == "quit":
         running = False
+
+#        ▄▄▄▄                                
+#      ██▀▀▀▀█                               
+#     ██         ▄█████▄  ████▄██▄   ▄████▄  
+#     ██  ▄▄▄▄   ▀ ▄▄▄██  ██ ██ ██  ██▄▄▄▄██ 
+#     ██  ▀▀██  ▄██▀▀▀██  ██ ██ ██  ██▀▀▀▀▀▀ 
+#      ██▄▄▄██  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█ 
+#        ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
+
+    #if sf.state == "game":
+        
+
+
 
     if need_redraw:
         if choice:

@@ -72,3 +72,383 @@ log starts at 2026-03-09 09:30:31.
 2026-03-09 09:30:50: settings    2  music
 2026-03-09 09:30:50: settings    3  credits
 2026-03-09 09:31:24: credits    3  -
+log starts at 2026-03-10 08:36:07.
+
+2026-03-10 08:36:07: running    1  1
+2026-03-10 08:36:07: running    1  1
+2026-03-10 08:36:08: running    1  1
+2026-03-10 08:36:09: running    1  1
+2026-03-10 08:36:10: running    1  1
+2026-03-10 08:36:11: running    1  1
+2026-03-10 08:36:11: running    1  1
+2026-03-10 08:36:12: running    1  1
+2026-03-10 08:36:12: running    1  1
+2026-03-10 08:36:12: running    1  1
+2026-03-10 08:36:12: running    1  1
+2026-03-10 08:36:12: running    1  1
+2026-03-10 08:36:12: running    1  1
+2026-03-10 08:36:12: running    1  1
+2026-03-10 08:36:13: running    1  1
+2026-03-10 08:36:13: running    1  1
+2026-03-10 08:36:13: running    1  1
+2026-03-10 08:36:13: running    1  1
+2026-03-10 08:36:14: running    1  1
+2026-03-10 08:36:15: running    1  1
+2026-03-10 08:36:15: menu    1  Continue
+2026-03-10 08:36:19: game    1  Continue
+2026-03-10 08:36:19: game    2  Settings
+2026-03-10 08:36:19: game    3  Choice Tree - saves
+2026-03-10 08:36:20: game    3  Choice Tree - saves
+2026-03-10 08:36:21: game    2  Settings
+2026-03-10 08:36:21: game    3  Choice Tree - saves
+2026-03-10 08:36:22: game    3  Choice Tree - saves
+2026-03-10 08:36:22: game    2  Settings
+2026-03-10 08:36:22: game    3  Choice Tree - saves
+2026-03-10 08:36:23: game    2  Settings
+2026-03-10 08:36:23: game    3  Choice Tree - saves
+2026-03-10 08:36:23: game    4  Quit
+2026-03-10 08:36:24: game    4  Quit
+2026-03-10 08:36:24: game    3  Choice Tree - saves
+2026-03-10 08:36:24: game    2  Settings
+2026-03-10 08:36:26: game    2  Settings
+2026-03-10 08:36:26: game    2  Settings
+2026-03-10 08:36:26: game    2  Settings
+2026-03-10 08:36:26: game    2  Settings
+2026-03-10 08:36:26: game    3  Choice Tree - saves
+2026-03-10 08:36:27: game    4  Quit
+2026-03-10 08:36:27: game    4  Quit
+log starts at 2026-03-10 08:37:03.
+
+2026-03-10 08:37:03: running    1  1
+2026-03-10 08:37:03: running    1  1
+2026-03-10 08:37:04: running    1  1
+2026-03-10 08:37:05: running    1  1
+2026-03-10 08:37:06: running    1  1
+2026-03-10 08:37:07: running    1  1
+2026-03-10 08:37:07: running    1  1
+2026-03-10 08:37:07: running    1  1
+2026-03-10 08:37:07: running    1  1
+2026-03-10 08:37:08: running    1  1
+2026-03-10 08:37:08: running    1  1
+2026-03-10 08:37:08: running    1  1
+2026-03-10 08:37:08: running    1  1
+2026-03-10 08:37:08: running    1  1
+2026-03-10 08:37:09: running    1  1
+2026-03-10 08:37:09: running    1  1
+2026-03-10 08:37:09: running    1  1
+2026-03-10 08:37:09: running    1  1
+2026-03-10 08:37:10: running    1  1
+2026-03-10 08:37:11: running    1  1
+2026-03-10 08:37:11: menu    1  Continue
+2026-03-10 08:37:13: menu    2  Settings
+2026-03-10 08:37:13: menu    3  Choice Tree - saves
+2026-03-10 08:37:13: choice    3  saves
+2026-03-10 08:37:14: choice    2  load
+2026-03-10 08:37:14: choice    1  Move Off
+2026-03-10 08:37:15: choice    1  Move On
+2026-03-10 08:37:16: choice    1  Move On
+2026-03-10 08:37:16: choice    1  Move On
+2026-03-10 08:37:16: choice    1  Move On
+2026-03-10 08:37:16: choice    1  Move On
+2026-03-10 08:37:17: choice    1  Move On
+2026-03-10 08:37:17: choice    1  Move On
+2026-03-10 08:37:17: choice    1  Move On
+2026-03-10 08:37:18: choice    1  Move On
+2026-03-10 08:37:18: choice    1  Move On
+2026-03-10 08:37:18: choice    1  Move On
+2026-03-10 08:37:19: choice    1  Move On
+2026-03-10 08:37:19: choice    1  Move On
+2026-03-10 08:37:19: choice    1  Move On
+2026-03-10 08:37:19: choice    1  Move On
+2026-03-10 08:37:20: choice    1  Move On
+2026-03-10 08:37:21: choice    1  Move On
+2026-03-10 08:37:21: choice    1  Move On
+2026-03-10 08:37:21: choice    1  Move On
+2026-03-10 08:37:22: choice    1  Move On
+2026-03-10 08:37:23: choice    1  Move On
+2026-03-10 08:37:23: choice    1  Move On
+2026-03-10 08:37:23: choice    1  Move On
+2026-03-10 08:37:23: choice    1  Move On
+2026-03-10 08:37:24: choice    1  Move On
+2026-03-10 08:37:24: choice    1  Move On
+2026-03-10 08:37:24: choice    1  Move On
+2026-03-10 08:37:24: choice    1  Move On
+2026-03-10 08:37:24: choice    1  Move On
+2026-03-10 08:37:24: choice    1  Move On
+2026-03-10 08:37:24: choice    1  Move On
+2026-03-10 08:37:24: choice    1  Move On
+2026-03-10 08:37:24: choice    1  Move On
+2026-03-10 08:37:24: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:25: choice    1  Move On
+2026-03-10 08:37:26: choice    1  Move On
+2026-03-10 08:37:26: choice    1  Move On
+2026-03-10 08:37:26: choice    1  Move On
+2026-03-10 08:37:26: choice    1  Move On
+2026-03-10 08:37:26: choice    1  Move On
+2026-03-10 08:37:26: choice    1  Move On
+2026-03-10 08:37:27: choice    1  Move On
+2026-03-10 08:37:27: choice    1  Move On
+2026-03-10 08:37:27: choice    1  Move On
+2026-03-10 08:37:28: choice    1  Move On
+2026-03-10 08:37:28: choice    1  Move On
+2026-03-10 08:37:28: choice    1  Move On
+2026-03-10 08:37:28: choice    1  Move On
+2026-03-10 08:37:28: choice    1  Move On
+2026-03-10 08:37:28: choice    1  Move On
+2026-03-10 08:37:29: choice    1  Move On
+2026-03-10 08:37:29: choice    1  Move On
+2026-03-10 08:37:29: choice    1  Move On
+2026-03-10 08:37:29: choice    1  Move On
+2026-03-10 08:37:30: choice    1  Move On
+2026-03-10 08:37:30: choice    1  Move On
+2026-03-10 08:37:31: choice    1  Move On
+2026-03-10 08:37:31: choice    1  Move On
+2026-03-10 08:37:31: choice    1  Move On
+2026-03-10 08:37:31: choice    1  Move On
+2026-03-10 08:37:31: choice    1  Move On
+2026-03-10 08:37:32: choice    1  Move On
+2026-03-10 08:37:32: choice    1  Move On
+2026-03-10 08:37:32: choice    1  Move On
+2026-03-10 08:37:32: choice    1  Move On
+2026-03-10 08:37:33: choice    1  Move On
+2026-03-10 08:37:33: choice    1  Move On
+2026-03-10 08:37:33: choice    1  Move On
+2026-03-10 08:37:33: choice    1  Move On
+2026-03-10 08:37:33: choice    1  Move On
+2026-03-10 08:37:34: choice    1  Move On
+2026-03-10 08:37:36: choice    1  Move Off
+2026-03-10 08:37:36: choice    1  Move On
+2026-03-10 08:37:36: choice    1  Move On
+2026-03-10 08:37:37: choice    1  Move On
+2026-03-10 08:37:37: choice    1  Move Off
+2026-03-10 08:37:37: choice    2  load
+2026-03-10 08:37:38: choice    3  saves
+2026-03-10 08:37:38: choice    4  Back
+2026-03-10 08:37:38: menu    4  Quit
+2026-03-10 08:37:39: quit    4  Quit
+log starts at 2026-03-10 08:39:17.
+
+2026-03-10 08:39:17: running    1  1
+2026-03-10 08:39:17: running    1  1
+2026-03-10 08:39:18: running    1  1
+2026-03-10 08:39:19: running    1  1
+2026-03-10 08:39:20: running    1  1
+2026-03-10 08:39:20: running    1  1
+2026-03-10 08:39:21: running    1  1
+2026-03-10 08:39:22: running    1  1
+2026-03-10 08:39:22: running    1  1
+2026-03-10 08:39:22: running    1  1
+2026-03-10 08:39:23: running    1  1
+2026-03-10 08:39:23: running    1  1
+2026-03-10 08:39:23: running    1  1
+2026-03-10 08:39:23: running    1  1
+2026-03-10 08:39:23: running    1  1
+2026-03-10 08:39:23: running    1  1
+2026-03-10 08:39:23: running    1  1
+2026-03-10 08:39:24: running    1  1
+2026-03-10 08:39:25: running    1  1
+2026-03-10 08:39:26: running    1  1
+2026-03-10 08:39:26: menu    1  Continue
+2026-03-10 08:39:27: menu    2  Settings
+2026-03-10 08:39:27: menu    3  Choice Tree - saves
+2026-03-10 08:39:28: menu    2  Settings
+2026-03-10 08:39:28: menu    3  Choice Tree - saves
+2026-03-10 08:39:29: menu    4  Quit
+2026-03-10 08:39:29: quit    4  Quit
+log starts at 2026-03-10 08:39:32.
+
+2026-03-10 08:39:32: running    1  1
+2026-03-10 08:39:32: running    1  1
+2026-03-10 08:39:32: running    1  1
+2026-03-10 08:39:32: running    1  1
+2026-03-10 08:39:32: running    1  1
+2026-03-10 08:39:32: running    1  1
+2026-03-10 08:39:33: running    1  1
+2026-03-10 08:39:33: running    1  1
+2026-03-10 08:39:33: running    1  1
+2026-03-10 08:39:33: running    1  1
+2026-03-10 08:39:33: running    1  1
+2026-03-10 08:39:33: running    1  1
+2026-03-10 08:39:33: running    1  1
+2026-03-10 08:39:33: running    1  1
+2026-03-10 08:39:34: running    1  1
+2026-03-10 08:39:34: running    1  1
+2026-03-10 08:39:34: running    1  1
+2026-03-10 08:39:34: running    1  1
+2026-03-10 08:39:34: running    1  1
+2026-03-10 08:39:35: running    1  1
+2026-03-10 08:39:35: running    1  1
+2026-03-10 08:39:35: running    1  1
+2026-03-10 08:39:35: running    1  1
+2026-03-10 08:39:35: running    1  1
+2026-03-10 08:39:35: running    1  1
+2026-03-10 08:39:35: running    1  1
+2026-03-10 08:39:36: running    1  1
+2026-03-10 08:39:36: running    1  1
+2026-03-10 08:39:36: running    1  1
+2026-03-10 08:39:36: running    1  1
+2026-03-10 08:39:36: running    1  1
+2026-03-10 08:39:36: running    1  1
+2026-03-10 08:39:36: running    1  1
+2026-03-10 08:39:37: running    1  1
+2026-03-10 08:39:37: running    1  1
+2026-03-10 08:39:37: running    1  1
+2026-03-10 08:39:37: running    1  1
+2026-03-10 08:39:37: running    1  1
+2026-03-10 08:39:37: running    1  1
+2026-03-10 08:39:38: running    1  1
+2026-03-10 08:39:39: running    1  1
+2026-03-10 08:39:40: running    1  1
+2026-03-10 08:39:40: menu    1  Continue
+2026-03-10 08:39:43: game    1  Continue
+2026-03-10 08:39:45: game    2  Settings
+2026-03-10 08:39:45: game    3  Choice Tree - saves
+2026-03-10 08:39:45: game    4  Quit
+2026-03-10 08:39:45: game    1  Continue
+2026-03-10 08:39:46: game    1  Continue
+2026-03-10 08:39:46: game    4  Quit
+2026-03-10 08:39:46: game    4  Quit
+log starts at 2026-03-10 13:35:17.
+
+2026-03-10 13:35:17: running    1  1
+2026-03-10 13:35:17: running    1  1
+2026-03-10 13:35:18: running    1  1
+2026-03-10 13:35:19: running    1  1
+2026-03-10 13:35:20: running    1  1
+2026-03-10 13:35:21: running    1  1
+2026-03-10 13:35:21: running    1  1
+2026-03-10 13:35:22: running    1  1
+2026-03-10 13:35:22: running    1  1
+2026-03-10 13:35:22: running    1  1
+2026-03-10 13:35:22: running    1  1
+2026-03-10 13:35:22: running    1  1
+2026-03-10 13:35:22: running    1  1
+2026-03-10 13:35:22: running    1  1
+2026-03-10 13:35:23: running    1  1
+2026-03-10 13:35:23: running    1  1
+2026-03-10 13:35:23: running    1  1
+2026-03-10 13:35:23: running    1  1
+2026-03-10 13:35:24: running    1  1
+2026-03-10 13:35:25: running    1  1
+2026-03-10 13:35:25: running    1  1
+2026-03-10 13:35:25: menu    1  Continue
+2026-03-10 13:35:28: menu    2  Settings
+2026-03-10 13:35:29: settings    2  music
+2026-03-10 13:35:29: settings    1  screen
+2026-03-10 13:35:29: settings    2  music
+2026-03-10 13:35:30: settings    1  screen
+2026-03-10 13:35:30: screen    1  scale = 3.75
+2026-03-10 13:35:31: screen    2  scale +
+2026-03-10 13:35:33: screen    2  scale +
+2026-03-10 13:35:34: screen    3  scale -
+2026-03-10 13:35:35: screen    3  scale -
+2026-03-10 13:35:35: screen    4  back
+2026-03-10 13:35:38: settings    4  back
+2026-03-10 13:35:41: menu    4  Quit
+2026-03-10 13:35:41: menu    3  Choice Tree - saves
+2026-03-10 13:35:41: choice    3  saves
+2026-03-10 13:35:42: choice    2  load
+2026-03-10 13:35:42: choice    1  Move Off
+2026-03-10 13:35:42: choice    1  Move On
+2026-03-10 13:35:42: choice    1  Move On
+2026-03-10 13:35:43: choice    1  Move On
+2026-03-10 13:35:43: choice    1  Move On
+2026-03-10 13:35:43: choice    1  Move On
+2026-03-10 13:35:43: choice    1  Move On
+2026-03-10 13:35:43: choice    1  Move On
+2026-03-10 13:35:44: choice    1  Move On
+2026-03-10 13:35:44: choice    1  Move On
+2026-03-10 13:35:44: choice    1  Move On
+2026-03-10 13:35:45: choice    1  Move On
+2026-03-10 13:35:45: choice    1  Move On
+2026-03-10 13:35:45: choice    1  Move On
+2026-03-10 13:35:45: choice    1  Move On
+2026-03-10 13:35:45: choice    1  Move On
+2026-03-10 13:35:46: choice    1  Move On
+2026-03-10 13:35:46: choice    1  Move On
+2026-03-10 13:35:46: choice    1  Move On
+2026-03-10 13:35:46: choice    1  Move On
+2026-03-10 13:35:46: choice    1  Move On
+2026-03-10 13:35:46: choice    1  Move On
+2026-03-10 13:35:47: choice    1  Move On
+2026-03-10 13:35:47: choice    1  Move On
+2026-03-10 13:35:47: choice    1  Move On
+2026-03-10 13:35:47: choice    1  Move On
+2026-03-10 13:35:49: choice    1  Move On
+2026-03-10 13:35:49: choice    1  Move On
+2026-03-10 13:35:50: choice    1  Move On
+2026-03-10 13:35:50: choice    1  Move On
+2026-03-10 13:35:50: choice    1  Move On
+2026-03-10 13:35:51: choice    1  Move On
+2026-03-10 13:35:51: choice    1  Move On
+2026-03-10 13:35:52: choice    1  Move On
+2026-03-10 13:35:52: choice    1  Move On
+2026-03-10 13:35:56: choice    1  Move On
+2026-03-10 13:35:57: choice    1  Move On
+2026-03-10 13:35:57: choice    1  Move On
+2026-03-10 13:35:57: choice    1  Move On
+2026-03-10 13:35:57: choice    1  Move On
+2026-03-10 13:35:58: choice    1  Move On
+2026-03-10 13:35:58: choice    1  Move On
+2026-03-10 13:35:59: choice    1  Move On
+2026-03-10 13:36:01: choice    1  Move Off
+2026-03-10 13:36:01: choice    2  load
+2026-03-10 13:36:01: choice    3  saves
+2026-03-10 13:36:02: choice    2  load
+2026-03-10 13:36:02: choice    2  load
+2026-03-10 13:36:02: choice    2  load
+2026-03-10 13:36:02: choice    3  saves
+2026-03-10 13:36:02: choice    3  saves
+2026-03-10 13:36:03: choice    3  saves
+2026-03-10 13:36:03: choice    4  Back
+2026-03-10 13:36:03: menu    4  Quit
+2026-03-10 13:36:15: quit    4  Quit
+log starts at 2026-03-10 13:38:07.
+
+2026-03-10 13:38:07: running    1  1
+2026-03-10 13:38:07: running    1  1
+2026-03-10 13:38:08: running    1  1
+2026-03-10 13:38:09: running    1  1
+2026-03-10 13:38:10: running    1  1
+2026-03-10 13:38:10: running    1  1
+2026-03-10 13:38:11: running    1  1
+2026-03-10 13:38:11: running    1  1
+2026-03-10 13:38:11: running    1  1
+2026-03-10 13:38:11: running    1  1
+2026-03-10 13:38:11: running    1  1
+2026-03-10 13:38:12: running    1  1
+2026-03-10 13:38:12: running    1  1
+2026-03-10 13:38:12: running    1  1
+2026-03-10 13:38:12: running    1  1
+2026-03-10 13:38:12: running    1  1
+2026-03-10 13:38:12: running    1  1
+2026-03-10 13:38:13: running    1  1
+2026-03-10 13:38:14: running    1  1
+2026-03-10 13:38:15: running    1  1
+2026-03-10 13:38:15: menu    1  Continue
+2026-03-10 13:38:16: menu    2  Settings
+2026-03-10 13:38:16: menu    3  Choice Tree - saves
+2026-03-10 13:38:17: choice    3  saves
+2026-03-10 13:38:17: choice    2  load
+2026-03-10 13:38:18: choice    1  Move Off
+2026-03-10 13:38:18: choice    1  Move On
+2026-03-10 13:38:18: choice    1  Move On
+2026-03-10 13:38:18: choice    1  Move On
+2026-03-10 13:38:18: choice    1  Move On
+2026-03-10 13:38:45: choice    1  Move Off
+2026-03-10 13:38:45: choice    2  load
+2026-03-10 13:38:45: choice    3  saves
+2026-03-10 13:38:46: choice    4  Back
+2026-03-10 13:38:46: menu    4  Quit
+2026-03-10 13:38:46: quit    4  Quit
