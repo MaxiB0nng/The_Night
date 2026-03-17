@@ -242,10 +242,6 @@ while running:
     if sf.state == "game":
         sf.state == "0.0.0.0"
 
-    
-        
-
-
 
     if need_redraw:
         if choice:
