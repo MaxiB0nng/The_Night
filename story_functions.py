@@ -1,5 +1,4 @@
 import pygame
-import game
 import log
 
 black = (15, 25, 15) #0F190E

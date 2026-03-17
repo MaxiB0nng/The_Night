@@ -1,5 +1,4 @@
 
-
 def load():
     with open("save.tnp", "r") as f:
         data = f.read().strip()

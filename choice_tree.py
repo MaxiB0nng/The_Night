@@ -137,16 +137,19 @@ def moveing(move):
 
     check_out()
 
-    if is_place == False:
-        if move == "a":
-            x += 1
-        if move == "w":
-            y += 1
-        if move == "d":
-            x -= 1
-        if move == "s":
-            y -= 1
-        place = f"{x}:{y}"
+    while is_place == False:
+        if is_place == False:
+            if move == "a":
+                x += 1
+            if move == "w":
+                y += 1
+            if move == "d":
+                x -= 1
+            if move == "s":
+                y -= 1
+            place = f"{x}:{y}"
+            choice_tree()
         check_out()
-        choice_tree()
+    
+    if is_place:
         move = None
