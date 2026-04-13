@@ -2,7 +2,7 @@ import pygame
 import random
 import log
 import story_functions as sf
-import short_cut as sc
+import short_cut as cut
 import choice_tree as tree
 
 pygame.init()
@@ -98,7 +98,7 @@ while running:
             # Sequence finished — move to menu
             need_redraw = True
             sf.state = "menu"
-            sc.menu()
+            cut.menu()
 
 #     ▄▄▄  ▄▄▄                               
 #     ███  ███                               
@@ -109,7 +109,7 @@ while running:
 #     ▀▀    ▀▀    ▀▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀ 
 
     if sf.state == "menu":
-        sc.menu()
+        cut.menu()
 
         if sf.selected_valg_1:
             sf.state = "game"
@@ -117,23 +117,23 @@ while running:
 
         if sf.selected_valg_2:
             sf.state = "settings"
-            sc.settings()
+            cut.settings()
             sf.selected_valg_2 = False
         
         if sf.selected_valg_3:
             sf.state = "choice"
-            sc.choice()
+            cut.choice()
             sf.selected_valg_3 = False
 
         if sf.selected_valg_4:
             sf.state = "quit"
 
     if sf.state == "settings":
-        sc.settings()
+        cut.settings()
 
         if sf.selected_valg_1:
             sf.state = "screen"
-            sc.screen()
+            cut.screen()
             sf.selected_valg_1 = False
 
         if sf.selected_valg_2:
@@ -152,18 +152,18 @@ while running:
 
         if sf.selected_valg_4:
             sf.state = "menu"
-            sc.menu()
+            cut.menu()
             sf.selected_valg_4 = False
     
     if sf.state == "screen":
-        sc.screen()
+        cut.screen()
 
         if sf.selected_valg_2:
             sf.scale += 0.5
             if sf.scale >= 6:
                 sf.scale = 6
             sf.make_screen()
-            sc.screen()
+            cut.screen()
             need_redraw = True
             sf.selected_valg_2 = False
 
@@ -172,19 +172,19 @@ while running:
             if sf.scale <= 1:
                 sf.scale = 1
             sf.make_screen()
-            sc.screen()
+            cut.screen()
             sf.selected_valg_3 = False
 
         if sf.selected_valg_4:
             sf.state = "settings"
-            sc.settings()
+            cut.settings()
             sf.selected_valg_4 = False
 
     if sf.state == "credits":
         
         if sf.selected_valg_4:
             sf.state = "settings"
-            sc.settings()
+            cut.settings()
             sf.selected_valg_4 = False
 
     if sf.state == "music":
@@ -193,7 +193,7 @@ while running:
 
         if sf.selected_valg_4:
             sf.state = "settings"
-            sc.settings()
+            cut.settings()
             sf.selected_valg_4 = False
     
     if sf.state == "choice":
@@ -202,10 +202,10 @@ while running:
         if sf.selected_valg_1:
             if tree.move_selceted:
                 tree.move_selceted = False
-                sc.choice()
+                cut.choice()
             else:
                 tree.move_selceted = True
-                sc.choice()
+                cut.choice()
             sf.selected_valg_1 = False
 
         if sf.selected_valg_2:
@@ -225,7 +225,7 @@ while running:
         if sf.selected_valg_4:
             sf.state = "menu"
             choice = False
-            sc.menu()
+            cut.menu()
             sf.selected_valg_4 = False                                                          
 
     if sf.state == "quit":
@@ -240,6 +240,7 @@ while running:
 #        ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
 
     if sf.state == "game":
+        sf.cutsceen = True
         sf.state == "0.0.0.0"
 
 

@@ -1,6 +1,6 @@
 import pygame
 import story_functions as sf
-import short_cut as sc
+import short_cut as cut
     
 box_w = 50
 box_h = box_w/2
@@ -71,43 +71,26 @@ def choice_tree():
         elif block_type == 1:
            pygame.draw.ellipse(sf.main_canvas, sf.black,(rx,ry,box_w,box_h),4)
            pygame.draw.ellipse(sf.main_canvas,sf.green,((rx+2),(ry+2),(box_w-4),(box_h-4)) )
-        if place == "0:0":  
-            hint = hint_list[2]
-            sc.choice()
-        elif place == "-1:1" or place == "0:1" or place ==  "1:1":
-            hint = hint_list[3]
-            sc.choice()
-        elif place == "-2:2":
-            hint = hint_list[4]
-            sc.choice()
-        elif place == "-1:2":
-            hint = hint_list[5]
-            sc.choice()
-        elif place == "0:2":
-            hint = hint_list[6]
-            sc.choice()
-        elif place == "1:2":
-            hint = hint_list[7]
-            sc.choice()
-        elif place == "2:2":
-            hint = hint_list[9]
-            sc.choice()
-        elif place == "3:2":
-            hint = hint_list[8]
-            sc.choice()
-        elif place == "0:3":
-            hint = hint_list[10]
-            sc.choice()
-        elif place == "2:3":
-            hint = hint_list[11]
-            sc.choice()
-        elif place == "0:4" or place == "2:4":
-            hint = hint_list[12]
-            sc.choice()
+           
+        place_hints = {
+            "0:0":  2,
+            "-1:1": 3, "0:1": 3, "1:1": 3,
+            "-2:2": 4,
+            "-1:2": 5,
+            "0:2":  6,
+            "1:2":  7,
+            "2:2":  9,
+            "3:2":  8,
+            "0:3":  10,
+            "2:3":  11,
+            "0:4":  12, "2:4": 12,
+        }
 
+        if place in place_hints:
+            hint = hint_list[place_hints[place]]
+            cut.choice()
         else:
             hint = hint_list[0]
-    pygame.draw.circle(sf.main_canvas, sf.red, (middel_x,middel_y), 3)
 
 def check_out():
     global is_place
