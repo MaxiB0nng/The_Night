@@ -92,6 +92,8 @@ def choice_tree():
         else:
             hint = hint_list[0]
 
+    pygame.draw.circle(sf.main_canvas, sf.red, (middel_x,middel_y), 3)
+
 def check_out():
     global is_place
     for item in box_list_1:

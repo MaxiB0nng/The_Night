@@ -1,0 +1,41 @@
+Date : 2026-05-13 10:56:43
+Directory : /home/maxibonng/Desktop/story games/The Night
+Total : 12 files,  664 codes, 40 comments, 150 blanks, all 854 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Python   |          6 |        609 |         40 |        150 |        799 |
+| XML      |          6 |         55 |          0 |          0 |         55 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                         | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                            |         12 |        664 |         40 |        150 |        854 |
+| . (Files)                                                                                    |          6 |        609 |         40 |        150 |        799 |
+| .idea                                                                                        |          6 |         55 |          0 |          0 |         55 |
+| .idea (Files)                                                                                |          4 |         29 |          0 |          0 |         29 |
+| .idea/inspectionProfiles                                                                     |          2 |         26 |          0 |          0 |         26 |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                     | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/maxibonng/Desktop/story games/The Night/.idea/8 bit game.iml                           | XML      |          8 |          0 |          0 |          8 |
+| /home/maxibonng/Desktop/story games/The Night/.idea/inspectionProfiles/Project_Default.xml   | XML      |         20 |          0 |          0 |         20 |
+| /home/maxibonng/Desktop/story games/The Night/.idea/inspectionProfiles/profiles_settings.xml | XML      |          6 |          0 |          0 |          6 |
+| /home/maxibonng/Desktop/story games/The Night/.idea/misc.xml                                 | XML      |          7 |          0 |          0 |          7 |
+| /home/maxibonng/Desktop/story games/The Night/.idea/modules.xml                              | XML      |          8 |          0 |          0 |          8 |
+| /home/maxibonng/Desktop/story games/The Night/.idea/vcs.xml                                  | XML      |          6 |          0 |          0 |          6 |
+| /home/maxibonng/Desktop/story games/The Night/The_night.py                                   | Python   |        189 |         21 |         45 |        255 |
+| /home/maxibonng/Desktop/story games/The Night/choice_tree.py                                 | Python   |        110 |          1 |         29 |        140 |
+| /home/maxibonng/Desktop/story games/The Night/log.py                                         | Python   |         21 |          0 |          4 |         25 |
+| /home/maxibonng/Desktop/story games/The Night/save_load.py                                   | Python   |         10 |          0 |          5 |         15 |
+| /home/maxibonng/Desktop/story games/The Night/short_cut.py                                   | Python   |         17 |          0 |          5 |         22 |
+| /home/maxibonng/Desktop/story games/The Night/story_functions.py                             | Python   |        262 |         18 |         62 |        342 |
+| Total                                                                                        |          |        664 |         40 |        150 |        854 |
++----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

@@ -1,5 +1,6 @@
 import pygame
 import log
+import short_cut as cut
 
 black = (15, 25, 15) #0F190E
 green = (10, 142, 10) #0A8E0A
@@ -133,7 +134,8 @@ def make_screen():
     pygame.display.set_icon(the_night_logo)  # Sæt ikonet for vinduet
 
     # Opret skrifttype (angiv skrifttype og størrelse)
-    font_path = "Pixelon-OGALo.ttf"  # Sti til din skrifttype-fil
+    #https://befonts.com/author/studioaktype
+    font_path = "Pixel.ttf"  # font made by studioaktype
     pygame.font.init()
     font = pygame.font.FontType(font_path, 11)
 
@@ -226,6 +228,42 @@ def text_redraw():
     elif valg == 6:
         text_canvas.fill(green)
 
+def choice_select(state,
+                  state_to1,cut_to1,
+                  state_to2,cut_to2,
+                  state_to3,cut_to3,
+                  state_to4,cut_to4):
+    global selected_valg_1,selected_valg_2,selected_valg_3,selected_valg_4
+
+    if selected_valg_1:
+        if state_to1 != None:
+            state = state_to1
+        if cut_to1 != None:
+            cut_to1()
+        selected_valg_1 = False
+
+    elif selected_valg_2:
+        if state_to2 != None:
+            state = state_to2
+        if cut_to2 != None:
+            cut_to2()
+        selected_valg_2 = False        
+    
+    elif selected_valg_3:
+        if state_to3 != None:
+            state = state_to3
+        if cut_to3 != None:
+            cut_to3()
+        selected_valg_3 = False        
+    
+    elif selected_valg_4:
+        if state_to4 != None:
+            state = state_to4
+        if cut_to4 != None:
+            cut_to4()
+        selected_valg_4 = False
+    
+
 def redraw(state):
     global startup_sequence, startup_index,startup_next_time,  scaled_width, scaled_height 
     text_redraw()
@@ -239,7 +277,7 @@ def redraw(state):
         ("Opening", "The_Night", "Made By MaxiBonng", 1000),
         ("Running simulation", "-", "Made By MaxiBonng", 1000),
         ("Running simulation", "December 12th", "-", 1000),
-        ("Running simulation", "December 12th", "case #19981112", 500),
+        ("Running simulation", "December 12th", "Case #19981112", 500),
         ("Loading", "-", "-", 500),
         ("Loading", "camp_fire_2.png", "---------- 0%", None),
         ("Loading", "camp_fire.png", "#--------- 10%", None),

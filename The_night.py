@@ -111,9 +111,10 @@ while running:
     if sf.state == "menu":
         cut.menu()
 
+
         if sf.selected_valg_1:
             sf.state = "game"
-            sf.selected_valg_2 = False
+            sf.selected_valg_1 = False
 
         if sf.selected_valg_2:
             sf.state = "settings"
@@ -126,7 +127,7 @@ while running:
             sf.selected_valg_3 = False
 
         if sf.selected_valg_4:
-            sf.state = "quit"
+            running = False
 
     if sf.state == "settings":
         cut.settings()
