@@ -110,127 +110,63 @@ while running:
 
     if sf.state == "menu":
         cut.menu()
-
-
-        if sf.selected_valg_1:
-            sf.state = "game"
-            sf.selected_valg_1 = False
-
-        if sf.selected_valg_2:
-            sf.state = "settings"
-            cut.settings()
-            sf.selected_valg_2 = False
-        
-        if sf.selected_valg_3:
-            sf.state = "choice"
-            cut.choice()
-            sf.selected_valg_3 = False
-
-        if sf.selected_valg_4:
-            running = False
+        sf.choice_select("game",None,
+                         "settings",cut.settings,
+                         "choice",cut.choice,
+                         "quit",None)
 
     if sf.state == "settings":
         cut.settings()
+        sf.choice_select("screen",cut.screen,
+                         "music",cut.musik,
+                         "credits",cut.credits,
+                         "menu",cut.menu)
 
-        if sf.selected_valg_1:
-            sf.state = "screen"
-            cut.screen()
-            sf.selected_valg_1 = False
-
-        if sf.selected_valg_2:
-            sf.state = "music"
-            sf.story_update("music","-","-",)
-            sf.valg_update("-","-","-","back",)
-            sf.selected_valg_2 = False
-
-        if sf.selected_valg_3:
-            sf.state = "credits"
-            sf.story_update("Programer -MaxiBonng"
-                        ,"Art -Maxibonng"
-                        ,"Music -MaxiBonng")
-            sf.valg_update("-", "-", "-", "back")
-            sf.selected_valg_3 = False
-
-        if sf.selected_valg_4:
-            sf.state = "menu"
-            cut.menu()
-            sf.selected_valg_4 = False
-    
     if sf.state == "screen":
         cut.screen()
-
         if sf.selected_valg_2:
             sf.scale += 0.5
             if sf.scale >= 6:
                 sf.scale = 6
             sf.make_screen()
-            cut.screen()
-            need_redraw = True
-            sf.selected_valg_2 = False
 
         if sf.selected_valg_3:
             sf.scale -= 0.5
             if sf.scale <= 1:
                 sf.scale = 1
             sf.make_screen()
-            cut.screen()
-            sf.selected_valg_3 = False
 
-        if sf.selected_valg_4:
-            sf.state = "settings"
-            cut.settings()
-            sf.selected_valg_4 = False
+        sf.choice_select(None,None,
+                         None,cut.screen,
+                         None,cut.screen,
+                         "settings",cut.settings)
 
     if sf.state == "credits":
         
-        if sf.selected_valg_4:
-            sf.state = "settings"
-            cut.settings()
-            sf.selected_valg_4 = False
+        sf.choice_select(None,None,
+                         None,None,
+                         None,None,
+                         "settings",cut.settings)
 
     if sf.state == "music":
-        sf.story_update("music","-","-",)
-        sf.valg_update("-","-","-","back",)
 
-        if sf.selected_valg_4:
-            sf.state = "settings"
-            cut.settings()
-            sf.selected_valg_4 = False
+        sf.choice_select(None,None,
+                         None,None,
+                         None,None,
+                         "settings",cut.settings)
     
     if sf.state == "choice":
-        choice = True
 
         if sf.selected_valg_1:
             if tree.move_selceted:
                 tree.move_selceted = False
-                cut.choice()
             else:
                 tree.move_selceted = True
-                cut.choice()
-            sf.selected_valg_1 = False
-
-        if sf.selected_valg_2:
-            if tree.move_selceted:
-                tree.moveing(1)
-            else:
-                tree.moveing(2)
-            sf.selected_valg_2 = False
-
-        if sf.selected_valg_3:
-            if tree.move_selceted:
-                tree.moveing(3)
-            else:
-                tree.moveing(4)
-            sf.selected_valg_3 = False
-
-        if sf.selected_valg_4:
-            sf.state = "menu"
-            choice = False
-            cut.menu()
-            sf.selected_valg_4 = False                                                          
-
-    if sf.state == "quit":
-        running = False
+        
+        sf.choice_select(None,cut.choice,
+                        None,None,
+                        None,None,
+                        "menu",cut.menu)
 
 #        ▄▄▄▄                                
 #      ██▀▀▀▀█                               
@@ -246,9 +182,10 @@ while running:
 
 
     if need_redraw:
-        if choice:
+        if sf.state == "choice":
             tree.choice_tree()
-            choice = False
+        if sf.state == "quit":
+            running = False
         sf.redraw(sf.state)
         need_redraw = False
 

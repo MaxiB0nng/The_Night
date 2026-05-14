@@ -1,5 +1,5 @@
 import pygame
-import log
+import log as log
 import short_cut as cut
 
 black = (15, 25, 15) #0F190E
@@ -33,6 +33,26 @@ state = "running"
 # state = "menu" #den statien som spiler er på 
 #start på "running"
 valg = int(1) #de valg som spiler har max 4
+
+
+startup_sequence = [
+    ("Opening", "The_Night", "Made By MaxiBonng", 1000),
+    ("Running simulation", "-", "Made By MaxiBonng", 1000),
+    ("Running simulation", "December 12th", "-", 1000),
+    ("Running simulation", "December 12th", "Case #19981112", 500),
+    ("Loading", "-", "-", 500),
+    ("Loading", "log.py", "---------- 0%", None),
+    ("Loading", "short_cut.py", "##-------- 20%", None),
+    ("Loading", "save_load.py", "####------ 40%", None),
+    ("Loading", "choice_tree.py", "######---- 60%", None),
+    ("Loading", "story_functions.py", "#######--- 70%", None),
+    ("Running", "The_Night.py", "#########- 90%", 400),
+    ("Welcome", "Mr.############", "-", 1000),
+    ("-","-","-", 1500)
+]
+
+glitch = [pygame.image.load(f"img/start_up/glitch_{i}.png")
+        for i in range(1, 10)]
 
 
 # Indlæs billede
@@ -228,12 +248,11 @@ def text_redraw():
     elif valg == 6:
         text_canvas.fill(green)
 
-def choice_select(state,
-                  state_to1,cut_to1,
+def choice_select(state_to1,cut_to1,
                   state_to2,cut_to2,
                   state_to3,cut_to3,
                   state_to4,cut_to4):
-    global selected_valg_1,selected_valg_2,selected_valg_3,selected_valg_4
+    global selected_valg_1,selected_valg_2,selected_valg_3,selected_valg_4,state
 
     if selected_valg_1:
         if state_to1 != None:
@@ -261,8 +280,7 @@ def choice_select(state,
             state = state_to4
         if cut_to4 != None:
             cut_to4()
-        selected_valg_4 = False
-    
+        selected_valg_4 = False 
 
 def redraw(state):
     global startup_sequence, startup_index,startup_next_time,  scaled_width, scaled_height 
@@ -271,32 +289,6 @@ def redraw(state):
     print(state)
     log.log(state ,valg, valg_log)
     log.first_log = False
-
-    # Endelig skærmstørrelse beregnes
-    startup_sequence = [
-        ("Opening", "The_Night", "Made By MaxiBonng", 1000),
-        ("Running simulation", "-", "Made By MaxiBonng", 1000),
-        ("Running simulation", "December 12th", "-", 1000),
-        ("Running simulation", "December 12th", "Case #19981112", 500),
-        ("Loading", "-", "-", 500),
-        ("Loading", "camp_fire_2.png", "---------- 0%", None),
-        ("Loading", "camp_fire.png", "#--------- 10%", None),
-        ("Loading", "front_tent.png", "##-------- 20%", None),
-        ("Loading", "forest_1.png", "###------- 30%", None),
-        ("Loading", "forest_2.png", "###------ 30%", None),
-        ("Loading", "forest_2_1.png", "####------ 40%", None),
-        ("Loading", "forest_camp.png", "#####----- 50%", None),
-        ("Loading", "forest_camp_2.png", "######---- 60%", None),
-        ("Loading", "start_cut_sceen.png", "#######--- 70%", None),
-        ("Loading", "logo.png", "########-- 80%", None),
-        ("Loading", "The_Night.py", "#########- 90%", 400),
-        ("Opening", "-", "########## 100%", 1000),
-        ("Welcome", "Mr.############", "-", 1000),
-        ("-","-","-", 1500)
-    ]
-
-    glitch = [pygame.image.load(f"img/start_up/glitch_{i}.png")
-            for i in range(1, 10)]
 
     if state == "running":
         if startup_index == 1:
@@ -319,8 +311,9 @@ def redraw(state):
             main_canvas.blit(glitch[8], (image_x, image_y))
         text_canvas.fill(green)
 
-    if state == "menu" or state == "settings" or state == "screen":
+    elif state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
+
 
     canvas.blit(main_canvas, (3, 3))  # Tegn hoved-canvas på det primære canvas
     canvas.blit(story_canvas, (3, 119))  # Tegn tekst-canvas nederst i det primære canvas
@@ -332,8 +325,7 @@ def redraw(state):
         if monitor_height >= monitor_width:
            SCREEN.blit(scaled_canvas, (0, height_offset))
         if monitor_width >= monitor_height:
-            SCREEN.blit(scaled_canvas, (width_offset, 0))
-              
+            SCREEN.blit(scaled_canvas, (width_offset, 0))       
     else:
         SCREEN.blit(scaled_canvas, (0, 0))
 

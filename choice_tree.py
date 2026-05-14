@@ -86,11 +86,12 @@ def choice_tree():
             "0:4":  12, "2:4": 12,
         }
 
-        if place in place_hints:
-            hint = hint_list[place_hints[place]]
-            cut.choice()
-        else:
-            hint = hint_list[0]
+    if place in place_hints:
+        hint = hint_list[place_hints[place]]
+    else:
+        hint = hint_list[0]
+    cut.choice()   # called once
+
 
     pygame.draw.circle(sf.main_canvas, sf.red, (middel_x,middel_y), 3)
 
