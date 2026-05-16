@@ -17,6 +17,10 @@ selected_valg_2 = False
 selected_valg_3 = False
 selected_valg_4 = False
 
+prev_story1 = "-"
+prev_story2 = "-"
+prev_story3 = "-"
+
 image_x = 0
 image_y = 0
 
@@ -27,6 +31,8 @@ fullscreen = False
 cutsceen_index = 0
 cutsceen_next_time = 0
 
+cutsceen_img_index = 0
+
 #player variabler
 state = "running"
 # state = "menu" #den statien som spiler er på 
@@ -34,61 +40,61 @@ state = "running"
 valg = int(1) #de valg som spiler har max 4
 
 startup_sequence = [
-    (0,"Opening", "The_Night", "Made By MaxiBonng", 1000),
-    (1,"Running simulation", "-", "Made By MaxiBonng", 1000),
-    (2,"Running simulation", "December 12th", "-", 1000),
-    (3,"Running simulation", "December 12th", "Case #19981112", 500),
-    (4,"Loading", "-", "-", 500),
-    (5,"Loading", "log.py", "---------- 0%", None),
-    (5,"Loading", "short_cut.py", "##-------- 20%", None),
-    (6,"Loading", "save_load.py", "####------ 40%", None),
-    (6,"Loading", "choice_tree.py", "######---- 60%", None),
-    (7,"Loading", "story_functions.py", "#######--- 70%", None),
-    (7,"Loading", "img/logo.png", "#######--- 71%", None),
-    (7,"Loading", "img/start_cut_sceen.png", "#######--- 72%", None),
-    (7,"Loading", "img/start_screen.png", "#######--- 73%", None),
-    (7,"Loading", "img/start_up/glitch_1.png", "#######--- 74%", None),
-    (7,"Loading", "img/start_up/glitch_2.png", "#######--- 74%", None),
-    (7,"Loading", "img/start_up/glitch_3.png", "#######--- 75%", None),
-    (7,"Loading", "img/start_up/glitch_4.png", "#######--- 75%", None),
-    (7,"Loading", "img/start_up/glitch_5.png", "#######--- 76%", None),
-    (7,"Loading", "img/start_up/glitch_6.png", "#######--- 77%", None),
-    (7,"Loading", "img/start_up/glitch_7.png", "#######--- 77%", None),
-    (7,"Loading", "img/start_up/glitch_8.png", "#######--- 78%", None),
-    (7,"Loading", "img/start_up/glitch_9.png", "#######--- 79%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_1.png", "########-- 80%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_2.png", "########-- 80%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_3.png", "########-- 80%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_4.png", "########-- 81%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_5.png", "########-- 81%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_6.png", "########-- 81%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_7.png", "########-- 82%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_8.png", "########-- 82%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_9.png", "########-- 82%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_10.png", "########-- 83%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_11.png", "########-- 83%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_12.png", "########-- 83%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_13.png", "########-- 84%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_14.png", "########-- 84%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_15.png", "########-- 84%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_16.png", "########-- 85%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_17.png", "########-- 85%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_18.png", "########-- 85%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_19.png", "########-- 86%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_20.png", "########-- 86%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_21.png", "########-- 86%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_22.png", "########-- 87%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_23.png", "########-- 87%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_24.png", "########-- 87%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_25.png", "########-- 88%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_26.png", "########-- 88%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_27.png", "########-- 88%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_28.png", "########-- 89%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_29.png", "########-- 89%", None),
-    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_30.png", "########-- 89%", None),
-    (8,"Running", "The_Night.py", "#########- 90%", 400),
-    (9,"Welcome", "Mr.############", "-", 1000),
-    (9,"-","-","-", 1500)
+    (0,(0,"Opening", "The_Night", "Made By MaxiBonng", 1000)),
+    (0,(1,"Running simulation", "-", "Made By MaxiBonng", 1000)),
+    (0,(2,"Running simulation", "December 12th", "-", 1000)),
+    (0,(3,"Running simulation", "December 12th", "Case #19981112", 500)),
+    (0,(4,"Loading", "-", "-", 500)),
+    (0,(5,"Running", "log.py", "---------- 0%", None)),
+    (0,(5,None, "short_cut.py", "##-------- 20%", None)),
+    (0,(6,None, "save_load.py", "####------ 40%", None)),
+    (0,(6,None, "choice_tree.py", "######---- 60%", None)),
+    (0,(7,None, "story_functions.py", "#######--- 70%", None)),
+    (0,(7,None, "logo.png", "#######--- 71%", None)),
+    (0,(7,None, "start_cut_sceen.png", "#######--- 72%", None)),
+    (0,(7,None, "start_screen.png", "#######--- 73%", None)),
+    (0,(7,None, "glitch_1.png", "#######--- 74%", None)),
+    (0,(7,None, "glitch_2.png", "#######--- 74%", None)),
+    (0,(7,None, "glitch_3.png", "#######--- 75%", None)),
+    (0,(7,None, "glitch_4.png", "#######--- 75%", None)),
+    (0,(7,None, "glitch_5.png", "#######--- 76%", None)),
+    (0,(7,None, "glitch_6.png", "#######--- 77%", None)),
+    (0,(7,None, "glitch_7.png", "#######--- 77%", None)),
+    (0,(7,None, "glitch_8.png", "#######--- 78%", None)),
+    (0,(7,None, "glitch_9.png", "#######--- 79%", None)),
+    (0,(8,None, "opening_cutsceen_1.png", "########-- 80%", None)),
+    (0,(8,None, "opening_cutsceen_2.png", "########-- 80%", None)),
+    (0,(8,None, "opening_cutsceen_3.png", "########-- 80%", None)),
+    (0,(8,None, "opening_cutsceen_4.png", "########-- 81%", None)),
+    (0,(8,None, "opening_cutsceen_5.png", "########-- 81%", None)),
+    (0,(8,None, "opening_cutsceen_6.png", "########-- 81%", None)),
+    (0,(8,None, "opening_cutsceen_7.png", "########-- 82%", None)),
+    (0,(8,None, "opening_cutsceen_8.png", "########-- 82%", None)),
+    (0,(8,None, "opening_cutsceen_9.png", "########-- 82%", None)),
+    (0,(8,None, "opening_cutsceen_10.png", "########-- 83%", None)),
+    (0,(8,None, "opening_cutsceen_11.png", "########-- 83%", None)),
+    (0,(8,None, "opening_cutsceen_12.png", "########-- 83%", None)),
+    (0,(8,None, "opening_cutsceen_13.png", "########-- 84%", None)),
+    (0,(8,None, "opening_cutsceen_14.png", "########-- 84%", None)),
+    (0,(8,None, "opening_cutsceen_15.png", "########-- 84%", None)),
+    (0,(8,None, "opening_cutsceen_16.png", "########-- 85%", None)),
+    (0,(8,None, "opening_cutsceen_17.png", "########-- 85%", None)),
+    (0,(8,None, "opening_cutsceen_18.png", "########-- 85%", None)),
+    (0,(8,None, "opening_cutsceen_19.png", "########-- 86%", None)),
+    (0,(8,None, "opening_cutsceen_20.png", "########-- 86%", None)),
+    (0,(8,None, "opening_cutsceen_21.png", "########-- 86%", None)),
+    (0,(8,None, "opening_cutsceen_22.png", "########-- 87%", None)),
+    (0,(8,None, "opening_cutsceen_23.png", "########-- 87%", None)),
+    (0,(8,None, "opening_cutsceen_24.png", "########-- 87%", None)),
+    (0,(8,None, "opening_cutsceen_25.png", "########-- 88%", None)),
+    (0,(8,None, "opening_cutsceen_26.png", "########-- 88%", None)),
+    (0,(8,None, "opening_cutsceen_27.png", "########-- 88%", None)),
+    (0,(8,None, "opening_cutsceen_28.png", "########-- 89%", None)),
+    (0,(8,None, "opening_cutsceen_29.png", "########-- 89%", None)),
+    (0,(8,None, "opening_cutsceen_30.png", "########-- 89%", None)),
+    (0,(8,"Running", "The_Night.py", "#########- 90%", 400)),
+    (0,(9,"Welcome", "Mr.############", "-", 1000)),
+    (0,(9,"-","-","-", 1500))
 ]
 
 
@@ -97,59 +103,27 @@ glitch = [pygame.image.load(f"img/start_up/glitch_{i}.png")
         for i in range(1, 10)]
 
 opening_cutsceen_list = [
-    (0,"Opening","Opening_cutsceen","Loading .", 1000),
-    (0,"Running","Opening_cutsceen","Loading ..", 1000),
-    (1,"Running","Opening_cutsceen","Loading ...", 500),
-    (1 ,"Running","Its night","-", 500),
-    (2 ,"Running","Its night","-", 500),
-    (3 ,"Running","Its night","-", 500),
-    (4 ,"Running","Its night","-", 500),
-    (5 ,"Running","Its night","-", 500),
-    (6 ,"Running","Its night","-", 500),
-    (7 ,"Running","Its night","-", 500),
-    (8 ,"Running","Your driving home","-", 500),
-    (9 ,"Running","Your driving home","-", 500),
-    (10,"Running","Your driving home","-", 500),
-    (11,"Running","Your driving home","-", 500),
-    (12,"Running","Your driving home","-", 500),
-    (13,"Running","Your driving home","-", 500),
-    (10,"Running","Your driving home","-", 500),
-    (11,"Running","Your driving home","-", 500),
-    (12,"Running","Your driving home","-", 500),
-    (13,"Running","Your driving home","-", 500),
-    (10,"Running","Your driving home","-", 500),
-    (11,"Running","Your driving home","-", 500),
-    (12,"Running","Your driving home","-", 500),
-    (13,"Running","Your driving home","-", 500),
-    (10,"Running","You just got back from work","-", 500),
-    (11,"Running","You just got back from work","-", 500),
-    (12,"Running","You just got back from work","-", 500),
-    (13,"Running","You just got back from work","-", 500),
-    (14,"Running","You just got back from work","-", 500),
-    (15,"Running","You just got back from work","-", 500),
-    (16,"Running","You just got back from work","-", 500),
-    (17,"Running","You just got back from work","-", 500),
-    (18,"Running","You just got back from work","-", 500),
-    (19,"Running","You just got back from work","-", 500),
-    (20,"Running","You just got back from work","-", 500),
-    (21,"Running","You just got back from work","-", 500),
-    (22,"Running","You just got back from work","-", 500),
-    (23,"Running","-","-", 500),
-    (24,"Running","-","-", 500),
-    (25,"Running","-","-", 500),
-    (26,"Running","-","-", 500),
-    (27,"Running","-","-", 500),
-    (28,"Running","-","-", 500),
-    (29,"Running","-","-", 500),
-    (30,"Running","STARTING GAME","HAVE FUN.", 1000),
-    (0,"Running","STARTING GAME","HAVE FUN..", 500),
-    (0,"Running","STARTING GAME","HAVE FUN...", 2000),
-
+    (0,(0,"Opening","Opening_cutsceen","Loading .", 1000)),
+    (0,(0,"Running","Opening_cutsceen","Loading ..", 1000)),
+    (0,(1,"Running","Opening_cutsceen","Loading ...", 500)),
+    (0,(1 ,"Running","Its night","-", 500)),
+    (0,(2 ,None,"Its night",None, 500)),
+    (1,(3,7,500)),
+    (0,(8 ,None,"Your driving home",None, 500)),
+    (1,(9,13,500)),
+    (1,(10,13,500)),
+    (1,(10,13,500)),
+    (0,(10,None,"You just got back from work",None, 500)),
+    (1,(11,22,500)),
+    (0,(23,None,"-",None, 500)),
+    (1,(24,29,500)),
+    (0,(30,None,"STARTING GAME","HAVE FUN.", 1000)),
+    (0,(0,"Running","STARTING GAME","HAVE FUN..", 500)),
+    (0,(0,"Running","STARTING GAME","HAVE FUN...", 2000)),
 ]
 
 opening_cutsceen = [pygame.image.load(f"img\opening_cutsceen/opening_cutsceen_{i}.png")
                     for i in range(1, 31)]
-
 
 # Indlæs billede
 def image_make():
@@ -287,11 +261,26 @@ def valg_update(v1 ,v2, v3, v4):
 
 def story_update(text1, text2, text3):
     global text_story, text_story_2, text_story_3
+    global prev_story1 ,prev_story2 ,prev_story3
     story_canvas.fill(black)
     
-    text_story = font.render(text1, True, green)
-    text_story_2 = font.render(text2, True, green)
-    text_story_3 = font.render(text3, True, green)
+    if text1 == None:
+        text_story = font.render(prev_story1, True, green)
+    else:    
+        text_story = font.render(text1, True, green)
+        prev_story1 = text1
+    
+    if text2 == None:
+        text_story_2 = font.render(prev_story2, True, green)
+    else:
+        text_story_2 = font.render(text2, True, green)
+        prev_story2 = text2
+    
+    if text3 == None:
+        text_story_3 = font.render(prev_story3, True, green)
+    else:
+        text_story_3 = font.render(text3, True, green)
+        prev_story3 = text3
 
     story_canvas.blit(text_story, (valg_x, story_y))
     story_canvas.blit(text_story_2, (valg_x, story_y_2))
@@ -379,30 +368,49 @@ def choice_select(state_to1,cut_to1,
         selected_valg_4 = False
 
 def cutsceen(text_list, img_list, state_to, cut_to):
-    global state, cutsceen_index, cutsceen_next_time
+    global state, cutsceen_index, cutsceen_next_time, cutsceen_img_index
 
     now = pygame.time.get_ticks()
 
     if cutsceen_index < len(text_list):
         if now >= cutsceen_next_time:
-            img_index, text1, text2, text3, delay = text_list[cutsceen_index]
+            sceen_type, sceen_info = text_list[cutsceen_index]
 
-            if img_index == 0:
-                main_canvas.fill(green)
-            else:
-                main_canvas.blit(img_list[img_index - 1], (image_x, image_y))
-            if delay is None:
-                if state == "running":
-                    delay_ms = random.randint(50, 150)
-            else:
+            if sceen_type == 0:
+                img_index, text1, text2, text3, delay = sceen_info
+            
+                if img_index == 0:
+                    main_canvas.fill(green)
+                else:
+                    main_canvas.blit(img_list[img_index - 1], (image_x, image_y))
+                if delay is None:
+                    if state == "running":
+                        delay_ms = random.randint(50, 150)
+                else:
+                    delay_ms = delay
+                story_update(text1, text2, text3)
+                redraw(state)
+            if sceen_type == 1:
+                img_index_start, img_index_to, delay = sceen_info
+                current_img = img_index_start + cutsceen_img_index
+                main_canvas.blit(img_list[current_img - 1], (image_x, image_y))
                 delay_ms = delay
+                story_update(None, None, None)
+                redraw(state)
+                if current_img < img_index_to:
+                    cutsceen_img_index += 1
+                    cutsceen_next_time = now + delay_ms
+                    return
+                else:
+                    cutsceen_img_index = 0
+
             cutsceen_next_time = now + delay_ms
             cutsceen_index += 1
-            story_update(text1, text2, text3)
-            redraw(state)
+
     else:
         cutsceen_index = 0
         cutsceen_next_time = 0
+        cutsceen_img_index = 0
         state = state_to
         cut_to()
         redraw(state)
@@ -422,9 +430,9 @@ def redraw(state):
         main_canvas.blit(start_front, (image_x, image_y))
 
 
-    canvas.blit(main_canvas, (3, 3))  # Tegn hoved-canvas på det primære canvas
-    canvas.blit(story_canvas, (3, 119))  # Tegn tekst-canvas nederst i det primære canvas
-    canvas.blit(text_canvas, (3, 179))  # Tegn tekst-canvas nederst i det primære canvas
+    canvas.blit(main_canvas, (3, 3))
+    canvas.blit(story_canvas,(3, 119))
+    canvas.blit(text_canvas, (3, 179)) 
 
     # Skalér det samled e canvas og tegn det på skærmen
     scaled_canvas = pygame.transform.scale(canvas, (scaled_width, scaled_height))
