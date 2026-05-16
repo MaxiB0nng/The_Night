@@ -44,6 +44,48 @@ startup_sequence = [
     (6,"Loading", "save_load.py", "####------ 40%", None),
     (6,"Loading", "choice_tree.py", "######---- 60%", None),
     (7,"Loading", "story_functions.py", "#######--- 70%", None),
+    (7,"Loading", "img/logo.png", "#######--- 71%", None),
+    (7,"Loading", "img/start_cut_sceen.png", "#######--- 72%", None),
+    (7,"Loading", "img/start_screen.png", "#######--- 73%", None),
+    (7,"Loading", "img/start_up/glitch_1.png", "#######--- 74%", None),
+    (7,"Loading", "img/start_up/glitch_2.png", "#######--- 74%", None),
+    (7,"Loading", "img/start_up/glitch_3.png", "#######--- 75%", None),
+    (7,"Loading", "img/start_up/glitch_4.png", "#######--- 75%", None),
+    (7,"Loading", "img/start_up/glitch_5.png", "#######--- 76%", None),
+    (7,"Loading", "img/start_up/glitch_6.png", "#######--- 77%", None),
+    (7,"Loading", "img/start_up/glitch_7.png", "#######--- 77%", None),
+    (7,"Loading", "img/start_up/glitch_8.png", "#######--- 78%", None),
+    (7,"Loading", "img/start_up/glitch_9.png", "#######--- 79%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_1.png", "########-- 80%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_2.png", "########-- 80%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_3.png", "########-- 80%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_4.png", "########-- 81%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_5.png", "########-- 81%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_6.png", "########-- 81%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_7.png", "########-- 82%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_8.png", "########-- 82%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_9.png", "########-- 82%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_10.png", "########-- 83%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_11.png", "########-- 83%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_12.png", "########-- 83%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_13.png", "########-- 84%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_14.png", "########-- 84%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_15.png", "########-- 84%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_16.png", "########-- 85%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_17.png", "########-- 85%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_18.png", "########-- 85%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_19.png", "########-- 86%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_20.png", "########-- 86%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_21.png", "########-- 86%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_22.png", "########-- 87%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_23.png", "########-- 87%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_24.png", "########-- 87%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_25.png", "########-- 88%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_26.png", "########-- 88%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_27.png", "########-- 88%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_28.png", "########-- 89%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_29.png", "########-- 89%", None),
+    (8,"Loading", "img/opening_cutsceen/opening_cutsceen_30.png", "########-- 89%", None),
     (8,"Running", "The_Night.py", "#########- 90%", 400),
     (9,"Welcome", "Mr.############", "-", 1000),
     (9,"-","-","-", 1500)
@@ -122,7 +164,6 @@ def make_canvas():
     global text_valg_1, text_valg_b_1, text_valg_2, text_valg_b_2
     global text_valg_3, text_valg_b_3, text_valg_4, text_valg_b_4
     global story_y, story_y_2, story_y_3, text_story, text_story_2, text_story_3
-    global story_canvas_width
 
     #main_canvas det der kommer bilder på
     main_canvas_width = 314
@@ -245,7 +286,7 @@ def valg_update(v1 ,v2, v3, v4):
     text_valg_b_4 = font.render(valg_4, True, black)
 
 def story_update(text1, text2, text3):
-    global text_story, text_story_2, text_story_3, story_canvas_width
+    global text_story, text_story_2, text_story_3
     story_canvas.fill(black)
     
     text_story = font.render(text1, True, green)
@@ -351,7 +392,8 @@ def cutsceen(text_list, img_list, state_to, cut_to):
             else:
                 main_canvas.blit(img_list[img_index - 1], (image_x, image_y))
             if delay is None:
-                delay_ms = random.randint(50, 250)
+                if state == "running":
+                    delay_ms = random.randint(50, 150)
             else:
                 delay_ms = delay
             cutsceen_next_time = now + delay_ms
