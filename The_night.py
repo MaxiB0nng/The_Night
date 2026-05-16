@@ -79,27 +79,6 @@ while running:
                 elif event.key == pygame.K_m:
                     running = False
 
-    if sf.state == "running":
-        # Non-blocking startup sequence using pygame.time.get_ticks()
-        now = pygame.time.get_ticks()
-        if sf.startup_index < len(sf.startup_sequence):
-            text1, text2, text3, delay = sf.startup_sequence[sf.startup_index]
-            # When it's time to show the next step
-            if now >= sf.startup_next_time:
-                sf.story_update(text1, text2, text3)
-                sf.redraw(sf.state)
-                if delay is None:
-                    delay_ms = random.randint(50, 250)
-                else:
-                    delay_ms = delay
-                sf.startup_next_time = now + delay_ms
-                sf.startup_index += 1
-        else:
-            # Sequence finished — move to menu
-            need_redraw = True
-            sf.state = "menu"
-            cut.menu()
-
 #     ▄▄▄  ▄▄▄                               
 #     ███  ███                               
 #     ████████   ▄████▄   ██▄████▄  ██    ██ 
@@ -108,9 +87,12 @@ while running:
 #     ██    ██  ▀██▄▄▄▄█  ██    ██  ██▄▄▄███ 
 #     ▀▀    ▀▀    ▀▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀ 
 
+    if sf.state == "running":
+        sf.cutsceen(sf.startup_sequence,sf.glitch,"menu",cut.menu)
+
     if sf.state == "menu":
         cut.menu()
-        sf.choice_select("game",None,
+        sf.choice_select("opening_cutsceen",None,
                          "settings",cut.settings,
                          "choice",cut.choice,
                          "quit",None)
@@ -142,21 +124,18 @@ while running:
                          "settings",cut.settings)
 
     if sf.state == "credits":
-        
         sf.choice_select(None,None,
                          None,None,
                          None,None,
                          "settings",cut.settings)
 
     if sf.state == "music":
-
         sf.choice_select(None,None,
                          None,None,
                          None,None,
                          "settings",cut.settings)
     
     if sf.state == "choice":
-
         if sf.selected_valg_1:
             if tree.move_selceted:
                 tree.move_selceted = False
@@ -167,7 +146,6 @@ while running:
                         None,None,
                         None,None,
                         "menu",cut.menu)
-
 #        ▄▄▄▄                                
 #      ██▀▀▀▀█                               
 #     ██         ▄█████▄  ████▄██▄   ▄████▄  
@@ -176,10 +154,9 @@ while running:
 #      ██▄▄▄██  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█ 
 #        ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
 
-    if sf.state == "game":
-        sf.cutsceen = True
-        sf.state == "0.0.0.0"
 
+    if sf.state == "opening_cutsceen":
+        sf.cutsceen(sf.opening_cutsceen_list,sf.opening_cutsceen,"home_continue",cut.home_continue)
 
     if need_redraw:
         if sf.state == "choice":

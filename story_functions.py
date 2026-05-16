@@ -1,4 +1,5 @@
 import pygame
+import random
 import log as log
 import short_cut as cut
 
@@ -10,9 +11,6 @@ screen_width = 320
 screen_height = 240
 scale = int(3)
 
-# Index and timer for non-blocking startup sequence
-startup_index = 0
-startup_next_time = 0
 
 selected_valg_1 = False
 selected_valg_2 = False
@@ -26,7 +24,8 @@ log.first_log = True
 
 fullscreen = False
 
-cutsceen = False
+cutsceen_index = 0
+cutsceen_next_time = 0
 
 #player variabler
 state = "running"
@@ -34,25 +33,80 @@ state = "running"
 #start på "running"
 valg = int(1) #de valg som spiler har max 4
 
-
 startup_sequence = [
-    ("Opening", "The_Night", "Made By MaxiBonng", 1000),
-    ("Running simulation", "-", "Made By MaxiBonng", 1000),
-    ("Running simulation", "December 12th", "-", 1000),
-    ("Running simulation", "December 12th", "Case #19981112", 500),
-    ("Loading", "-", "-", 500),
-    ("Loading", "log.py", "---------- 0%", None),
-    ("Loading", "short_cut.py", "##-------- 20%", None),
-    ("Loading", "save_load.py", "####------ 40%", None),
-    ("Loading", "choice_tree.py", "######---- 60%", None),
-    ("Loading", "story_functions.py", "#######--- 70%", None),
-    ("Running", "The_Night.py", "#########- 90%", 400),
-    ("Welcome", "Mr.############", "-", 1000),
-    ("-","-","-", 1500)
+    (0,"Opening", "The_Night", "Made By MaxiBonng", 1000),
+    (1,"Running simulation", "-", "Made By MaxiBonng", 1000),
+    (2,"Running simulation", "December 12th", "-", 1000),
+    (3,"Running simulation", "December 12th", "Case #19981112", 500),
+    (4,"Loading", "-", "-", 500),
+    (5,"Loading", "log.py", "---------- 0%", None),
+    (5,"Loading", "short_cut.py", "##-------- 20%", None),
+    (6,"Loading", "save_load.py", "####------ 40%", None),
+    (6,"Loading", "choice_tree.py", "######---- 60%", None),
+    (7,"Loading", "story_functions.py", "#######--- 70%", None),
+    (8,"Running", "The_Night.py", "#########- 90%", 400),
+    (9,"Welcome", "Mr.############", "-", 1000),
+    (9,"-","-","-", 1500)
 ]
+
+
 
 glitch = [pygame.image.load(f"img/start_up/glitch_{i}.png")
         for i in range(1, 10)]
+
+opening_cutsceen_list = [
+    (0,"Opening","Opening_cutsceen","Loading .", 1000),
+    (0,"Running","Opening_cutsceen","Loading ..", 1000),
+    (1,"Running","Opening_cutsceen","Loading ...", 500),
+    (1 ,"Running","Its night","-", 500),
+    (2 ,"Running","Its night","-", 500),
+    (3 ,"Running","Its night","-", 500),
+    (4 ,"Running","Its night","-", 500),
+    (5 ,"Running","Its night","-", 500),
+    (6 ,"Running","Its night","-", 500),
+    (7 ,"Running","Its night","-", 500),
+    (8 ,"Running","Your driving home","-", 500),
+    (9 ,"Running","Your driving home","-", 500),
+    (10,"Running","Your driving home","-", 500),
+    (11,"Running","Your driving home","-", 500),
+    (12,"Running","Your driving home","-", 500),
+    (13,"Running","Your driving home","-", 500),
+    (10,"Running","Your driving home","-", 500),
+    (11,"Running","Your driving home","-", 500),
+    (12,"Running","Your driving home","-", 500),
+    (13,"Running","Your driving home","-", 500),
+    (10,"Running","Your driving home","-", 500),
+    (11,"Running","Your driving home","-", 500),
+    (12,"Running","Your driving home","-", 500),
+    (13,"Running","Your driving home","-", 500),
+    (10,"Running","You just got back from work","-", 500),
+    (11,"Running","You just got back from work","-", 500),
+    (12,"Running","You just got back from work","-", 500),
+    (13,"Running","You just got back from work","-", 500),
+    (14,"Running","You just got back from work","-", 500),
+    (15,"Running","You just got back from work","-", 500),
+    (16,"Running","You just got back from work","-", 500),
+    (17,"Running","You just got back from work","-", 500),
+    (18,"Running","You just got back from work","-", 500),
+    (19,"Running","You just got back from work","-", 500),
+    (20,"Running","You just got back from work","-", 500),
+    (21,"Running","You just got back from work","-", 500),
+    (22,"Running","You just got back from work","-", 500),
+    (23,"Running","-","-", 500),
+    (24,"Running","-","-", 500),
+    (25,"Running","-","-", 500),
+    (26,"Running","-","-", 500),
+    (27,"Running","-","-", 500),
+    (28,"Running","-","-", 500),
+    (29,"Running","-","-", 500),
+    (30,"Running","STARTING GAME","HAVE FUN.", 1000),
+    (0,"Running","STARTING GAME","HAVE FUN..", 500),
+    (0,"Running","STARTING GAME","HAVE FUN...", 2000),
+
+]
+
+opening_cutsceen = [pygame.image.load(f"img\opening_cutsceen/opening_cutsceen_{i}.png")
+                    for i in range(1, 31)]
 
 
 # Indlæs billede
@@ -68,6 +122,7 @@ def make_canvas():
     global text_valg_1, text_valg_b_1, text_valg_2, text_valg_b_2
     global text_valg_3, text_valg_b_3, text_valg_4, text_valg_b_4
     global story_y, story_y_2, story_y_3, text_story, text_story_2, text_story_3
+    global story_canvas_width
 
     #main_canvas det der kommer bilder på
     main_canvas_width = 314
@@ -190,7 +245,7 @@ def valg_update(v1 ,v2, v3, v4):
     text_valg_b_4 = font.render(valg_4, True, black)
 
 def story_update(text1, text2, text3):
-    global text_story, text_story_2, text_story_3
+    global text_story, text_story_2, text_story_3, story_canvas_width
     story_canvas.fill(black)
     
     text_story = font.render(text1, True, green)
@@ -280,7 +335,35 @@ def choice_select(state_to1,cut_to1,
             state = state_to4
         if cut_to4 != None:
             cut_to4()
-        selected_valg_4 = False 
+        selected_valg_4 = False
+
+def cutsceen(text_list, img_list, state_to, cut_to):
+    global state, cutsceen_index, cutsceen_next_time
+
+    now = pygame.time.get_ticks()
+
+    if cutsceen_index < len(text_list):
+        if now >= cutsceen_next_time:
+            img_index, text1, text2, text3, delay = text_list[cutsceen_index]
+
+            if img_index == 0:
+                main_canvas.fill(green)
+            else:
+                main_canvas.blit(img_list[img_index - 1], (image_x, image_y))
+            if delay is None:
+                delay_ms = random.randint(50, 250)
+            else:
+                delay_ms = delay
+            cutsceen_next_time = now + delay_ms
+            cutsceen_index += 1
+            story_update(text1, text2, text3)
+            redraw(state)
+    else:
+        cutsceen_index = 0
+        cutsceen_next_time = 0
+        state = state_to
+        cut_to()
+        redraw(state)
 
 def redraw(state):
     global startup_sequence, startup_index,startup_next_time,  scaled_width, scaled_height 
@@ -290,28 +373,10 @@ def redraw(state):
     log.log(state ,valg, valg_log)
     log.first_log = False
 
-    if state == "running":
-        if startup_index == 1:
-            main_canvas.blit(glitch[0], (image_x, image_y))
-        elif startup_index == 2:
-            main_canvas.blit(glitch[1], (image_x, image_y))
-        elif startup_index == 3:
-            main_canvas.blit(glitch[2], (image_x, image_y))
-        elif startup_index == 5:
-            main_canvas.blit(glitch[3], (image_x, image_y))
-        elif startup_index == 7:
-            main_canvas.blit(glitch[4], (image_x, image_y))
-        elif startup_index == 10:
-            main_canvas.blit(glitch[5], (image_x, image_y))
-        elif startup_index == 13:
-            main_canvas.blit(glitch[6], (image_x, image_y))
-        elif startup_index == 15:
-            main_canvas.blit(glitch[7], (image_x, image_y))
-        elif startup_index == 17:
-            main_canvas.blit(glitch[8], (image_x, image_y))
+    if state == "running" or state == "opening_cutsceen":
         text_canvas.fill(green)
 
-    elif state == "menu" or state == "settings" or state == "screen":
+    if state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
 
 
