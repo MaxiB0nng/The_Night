@@ -39,6 +39,15 @@ state = "running"
 #start på "running"
 valg = int(1) #de valg som spiler har max 4
 
+#        ▄▄▄▄                                                                        
+#      ██▀▀▀▀█              ██                                                       
+#     ██▀       ██    ██  ███████   ▄▄█████▄   ▄█████▄   ▄████▄    ▄████▄   ██▄████▄ 
+#     ██        ██    ██    ██      ██▄▄▄▄ ▀  ██▀    ▀  ██▄▄▄▄██  ██▄▄▄▄██  ██▀   ██ 
+#     ██▄       ██    ██    ██       ▀▀▀▀██▄  ██        ██▀▀▀▀▀▀  ██▀▀▀▀▀▀  ██    ██ 
+#      ██▄▄▄▄█  ██▄▄▄███    ██▄▄▄   █▄▄▄▄▄██  ▀██▄▄▄▄█  ▀██▄▄▄▄█  ▀██▄▄▄▄█  ██    ██ 
+#        ▀▀▀▀    ▀▀▀▀ ▀▀     ▀▀▀▀    ▀▀▀▀▀▀     ▀▀▀▀▀     ▀▀▀▀▀     ▀▀▀▀▀   ▀▀    ▀▀ 
+
+
 startup_sequence = [
     (0,(0,"Opening", "The_Night", "Made By MaxiBonng", 1000)),
     (0,(1,"Running simulation", "-", "Made By MaxiBonng", 1000)),
@@ -105,8 +114,8 @@ glitch = [pygame.image.load(f"img/start_up/glitch_{i}.png")
 opening_cutsceen_list = [
     (0,(0,"Opening","Opening_cutsceen","Loading .", 1000)),
     (0,(0,"Running","Opening_cutsceen","Loading ..", 1000)),
-    (0,(1,"Running","Opening_cutsceen","Loading ...", 500)),
-    (0,(1 ,"Running","Its night","-", 500)),
+    (0,(1,None,None,"Loading ...", 500)),
+    (0,(1 ,None,"Its night","-", 500)),
     (0,(2 ,None,"Its night",None, 500)),
     (1,(3,7,500)),
     (0,(8 ,None,"Your driving home",None, 500)),
@@ -118,13 +127,75 @@ opening_cutsceen_list = [
     (0,(23,None,"-",None, 500)),
     (1,(24,29,500)),
     (0,(30,None,"STARTING GAME","HAVE FUN.", 1000)),
-    (0,(0,"Running","STARTING GAME","HAVE FUN..", 500)),
-    (0,(0,"Running","STARTING GAME","HAVE FUN...", 2000)),
+    (0,(0,None,"STARTING GAME","HAVE FUN..", 500)),
+    (0,(0,None,None,"HAVE FUN...", 2000)),
 ]
 
 opening_cutsceen = [pygame.image.load(f"img\opening_cutsceen/opening_cutsceen_{i}.png")
                     for i in range(1, 31)]
 
+def cutsceen(text_list, img_list, state_to, cut_to):
+    global state, cutsceen_index, cutsceen_next_time, cutsceen_img_index
+
+    now = pygame.time.get_ticks()
+
+    if cutsceen_index < len(text_list):
+        if now >= cutsceen_next_time:
+            sceen_type, sceen_info = text_list[cutsceen_index]
+
+            if sceen_type == 0:
+                img_index, text1, text2, text3, delay = sceen_info
+            
+                if img_index == 0:
+                    main_canvas.fill(green)
+                else:
+                    main_canvas.blit(img_list[img_index - 1], (image_x, image_y))
+                if delay is None:
+                    if state == "running":
+                        delay_ms = random.randint(50, 150)
+                else:
+                    delay_ms = delay
+                story_update(text1, text2, text3)
+                redraw(state)
+            if sceen_type == 1:
+                img_index_start, img_index_to, delay = sceen_info
+
+                current_img = img_index_start + cutsceen_img_index
+
+                main_canvas.blit(img_list[current_img - 1], (image_x, image_y))
+
+                delay_ms = delay
+
+                story_update(None, None, None)
+                redraw(state)
+                
+                if current_img < img_index_to:
+                    cutsceen_img_index += 1
+                    cutsceen_next_time = now + delay_ms
+                    return
+                else:
+                    cutsceen_img_index = 0
+
+            cutsceen_next_time = now + delay_ms
+            cutsceen_index += 1
+
+    else:
+        cutsceen_index = 0
+        cutsceen_next_time = 0
+        cutsceen_img_index = 0
+        state = state_to
+        cut_to()
+        redraw(state)
+
+
+#        ▄▄▄▄                                                    
+#      ██▀▀▀▀█                                                   
+#     ██▀        ▄█████▄  ██▄████▄  ██▄  ▄██   ▄█████▄  ▄▄█████▄ 
+#     ██         ▀ ▄▄▄██  ██▀   ██   ██  ██    ▀ ▄▄▄██  ██▄▄▄▄ ▀ 
+#     ██▄       ▄██▀▀▀██  ██    ██   ▀█▄▄█▀   ▄██▀▀▀██   ▀▀▀▀██▄ 
+#      ██▄▄▄▄█  ██▄▄▄███  ██    ██    ████    ██▄▄▄███  █▄▄▄▄▄██ 
+#        ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀    ▀▀     ▀▀      ▀▀▀▀ ▀▀   ▀▀▀▀▀▀  
+                                                         
 # Indlæs billede
 def image_make():
     global start_front, start_cutsceen
@@ -237,7 +308,19 @@ def make_screen():
 
 make_screen()
 
+
+#     ▄▄    ▄▄            ▄▄▄▄               
+#     ▀██  ██▀            ▀▀██               
+#      ██  ██    ▄█████▄    ██       ▄███▄██ 
+#      ██  ██    ▀ ▄▄▄██    ██      ██▀  ▀██ 
+#       ████    ▄██▀▀▀██    ██      ██    ██ 
+#       ████    ██▄▄▄███    ██▄▄▄   ▀██▄▄███ 
+#       ▀▀▀▀     ▀▀▀▀ ▀▀     ▀▀▀▀    ▄▀▀▀ ██ 
+#                                    ▀████▀▀ 
+
+
 def valg_update(v1 ,v2, v3, v4):
+
     global valg_1 ,valg_2, valg_3, valg_4
     global text_valg_1, text_valg_2, text_valg_3, text_valg_4
     global text_valg_b_1, text_valg_b_2, text_valg_b_3, text_valg_b_4
@@ -258,80 +341,6 @@ def valg_update(v1 ,v2, v3, v4):
 
     text_valg_4 = font.render(valg_4, True, green)
     text_valg_b_4 = font.render(valg_4, True, black)
-
-def story_update(text1, text2, text3):
-    global text_story, text_story_2, text_story_3
-    global prev_story1 ,prev_story2 ,prev_story3
-    story_canvas.fill(black)
-    
-    if text1 == None:
-        text_story = font.render(prev_story1, True, green)
-    else:    
-        text_story = font.render(text1, True, green)
-        prev_story1 = text1
-    
-    if text2 == None:
-        text_story_2 = font.render(prev_story2, True, green)
-    else:
-        text_story_2 = font.render(text2, True, green)
-        prev_story2 = text2
-    
-    if text3 == None:
-        text_story_3 = font.render(prev_story3, True, green)
-    else:
-        text_story_3 = font.render(text3, True, green)
-        prev_story3 = text3
-
-    story_canvas.blit(text_story, (valg_x, story_y))
-    story_canvas.blit(text_story_2, (valg_x, story_y_2))
-    story_canvas.blit(text_story_3, (valg_x, story_y_3))
-
-def text_valg():
-    global selected_valg_1, selected_valg_2,selected_valg_3 , selected_valg_4
-    # Opdater teksten baseret på valget
-    if valg == 1:
-        selected_valg_1 = True
-    elif valg == 2:
-        selected_valg_2 = True 
-    elif valg == 3:
-        selected_valg_3 = True
-    elif valg == 4:
-        selected_valg_4 = True
-        
-def text_redraw():
-    global valg_log
-    
-    text_canvas.fill(black)
-    if valg == 1:
-        pygame.draw.rect(text_canvas, green, (0, valg_1_y, 318, 13))
-        text_canvas.blit(text_valg_b_1, (valg_x, valg_1_y))
-        text_canvas.blit(text_valg_2, (valg_x, valg_2_y))
-        text_canvas.blit(text_valg_3, (valg_x, valg_3_y))
-        text_canvas.blit(text_valg_4, (valg_x, valg_4_y))
-        valg_log = valg_1
-    elif valg == 2:
-        pygame.draw.rect(text_canvas, green, (0, valg_2_y, 318, 13))
-        text_canvas.blit(text_valg_1, (valg_x, valg_1_y))
-        text_canvas.blit(text_valg_b_2, (valg_x, valg_2_y))
-        text_canvas.blit(text_valg_3, (valg_x, valg_3_y))
-        text_canvas.blit(text_valg_4, (valg_x, valg_4_y))
-        valg_log = valg_2
-    elif valg == 3:
-        pygame.draw.rect(text_canvas, green, (0, valg_3_y, 318, 13))
-        text_canvas.blit(text_valg_1, (valg_x, valg_1_y))
-        text_canvas.blit(text_valg_2, (valg_x, valg_2_y))
-        text_canvas.blit(text_valg_b_3, (valg_x, valg_3_y))
-        text_canvas.blit(text_valg_4, (valg_x, valg_4_y))
-        valg_log = valg_3
-    elif valg == 4:
-        pygame.draw.rect(text_canvas, green, (0, valg_4_y, 318, 13))
-        text_canvas.blit(text_valg_1, (valg_x, valg_1_y))
-        text_canvas.blit(text_valg_2, (valg_x, valg_2_y))
-        text_canvas.blit(text_valg_3, (valg_x, valg_3_y))
-        text_canvas.blit(text_valg_b_4, (valg_x, valg_4_y))
-        valg_log = valg_4
-    elif valg == 6:
-        text_canvas.fill(green)
 
 def choice_select(state_to1,cut_to1,
                   state_to2,cut_to2,
@@ -367,53 +376,98 @@ def choice_select(state_to1,cut_to1,
             cut_to4()
         selected_valg_4 = False
 
-def cutsceen(text_list, img_list, state_to, cut_to):
-    global state, cutsceen_index, cutsceen_next_time, cutsceen_img_index
+def text_valg():
+    global selected_valg_1, selected_valg_2,selected_valg_3 , selected_valg_4
+    # Opdater teksten baseret på valget
+    if valg == 1:
+        selected_valg_1 = True
+    elif valg == 2:
+        selected_valg_2 = True 
+    elif valg == 3:
+        selected_valg_3 = True
+    elif valg == 4:
+        selected_valg_4 = True
 
-    now = pygame.time.get_ticks()
 
-    if cutsceen_index < len(text_list):
-        if now >= cutsceen_next_time:
-            sceen_type, sceen_info = text_list[cutsceen_index]
-
-            if sceen_type == 0:
-                img_index, text1, text2, text3, delay = sceen_info
-            
-                if img_index == 0:
-                    main_canvas.fill(green)
-                else:
-                    main_canvas.blit(img_list[img_index - 1], (image_x, image_y))
-                if delay is None:
-                    if state == "running":
-                        delay_ms = random.randint(50, 150)
-                else:
-                    delay_ms = delay
-                story_update(text1, text2, text3)
-                redraw(state)
-            if sceen_type == 1:
-                img_index_start, img_index_to, delay = sceen_info
-                current_img = img_index_start + cutsceen_img_index
-                main_canvas.blit(img_list[current_img - 1], (image_x, image_y))
-                delay_ms = delay
-                story_update(None, None, None)
-                redraw(state)
-                if current_img < img_index_to:
-                    cutsceen_img_index += 1
-                    cutsceen_next_time = now + delay_ms
-                    return
-                else:
-                    cutsceen_img_index = 0
-
-            cutsceen_next_time = now + delay_ms
-            cutsceen_index += 1
-
+#       ▄▄▄▄                                           
+#     ▄█▀▀▀▀█     ██                                   
+#     ██▄       ███████    ▄████▄    ██▄████  ▀██  ███ 
+#      ▀████▄     ██      ██▀  ▀██   ██▀       ██▄ ██  
+#          ▀██    ██      ██    ██   ██         ████▀  
+#     █▄▄▄▄▄█▀    ██▄▄▄   ▀██▄▄██▀   ██          ███   
+#      ▀▀▀▀▀       ▀▀▀▀     ▀▀▀▀     ▀▀          ██    
+#                                              ███     
+   
+def story_update(text1, text2, text3):
+    global text_story, text_story_2, text_story_3
+    global prev_story1 ,prev_story2 ,prev_story3
+    story_canvas.fill(black)
+    
+    if text1 == None:
+        text_story = font.render(prev_story1, True, green)
+    else:    
+        text_story = font.render(text1, True, green)
+        prev_story1 = text1
+    
+    if text2 == None:
+        text_story_2 = font.render(prev_story2, True, green)
     else:
-        cutsceen_index = 0
-        cutsceen_next_time = 0
-        cutsceen_img_index = 0
-        state = state_to
-        cut_to()
-        redraw(state)
+        text_story_2 = font.render(text2, True, green)
+        prev_story2 = text2
+    
+    if text3 == None:
+        text_story_3 = font.render(prev_story3, True, green)
+    else:
+        text_story_3 = font.render(text3, True, green)
+        prev_story3 = text3
+
+    story_canvas.blit(text_story, (valg_x, story_y))
+    story_canvas.blit(text_story_2, (valg_x, story_y_2))
+    story_canvas.blit(text_story_3, (valg_x, story_y_3))
+
+
+def text_redraw():
+    global valg_log
+    
+    text_canvas.fill(black)
+    if valg == 1:
+        pygame.draw.rect(text_canvas, green, (0, valg_1_y, 318, 13))
+        text_canvas.blit(text_valg_b_1, (valg_x, valg_1_y))
+        text_canvas.blit(text_valg_2, (valg_x, valg_2_y))
+        text_canvas.blit(text_valg_3, (valg_x, valg_3_y))
+        text_canvas.blit(text_valg_4, (valg_x, valg_4_y))
+        valg_log = valg_1
+    elif valg == 2:
+        pygame.draw.rect(text_canvas, green, (0, valg_2_y, 318, 13))
+        text_canvas.blit(text_valg_1, (valg_x, valg_1_y))
+        text_canvas.blit(text_valg_b_2, (valg_x, valg_2_y))
+        text_canvas.blit(text_valg_3, (valg_x, valg_3_y))
+        text_canvas.blit(text_valg_4, (valg_x, valg_4_y))
+        valg_log = valg_2
+    elif valg == 3:
+        pygame.draw.rect(text_canvas, green, (0, valg_3_y, 318, 13))
+        text_canvas.blit(text_valg_1, (valg_x, valg_1_y))
+        text_canvas.blit(text_valg_2, (valg_x, valg_2_y))
+        text_canvas.blit(text_valg_b_3, (valg_x, valg_3_y))
+        text_canvas.blit(text_valg_4, (valg_x, valg_4_y))
+        valg_log = valg_3
+    elif valg == 4:
+        pygame.draw.rect(text_canvas, green, (0, valg_4_y, 318, 13))
+        text_canvas.blit(text_valg_1, (valg_x, valg_1_y))
+        text_canvas.blit(text_valg_2, (valg_x, valg_2_y))
+        text_canvas.blit(text_valg_3, (valg_x, valg_3_y))
+        text_canvas.blit(text_valg_b_4, (valg_x, valg_4_y))
+        valg_log = valg_4
+    elif valg == 6:
+        text_canvas.fill(green)
+
+#     ▄▄▄▄▄▄                    ▄▄                               
+#     ██▀▀▀▀██                  ██                               
+#     ██    ██   ▄████▄    ▄███▄██   ██▄████   ▄█████▄ ██      ██
+#     ███████   ██▄▄▄▄██  ██▀  ▀██   ██▀       ▀ ▄▄▄██ ▀█  ██  █▀
+#     ██  ▀██▄  ██▀▀▀▀▀▀  ██    ██   ██       ▄██▀▀▀██  ██▄██▄██ 
+#     ██    ██  ▀██▄▄▄▄█  ▀██▄▄███   ██       ██▄▄▄███  ▀██  ██▀ 
+#     ▀▀    ▀▀▀   ▀▀▀▀▀     ▀▀▀ ▀▀   ▀▀        ▀▀▀▀ ▀▀   ▀▀  ▀▀  
 
 def redraw(state):
     global startup_sequence, startup_index,startup_next_time,  scaled_width, scaled_height 
