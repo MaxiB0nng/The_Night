@@ -4,6 +4,7 @@ import log
 import story_functions as sf
 import short_cut as cut
 import choice_tree as tree
+import cutsceen as sceen
 
 pygame.init()
 pygame.mixer.init()
@@ -28,7 +29,7 @@ while running:
             running = False
 
         # Håndter KEYDOWN tastetryk
-        if event.type == pygame.KEYDOWN:
+        if event.type == pygame.KEYDOWN and sf.allow_input:
                 
                 if event.key == pygame.K_SPACE or event.key == pygame.K_RETURN:  # Space/enter tast blev trykke
                     if not sf.state == "running":
@@ -72,11 +73,12 @@ while running:
                         tree.moveing("d")
                         need_redraw = True
                         
-                elif event.key == pygame.K_q:
-                    sf.state = "menu"
-                    print("pressed q")
-                    sf.redraw(sf.state)
                 elif event.key == pygame.K_m:
+                    sf.state = "menu"
+                    print("pressed m")
+                    sf.redraw(sf.state)
+
+                elif event.key == pygame.K_q:
                     running = False
 
 #     ▄▄▄  ▄▄▄                               
@@ -88,7 +90,7 @@ while running:
 #     ▀▀    ▀▀    ▀▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀ 
 
     if sf.state == "running":
-        sf.cutsceen(sf.startup_sequence,sf.glitch,"menu",cut.menu)
+        sf.cutsceen(sceen.startup_sequence,sceen.glitch,"menu",cut.menu)
 
     if sf.state == "menu":
         cut.menu()
@@ -146,18 +148,110 @@ while running:
                         None,None,
                         None,None,
                         "menu",cut.menu)
-#        ▄▄▄▄                                
-#      ██▀▀▀▀█                               
-#     ██         ▄█████▄  ████▄██▄   ▄████▄  
-#     ██  ▄▄▄▄   ▀ ▄▄▄██  ██ ██ ██  ██▄▄▄▄██ 
-#     ██  ▀▀██  ▄██▀▀▀██  ██ ██ ██  ██▀▀▀▀▀▀ 
-#      ██▄▄▄██  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█ 
-#        ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
+#     ▄▄▄▄                                
+#   ██▀▀▀▀█                               
+#  ██         ▄█████▄  ████▄██▄   ▄████▄  
+#  ██  ▄▄▄▄   ▀ ▄▄▄██  ██ ██ ██  ██▄▄▄▄██ 
+#  ██  ▀▀██  ▄██▀▀▀██  ██ ██ ██  ██▀▀▀▀▀▀ 
+#   ██▄▄▄██  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█ 
+#     ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
+
+#        ▄▄▄▄   ▄▄                                                                      ▄▄▄    
+#      ██▀▀▀▀█  ██                              ██                                     █▀██    
+#     ██▀       ██▄████▄   ▄█████▄  ██▄███▄   ███████    ▄████▄    ██▄████               ██    
+#     ██        ██▀   ██   ▀ ▄▄▄██  ██▀  ▀██    ██      ██▄▄▄▄██   ██▀                   ██    
+#     ██▄       ██    ██  ▄██▀▀▀██  ██    ██    ██      ██▀▀▀▀▀▀   ██                    ██    
+#      ██▄▄▄▄█  ██    ██  ██▄▄▄███  ███▄▄██▀    ██▄▄▄   ▀██▄▄▄▄█   ██                 ▄▄▄██▄▄▄ 
+#        ▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀  ██ ▀▀▀       ▀▀▀▀     ▀▀▀▀▀    ▀▀                 ▀▀▀▀▀▀▀▀ 
+#                                   ██                                                         
+#                                ▄    ▄                     
+#                                █    █  ▄▄▄   ▄▄▄▄▄   ▄▄▄  
+#                                █▄▄▄▄█ █▀ ▀█  █ █ █  █▀  █ 
+#                                █    █ █   █  █ █ █  █▀▀▀▀ 
+#                                █    █ ▀█▄█▀  █ █ █  ▀█▄▄▀ 
 
 
     if sf.state == "opening_cutsceen":
-        sf.cutsceen(sf.opening_cutsceen_list,sf.opening_cutsceen,"home_continue",cut.home_continue)
+        sf.cutsceen(sceen.opening_cutsceen_list,sceen.opening_cutsceen,"H_continue",cut.H_continue)
 
+
+    if sf.state == "H_continue":
+        sf.choice_select("H_kitchen",cut.H_kitchen,
+                         "H_livingroom",cut.H_livingroom,
+                         "H_room",cut.H_room,
+                         None,None)
+        
+    if sf.state == "H_kitchen":
+        if sf.get_plot("item", "knife") or sf.get_plot("item", "bun"):
+            sf.choice_select(None,None,
+                            None,None,
+                            "H_livingroom",cut.H_livingroom,
+                            None,None)
+        else:
+            sf.choice_select("H_look_for_food",None,
+                            "H_search_your_kitchen",None,
+                            "H_livingroom",cut.H_livingroom,
+                            None,None)
+            
+    if sf.state == "H_look_for_food":
+        if not sf.get_plot("item", "bun"):
+            sf.plot_write("item", "bun", True)
+        sf.cutsceen(sceen.H_look_for_food_cutsceen, sceen.H_look_for_food_img, "H_kitchen", cut.H_kitchen)
+
+    if sf.state == "H_search_your_kitchen":
+        if not sf.get_plot("item", "knife"):
+            sf.plot_write("item", "knife", True)
+        sf.cutsceen(sceen.H_search_your_kitchen_cutsceen, sceen.H_search_your_kitchen_img, "H_kitchen", cut.H_kitchen)
+
+
+    if sf.state == "H_livingroom":
+        sf.choice_select("H_sit_down",cut.H_sit_down,
+                         "H_kitchen",cut.H_kitchen,
+                         "H_room",cut.H_room,
+                         None,None)
+
+    if sf.state == "H_sit_down":
+        sf.choice_select("H_livingroom",cut.H_livingroom,
+                         "H_tv",None,
+                         None,None,
+                         None,None)
+
+
+    if sf.state == "H_room":
+        if sf.get_plot("item","letter") and not sf.get_plot("item","phone"):
+            sf.choice_select(None,None,
+                            "H_lay_down",None,
+                            None,None,
+                            "H_livingroom",cut.H_livingroom)
+        if sf.get_plot("item", "letter"):
+            sf.choice_select(None,None,
+                            "H_lay_down",None,
+                            "H_put_down",None,
+                            "H_livingroom",cut.H_livingroom)
+        if not sf.get_plot("item", "phone"):
+            sf.choice_select("H_look_around",None,
+                            "H_lay_down",None,
+                            "-",None,
+                            "H_livingroom",cut.H_livingroom)
+        else:
+            sf.choice_select("H_look_around",None,
+                            "H_lay_down",None,
+                            "H_put_down",None,
+                            "H_livingroom",cut.H_livingroom)
+
+    if sf.state == "H_look_around":
+        if not sf.get_plot("item", "letter"):
+            sf.plot_write("item", "letter", True)
+        sf.cutsceen(sceen.H_look_around_cutsceen, sceen.H_look_around_img, "H_room", cut.H_room)
+
+    if sf.state == "H_lay_down":
+        sf.cutsceen(sceen.H_lay_down_cutsceen, sceen.H_lay_down_img, "O_get_up_bed", None)
+
+    if sf.state == "H_put_down":
+        if sf.get_plot("item", "phone"):
+            sf.plot_write("item", "phone", False)
+        sf.cutsceen(sceen.H_put_down_cutsceen, sceen.H_put_down_img, "H_room", cut.H_room)
+        
     if need_redraw:
         if sf.state == "choice":
             tree.choice_tree()

@@ -31,7 +31,59 @@ def choice():
     else:
         sf.valg_update("Move Off", "load","saves","Back")
 
-def home_continue():
+#        ▄▄▄▄   ▄▄                                                                      ▄▄▄    
+#      ██▀▀▀▀█  ██                              ██                                     █▀██    
+#     ██▀       ██▄████▄   ▄█████▄  ██▄███▄   ███████    ▄████▄    ██▄████               ██    
+#     ██        ██▀   ██   ▀ ▄▄▄██  ██▀  ▀██    ██      ██▄▄▄▄██   ██▀                   ██    
+#     ██▄       ██    ██  ▄██▀▀▀██  ██    ██    ██      ██▀▀▀▀▀▀   ██                    ██    
+#      ██▄▄▄▄█  ██    ██  ██▄▄▄███  ███▄▄██▀    ██▄▄▄   ▀██▄▄▄▄█   ██                 ▄▄▄██▄▄▄ 
+#        ▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀  ██ ▀▀▀       ▀▀▀▀     ▀▀▀▀▀    ▀▀                 ▀▀▀▀▀▀▀▀ 
+#                                   ██                                                         
+#                                ▄    ▄                     
+#                                █    █  ▄▄▄   ▄▄▄▄▄   ▄▄▄  
+#                                █▄▄▄▄█ █▀ ▀█  █ █ █  █▀  █ 
+#                                █    █ █   █  █ █ █  █▀▀▀▀ 
+#                                █    █ ▀█▄█▀  █ █ █  ▀█▄▄▀ 
+
+
+def H_continue():
     sf.story_update("-","-","-")
-    sf.valg_update("-", "-", "-", "-")
+    sf.valg_update("Go to the kitchen", "Go to the living room", "Go to your room", "-")
+
+def H_kitchen():
+    if sf.get_plot("item", "knife") or sf.get_plot("item", "bun"):
+        sf.story_update("The kitchen","-","-")
+        sf.valg_update("-", "-", "Go to the living room", "-")   
+    else:
+        sf.story_update("The kitchen","You should probely eat",":IM NOT HUNGRY")
+        sf.valg_update("Look for food", "Search your kitchen", "Go to the living room", "-")
+
+def H_livingroom():
+    sf.story_update("Home Sweet Home","Better then the office","-")
+    sf.valg_update("Sit down in the couch","Go to your kitchen","Go to your room", "-")
+
+def H_room():
+    if sf.get_plot("item","letter") and not sf.get_plot("item","phone"):
+        sf.story_update("You walk into your room","Its a bit messy","-")
+        sf.valg_update("-","Lay down in your bed",
+                       "-","Go to the living room")
+        
+    elif sf.get_plot("item","letter"):
+        sf.story_update("You walk into your room","Its a bit messy",":...")
+        sf.valg_update("-","Lay down in your bed",
+                       "put down your phone","Go to the living room")
+        
+    elif not sf.get_plot("item","phone"):
+        sf.story_update("You walk into your room","Its a bit messy","-")
+        sf.valg_update("Look around your room","Lay down in your bed",
+                       "-","Go to the living room")
+
+    else:
+        sf.story_update("You walk into your room","Its a bit messy",".")
+        sf.valg_update("Look around your room","Lay down in your bed","put down your phone","Go to the living room")
+
+
+def H_sit_down():
+    sf.story_update("Tired?","Maybe some TV can relax you?","-")
+    sf.valg_update("Stand up","Watch som TV","-","-")
 

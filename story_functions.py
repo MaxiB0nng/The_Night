@@ -1,7 +1,6 @@
 import pygame
 import random
 import log as log
-import short_cut as cut
 
 black = (15, 25, 15) #0F190E
 green = (10, 142, 10) #0A8E0A
@@ -33,11 +32,14 @@ cutsceen_next_time = 0
 
 cutsceen_img_index = 0
 
+allow_input = True
+
 #player variabler
 state = "running"
 # state = "menu" #den statien som spiler er på 
 #start på "running"
 valg = int(1) #de valg som spiler har max 4
+
 
 #        ▄▄▄▄                                                                        
 #      ██▀▀▀▀█              ██                                                       
@@ -47,95 +49,9 @@ valg = int(1) #de valg som spiler har max 4
 #      ██▄▄▄▄█  ██▄▄▄███    ██▄▄▄   █▄▄▄▄▄██  ▀██▄▄▄▄█  ▀██▄▄▄▄█  ▀██▄▄▄▄█  ██    ██ 
 #        ▀▀▀▀    ▀▀▀▀ ▀▀     ▀▀▀▀    ▀▀▀▀▀▀     ▀▀▀▀▀     ▀▀▀▀▀     ▀▀▀▀▀   ▀▀    ▀▀ 
 
-
-startup_sequence = [
-    (0,(0,"Opening", "The_Night", "Made By MaxiBonng", 1000)),
-    (0,(1,"Running simulation", "-", "Made By MaxiBonng", 1000)),
-    (0,(2,"Running simulation", "December 12th", "-", 1000)),
-    (0,(3,"Running simulation", "December 12th", "Case #19981112", 500)),
-    (0,(4,"Loading", "-", "-", 500)),
-    (0,(5,"Running", "log.py", "---------- 0%", None)),
-    (0,(5,None, "short_cut.py", "##-------- 20%", None)),
-    (0,(6,None, "save_load.py", "####------ 40%", None)),
-    (0,(6,None, "choice_tree.py", "######---- 60%", None)),
-    (0,(7,None, "story_functions.py", "#######--- 70%", None)),
-    (0,(7,None, "logo.png", "#######--- 71%", None)),
-    (0,(7,None, "start_cut_sceen.png", "#######--- 72%", None)),
-    (0,(7,None, "start_screen.png", "#######--- 73%", None)),
-    (0,(7,None, "glitch_1.png", "#######--- 74%", None)),
-    (0,(7,None, "glitch_2.png", "#######--- 74%", None)),
-    (0,(7,None, "glitch_3.png", "#######--- 75%", None)),
-    (0,(7,None, "glitch_4.png", "#######--- 75%", None)),
-    (0,(7,None, "glitch_5.png", "#######--- 76%", None)),
-    (0,(7,None, "glitch_6.png", "#######--- 77%", None)),
-    (0,(7,None, "glitch_7.png", "#######--- 77%", None)),
-    (0,(7,None, "glitch_8.png", "#######--- 78%", None)),
-    (0,(7,None, "glitch_9.png", "#######--- 79%", None)),
-    (0,(8,None, "opening_cutsceen_1.png", "########-- 80%", None)),
-    (0,(8,None, "opening_cutsceen_2.png", "########-- 80%", None)),
-    (0,(8,None, "opening_cutsceen_3.png", "########-- 80%", None)),
-    (0,(8,None, "opening_cutsceen_4.png", "########-- 81%", None)),
-    (0,(8,None, "opening_cutsceen_5.png", "########-- 81%", None)),
-    (0,(8,None, "opening_cutsceen_6.png", "########-- 81%", None)),
-    (0,(8,None, "opening_cutsceen_7.png", "########-- 82%", None)),
-    (0,(8,None, "opening_cutsceen_8.png", "########-- 82%", None)),
-    (0,(8,None, "opening_cutsceen_9.png", "########-- 82%", None)),
-    (0,(8,None, "opening_cutsceen_10.png", "########-- 83%", None)),
-    (0,(8,None, "opening_cutsceen_11.png", "########-- 83%", None)),
-    (0,(8,None, "opening_cutsceen_12.png", "########-- 83%", None)),
-    (0,(8,None, "opening_cutsceen_13.png", "########-- 84%", None)),
-    (0,(8,None, "opening_cutsceen_14.png", "########-- 84%", None)),
-    (0,(8,None, "opening_cutsceen_15.png", "########-- 84%", None)),
-    (0,(8,None, "opening_cutsceen_16.png", "########-- 85%", None)),
-    (0,(8,None, "opening_cutsceen_17.png", "########-- 85%", None)),
-    (0,(8,None, "opening_cutsceen_18.png", "########-- 85%", None)),
-    (0,(8,None, "opening_cutsceen_19.png", "########-- 86%", None)),
-    (0,(8,None, "opening_cutsceen_20.png", "########-- 86%", None)),
-    (0,(8,None, "opening_cutsceen_21.png", "########-- 86%", None)),
-    (0,(8,None, "opening_cutsceen_22.png", "########-- 87%", None)),
-    (0,(8,None, "opening_cutsceen_23.png", "########-- 87%", None)),
-    (0,(8,None, "opening_cutsceen_24.png", "########-- 87%", None)),
-    (0,(8,None, "opening_cutsceen_25.png", "########-- 88%", None)),
-    (0,(8,None, "opening_cutsceen_26.png", "########-- 88%", None)),
-    (0,(8,None, "opening_cutsceen_27.png", "########-- 88%", None)),
-    (0,(8,None, "opening_cutsceen_28.png", "########-- 89%", None)),
-    (0,(8,None, "opening_cutsceen_29.png", "########-- 89%", None)),
-    (0,(8,None, "opening_cutsceen_30.png", "########-- 89%", None)),
-    (0,(8,"Running", "The_Night.py", "#########- 90%", 400)),
-    (0,(9,"Welcome", "Mr.############", "-", 1000)),
-    (0,(9,"-","-","-", 1500))
-]
-
-
-
-glitch = [pygame.image.load(f"img/start_up/glitch_{i}.png")
-        for i in range(1, 10)]
-
-opening_cutsceen_list = [
-    (0,(0,"Opening","Opening_cutsceen","Loading .", 1000)),
-    (0,(0,"Running","Opening_cutsceen","Loading ..", 1000)),
-    (0,(1,None,None,"Loading ...", 500)),
-    (0,(1 ,None,"Its night","-", 500)),
-    (0,(2 ,None,"Its night",None, 500)),
-    (1,(3,7,500)),
-    (0,(8 ,None,"Your driving home",None, 500)),
-    (1,(9,13,500)),
-    (1,(10,13,500)),
-    (1,(10,13,500)),
-    (0,(10,None,"You just got back from work",None, 500)),
-    (1,(11,22,500)),
-    (0,(23,None,"-",None, 500)),
-    (1,(24,29,500)),
-    (0,(30,None,"STARTING GAME","HAVE FUN.", 1000)),
-    (0,(0,None,"STARTING GAME","HAVE FUN..", 500)),
-    (0,(0,None,None,"HAVE FUN...", 2000)),
-]
-
-opening_cutsceen = [pygame.image.load(f"img\opening_cutsceen/opening_cutsceen_{i}.png")
-                    for i in range(1, 31)]
-
 def cutsceen(text_list, img_list, state_to, cut_to):
-    global state, cutsceen_index, cutsceen_next_time, cutsceen_img_index
+    global state, cutsceen_index, cutsceen_next_time, cutsceen_img_index, allow_input
+    allow_input = False
 
     now = pygame.time.get_ticks()
 
@@ -180,12 +96,65 @@ def cutsceen(text_list, img_list, state_to, cut_to):
             cutsceen_index += 1
 
     else:
-        cutsceen_index = 0
-        cutsceen_next_time = 0
-        cutsceen_img_index = 0
-        state = state_to
-        cut_to()
-        redraw(state)
+        if now >= cutsceen_next_time:
+            cutsceen_index = 0
+            cutsceen_next_time = 0
+            cutsceen_img_index = 0
+            allow_input = True
+            state = state_to
+            cut_to()
+            redraw(state)
+
+
+#     ▄▄▄▄▄▄    ▄▄▄▄                         
+#     ██▀▀▀▀█▄  ▀▀██                  ██     
+#     ██    ██    ██       ▄████▄   ███████  
+#     ██████▀     ██      ██▀  ▀██    ██     
+#     ██          ██      ██    ██    ██     
+#     ██          ██▄▄▄   ▀██▄▄██▀    ██▄▄▄  
+#     ▀▀           ▀▀▀▀     ▀▀▀▀       ▀▀▀▀  
+
+item_list= [
+    ("bun",0,False),
+    ("knife",6,False),
+    ("letter",6,False),
+    ("phone",4, True),
+]
+
+plot_list = [
+    ("alseep couch",(3,6),False),
+    ("asleep bed",1,False)
+]
+
+def get_plot(list_choice, event_item):
+    global item_list, plot_list
+
+    if list_choice == "item":
+        for item, _, happened in item_list:
+            if item == event_item:
+                return happened
+
+    elif list_choice == "plot":
+        for event, _, happened in plot_list:
+            if event == event_item:
+                return happened
+
+
+def plot_write(list_choice,event_item,bolang: bool):
+    global item_list, plot_list
+
+    if list_choice == "item":
+        for i, (item, ending, happened) in enumerate(item_list):
+            if item == event_item:
+                happened = bolang
+                item_list[i] = (item, ending, happened)
+
+    
+    elif list_choice == "plot":
+        for i, (event, ending, happened) in enumerate(plot_list):
+            if event == event_item:
+                happened = bolang
+                item_list[i] = (event, ending, happened)
 
 
 #        ▄▄▄▄                                                    
@@ -477,7 +446,7 @@ def redraw(state):
     log.log(state ,valg, valg_log)
     log.first_log = False
 
-    if state == "running" or state == "opening_cutsceen":
+    if allow_input == False:
         text_canvas.fill(green)
 
     if state == "menu" or state == "settings" or state == "screen":
@@ -500,3 +469,25 @@ def redraw(state):
 
     # Opdater skærmen
     pygame.display.flip()
+
+state_list = [
+    "running",                  # startup cutscene (boot sequence + glitch), goes to menu
+    "menu",                     # main menu: Continue / Settings / Choice Tree / Quit
+    "settings",                 # settings submenu: Screen / Music / Credits / Back
+    "screen",                   # screen scale adjuster, back to settings
+    "credits",                  # credits screen, back to settings
+    "music",                    # music settings placeholder, back to settings
+    "choice",                   # choice tree viewer, back to menu
+    "opening_cutsceen",         # opening story cutscene (night drive), goes to H_continue
+    "H_continue",               # after opening cutscene: Kitchen / Livingroom / Room
+    "H_kitchen",                # kitchen: Look for food / Search kitchen / Livingroom
+    "H_livingroom",             # livingroom: Sit down / Kitchen / Room
+    "H_sit_down",               # cutscene: sitting down, goes back to H_livingroom
+    "H_room",                   # room: Look around / Lay down / Put down / Livingroom
+    "H_look_around",            # cutscene: looking around room, goes back to H_room
+    "H_lay_down",               # cutscene: laying down, goes back to H_room
+    "H_put_down",               # cutscene: putting down phone (needs phone item), goes back to H_room
+    "H_look_for_food",          # cutscene: find bun item, goes back to H_kitchen
+    "H_search_your_kitchen",    # cutscene: find knife item, goes back to H_kitchen
+    "quit",                     # exits the game
+]
