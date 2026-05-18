@@ -29,9 +29,9 @@ while running:
             running = False
 
         # Håndter KEYDOWN tastetryk
-        if event.type == pygame.KEYDOWN and sf.allow_input:
+        if event.type == pygame.KEYDOWN:
                 
-                if event.key == pygame.K_SPACE or event.key == pygame.K_RETURN:  # Space/enter tast blev trykke
+                if event.key == pygame.K_SPACE or event.key == pygame.K_RETURN and sf.allow_input:  # Space/enter tast blev trykke
                     if not sf.state == "running":
                         sf.text_valg()
                     need_redraw = True
@@ -43,7 +43,7 @@ while running:
                     sf.make_screen()
                     need_redraw = True
 
-                elif event.key == pygame.K_DOWN:
+                elif event.key == pygame.K_DOWN and sf.allow_input:
                     if tree.move_selceted:
                         tree.moveing("s")
                     else:
@@ -53,7 +53,7 @@ while running:
                         print(sf.valg) 
                     need_redraw = True
 
-                elif event.key == pygame.K_UP:
+                elif event.key == pygame.K_UP and sf.allow_input:
                     if tree.move_selceted:
                         tree.moveing("w")
                     else:
@@ -63,12 +63,12 @@ while running:
                         print(sf.valg)
                     need_redraw = True
 
-                elif event.key == pygame.K_LEFT:
+                elif event.key == pygame.K_LEFT and sf.allow_input:
                     if tree.move_selceted:
                         tree.moveing("a")
                         need_redraw = True
 
-                elif event.key == pygame.K_RIGHT:
+                elif event.key == pygame.K_RIGHT and sf.allow_input:
                     if tree.move_selceted:
                         tree.moveing("d")
                         need_redraw = True
@@ -76,7 +76,9 @@ while running:
                 elif event.key == pygame.K_m:
                     sf.state = "menu"
                     print("pressed m")
+                    cut.menu
                     sf.redraw(sf.state)
+
 
                 elif event.key == pygame.K_q:
                     running = False
@@ -219,33 +221,36 @@ while running:
 
     if sf.state == "H_room":
         if sf.get_plot("item","letter") and not sf.get_plot("item","phone"):
-            sf.choice_select(None,None,
+            sf.choice_select("H_look_around",cut.H_look_around,
                             "H_lay_down",None,
                             None,None,
                             "H_livingroom",cut.H_livingroom)
-        if sf.get_plot("item", "letter"):
-            sf.choice_select(None,None,
-                            "H_lay_down",None,
-                            "H_put_down",None,
-                            "H_livingroom",cut.H_livingroom)
+
         if not sf.get_plot("item", "phone"):
-            sf.choice_select("H_look_around",None,
+            sf.choice_select("H_look_around",cut.H_look_around,
                             "H_lay_down",None,
                             "-",None,
                             "H_livingroom",cut.H_livingroom)
         else:
-            sf.choice_select("H_look_around",None,
-                            "H_lay_down",None,
+            sf.choice_select("H_look_around",cut.H_look_around,
+                            "H_lay_down",cut.H_lay_down,
                             "H_put_down",None,
                             "H_livingroom",cut.H_livingroom)
 
     if sf.state == "H_look_around":
         if not sf.get_plot("item", "letter"):
             sf.plot_write("item", "letter", True)
-        sf.cutsceen(sceen.H_look_around_cutsceen, sceen.H_look_around_img, "H_room", cut.H_room)
+        sf.choice_select("H_room",cut.H_room,
+                         None,None,
+                         None,None,
+                         None,None,)
 
+    
     if sf.state == "H_lay_down":
-        sf.cutsceen(sceen.H_lay_down_cutsceen, sceen.H_lay_down_img, "O_get_up_bed", None)
+        sf.choice_select("H_room",cut.H_room,
+                         "O_get_up_bed",None,
+                         None,None,
+                         None,None,)
 
     if sf.state == "H_put_down":
         if sf.get_plot("item", "phone"):

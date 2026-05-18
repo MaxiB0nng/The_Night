@@ -2,7 +2,7 @@ import story_functions as sf
 import choice_tree as tree
 
 def menu():
-    sf.story_update("Welcome to The Night", "Case #19981112", "you can always press Q to return to the main menu")
+    sf.story_update("Welcome to The Night", "Case #19981112", "you can always press M to return to the main menu")
     sf.valg_update("Continue","Settings","Choice Tree - saves", "Quit")
 
 def settings():
@@ -47,7 +47,7 @@ def choice():
 
 
 def H_continue():
-    sf.story_update("-","-","-")
+    sf.story_update("You just got home","Your tired maybe get some sleep","-")
     sf.valg_update("Go to the kitchen", "Go to the living room", "Go to your room", "-")
 
 def H_kitchen():
@@ -70,7 +70,7 @@ def H_room():
         
     elif sf.get_plot("item","letter"):
         sf.story_update("You walk into your room","Its a bit messy",":...")
-        sf.valg_update("-","Lay down in your bed",
+        sf.valg_update("Look at letter","Lay down in your bed",
                        "put down your phone","Go to the living room")
         
     elif not sf.get_plot("item","phone"):
@@ -82,6 +82,13 @@ def H_room():
         sf.story_update("You walk into your room","Its a bit messy",".")
         sf.valg_update("Look around your room","Lay down in your bed","put down your phone","Go to the living room")
 
+def H_look_around():
+    sf.story_update("It a letter from robbert", "-","-")
+    sf.valg_update("put letter down","-","-","-")
+
+def H_lay_down():
+    sf.story_update("You lay in your bed", "-","-")
+    sf.valg_update("Stand up","Go to sleep","-","-")
 
 def H_sit_down():
     sf.story_update("Tired?","Maybe some TV can relax you?","-")

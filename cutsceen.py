@@ -1,7 +1,5 @@
 import pygame
 
-
-
 #       ▄▄▄▄                                           
 #     ▄█▀▀▀▀█     ██                            ██     
 #     ██▄       ███████    ▄█████▄   ██▄████  ███████  
@@ -99,9 +97,8 @@ opening_cutsceen_list = [
     (0,(0,None,None,"HAVE FUN...", 2000)),
 ]
 
-opening_cutsceen = [pygame.image.load(f"img\opening_cutsceen\opening_cutsceen_{i}.png")
+opening_cutsceen = [pygame.image.load(f"img/opening_cutsceen/opening_cutsceen_{i}.png")
                     for i in range(1, 31)]
-
 
 #     ▄▄    ▄▄                               
 #     ██    ██                               
@@ -117,45 +114,26 @@ H_look_for_food_cutsceen = [
 ]
 
 H_look_for_food_img = [
-    pygame.image.load(f"img\start_screen.png")
+    pygame.image.load(f"img/start_screen.png")
 ]
 
 
 H_search_your_kitchen_cutsceen = [
     (0,(1,"You look around","-","-",2500)),
     (0,(1,"Its all empty...","-","-",2500)),
-    (0,(1,"You finde a knife","Carefull you can stab people whit that","-",5000)),   
+    (0,(1,"You finde a knife","Carefull you can stab people whit that","-",5000)),
 ]
 
 H_search_your_kitchen_img = [
-    pygame.image.load(f"img\start_screen.png")
-]
-
-
-H_look_around_cutsceen = [
-    (0,(1, "You find a letter", "-", ":", 10000)),
-]
-
-H_look_around_img = [
-    pygame.image.load(f"img\start_screen.png")
-]
-
-H_lay_down_cutsceen = [
-    (0,(1, "Lay down in your bed andd and fall asleep",  "-", "", 1500)),
-    (0,(1, "-",  "-", "-", 1500)),
-]
-
-H_lay_down_img = [
-    pygame.image.load(f"img\start_screen.png")
+    pygame.image.load(f"img/start_screen.png")
 ]
 
 
 H_put_down_cutsceen = [
     (0,(1, "You put down your phone", "-", ":WHY WOULD YOU DO THAT", 1000)),
     (0,(1, "You put down your phone", "-", "-", 1500)),
-    
-]
 
+]
 H_put_down_img = [
-    pygame.image.load(f"img\start_screen.png")
+    pygame.image.load(f"img/start_screen.png")
 ]

@@ -167,9 +167,8 @@ def plot_write(list_choice,event_item,bolang: bool):
                                                          
 # Indlæs billede
 def image_make():
-    global start_front, start_cutsceen
+    global start_front
     start_front = pygame.image.load("img/start_screen.png")
-    start_cutsceen = pygame.image.load("img/start_cut_sceen.png")
 
 def make_canvas():
     global valg_1,valg_2,valg_3,valg_4
@@ -451,6 +450,8 @@ def redraw(state):
 
     if state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
+
+
 
 
     canvas.blit(main_canvas, (3, 3))

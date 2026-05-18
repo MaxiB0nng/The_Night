@@ -1,0 +1,210 @@
+log starts at 2026-05-18 10:59:31.
+
+2026-05-18 10:59:31: running    1  1
+2026-05-18 10:59:31: running    1  1
+2026-05-18 10:59:32: running    1  1
+2026-05-18 10:59:33: running    1  1
+2026-05-18 10:59:34: running    1  1
+2026-05-18 10:59:34: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:35: running    1  1
+2026-05-18 10:59:36: running    1  1
+2026-05-18 10:59:36: running    1  1
+2026-05-18 10:59:36: running    1  1
+2026-05-18 10:59:36: running    1  1
+2026-05-18 10:59:36: running    1  1
+2026-05-18 10:59:36: running    1  1
+2026-05-18 10:59:36: running    1  1
+2026-05-18 10:59:36: running    1  1
+2026-05-18 10:59:36: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:37: running    1  1
+2026-05-18 10:59:38: running    1  1
+2026-05-18 10:59:38: running    1  1
+2026-05-18 10:59:38: running    1  1
+2026-05-18 10:59:38: running    1  1
+2026-05-18 10:59:38: running    1  1
+2026-05-18 10:59:38: running    1  1
+2026-05-18 10:59:38: running    1  1
+2026-05-18 10:59:38: running    1  1
+2026-05-18 10:59:38: running    1  1
+2026-05-18 10:59:39: running    1  1
+2026-05-18 10:59:39: running    1  1
+2026-05-18 10:59:39: running    1  1
+2026-05-18 10:59:39: running    1  1
+2026-05-18 10:59:39: running    1  1
+2026-05-18 10:59:39: running    1  1
+2026-05-18 10:59:39: running    1  1
+2026-05-18 10:59:39: running    1  1
+2026-05-18 10:59:40: running    1  1
+2026-05-18 10:59:42: menu    1  Continue
+2026-05-18 10:59:44  log closing
+=============================
+
+
+
+log starts at 2026-05-18 11:02:44.
+
+2026-05-18 11:02:44: running    1  1
+2026-05-18 11:02:44: running    1  1
+2026-05-18 11:02:46: running    1  1
+2026-05-18 11:02:46: running    1  1
+2026-05-18 11:02:47: running    1  1
+2026-05-18 11:02:48: running    1  1
+2026-05-18 11:02:49: running    1  1
+2026-05-18 11:02:49: running    1  1
+2026-05-18 11:02:49: running    1  1
+2026-05-18 11:02:49: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:50: running    1  1
+2026-05-18 11:02:51: running    1  1
+2026-05-18 11:02:51: running    1  1
+2026-05-18 11:02:51: running    1  1
+2026-05-18 11:02:51: running    1  1
+2026-05-18 11:02:51: running    1  1
+2026-05-18 11:02:51: running    1  1
+2026-05-18 11:02:51: running    1  1
+2026-05-18 11:02:51: running    1  1
+2026-05-18 11:02:51: running    1  1
+2026-05-18 11:02:52: running    1  1
+2026-05-18 11:02:52: running    1  1
+2026-05-18 11:02:52: running    1  1
+2026-05-18 11:02:52: running    1  1
+2026-05-18 11:02:52: running    1  1
+2026-05-18 11:02:52: running    1  1
+2026-05-18 11:02:52: running    1  1
+2026-05-18 11:02:52: running    1  1
+2026-05-18 11:02:52: running    1  1
+2026-05-18 11:02:52: running    1  1
+2026-05-18 11:02:53: running    1  1
+2026-05-18 11:02:53: running    1  1
+2026-05-18 11:02:53: running    1  1
+2026-05-18 11:02:53: running    1  1
+2026-05-18 11:02:53: running    1  1
+2026-05-18 11:02:53: running    1  1
+2026-05-18 11:02:53: running    1  1
+2026-05-18 11:02:53: running    1  1
+2026-05-18 11:02:53: running    1  1
+2026-05-18 11:02:54: running    1  1
+2026-05-18 11:02:54: running    1  1
+2026-05-18 11:02:54: running    1  1
+2026-05-18 11:02:54: running    1  1
+2026-05-18 11:02:54: running    1  1
+2026-05-18 11:02:54: running    1  1
+2026-05-18 11:02:54: running    1  1
+2026-05-18 11:02:55: running    1  1
+2026-05-18 11:02:57: menu    1  Continue
+2026-05-18 11:02:59: menu    2  Settings
+2026-05-18 11:02:59: menu    3  Choice Tree - saves
+2026-05-18 11:02:59: menu    2  Settings
+2026-05-18 11:03:00: menu    1  Continue
+2026-05-18 11:03:00: opening_cutsceen    1  Continue
+2026-05-18 11:03:00: opening_cutsceen    1  Continue
+2026-05-18 11:03:01: opening_cutsceen    1  Continue
+2026-05-18 11:03:02: opening_cutsceen    1  Continue
+2026-05-18 11:03:02: opening_cutsceen    1  Continue
+2026-05-18 11:03:03: opening_cutsceen    1  Continue
+2026-05-18 11:03:03: opening_cutsceen    1  Continue
+2026-05-18 11:03:04: opening_cutsceen    1  Continue
+2026-05-18 11:03:04: opening_cutsceen    1  Continue
+2026-05-18 11:03:05: opening_cutsceen    1  Continue
+2026-05-18 11:03:05: opening_cutsceen    1  Continue
+2026-05-18 11:03:06: opening_cutsceen    1  Continue
+2026-05-18 11:03:06: opening_cutsceen    1  Continue
+2026-05-18 11:03:07: opening_cutsceen    1  Continue
+2026-05-18 11:03:07: opening_cutsceen    1  Continue
+2026-05-18 11:03:08: opening_cutsceen    1  Continue
+2026-05-18 11:03:08: opening_cutsceen    1  Continue
+2026-05-18 11:03:09: opening_cutsceen    1  Continue
+2026-05-18 11:03:09: opening_cutsceen    1  Continue
+2026-05-18 11:03:10: opening_cutsceen    1  Continue
+2026-05-18 11:03:10: opening_cutsceen    1  Continue
+2026-05-18 11:03:11: opening_cutsceen    1  Continue
+2026-05-18 11:03:11: opening_cutsceen    1  Continue
+2026-05-18 11:03:12: opening_cutsceen    1  Continue
+2026-05-18 11:03:12: opening_cutsceen    1  Continue
+2026-05-18 11:03:13: opening_cutsceen    1  Continue
+2026-05-18 11:03:13: opening_cutsceen    1  Continue
+2026-05-18 11:03:14: opening_cutsceen    1  Continue
+2026-05-18 11:03:14: opening_cutsceen    1  Continue
+2026-05-18 11:03:15: opening_cutsceen    1  Continue
+2026-05-18 11:03:15: opening_cutsceen    1  Continue
+2026-05-18 11:03:16: opening_cutsceen    1  Continue
+2026-05-18 11:03:16: opening_cutsceen    1  Continue
+2026-05-18 11:03:17: opening_cutsceen    1  Continue
+2026-05-18 11:03:17: opening_cutsceen    1  Continue
+2026-05-18 11:03:18: opening_cutsceen    1  Continue
+2026-05-18 11:03:18: opening_cutsceen    1  Continue
+2026-05-18 11:03:19: opening_cutsceen    1  Continue
+2026-05-18 11:03:19: opening_cutsceen    1  Continue
+2026-05-18 11:03:20: opening_cutsceen    1  Continue
+2026-05-18 11:03:20: opening_cutsceen    1  Continue
+2026-05-18 11:03:21: opening_cutsceen    1  Continue
+2026-05-18 11:03:21: opening_cutsceen    1  Continue
+2026-05-18 11:03:22: opening_cutsceen    1  Continue
+2026-05-18 11:03:22: opening_cutsceen    1  Continue
+2026-05-18 11:03:23: opening_cutsceen    1  Continue
+2026-05-18 11:03:24: opening_cutsceen    1  Continue
+2026-05-18 11:03:24: opening_cutsceen    1  Continue
+2026-05-18 11:03:26: H_continue    1  Go to the kitchen
+2026-05-18 11:03:38: H_continue    2  Go to the living room
+2026-05-18 11:03:38: H_continue    1  Go to the kitchen
+2026-05-18 11:03:39: H_continue    2  Go to the living room
+2026-05-18 11:03:39: H_continue    1  Go to the kitchen
+2026-05-18 11:03:39: H_kitchen    1  Look for food
+2026-05-18 11:03:40: menu    1  Look for food
+2026-05-18 11:03:42: menu    2  Settings
+2026-05-18 11:03:42: menu    1  Continue
+2026-05-18 11:03:42: menu    2  Settings
+2026-05-18 11:03:42: menu    1  Continue
+2026-05-18 11:03:43: menu    2  Settings
+2026-05-18 11:03:43: menu    1  Continue
+2026-05-18 11:03:43: menu    2  Settings
+2026-05-18 11:03:43: menu    1  Continue
+2026-05-18 11:03:43: menu    2  Settings
+2026-05-18 11:03:44: menu    3  Choice Tree - saves
+2026-05-18 11:03:44: menu    4  Quit
+2026-05-18 11:03:44: menu    3  Choice Tree - saves
+2026-05-18 11:03:44: menu    2  Settings
+2026-05-18 11:03:44: menu    1  Continue
+2026-05-18 11:03:45: menu    2  Settings
+2026-05-18 11:03:45: menu    3  Choice Tree - saves
+2026-05-18 11:03:45: menu    4  Quit
+2026-05-18 11:03:45: menu    3  Choice Tree - saves
+2026-05-18 11:03:45: menu    2  Settings
+2026-05-18 11:03:45: menu    1  Continue
+2026-05-18 11:03:46: menu    2  Settings
+2026-05-18 11:03:46: menu    3  Choice Tree - saves
+2026-05-18 11:03:46: menu    4  Quit
+2026-05-18 11:03:46: menu    3  Choice Tree - saves
+2026-05-18 11:03:46: menu    2  Settings
+2026-05-18 11:03:47: menu    1  Continue
+2026-05-18 11:03:49: menu    1  Continue
