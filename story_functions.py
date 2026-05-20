@@ -154,7 +154,7 @@ def plot_write(list_choice,event_item,bolang: bool):
         for i, (event, ending, happened) in enumerate(plot_list):
             if event == event_item:
                 happened = bolang
-                item_list[i] = (event, ending, happened)
+                plot_list[i] = (event, ending, happened)
 
 
 #        ▄▄▄▄                                                    
@@ -168,7 +168,7 @@ def plot_write(list_choice,event_item,bolang: bool):
 # Indlæs billede
 def image_make():
     global start_front
-    start_front = pygame.image.load("img/start_screen.png")
+    start_front = pygame.image.load("img/start_screen.png").convert()
 
 def make_canvas():
     global valg_1,valg_2,valg_3,valg_4
@@ -269,7 +269,6 @@ def make_screen():
     font = pygame.font.FontType(font_path, 11)
 
     # Lav det primære canvas
-    print(scale)
     canvas = pygame.Surface((screen_width, screen_height))
     canvas.fill(black)
     pygame.draw.rect(canvas, green, (1, 1, 318, 238))  # Grøn kant
@@ -441,7 +440,6 @@ def redraw(state):
     global startup_sequence, startup_index,startup_next_time,  scaled_width, scaled_height 
     text_redraw()
     
-    print(state)
     log.log(state ,valg, valg_log)
     log.first_log = False
 
