@@ -28,7 +28,7 @@ box_list_1 = [    "0:0:1",
 arrow_list_1 = ["0:1","0:2","0:3","1:4","1:5","2:6","3:7","3:8","3:9",
                 "6:10","8:11","10:12","11:13"]
 
-hint_list = ["-","you have found this","Try starting the game!","look around","are you hungry?","looking for something?",
+hint_list_1 = ["-","you have found this","Try starting the game!","look around","are you hungry?","looking for something?",
              "maybe take a rest?","be curious","those dam screens!","take a rest dude","dont you have better things to do","go to sleep",
              "arent you tired after work?"]
 hint = None
@@ -39,7 +39,7 @@ rx = int((middel_x-(box_w/2))+((box_w+margin)*x))
 ry = int((middel_y-(box_h/2))+((box_h+margin)*y))
 
 def choice_tree():   
-    global rx , ry, box_list_1, hint,hint_list, block_type
+    global rx , ry, box_list_1, hint,hint_list_1, block_type
 
     sf.main_canvas.fill(sf.black)
     pygame.draw.rect(sf.main_canvas, sf.green, (2,2,310,110)) 
@@ -87,9 +87,9 @@ def choice_tree():
         }
 
     if place in place_hints:
-        hint = hint_list[place_hints[place]]
+        hint = hint_list_1[place_hints[place]]
     else:
-        hint = hint_list[0]
+        hint = hint_list_1[0]
     cut.choice()   # called once
 
 
