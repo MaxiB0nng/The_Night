@@ -47,8 +47,9 @@ def choice():
 
 
 def H_continue():
+    sf.chapter = 1
     sf.story_update("You just got home","Your tired maybe get some sleep","-")
-    sf.valg_update("Go to the kitchen", "Go to the living room", "Go to your room", "-")
+    sf.valg_update("Sit down in the couch","Go to your kitchen","Go to your room", "-")
 
 def H_kitchen():
     if sf.get_plot("item", "knife") or sf.get_plot("item", "bun"):

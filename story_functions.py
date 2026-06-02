@@ -1,6 +1,7 @@
 import pygame
 import random
 import log as log
+import save_load as sl
 
 black = (15, 25, 15) #0F190E
 green = (10, 142, 10) #0A8E0A
@@ -36,7 +37,10 @@ allow_input = True
 
 #player variabler
 state = "running"
-# state = "menu" #den statien som spiler er på 
+chapter = 0
+
+# state = "menu" 
+#den statien som spiler er på 
 #start på "running"
 valg = int(1) #de valg som spiler har max 4
 
@@ -437,7 +441,7 @@ def text_redraw():
 #     ▀▀    ▀▀▀   ▀▀▀▀▀     ▀▀▀ ▀▀   ▀▀        ▀▀▀▀ ▀▀   ▀▀  ▀▀  
 
 def redraw(state):
-    global startup_sequence, startup_index,startup_next_time,  scaled_width, scaled_height 
+    global startup_sequence, startup_index,startup_next_time,  scaled_width, scaled_height, chapter
     text_redraw()
     
     log.log(state ,valg, valg_log)
@@ -446,11 +450,8 @@ def redraw(state):
     if allow_input == False:
         text_canvas.fill(green)
 
-    if state == "menu" or state == "settings" or state == "screen":
+    elif state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
-
-
-
 
     canvas.blit(main_canvas, (3, 3))
     canvas.blit(story_canvas,(3, 119))
@@ -467,26 +468,6 @@ def redraw(state):
         SCREEN.blit(scaled_canvas, (0, 0))
 
     # Opdater skærmen
-    pygame.display.flip()
+    sl.save(chapter,state)
 
-state_list = [
-    "running",                  # startup cutscene (boot sequence + glitch), goes to menu
-    "menu",                     # main menu: Continue / Settings / Choice Tree / Quit
-    "settings",                 # settings submenu: Screen / Music / Credits / Back
-    "screen",                   # screen scale adjuster, back to settings
-    "credits",                  # credits screen, back to settings
-    "music",                    # music settings placeholder, back to settings
-    "choice",                   # choice tree viewer, back to menu
-    "opening_cutsceen",         # opening story cutscene (night drive), goes to H_continue
-    "H_continue",               # after opening cutscene: Kitchen / Livingroom / Room
-    "H_kitchen",                # kitchen: Look for food / Search kitchen / Livingroom
-    "H_livingroom",             # livingroom: Sit down / Kitchen / Room
-    "H_sit_down",               # cutscene: sitting down, goes back to H_livingroom
-    "H_room",                   # room: Look around / Lay down / Put down / Livingroom
-    "H_look_around",            # cutscene: looking around room, goes back to H_room
-    "H_lay_down",               # cutscene: laying down, goes back to H_room
-    "H_put_down",               # cutscene: putting down phone (needs phone item), goes back to H_room
-    "H_look_for_food",          # cutscene: find bun item, goes back to H_kitchen
-    "H_search_your_kitchen",    # cutscene: find knife item, goes back to H_kitchen
-    "quit",                     # exits the game
-]
+    pygame.display.flip()

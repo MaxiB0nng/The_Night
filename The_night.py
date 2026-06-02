@@ -1,10 +1,12 @@
 import pygame
-import random
 import log
 import story_functions as sf
 import short_cut as cut
 import choice_tree as tree
 import cutsceen as sceen
+import save_load as sl
+
+
 
 pygame.init()
 pygame.mixer.init()
@@ -143,11 +145,28 @@ while running:
                 tree.move_selceted = False
             else:
                 tree.move_selceted = True
-        
-        sf.choice_select(None,cut.choice,
-                        None,None,
-                        None,None,
-                        "menu",cut.menu)
+
+        if sf.selected_valg_2:
+            result = sl.load()
+            if result:
+                sf.chapter, sf.state, sl.visited = result
+                sf.selected_valg_2 = False
+                # call the shortcut for the loaded state to set up text/choices
+                state_cuts = {
+                    "H_kitchen": cut.H_kitchen,
+                    "H_livingroom": cut.H_livingroom,
+                    "H_room": cut.H_room,
+                }
+                if sf.state in state_cuts:
+                    state_cuts[sf.state]()
+                need_redraw = True
+
+
+        if not sf.selected_valg_2:
+            sf.choice_select(None,cut.choice,
+                            None,None,
+                            None,None,
+                            "menu",cut.menu)
 #     ▄▄▄▄                                
 #   ██▀▀▀▀█                               
 #  ██         ▄█████▄  ████▄██▄   ▄████▄  
@@ -172,15 +191,8 @@ while running:
 
 
     if sf.state == "opening_cutsceen":
-        sf.cutsceen(sceen.opening_cutsceen_list,sceen.opening_cutsceen,"H_continue",cut.H_continue)
+        sf.cutsceen(sceen.opening_cutsceen_list,sceen.opening_cutsceen,"H_livingroom",cut.H_continue)
 
-
-    if sf.state == "H_continue":
-        sf.choice_select("H_kitchen",cut.H_kitchen,
-                         "H_livingroom",cut.H_livingroom,
-                         "H_room",cut.H_room,
-                         None,None)
-        
     if sf.state == "H_kitchen":
         if sf.get_plot("item", "knife") or sf.get_plot("item", "bun"):
             sf.choice_select(None,None,
