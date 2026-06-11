@@ -126,7 +126,7 @@ item_list= [
 ]
 
 plot_list = [
-    ("alseep couch",(3,6),False),
+    ("alseep tv",(3,6),False),
     ("asleep bed",1,False)
 ]
 
@@ -171,8 +171,18 @@ def plot_write(list_choice,event_item,bolang: bool):
                                                          
 # Indlæs billede
 def image_make():
-    global start_front
+    global start_front, kitchen_k, kitchen_uk, livingroom
+    global sit_down, room, letter, lay_down
+
     start_front = pygame.image.load("img/start_screen.png").convert()
+    kitchen_k = pygame.image.load("img/Home/H_kitchen_k.png").convert()
+    kitchen_uk = pygame.image.load("img/Home/H_kitchen_uk.png").convert()
+    livingroom = pygame.image.load("img/Home/H_livingroom.png").convert()
+    sit_down = pygame.image.load("img/Home/H_sit_down.png").convert()
+    room = pygame.image.load("img/Home/H_room.png").convert()
+    letter = pygame.image.load("img/Home/H_letter.png").convert()
+    lay_down = pygame.image.load("img\Home\H_lay_down3.png").convert()
+
 
 def make_canvas():
     global valg_1,valg_2,valg_3,valg_4
@@ -266,9 +276,8 @@ def make_screen():
     the_night_logo = pygame.image.load("img/logo.png").convert_alpha()  # Indlæs dit ikonbillede
     pygame.display.set_icon(the_night_logo)  # Sæt ikonet for vinduet
 
-    # Opret skrifttype (angiv skrifttype og størrelse)
-    #https://befonts.com/author/studioaktype
-    font_path = "Pixel.ttf"  # font made by studioaktype
+  
+    font_path = "TN_pixel.ttf" 
     pygame.font.init()
     font = pygame.font.FontType(font_path, 11)
 
@@ -452,6 +461,27 @@ def redraw(state):
 
     elif state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
+
+    elif state == "H_kitchen":
+        if get_plot("item", "knife"):
+            main_canvas.blit(kitchen_uk, (image_x, image_y))
+        else:
+            main_canvas.blit(kitchen_k, (image_x, image_y))
+
+    elif state == "H_livingroom":
+        main_canvas.blit(livingroom , (image_x, image_y))
+
+    elif state == "H_sit_down":
+            main_canvas.blit(sit_down, (image_x, image_y))
+
+    elif state == "H_room":
+        main_canvas.blit(room, (image_x, image_y))
+
+    elif state == "H_room":
+        main_canvas.blit(room, (image_x, image_y))
+
+    elif state == "H_lay_down":
+        main_canvas.blit(lay_down, (image_x, image_y))
 
 
     if state in ("menu", "settings", "screen", "credits", "music", "choice",'opening_cutsceen'):

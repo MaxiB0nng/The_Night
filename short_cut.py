@@ -64,13 +64,10 @@ def H_livingroom():
     sf.valg_update("Sit down in the couch","Go to your kitchen","Go to your room", "-")
 
 def H_room():
-
-
     if sf.get_plot("item","letter"):
         sf.story_update("You walk into your room","Its a bit messy",":...")
         sf.valg_update("Look at letter","Lay down in your bed",
                        "-","Go to the living room")
-
     else:
         sf.story_update("You walk into your room","Its a bit messy",".")
         sf.valg_update("Look around your room","Lay down in your bed","-","Go to the living room")

@@ -6,16 +6,16 @@ track = {
 }
 
 
-_current = None
+current = None
 enabled = True
-volume = 1.0
+volume = 1
 
 
 def switch(track_key):
-    global _current
-    if not enabled or track_key == _current:
+    global current
+    if not enabled or track_key == current:
         return
-    _current = track_key
+    current = track_key
     path = track.get(track_key)
     if path:
         pygame.mixer.music.load(path)
@@ -26,13 +26,13 @@ def switch(track_key):
 def stop():
     pygame.mixer.music.stop()
     global _current
-    _current = None
+    current = None
 
 def toggle():
     global enabled
     enabled = not enabled
     if enabled:
-        switch(_current or "home")  # resume
+        switch(current or "home")  # resume
     else:
         stop()
 

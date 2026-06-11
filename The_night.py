@@ -216,7 +216,6 @@ while running:
             sf.plot_write("item", "knife", True)
         sf.cutsceen(sceen.H_search_your_kitchen_cutsceen, sceen.H_search_your_kitchen_img, "H_kitchen", cut.H_kitchen)
 
-
     if sf.state == "H_livingroom":
         sf.choice_select("H_sit_down",cut.H_sit_down,
                          "H_kitchen",cut.H_kitchen,
@@ -229,16 +228,20 @@ while running:
                          None,None,
                          None,None)
 
+    if sf.state == "H_tv":
+        sf.cutsceen(sceen.H_watch_tv_cutseen, sceen.H_watch_tv_img, "menu", cut.menu)
+        if not sf.get_plot("plot", "alseep tv"):
+            sf.plot_write("plot", "alseep tv", True)
 
     if sf.state == "H_room":
         if sf.get_plot("item","letter"):
             sf.choice_select("H_look_around",cut.H_look_around,
-                            "H_lay_down",None,
+                            "H_lay_down",cut.H_lay_down,
                             None,None,
                             "H_livingroom",cut.H_livingroom)
         else:
             sf.choice_select("H_look_around",cut.H_look_around,
-                            "H_lay_down",None,
+                            "H_lay_down",cut.H_lay_down,
                             "-",None,
                             "H_livingroom",cut.H_livingroom)
 
@@ -250,12 +253,16 @@ while running:
                          None,None,
                          None,None,)
 
-    
     if sf.state == "H_lay_down":
         sf.choice_select("H_room",cut.H_room,
-                         "H_fall_",None,
+                         "H_fall_asleep",None,
                          None,None,
                          None,None,)
+
+    if sf.state == "H_fall_asleep":
+        sf.cutsceen(sceen.H_fall_asleep_cutsceen, sceen.H_fall_asleep_img, "menu", cut.menu)
+        if not sf.get_plot("plot", "alseep tv"):
+            sf.plot_write("plot", "alseep tv", True)
 
     if need_redraw:
         if sf.state == "choice":

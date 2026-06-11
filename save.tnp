@@ -1,4 +1,4 @@
-1:H_look_for_food
-item:[0]
+1:H_livingroom
+item:[]
 plot:[]
-all:1/(H_livingroom,H_kitchen,H_look_for_food)
+all:1/(H_livingroom,H_kitchen,H_look_for_food,H_search_your_kitchen,H_sit_down,H_room,H_look_around,H_lay_down,H_fall_asleep,H_tv,menu,opening_cutsceen)

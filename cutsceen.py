@@ -1,5 +1,8 @@
 import pygame
 
+img = pygame.image.load
+
+
 #       ▄▄▄▄                                           
 #     ▄█▀▀▀▀█     ██                            ██     
 #     ██▄       ███████    ▄█████▄   ██▄████  ███████  
@@ -65,7 +68,7 @@ startup_sequence = [
     (0,(9,"-","-","-", 1500))
 ]
 
-glitch = [pygame.image.load(f"img/start_up/glitch_{i}.png").convert()
+glitch = [img(f"img/start_up/glitch_{i}.png").convert()
         for i in range(1, 10)]
   
 
@@ -97,7 +100,7 @@ opening_cutsceen_list = [
     (0,(0,None,None,"HAVE FUN...", 2000)),
 ]
 
-opening_cutsceen = [pygame.image.load(f"img/opening_cutsceen/opening_cutsceen_{i}.png").convert()
+opening_cutsceen = [img(f"img/opening_cutsceen/opening_cutsceen_{i}.png").convert()
                     for i in range(1, 31)]
 
 #     ▄▄    ▄▄                               
@@ -109,23 +112,62 @@ opening_cutsceen = [pygame.image.load(f"img/opening_cutsceen/opening_cutsceen_{i
 #     ▀▀    ▀▀    ▀▀▀▀    ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
 
 H_look_for_food_cutsceen = [
-    (0,(1,"You look around","-","-",1500)),
-    (0,(1,"You find a bun","-","-",1500)),
+    (0,(1,"You look around","-","-",500)),
+    (0,(2,None,"-","-",500)),
+    (0,(3,None,"-","-",500)),
+    (0,(4,None,"-","-",500)),
+    (0,(5,"You find a bun","-","-",1000)),
+
 ]
 
-H_look_for_food_img = [
-    pygame.image.load(f"img/start_screen.png").convert()
+H_look_for_food_img = [   
+   img(f"img/Home/H_look_for_food1.png").convert(),
+   img(f"img/Home/H_look_for_food2.png").convert(),
+   img(f"img/Home/H_look_for_food3.png").convert(),
+   img(f"img/Home/H_look_for_food4.png").convert(),
+   img(f"img/Home/H_look_for_food5.png").convert()
 ]
-
 
 H_search_your_kitchen_cutsceen = [
     (0,(1,"You look around","-","-",2500)),
-    (0,(1,"Its all empty...","-","-",2500)),
-    (0,(1,"You finde a knife","Carefull you can stab people whit that","-",5000)),
+    (0,(2,"Its all empty...","-","-",2500)),
+    (0,(3,"You finde a knife","Carefull you can stab people whit that","-",5000))
 ]
 
 H_search_your_kitchen_img = [
-    pygame.image.load(f"img/start_screen.png").convert()
+    img(f"img\Home\H_search1.png").convert(),
+    img(f"img\Home\H_search2.png").convert(),
+    img(f"img\Home\H_search3.png").convert()
 ]
 
+H_watch_tv_cutseen = [
+    (0,(1,"You watch som tv","-","-",1000)),
+    (0,(2,"You are starting to become tired","-","-",1000)),
+    (0,(3,"-","-","-",1000)),
+    (0,(4,"-","-","-",1000))
+]
 
+H_watch_tv_img = [
+    img(f"img\Home\H_tv1.png").convert(),
+    img(f"img\Home\H_tv2.png").convert(),
+    img(f"img\Home\H_tv3.png").convert(),
+    img(f"img\Home\H_tv4.png").convert()
+]
+
+H_fall_asleep_cutsceen = [
+    (0,(1,"You lay down","-","-",1000)),
+    (0,(2,"-","-","-",1000)),   
+    (0,(3,"-","-","-",1000)),
+    (0,(4,"You are starting to become tired","-","-",1000)),
+    (0,(5,"-","-","-",1000)),
+    (0,(6,"-","-","-",1000))
+]
+
+H_fall_asleep_img = [
+    img(f"img\Home\H_lay_down1.png").convert(),
+    img(f"img\Home\H_lay_down2.png").convert(),
+    img(f"img\Home\H_lay_down3.png").convert(),
+    img(f"img\Home\H_lay_down4.png").convert(),
+    img(f"img\Home\H_lay_down5.png").convert(),
+    img(f"img\Home\H_lay_down6.png").convert()   
+]
