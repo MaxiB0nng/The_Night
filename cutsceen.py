@@ -129,11 +129,3 @@ H_search_your_kitchen_img = [
 ]
 
 
-H_put_down_cutsceen = [
-    (0,(1, "You put down your phone", "-", ":WHY WOULD YOU DO THAT", 1000)),
-    (0,(1, "You put down your phone", "-", "-", 1500)),
-
-]
-H_put_down_img = [
-    pygame.image.load(f"img/start_screen.png").convert()
-]

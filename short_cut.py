@@ -64,24 +64,16 @@ def H_livingroom():
     sf.valg_update("Sit down in the couch","Go to your kitchen","Go to your room", "-")
 
 def H_room():
-    if sf.get_plot("item","letter") and not sf.get_plot("item","phone"):
-        sf.story_update("You walk into your room","Its a bit messy","-")
-        sf.valg_update("-","Lay down in your bed",
-                       "-","Go to the living room")
-        
-    elif sf.get_plot("item","letter"):
+
+
+    if sf.get_plot("item","letter"):
         sf.story_update("You walk into your room","Its a bit messy",":...")
         sf.valg_update("Look at letter","Lay down in your bed",
-                       "put down your phone","Go to the living room")
-        
-    elif not sf.get_plot("item","phone"):
-        sf.story_update("You walk into your room","Its a bit messy","-")
-        sf.valg_update("Look around your room","Lay down in your bed",
                        "-","Go to the living room")
 
     else:
         sf.story_update("You walk into your room","Its a bit messy",".")
-        sf.valg_update("Look around your room","Lay down in your bed","put down your phone","Go to the living room")
+        sf.valg_update("Look around your room","Lay down in your bed","-","Go to the living room")
 
 def H_look_around():
     sf.story_update("It a letter from robbert", "-","-")

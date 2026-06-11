@@ -5,7 +5,7 @@ import short_cut as cut
 import choice_tree as tree
 import cutsceen as sceen
 import save_load as sl
-
+import audio
 
 
 pygame.init()
@@ -19,6 +19,7 @@ choice = False
 sf.image_make()
 sf.make_canvas()
 sf.redraw(sf.state)
+
 
 # Spil-loop
 clock = pygame.time.Clock()
@@ -230,21 +231,15 @@ while running:
 
 
     if sf.state == "H_room":
-        if sf.get_plot("item","letter") and not sf.get_plot("item","phone"):
+        if sf.get_plot("item","letter"):
             sf.choice_select("H_look_around",cut.H_look_around,
                             "H_lay_down",None,
                             None,None,
                             "H_livingroom",cut.H_livingroom)
-
-        elif not sf.get_plot("item", "phone"):
+        else:
             sf.choice_select("H_look_around",cut.H_look_around,
                             "H_lay_down",None,
                             "-",None,
-                            "H_livingroom",cut.H_livingroom)
-        else:
-            sf.choice_select("H_look_around",cut.H_look_around,
-                            "H_lay_down",cut.H_lay_down,
-                            "H_put_down",None,
                             "H_livingroom",cut.H_livingroom)
 
     if sf.state == "H_look_around":
@@ -258,15 +253,10 @@ while running:
     
     if sf.state == "H_lay_down":
         sf.choice_select("H_room",cut.H_room,
-                         "O_get_up_bed",None,
+                         "H_fall_",None,
                          None,None,
                          None,None,)
 
-    if sf.state == "H_put_down":
-        if sf.get_plot("item", "phone"):
-            sf.plot_write("item", "phone", False)
-        sf.cutsceen(sceen.H_put_down_cutsceen, sceen.H_put_down_img, "H_room", cut.H_room)
-        
     if need_redraw:
         if sf.state == "choice":
             tree.choice_tree()

@@ -41,7 +41,7 @@ state_list = [
     "H_room",                   # room: Look around / Lay down / Put down / Livingroom
     "H_look_around",            # cutscene: looking around room, goes back to H_room
     "H_lay_down",               # cutscene: laying down, goes back to H_room
-    "H_put_down",               # cutscene: putting down phone (needs phone item), goes back to H_room
+    "H_put_down",               # removed
     "H_look_for_food",          # cutscene: find bun item, goes back to H_kitchen
     "H_search_your_kitchen",    # cutscene: find knife item, goes back to H_kitchen
     "quit",                     # exits the game
@@ -57,36 +57,36 @@ state_list = [
 #        ▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀  ██ ▀▀▀       ▀▀▀▀     ▀▀▀▀▀    ▀▀                 ▀▀▀▀▀▀▀▀ 
 
 """
-╔══════════════════════╗
-║ H_livingroom         ║
-║ continue             ║
-║ try starting game!   ║
-╚══════════════════════╝
+╔═══════════════════╗
+║ H_livingroom      ║
+║ continue          ║
+║ try starting game!║
+╚═══════════════════╝
            │
      ┌─────┼─────┐
      ▼     ▼     ▼
-╔═══════════════════╗            ╔═══════════════════╗       ╔═══════════════════╗
-║ H_kitchen         ║            ║ H_livingroom      ║       ║ H_room            ║
-║ go to kitchen     ║            ║ go to living room ║       ║ go to your room   ║
-║ look around       ║            ║ look around       ║       ║ look around       ║
-╚═══════════════════╝            ╚═══════════════════╝       ╚═══════════════════╝
-   │               │                      │                   │         │        │
-   ▼               ▼                      ▼                   ▼         ▼        ▼
-╔══════════════╗ ╔══════════════╗  ╔══════════════╗  ╔══════════╗╔══════════╗╔══════════╗
-║ H_look_for   ║ ║ H_search_    ║  ║ H_sit_down   ║  ║H_look_   ║║H_put_    ║║H_lay_    ║
-║ _food        ║ ║ your_kitchen ║  ║ sit down     ║  ║around    ║║down      ║║down      ║
-║ look for bun ║ ║ find knife   ║  ║ couch        ║  ║letter    ║║phone     ║║in bed    ║
-╚══════════════╝ ╚══════════════╝  ╚══════════════╝  ╚══════════╝╚══════════╝╚══════════╝
-                                          │                                   │
-                                          ▼                                   ▼
-                                  ╔══════════════╗                   ╔══════════════╗
-                                  ║ H_tv         ║                   ║ H_lay_down   ║
-                                  ║ watch tv     ║                   ║ do to sleep  ║
-                                  ╚══════════════╝                   ╚══════════════╝
-                                          │                                   │
-                                          ▼                                   ▼
-                                  ╔══════════════╗                   ╔══════════════╗
-                                  ║ asleep couch ║                   ║ asleep bed   ║
-                                  ║ C.0-1.1.0    ║                   ║ C.0-1.1.1    ║
-                                  ╚══════════════╝                   ╚══════════════╝
+╔════════════════╗               ╔═══════════════════╗    ╔═══════════════════╗
+║ H_kitchen      ║               ║ H_livingroom      ║    ║ H_room            ║
+║ go to kitchen  ║               ║ go to living room ║    ║ go to your room   ║
+║ look around    ║               ║ look around       ║    ║ look around       ║
+╚════════════════╝               ╚═══════════════════╝    ╚═══════════════════╝
+   │               │                      │                   │            │
+   ▼               ▼                      ▼                   ▼            ▼
+╔══════════════╗ ╔══════════════╗  ╔══════════════╗  ╔══════════╗      ╔══════════╗
+║ H_look_for   ║ ║ H_search_    ║  ║ H_sit_down   ║  ║H_look_   ║      ║H_lay_    ║
+║ _food        ║ ║ your_kitchen ║  ║ sit down     ║  ║around    ║      ║down      ║
+║ look for bun ║ ║ find knife   ║  ║ couch        ║  ║letter    ║      ║in bed    ║
+╚══════════════╝ ╚══════════════╝  ╚══════════════╝  ╚══════════╝      ╚══════════╝
+                                          │                                 │
+                                          ▼                                 ▼
+                                  ╔══════════════╗                 ╔══════════════╗
+                                  ║ H_tv         ║                 ║ H_lay_down   ║
+                                  ║ watch tv     ║                 ║ do to sleep  ║
+                                  ╚══════════════╝                 ╚══════════════╝
+                                          │                                 │
+                                          ▼                                 ▼
+                                  ╔══════════════╗                 ╔══════════════╗
+                                  ║ asleep couch ║                 ║ asleep bed   ║
+                                  ║ C.0-1.1.0    ║                 ║ C.0-1.1.1    ║
+                                  ╚══════════════╝                 ╚══════════════╝
 """

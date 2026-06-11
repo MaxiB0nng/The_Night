@@ -1,0 +1,526 @@
+log starts at 2026-06-11 04:18:33.
+
+log starts at 2026-06-11 04:20:02.
+
+2026-06-11 04:20:02: running    1  1
+2026-06-11 04:20:02: running    1  1
+2026-06-11 04:20:03: running    1  1
+2026-06-11 04:20:04: running    1  1
+2026-06-11 04:20:05: running    1  1
+2026-06-11 04:20:06: running    1  1
+2026-06-11 04:20:06: running    1  1
+2026-06-11 04:20:06: running    1  1
+2026-06-11 04:20:06: running    1  1
+2026-06-11 04:20:07: running    1  1
+2026-06-11 04:20:07: running    1  1
+2026-06-11 04:20:07: running    1  1
+2026-06-11 04:20:07: running    1  1
+2026-06-11 04:20:07: running    1  1
+2026-06-11 04:20:07: running    1  1
+2026-06-11 04:20:07: running    1  1
+2026-06-11 04:20:07: running    1  1
+2026-06-11 04:20:07: running    1  1
+2026-06-11 04:20:08: running    1  1
+2026-06-11 04:20:08: running    1  1
+2026-06-11 04:20:08: running    1  1
+2026-06-11 04:20:08: running    1  1
+2026-06-11 04:20:08: running    1  1
+2026-06-11 04:20:08: running    1  1
+2026-06-11 04:20:08: running    1  1
+2026-06-11 04:20:08: running    1  1
+2026-06-11 04:20:08: running    1  1
+2026-06-11 04:20:09: running    1  1
+2026-06-11 04:20:09: running    1  1
+2026-06-11 04:20:09: running    1  1
+2026-06-11 04:20:09: running    1  1
+2026-06-11 04:20:09: running    1  1
+2026-06-11 04:20:09: running    1  1
+2026-06-11 04:20:09: running    1  1
+2026-06-11 04:20:09: running    1  1
+2026-06-11 04:20:09: running    1  1
+2026-06-11 04:20:09: running    1  1
+2026-06-11 04:20:10: running    1  1
+2026-06-11 04:20:10: running    1  1
+2026-06-11 04:20:10: running    1  1
+2026-06-11 04:20:10: running    1  1
+2026-06-11 04:20:10: running    1  1
+2026-06-11 04:20:10: running    1  1
+2026-06-11 04:20:10: running    1  1
+2026-06-11 04:20:10: running    1  1
+2026-06-11 04:20:10: running    1  1
+2026-06-11 04:20:11: running    1  1
+2026-06-11 04:20:11: running    1  1
+2026-06-11 04:20:11: running    1  1
+2026-06-11 04:20:11: running    1  1
+2026-06-11 04:20:11: running    1  1
+2026-06-11 04:20:11: running    1  1
+2026-06-11 04:20:11: running    1  1
+2026-06-11 04:20:11: running    1  1
+2026-06-11 04:20:12: running    1  1
+2026-06-11 04:20:13: running    1  1
+2026-06-11 04:20:14: menu    1  Continue
+2026-06-11 04:20:19  log closing
+=============================
+
+
+
+log starts at 2026-06-11 04:20:24.
+
+2026-06-11 04:20:24: running    1  1
+2026-06-11 04:20:24: running    1  1
+2026-06-11 04:20:25: running    1  1
+2026-06-11 04:20:26: running    1  1
+2026-06-11 04:20:27: running    1  1
+2026-06-11 04:20:28: running    1  1
+2026-06-11 04:20:28: running    1  1
+2026-06-11 04:20:29: running    1  1
+2026-06-11 04:20:29: running    1  1
+2026-06-11 04:20:29: running    1  1
+2026-06-11 04:20:29: running    1  1
+2026-06-11 04:20:29: running    1  1
+2026-06-11 04:20:29: running    1  1
+2026-06-11 04:20:29: running    1  1
+2026-06-11 04:20:29: running    1  1
+2026-06-11 04:20:29: running    1  1
+2026-06-11 04:20:30: running    1  1
+2026-06-11 04:20:30: running    1  1
+2026-06-11 04:20:30: running    1  1
+2026-06-11 04:20:30: running    1  1
+2026-06-11 04:20:30: running    1  1
+2026-06-11 04:20:30: running    1  1
+2026-06-11 04:20:30: running    1  1
+2026-06-11 04:20:30: running    1  1
+2026-06-11 04:20:31: running    1  1
+2026-06-11 04:20:31: running    1  1
+2026-06-11 04:20:31: running    1  1
+2026-06-11 04:20:31: running    1  1
+2026-06-11 04:20:31: running    1  1
+2026-06-11 04:20:31: running    1  1
+2026-06-11 04:20:31: running    1  1
+2026-06-11 04:20:31: running    1  1
+2026-06-11 04:20:32: running    1  1
+2026-06-11 04:20:32: running    1  1
+2026-06-11 04:20:32: running    1  1
+2026-06-11 04:20:32: running    1  1
+2026-06-11 04:20:32: running    1  1
+2026-06-11 04:20:32: running    1  1
+2026-06-11 04:20:32: running    1  1
+2026-06-11 04:20:32: running    1  1
+2026-06-11 04:20:32: running    1  1
+2026-06-11 04:20:33: running    1  1
+2026-06-11 04:20:33: running    1  1
+2026-06-11 04:20:33: running    1  1
+2026-06-11 04:20:33: running    1  1
+2026-06-11 04:20:33: running    1  1
+2026-06-11 04:20:33: running    1  1
+2026-06-11 04:20:33: running    1  1
+2026-06-11 04:20:34: running    1  1
+2026-06-11 04:20:34: running    1  1
+2026-06-11 04:20:34: running    1  1
+2026-06-11 04:20:34: running    1  1
+2026-06-11 04:20:34: running    1  1
+2026-06-11 04:20:34: running    1  1
+2026-06-11 04:20:34: running    1  1
+2026-06-11 04:20:35: running    1  1
+2026-06-11 04:20:37: menu    1  Continue
+2026-06-11 04:20:44: opening_cutsceen    1  Continue
+2026-06-11 04:20:44: opening_cutsceen    1  Continue
+2026-06-11 04:20:45: opening_cutsceen    1  Continue
+2026-06-11 04:20:46: opening_cutsceen    1  Continue
+2026-06-11 04:20:47: opening_cutsceen    1  Continue
+2026-06-11 04:20:47: opening_cutsceen    1  Continue
+2026-06-11 04:20:48: opening_cutsceen    1  Continue
+2026-06-11 04:20:48  log closing
+=============================
+
+
+
+log starts at 2026-06-11 04:23:58.
+
+2026-06-11 04:23:58: running    1  1
+2026-06-11 04:23:58: running    1  1
+2026-06-11 04:23:59: running    1  1
+2026-06-11 04:24:00: running    1  1
+2026-06-11 04:24:01: running    1  1
+2026-06-11 04:24:02: running    1  1
+2026-06-11 04:24:02: running    1  1
+2026-06-11 04:24:03: running    1  1
+2026-06-11 04:24:03: running    1  1
+2026-06-11 04:24:03: running    1  1
+2026-06-11 04:24:03: running    1  1
+2026-06-11 04:24:03: running    1  1
+2026-06-11 04:24:03: running    1  1
+2026-06-11 04:24:03: running    1  1
+2026-06-11 04:24:03: running    1  1
+2026-06-11 04:24:04: running    1  1
+2026-06-11 04:24:04: running    1  1
+2026-06-11 04:24:04: running    1  1
+2026-06-11 04:24:04: running    1  1
+2026-06-11 04:24:04: running    1  1
+2026-06-11 04:24:04: running    1  1
+2026-06-11 04:24:04  log closing
+=============================
+
+
+
+2026-06-11 04:24:04  log closing
+=============================
+
+
+
+log starts at 2026-06-11 04:24:07.
+
+2026-06-11 04:24:07: running    1  1
+2026-06-11 04:24:07: running    1  1
+2026-06-11 04:24:08: running    1  1
+2026-06-11 04:24:09: running    1  1
+2026-06-11 04:24:10: running    1  1
+2026-06-11 04:24:10: running    1  1
+2026-06-11 04:24:11: running    1  1
+2026-06-11 04:24:11: running    1  1
+2026-06-11 04:24:11: running    1  1
+2026-06-11 04:24:11: running    1  1
+2026-06-11 04:24:11: running    1  1
+2026-06-11 04:24:11: running    1  1
+2026-06-11 04:24:12: running    1  1
+2026-06-11 04:24:12: running    1  1
+2026-06-11 04:24:12: running    1  1
+2026-06-11 04:24:12: running    1  1
+2026-06-11 04:24:12: running    1  1
+2026-06-11 04:24:12: running    1  1
+2026-06-11 04:24:12: running    1  1
+2026-06-11 04:24:12: running    1  1
+2026-06-11 04:24:12: running    1  1
+2026-06-11 04:24:13: running    1  1
+2026-06-11 04:24:13: running    1  1
+2026-06-11 04:24:13: running    1  1
+2026-06-11 04:24:13: running    1  1
+2026-06-11 04:24:13: running    1  1
+2026-06-11 04:24:13: running    1  1
+2026-06-11 04:24:13: running    1  1
+2026-06-11 04:24:14: running    1  1
+2026-06-11 04:24:14: running    1  1
+2026-06-11 04:24:14: running    1  1
+2026-06-11 04:24:14: running    1  1
+2026-06-11 04:24:14: running    1  1
+2026-06-11 04:24:14: running    1  1
+2026-06-11 04:24:14: running    1  1
+2026-06-11 04:24:14: running    1  1
+2026-06-11 04:24:14: running    1  1
+2026-06-11 04:24:15: running    1  1
+2026-06-11 04:24:15: running    1  1
+2026-06-11 04:24:15: running    1  1
+2026-06-11 04:24:15: running    1  1
+2026-06-11 04:24:15: running    1  1
+2026-06-11 04:24:15: running    1  1
+2026-06-11 04:24:15: running    1  1
+2026-06-11 04:24:15: running    1  1
+2026-06-11 04:24:15  log closing
+=============================
+
+
+
+log starts at 2026-06-11 04:24:27.
+
+2026-06-11 04:24:27: running    1  1
+2026-06-11 04:24:27: running    1  1
+2026-06-11 04:24:28: running    1  1
+2026-06-11 04:24:28  log closing
+=============================
+
+
+
+log starts at 2026-06-11 04:24:41.
+
+2026-06-11 04:24:41: running    1  1
+2026-06-11 04:24:41: running    1  1
+2026-06-11 04:24:42: running    1  1
+2026-06-11 04:24:43  log closing
+=============================
+
+
+
+log starts at 2026-06-11 04:46:43.
+
+2026-06-11 04:46:43: running    1  1
+2026-06-11 04:46:43: running    1  1
+2026-06-11 04:46:44: running    1  1
+2026-06-11 04:46:45: running    1  1
+2026-06-11 04:46:45  log closing
+=============================
+
+
+
+log starts at 2026-06-11 04:47:44.
+
+log starts at 2026-06-11 04:47:48.
+
+2026-06-11 04:47:49: running    1  1
+2026-06-11 04:47:49: running    1  1
+2026-06-11 04:47:50: running    1  1
+2026-06-11 04:47:51: running    1  1
+2026-06-11 04:47:52: running    1  1
+2026-06-11 04:47:52: running    1  1
+2026-06-11 04:47:53: running    1  1
+2026-06-11 04:47:53: running    1  1
+2026-06-11 04:47:53: running    1  1
+2026-06-11 04:47:53: running    1  1
+2026-06-11 04:47:53: running    1  1
+2026-06-11 04:47:53: running    1  1
+2026-06-11 04:47:53: running    1  1
+2026-06-11 04:47:54: running    1  1
+2026-06-11 04:47:54: running    1  1
+2026-06-11 04:47:54: running    1  1
+2026-06-11 04:47:54: running    1  1
+2026-06-11 04:47:54: running    1  1
+2026-06-11 04:47:54: running    1  1
+2026-06-11 04:47:54: running    1  1
+2026-06-11 04:47:54: running    1  1
+2026-06-11 04:47:54: running    1  1
+2026-06-11 04:47:54: running    1  1
+2026-06-11 04:47:55: running    1  1
+2026-06-11 04:47:55: running    1  1
+2026-06-11 04:47:55: running    1  1
+2026-06-11 04:47:55: running    1  1
+2026-06-11 04:47:55: running    1  1
+2026-06-11 04:47:55: running    1  1
+2026-06-11 04:47:55: running    1  1
+2026-06-11 04:47:55: running    1  1
+2026-06-11 04:47:55: running    1  1
+2026-06-11 04:47:56: running    1  1
+2026-06-11 04:47:56: running    1  1
+2026-06-11 04:47:56: running    1  1
+2026-06-11 04:47:56: running    1  1
+2026-06-11 04:47:56: running    1  1
+2026-06-11 04:47:56: running    1  1
+2026-06-11 04:47:56: running    1  1
+2026-06-11 04:47:56: running    1  1
+2026-06-11 04:47:56: running    1  1
+2026-06-11 04:47:57: running    1  1
+2026-06-11 04:47:57: running    1  1
+2026-06-11 04:47:57: running    1  1
+2026-06-11 04:47:57: running    1  1
+2026-06-11 04:47:57: running    1  1
+2026-06-11 04:47:57: running    1  1
+2026-06-11 04:47:57: running    1  1
+2026-06-11 04:47:57: running    1  1
+2026-06-11 04:47:57: running    1  1
+2026-06-11 04:47:57: running    1  1
+2026-06-11 04:47:58: running    1  1
+2026-06-11 04:47:58: running    1  1
+2026-06-11 04:47:58: running    1  1
+2026-06-11 04:47:58: running    1  1
+2026-06-11 04:47:59: running    1  1
+2026-06-11 04:48:01: menu    1  Continue
+2026-06-11 04:48:01  log closing
+=============================
+
+
+
+log starts at 2026-06-11 04:48:03.
+
+2026-06-11 04:48:03: running    1  1
+2026-06-11 04:48:03: running    1  1
+2026-06-11 04:48:04: running    1  1
+2026-06-11 04:48:05: running    1  1
+2026-06-11 04:48:06: running    1  1
+2026-06-11 04:48:07: running    1  1
+2026-06-11 04:48:07: running    1  1
+2026-06-11 04:48:07: running    1  1
+2026-06-11 04:48:07: running    1  1
+2026-06-11 04:48:07: running    1  1
+2026-06-11 04:48:07: running    1  1
+2026-06-11 04:48:08: running    1  1
+2026-06-11 04:48:08: running    1  1
+2026-06-11 04:48:08: running    1  1
+2026-06-11 04:48:08: running    1  1
+2026-06-11 04:48:08: running    1  1
+2026-06-11 04:48:08: running    1  1
+2026-06-11 04:48:08: running    1  1
+2026-06-11 04:48:08: running    1  1
+2026-06-11 04:48:08: running    1  1
+2026-06-11 04:48:09: running    1  1
+2026-06-11 04:48:09: running    1  1
+2026-06-11 04:48:09: running    1  1
+2026-06-11 04:48:09: running    1  1
+2026-06-11 04:48:09: running    1  1
+2026-06-11 04:48:09: running    1  1
+2026-06-11 04:48:09: running    1  1
+2026-06-11 04:48:10: running    1  1
+2026-06-11 04:48:10: running    1  1
+2026-06-11 04:48:10: running    1  1
+2026-06-11 04:48:10: running    1  1
+2026-06-11 04:48:10: running    1  1
+2026-06-11 04:48:10: running    1  1
+2026-06-11 04:48:10: running    1  1
+2026-06-11 04:48:10: running    1  1
+2026-06-11 04:48:11: running    1  1
+2026-06-11 04:48:11: running    1  1
+2026-06-11 04:48:11: running    1  1
+2026-06-11 04:48:11: running    1  1
+2026-06-11 04:48:11: running    1  1
+2026-06-11 04:48:11: running    1  1
+2026-06-11 04:48:11: running    1  1
+2026-06-11 04:48:11: running    1  1
+2026-06-11 04:48:12: running    1  1
+2026-06-11 04:48:12: running    1  1
+2026-06-11 04:48:12: running    1  1
+2026-06-11 04:48:12: running    1  1
+2026-06-11 04:48:12: running    1  1
+2026-06-11 04:48:12: running    1  1
+2026-06-11 04:48:12: running    1  1
+2026-06-11 04:48:12: running    1  1
+2026-06-11 04:48:12: running    1  1
+2026-06-11 04:48:12: running    1  1
+2026-06-11 04:48:13: running    1  1
+2026-06-11 04:48:13: running    1  1
+2026-06-11 04:48:14: running    1  1
+2026-06-11 04:48:15: menu    1  Continue
+2026-06-11 04:48:21: menu    1  Continue
+2026-06-11 04:48:22: menu    1  Continue
+2026-06-11 04:48:26: menu    2  Settings
+2026-06-11 04:48:26: settings    2  music
+2026-06-11 04:48:27: music    2  -
+2026-06-11 04:48:27: music    3  -
+2026-06-11 04:48:27: music    4  back
+2026-06-11 04:48:28: settings    4  back
+2026-06-11 04:48:28: settings    3  credits
+2026-06-11 04:48:28: settings    4  back
+2026-06-11 04:48:28: menu    4  Quit
+2026-06-11 04:48:29: menu    3  Choice Tree - saves
+2026-06-11 04:48:29: menu    2  Settings
+2026-06-11 04:48:29: menu    1  Continue
+2026-06-11 04:51:00  log closing
+=============================
+
+
+
+log starts at 2026-06-11 04:55:33.
+
+2026-06-11 04:55:33: running    1  1
+2026-06-11 04:55:33: running    1  1
+2026-06-11 04:55:34: running    1  1
+2026-06-11 04:55:35: running    1  1
+2026-06-11 04:55:36: running    1  1
+2026-06-11 04:55:36: running    1  1
+2026-06-11 04:55:37: running    1  1
+2026-06-11 04:55:37: running    1  1
+2026-06-11 04:55:37: running    1  1
+2026-06-11 04:55:37: running    1  1
+2026-06-11 04:55:37: running    1  1
+2026-06-11 04:55:37: running    1  1
+2026-06-11 04:55:37: running    1  1
+2026-06-11 04:55:38: running    1  1
+2026-06-11 04:55:38: running    1  1
+2026-06-11 04:55:38: running    1  1
+2026-06-11 04:55:38: running    1  1
+2026-06-11 04:55:38: running    1  1
+2026-06-11 04:55:38: running    1  1
+2026-06-11 04:55:38: running    1  1
+2026-06-11 04:55:38: running    1  1
+2026-06-11 04:55:39: running    1  1
+2026-06-11 04:55:39: running    1  1
+2026-06-11 04:55:39: running    1  1
+2026-06-11 04:55:39: running    1  1
+2026-06-11 04:55:39: running    1  1
+2026-06-11 04:55:39: running    1  1
+2026-06-11 04:55:39: running    1  1
+2026-06-11 04:55:39: running    1  1
+2026-06-11 04:55:40: running    1  1
+2026-06-11 04:55:40: running    1  1
+2026-06-11 04:55:40: running    1  1
+2026-06-11 04:55:40: running    1  1
+2026-06-11 04:55:40: running    1  1
+2026-06-11 04:55:40: running    1  1
+2026-06-11 04:55:40: running    1  1
+2026-06-11 04:55:41: running    1  1
+2026-06-11 04:55:41: running    1  1
+2026-06-11 04:55:41: running    1  1
+2026-06-11 04:55:41: running    1  1
+2026-06-11 04:55:41: running    1  1
+2026-06-11 04:55:41: running    1  1
+2026-06-11 04:55:41: running    1  1
+2026-06-11 04:55:41: running    1  1
+2026-06-11 04:55:41: running    1  1
+2026-06-11 04:55:42: running    1  1
+2026-06-11 04:55:42: running    1  1
+2026-06-11 04:55:42: running    1  1
+2026-06-11 04:55:42: running    1  1
+2026-06-11 04:55:42: running    1  1
+2026-06-11 04:55:42: running    1  1
+2026-06-11 04:55:42: running    1  1
+2026-06-11 04:55:42: running    1  1
+2026-06-11 04:55:42: running    1  1
+2026-06-11 04:55:43: running    1  1
+2026-06-11 04:55:44: running    1  1
+2026-06-11 04:55:45: menu    1  Continue
+2026-06-11 04:55:51: menu    2  Settings
+2026-06-11 04:55:51: menu    1  Continue
+2026-06-11 04:55:52: opening_cutsceen    1  Continue
+2026-06-11 04:55:52: opening_cutsceen    1  Continue
+2026-06-11 04:55:53: opening_cutsceen    1  Continue
+2026-06-11 04:55:54: opening_cutsceen    1  Continue
+2026-06-11 04:55:54: opening_cutsceen    1  Continue
+2026-06-11 04:55:55: opening_cutsceen    1  Continue
+2026-06-11 04:55:55: opening_cutsceen    1  Continue
+2026-06-11 04:55:56: opening_cutsceen    1  Continue
+2026-06-11 04:55:56: opening_cutsceen    1  Continue
+2026-06-11 04:55:57: opening_cutsceen    1  Continue
+2026-06-11 04:55:57: opening_cutsceen    1  Continue
+2026-06-11 04:55:58: opening_cutsceen    1  Continue
+2026-06-11 04:55:58: opening_cutsceen    1  Continue
+2026-06-11 04:55:59: opening_cutsceen    1  Continue
+2026-06-11 04:55:59: opening_cutsceen    1  Continue
+2026-06-11 04:56:00: opening_cutsceen    1  Continue
+2026-06-11 04:56:00: opening_cutsceen    1  Continue
+2026-06-11 04:56:01: opening_cutsceen    1  Continue
+2026-06-11 04:56:01: opening_cutsceen    1  Continue
+2026-06-11 04:56:01: opening_cutsceen    1  Continue
+2026-06-11 04:56:02: opening_cutsceen    1  Continue
+2026-06-11 04:56:02: opening_cutsceen    1  Continue
+2026-06-11 04:56:03: opening_cutsceen    1  Continue
+2026-06-11 04:56:03: opening_cutsceen    1  Continue
+2026-06-11 04:56:04: opening_cutsceen    1  Continue
+2026-06-11 04:56:04: opening_cutsceen    1  Continue
+2026-06-11 04:56:05: opening_cutsceen    1  Continue
+2026-06-11 04:56:05: opening_cutsceen    1  Continue
+2026-06-11 04:56:06: opening_cutsceen    1  Continue
+2026-06-11 04:56:06: opening_cutsceen    1  Continue
+2026-06-11 04:56:07: opening_cutsceen    1  Continue
+2026-06-11 04:56:07: opening_cutsceen    1  Continue
+2026-06-11 04:56:08: opening_cutsceen    1  Continue
+2026-06-11 04:56:08: opening_cutsceen    1  Continue
+2026-06-11 04:56:09: opening_cutsceen    1  Continue
+2026-06-11 04:56:09: opening_cutsceen    1  Continue
+2026-06-11 04:56:10: opening_cutsceen    1  Continue
+2026-06-11 04:56:10: opening_cutsceen    1  Continue
+2026-06-11 04:56:11: opening_cutsceen    1  Continue
+2026-06-11 04:56:11: opening_cutsceen    1  Continue
+2026-06-11 04:56:12: opening_cutsceen    1  Continue
+2026-06-11 04:56:12: opening_cutsceen    1  Continue
+2026-06-11 04:56:13: opening_cutsceen    1  Continue
+2026-06-11 04:56:13: opening_cutsceen    1  Continue
+2026-06-11 04:56:14: opening_cutsceen    1  Continue
+2026-06-11 04:56:14: opening_cutsceen    1  Continue
+2026-06-11 04:56:15: opening_cutsceen    1  Continue
+2026-06-11 04:56:16: opening_cutsceen    1  Continue
+2026-06-11 04:56:16: opening_cutsceen    1  Continue
+2026-06-11 04:56:18: H_livingroom    1  Sit down in the couch
+2026-06-11 04:57:05: H_livingroom    2  Go to your kitchen
+2026-06-11 04:57:06: H_livingroom    3  Go to your room
+2026-06-11 04:57:06: H_livingroom    2  Go to your kitchen
+2026-06-11 04:57:06: H_kitchen    2  Search your kitchen
+2026-06-11 04:57:07: H_kitchen    3  Go to the living room
+2026-06-11 04:57:07: H_livingroom    3  Go to your room
+2026-06-11 04:57:07: H_livingroom    2  Go to your kitchen
+2026-06-11 04:57:08: H_kitchen    2  Search your kitchen
+2026-06-11 04:57:08: H_kitchen    1  Look for food
+2026-06-11 04:57:08: H_look_for_food    1  Look for food
+2026-06-11 04:57:08: H_look_for_food    1  Look for food
+2026-06-11 04:57:10: H_look_for_food    1  Look for food
+2026-06-11 04:57:10: H_look_for_food    1  Look for food
+2026-06-11 04:57:11  log closing
+=============================
+
+
+

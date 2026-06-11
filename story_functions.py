@@ -2,6 +2,7 @@ import pygame
 import random
 import log as log
 import save_load as sl
+import audio
 
 black = (15, 25, 15) #0F190E
 green = (10, 142, 10) #0A8E0A
@@ -122,7 +123,6 @@ item_list= [
     ("bun",0,False),
     ("knife",6,False),
     ("letter",6,False),
-    ("phone",4, True),
 ]
 
 plot_list = [
@@ -452,6 +452,12 @@ def redraw(state):
 
     elif state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
+
+
+    if state in ("menu", "settings", "screen", "credits", "music", "choice",'opening_cutsceen'):
+        audio.switch("night")
+    elif state.startswith("H"):
+        audio.switch("home")
 
     canvas.blit(main_canvas, (3, 3))
     canvas.blit(story_canvas,(3, 119))
