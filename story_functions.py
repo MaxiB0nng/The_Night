@@ -215,36 +215,36 @@ def make_canvas():
 
     valg_1_y = 2
     valg_1 = str("1")
-    text_valg_1 = font.render(valg_1, True, green)
-    text_valg_b_1 = font.render(valg_1, True, black)
+    text_valg_1 = font.render(valg_1, False, green)
+    text_valg_b_1 = font.render(valg_1, False, black)
 
     valg_2_y = valg_1_y + 14
     valg_2 = str("2")
-    text_valg_2 = font.render(valg_2, True, green)
-    text_valg_b_2 = font.render(valg_2, True, black)
+    text_valg_2 = font.render(valg_2, False, green)
+    text_valg_b_2 = font.render(valg_2, False, black)
 
     valg_3_y = valg_2_y + 14
     valg_3 = str("3")
-    text_valg_3 = font.render(valg_3, True, green)
-    text_valg_b_3 = font.render(valg_3, True, black)
+    text_valg_3 = font.render(valg_3, False, green)
+    text_valg_b_3 = font.render(valg_3, False, black)
 
     valg_4_y = valg_3_y + 14
     valg_4 = str("4")
-    text_valg_4 = font.render(valg_4, True, green)
-    text_valg_b_4 = font.render(valg_4, True, black)
+    text_valg_4 = font.render(valg_4, False, green)
+    text_valg_b_4 = font.render(valg_4, False, black)
 
     #laver story text
     story_y = 3
     story = "-"
-    text_story = font.render(story, True, green)
+    text_story = font.render(story, False, green)
 
     story_y_2 = 19
     story_2 =  "-"
-    text_story_2 = font.render(story_2, True, green)
+    text_story_2 = font.render(story_2, False, green)
 
     story_y_3 = 36
     story_3 =  "-"
-    text_story_3 = font.render(story_3, True, black)
+    text_story_3 = font.render(story_3, False, black)
 
 def make_screen():
     global font, story_canvas, text_canvas, main_canvas, canvas, scaled_width, scaled_height, SCREEN, scale, fullscreen, width_offset,height_offset,monitor_width, monitor_height
@@ -279,7 +279,7 @@ def make_screen():
   
     font_path = "TN_pixel.ttf" 
     pygame.font.init()
-    font = pygame.font.FontType(font_path, 11)
+    font = pygame.font.Font(font_path, 11)
 
     # Lav det primære canvas
     canvas = pygame.Surface((screen_width, screen_height))
@@ -310,17 +310,17 @@ def valg_update(v1 ,v2, v3, v4):
     valg_3 = v3
     valg_4 = v4
     
-    text_valg_1 = font.render(valg_1, True, green)
-    text_valg_b_1 = font.render(valg_1, True, black)
+    text_valg_1 = font.render(valg_1, False, green)
+    text_valg_b_1 = font.render(valg_1, False, black)
 
-    text_valg_2 = font.render(valg_2, True, green)
-    text_valg_b_2 = font.render(valg_2, True, black)
+    text_valg_2 = font.render(valg_2, False, green)
+    text_valg_b_2 = font.render(valg_2, False, black)
 
-    text_valg_3 = font.render(valg_3, True, green)
-    text_valg_b_3 = font.render(valg_3, True, black)
+    text_valg_3 = font.render(valg_3, False, green)
+    text_valg_b_3 = font.render(valg_3, False, black)
 
-    text_valg_4 = font.render(valg_4, True, green)
-    text_valg_b_4 = font.render(valg_4, True, black)
+    text_valg_4 = font.render(valg_4, False, green)
+    text_valg_b_4 = font.render(valg_4, False, black)
 
 def choice_select(state_to1,cut_to1,
                   state_to2,cut_to2,

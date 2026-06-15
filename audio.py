@@ -8,7 +8,7 @@ track = {
 
 current = None
 enabled = True
-volume = 1
+volume = 0
 
 
 def switch(track_key):
@@ -40,3 +40,5 @@ def set_volume(v):
     global volume
     volume = max(0.0, min(1.0, v))
     pygame.mixer.music.set_volume(volume)
+
+
