@@ -1,44 +1,39 @@
 import pygame
 
-track = {
-    "home":  "music/ogg_files/Home_theme.ogg",
-    "night": "music/ogg_files/The_night_theme.ogg",
-}
+class Music:
+    def __init__(self):
+        self.current = None
+        self.volume = 100
 
+        self.track = {
+        "home":  "music/ogg_files/Home_theme.ogg",
+        "night": "music/ogg_files/The_night_theme.ogg",
+        }
 
-current = None
-enabled = True
-volume = 0
+    def switch(self, track_key):
+        self.current = track_key
+        path = self.track.get(track_key)
+        if path:
+            pygame.mixer.music.load(path)
+            pygame.mixer.music.set_volume(self.volume/ 100)
+            pygame.mixer.music.play(-1)
 
+    def stop(self):
+        pygame.mixer.music.stop()
+        self.current = None
 
-def switch(track_key):
-    global current
-    if not enabled or track_key == current:
-        return
-    current = track_key
-    path = track.get(track_key)
-    if path:
-        pygame.mixer.music.load(path)
-        pygame.mixer.music.set_volume(volume)
-        pygame.mixer.music.play(-1)
+    def set_volume(self, v):
+        self.volume = max(0, min(100, v))
+        pygame.mixer.music.set_volume(self.volume/ 100)
 
-
-def stop():
-    pygame.mixer.music.stop()
-    global _current
-    current = None
-
-def toggle():
-    global enabled
-    enabled = not enabled
-    if enabled:
-        switch(current or "home")  # resume
-    else:
-        stop()
-
-def set_volume(v):
-    global volume
-    volume = max(0.0, min(1.0, v))
-    pygame.mixer.music.set_volume(volume)
-
-
+class Soundfx:
+    def __init__(self):
+        self.current = None
+        self.volume = 100
+        
+        self.track = {
+        "down": "sound_fx\ogg_files\down.ogg",
+        "up": "sound_fx\ogg_files\up.ogg",
+        "press": "sound_fx\ogg_files\press.ogg"
+        }
+        

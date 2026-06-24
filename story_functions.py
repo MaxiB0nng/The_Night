@@ -485,9 +485,9 @@ def redraw(state):
 
 
     if state in ("menu", "settings", "screen", "credits", "music", "choice",'opening_cutsceen'):
-        audio.switch("night")
+        audio.Music().switch("night")
     elif state.startswith("H"):
-        audio.switch("home")
+        audio.Music().switch("home")
 
     canvas.blit(main_canvas, (3, 3))
     canvas.blit(story_canvas,(3, 119))
