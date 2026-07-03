@@ -1,4 +1,5 @@
 import story_functions as sf
+import short_cut as cut
 
 
 def load():
@@ -16,7 +17,6 @@ def load():
     else:
         return None
 
-    # restore item_list
     if ":" in listeitem:
         _, indexes_str = listeitem.split(":")
         indexes_str = indexes_str.strip("[] ")
@@ -26,7 +26,6 @@ def load():
                 name, ending, _ = sf.item_list[idx]
                 sf.item_list[idx] = (name, ending, True)
 
-    # restore plot_list
     if ":" in listeevent:
         _, indexes_str = listeevent.split(":")
         indexes_str = indexes_str.strip("[] ")
@@ -36,7 +35,6 @@ def load():
                 name, ending, _ = sf.plot_list[idx]
                 sf.plot_list[idx] = (name, ending, True)
 
-    # parse all_states into a flat list of visited states
     visited = []
     if all_states_line.startswith("all:"):
         raw = all_states_line[4:]
@@ -50,11 +48,16 @@ def load():
     sf.state = state
     sf.chapter = chapter
 
-    return sf.chapter, sf.state, visited
+    sf.redraw(sf.state)
+
+    cut_fn = getattr(cut, sf.state, None)
+    if cut_fn:
+        cut_fn()
+
 
 def save(chapter,state):
 
-    if chapter != 0:
+    if chapter != 0 and state != "quit":
         with open("save.tnp", "r") as f:
             chapter_line = f.readline().strip()
             listeitem = f.readline().strip()
@@ -62,7 +65,6 @@ def save(chapter,state):
             all_states = f.readline().strip()
 
 
-        #første linje
         if ":" in chapter_line:
             chapter_save, state_save = chapter_line.split(":")
         else:

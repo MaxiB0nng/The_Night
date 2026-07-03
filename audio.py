@@ -3,20 +3,22 @@ import pygame
 class Music:
     def __init__(self):
         self.current = None
-        self.volume = 100
+        self.volume = 0
 
         self.track = {
-        "home":  "music/ogg_files/Home_theme.ogg",
-        "night": "music/ogg_files/The_night_theme.ogg",
+        "home":  "music\ogg_files\Home_theme.ogg",
+        "night": "music\ogg_files\The_night_theme.ogg",
         }
 
     def switch(self, track_key):
         self.current = track_key
         path = self.track.get(track_key)
         if path:
+            print(f"[audio] loading: {path}")
             pygame.mixer.music.load(path)
             pygame.mixer.music.set_volume(self.volume/ 100)
             pygame.mixer.music.play(-1)
+            print(f"[audio] playing: {pygame.mixer.music.get_busy()}")
 
     def stop(self):
         pygame.mixer.music.stop()
@@ -32,8 +34,9 @@ class Soundfx:
         self.volume = 100
         
         self.track = {
-        "down": "sound_fx\ogg_files\down.ogg",
-        "up": "sound_fx\ogg_files\up.ogg",
-        "press": "sound_fx\ogg_files\press.ogg"
+        "down": "sound_fx/down.mid",
+        "up": "sound_fx/up.mid",
+        "press": "sound_fx/press.mid",
         }
         
+music = Music()

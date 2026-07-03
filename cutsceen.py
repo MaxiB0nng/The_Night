@@ -171,3 +171,18 @@ H_fall_asleep_img = [
     img(f"img\Home\H_lay_down5.png").convert(),
     img(f"img\Home\H_lay_down6.png").convert()   
 ]
+
+
+H_look_around_cutsceen = [
+    (0,(1,"You look around","-","-",1000)),
+    (0,(2,"You find something","-","-",1000)),
+    (0,(3,"Its a letter","-","-",1000)),
+    (0,(4,"-","-","-",1000)),
+]
+
+H_look_around_img = [
+    img(f"img\Home\H_look_around_letter1.png").convert(),
+    img(f"img\Home\H_look_around_letter2.png").convert(),
+    img(f"img\Home\H_look_around_letter3.png").convert(),
+    img(f"img\Home\H_letter.png").convert()
+]

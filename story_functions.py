@@ -3,6 +3,8 @@ import random
 import log as log
 import save_load as sl
 import audio
+import shader
+
 
 black = (15, 25, 15) #0F190E
 green = (10, 142, 10) #0A8E0A
@@ -44,6 +46,11 @@ chapter = 0
 #den statien som spiler er på 
 #start på "running"
 valg = int(1) #de valg som spiler har max 4
+
+shader_tick = 0
+shader_fps = 20
+shader_rate = 60 // shader_fps
+buzz = True
 
 
 #        ▄▄▄▄                                                                        
@@ -159,7 +166,6 @@ def plot_write(list_choice,event_item,bolang: bool):
             if event == event_item:
                 happened = bolang
                 plot_list[i] = (event, ending, happened)
-
 
 #        ▄▄▄▄                                                    
 #      ██▀▀▀▀█                                                   
@@ -484,17 +490,42 @@ def redraw(state):
         main_canvas.blit(lay_down, (image_x, image_y))
 
 
-    if state in ("menu", "settings", "screen", "credits", "music", "choice",'opening_cutsceen'):
-        audio.Music().switch("night")
+    if state in ("menu", "settings", "screen", "credits", "music", "choice", "opening_cutsceen"):
+        if audio.music.current != "night":
+            audio.music.switch("night")
     elif state.startswith("H"):
-        audio.Music().switch("home")
+        if audio.music.current != "home":
+            audio.music.switch("home")
+
 
     canvas.blit(main_canvas, (3, 3))
     canvas.blit(story_canvas,(3, 119))
     canvas.blit(text_canvas, (3, 179)) 
+    shader_redraw()
+
+def shader_redraw():
+    global shader_tick, buzz
 
     # Skalér det samled e canvas og tegn det på skærmen
     scaled_canvas = pygame.transform.scale(canvas, (scaled_width, scaled_height))
+
+    w, h = scaled_canvas.get_size()
+    
+    shader.noise(scaled_canvas)
+
+      
+    if not buzz and random.randint(0, 50) == 0:
+        buzz = True
+    if buzz == True:
+        
+        if shader.buzz_y >= h:
+            buzz_y = 0
+            return True
+        done = shader.buzz(scaled_canvas)
+        if done:
+            buzz = False  
+
+
     if fullscreen:
         if monitor_height >= monitor_width:
            SCREEN.blit(scaled_canvas, (0, height_offset))
@@ -503,7 +534,8 @@ def redraw(state):
     else:
         SCREEN.blit(scaled_canvas, (0, 0))
 
-    # Opdater skærmen
+    # Opdater skærmen og gemmer
+
     sl.save(chapter,state)
 
     pygame.display.flip()

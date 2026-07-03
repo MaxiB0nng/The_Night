@@ -9,7 +9,7 @@ def settings():
     sf.story_update("Settings", "-", "-")
     sf.valg_update("screen", "music", "credits", "back")
 
-def musik():
+def music():
     sf.story_update("music","-","-",)
     sf.valg_update("-","-","-","back",)
 
@@ -20,7 +20,7 @@ def credits():
     sf.valg_update("-", "-", "-", "back")
 
 def screen():
-    sf.story_update("The screen is fixed at a 320x240 ratio", f"the screen is  {sf.scaled_height}x{sf.scaled_width}", "-")
+    sf.story_update("The screen is fixed at a 240x320 ratio", f"the screen is  {sf.scaled_height}x{sf.scaled_width}", "-")
     sf.valg_update(f"scale = {sf.scale}", "scale +", "scale -", "back")
 
 
