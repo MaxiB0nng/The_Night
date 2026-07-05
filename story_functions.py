@@ -50,7 +50,6 @@ valg = int(1) #de valg som spiler har max 4
 shader_tick = 0
 shader_fps = 20
 shader_rate = 60 // shader_fps
-buzz = True
 
 
 #        ▄▄▄▄                                                                        
@@ -510,20 +509,14 @@ def shader_redraw():
     scaled_canvas = pygame.transform.scale(canvas, (scaled_width, scaled_height))
 
     w, h = scaled_canvas.get_size()
-    
-    shader.noise(scaled_canvas)
 
-      
-    if not buzz and random.randint(0, 50) == 0:
-        buzz = True
-    if buzz == True:
-        
-        if shader.buzz_y >= h:
-            buzz_y = 0
-            return True
-        done = shader.buzz(scaled_canvas)
-        if done:
-            buzz = False  
+
+    
+
+    if not shader.buzz and random.randint(0, 50) == 0:
+            shader.buzz = True
+
+    shader.noise(scaled_canvas,20)
 
 
     if fullscreen:
