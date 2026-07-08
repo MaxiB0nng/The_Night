@@ -121,7 +121,9 @@ state_list = [
 
 """
 1. lave soundfx
-2. musik menu
+2. menu
 3. save files
 4.choice_tree hint system
+5.crt tv shader
+6. make shaders work on the gpu
 """

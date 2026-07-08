@@ -497,26 +497,26 @@ def redraw(state):
             audio.music.switch("home")
 
 
-    canvas.blit(main_canvas, (3, 3))
-    canvas.blit(story_canvas,(3, 119))
-    canvas.blit(text_canvas, (3, 179)) 
+
     shader_redraw()
 
 def shader_redraw():
     global shader_tick, buzz
 
-    # Skalér det samled e canvas og tegn det på skærmen
-    scaled_canvas = pygame.transform.scale(canvas, (scaled_width, scaled_height))
+    canvas.fill(black)
+    pygame.draw.rect(canvas, green, (1, 1, 318, 238))
+    canvas.blit(main_canvas, (3, 3))
+    canvas.blit(story_canvas,(3, 119))
+    canvas.blit(text_canvas, (3, 179)) 
 
-    w, h = scaled_canvas.get_size()
-
-
-    
 
     if not shader.buzz and random.randint(0, 50) == 0:
             shader.buzz = True
 
-    shader.noise(scaled_canvas,20)
+    shader.noise(canvas,15)
+
+  # Skalér det samled e canvas og tegn det på skærmen
+    scaled_canvas = pygame.transform.scale(canvas, (scaled_width, scaled_height))
 
 
     if fullscreen:
