@@ -3,22 +3,23 @@ import log
 import story_functions as sf
 import short_cut as cut
 import choice_tree as tree
-import cutsceen as sceen
 import save_load as sl
 import audio
 
-
 pygame.init()
 pygame.mixer.init()
+sf.setup()
+
+import cutsceen as sceen
+
+
+
 
 #alle flag variabler
 need_redraw = True #hvis den er sand så opdatere den skærmen 
 choice = False
+left_right = True
 
-
-sf.image_make()
-sf.make_canvas()
-sf.redraw(sf.state)
 
 
 # Spil-loop
@@ -68,22 +69,44 @@ while running:
                 elif event.key == pygame.K_LEFT and sf.allow_input:
                     if tree.move_selceted:
                         tree.moveing("a")
-                        need_redraw = True
+                    elif left_right:
+                        if sf.state == "music" and sf.valg == 1:
+                            audio.music.next(-1)
+                        if sf.state == "music" and sf.valg == 2:
+                            audio.music.set_volume(audio.music.volume - 5)
+                        if sf.state == "screen" and sf.valg == 1:
+                            sf.scale -= 0.5
+                            if sf.scale <= 1:
+                                sf.scale = 1
+                            sf.make_screen()
+                            cut.screen
+                    need_redraw = True
 
                 elif event.key == pygame.K_RIGHT and sf.allow_input:
                     if tree.move_selceted:
                         tree.moveing("d")
-                        need_redraw = True
+                    elif left_right:
+                        if sf.state == "music" and sf.valg == 1:
+                            audio.music.next(1)
+                        if sf.state == "music" and sf.valg == 2:
+                            audio.music.set_volume(audio.music.volume + 5)
+                        if sf.state == "screen" and sf.valg == 1:
+                            sf.scale += 0.5
+                            if sf.scale >= 6:
+                                sf.scale = 6
+                            sf.make_screen()
+                            cut.screen
+
                         
+                    need_redraw = True
+
                 elif event.key == pygame.K_m:
                     sf.state = "menu"
                     cut.menu()
                     sf.redraw(sf.state)
 
-
                 elif event.key == pygame.K_q:
                     running = False
-
 #     ▄▄▄  ▄▄▄                               
 #     ███  ███                               
 #     ████████   ▄████▄   ██▄████▄  ██    ██ 
@@ -112,21 +135,18 @@ while running:
 
         elif sf.state == "screen":
             cut.screen()
-            if sf.selected_valg_2:
-                sf.scale += 0.5
-                if sf.scale >= 6:
-                    sf.scale = 6
-                sf.make_screen()
 
-            if sf.selected_valg_3:
-                sf.scale -= 0.5
-                if sf.scale <= 1:
-                    sf.scale = 1
-                sf.make_screen()
+            if sf.selected_valg_2:
+                if sf.shader_on == "ON":
+                    sf.shader_on = "OFF"
+                
+                elif sf.shader_on == "OFF":
+                    sf.shader_on = "ON"
+                    
 
             sf.choice_select(None,None,
                             None,cut.screen,
-                            None,cut.screen,
+                            None,None,
                             "settings",cut.settings)
 
         elif sf.state == "credits":
@@ -136,9 +156,8 @@ while running:
                             "settings",cut.settings)
 
         elif sf.state == "music":
-            cut.music
-
-
+            cut.music()
+    
             sf.choice_select(None,None,
                             None,None,
                             None,None,

@@ -1,5 +1,6 @@
 import story_functions as sf
 import short_cut as cut
+import audio
 
 
 def load():
@@ -17,7 +18,7 @@ def load():
     else:
         return None
 
-    if ":" in listeitem:
+    if ":" in listeitem: 
         _, indexes_str = listeitem.split(":")
         indexes_str = indexes_str.strip("[] ")
         if indexes_str:
@@ -54,6 +55,26 @@ def load():
     if cut_fn:
         cut_fn()
 
+
+
+def load_settings():
+
+    with open("save.tnp", "r") as f:
+        lines = f.readlines()
+
+    volume = int(lines[4])
+    sf.shader_on = lines[5].strip()
+    if lines[6] == "fullscreen":
+        sf.scale = 3
+        sf.fullscreen = True
+    else:
+        sf.scale = float(lines[6].strip())
+
+
+
+    audio.music.set_volume(volume)
+
+    
 
 def save(chapter,state):
 
@@ -113,3 +134,17 @@ def save(chapter,state):
             f.write(listeitem + "\n")
             f.write(listeevent + "\n")
             f.write(all_states + "\n")
+
+
+    with open("save.tnp", "r") as f:
+        lines = f.readlines()
+
+    lines[4] = f"{audio.music.volume}\n" 
+    lines[5] = f"{sf.shader_on}\n"
+    if sf.fullscreen:
+        lines[6] = "fullscreen"
+    else:
+        lines[6] = f"{sf.scale}\n"
+
+    with open("save.tnp", "w") as f:
+        f.writelines(lines)

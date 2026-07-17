@@ -19,7 +19,7 @@ def noise(plan, noise):
     shader = np.zeros((w, h, 3), dtype=np.int16)
 
 
-    lines_height = int(1)
+    lines_height = int(2)
     actual_lines_height = 0
     dark_noise = int(noise - (noise*3) )
     

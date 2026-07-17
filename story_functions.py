@@ -12,7 +12,7 @@ red = (162,8, 0) #A20800
 
 screen_width = 320
 screen_height = 240
-scale = int(3)
+
 
 
 selected_valg_1 = False
@@ -38,6 +38,8 @@ cutsceen_img_index = 0
 
 allow_input = True
 
+scale = 1
+
 #player variabler
 state = "running"
 chapter = 0
@@ -51,6 +53,13 @@ shader_tick = 0
 shader_fps = 20
 shader_rate = 60 // shader_fps
 
+
+def setup():
+    sl.load_settings()
+    make_screen()
+    make_canvas()
+    redraw(state)
+    image_make()
 
 #        ▄▄▄▄                                                                        
 #      ██▀▀▀▀█              ██                                                       
@@ -291,7 +300,7 @@ def make_screen():
     canvas.fill(black)
     pygame.draw.rect(canvas, green, (1, 1, 318, 238))  # Grøn kant
 
-make_screen()
+
 
 
 #     ▄▄    ▄▄            ▄▄▄▄               
@@ -299,8 +308,8 @@ make_screen()
 #      ██  ██    ▄█████▄    ██       ▄███▄██ 
 #      ██  ██    ▀ ▄▄▄██    ██      ██▀  ▀██ 
 #       ████    ▄██▀▀▀██    ██      ██    ██ 
-#       ████    ██▄▄▄███    ██▄▄▄   ▀██▄▄███ 
-#       ▀▀▀▀     ▀▀▀▀ ▀▀     ▀▀▀▀    ▄▀▀▀ ██ 
+#        ██    ██▄▄▄███    ██▄▄▄   ▀██▄▄███ 
+#        ▀▀     ▀▀▀▀ ▀▀     ▀▀▀▀    ▄▀▀▀ ██ 
 #                                    ▀████▀▀ 
 
 
@@ -489,19 +498,17 @@ def redraw(state):
         main_canvas.blit(lay_down, (image_x, image_y))
 
 
-    if state in ("menu", "settings", "screen", "credits", "music", "choice", "opening_cutsceen"):
+    if state in ("menu", "settings", "screen", "credits", "choice", "opening_cutsceen"):
         if audio.music.current != "night":
             audio.music.switch("night")
     elif state.startswith("H"):
         if audio.music.current != "home":
             audio.music.switch("home")
 
-
-
     shader_redraw()
 
 def shader_redraw():
-    global shader_tick, buzz
+    global shader_tick, buzz , shader_on
 
     canvas.fill(black)
     pygame.draw.rect(canvas, green, (1, 1, 318, 238))
@@ -510,10 +517,8 @@ def shader_redraw():
     canvas.blit(text_canvas, (3, 179)) 
 
 
-    if not shader.buzz and random.randint(0, 50) == 0:
-            shader.buzz = True
-
-    shader.noise(canvas,15)
+    if shader_on == "ON":
+        shader.noise(canvas,15)
 
   # Skalér det samled e canvas og tegn det på skærmen
     scaled_canvas = pygame.transform.scale(canvas, (scaled_width, scaled_height))

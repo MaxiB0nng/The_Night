@@ -1,5 +1,6 @@
 import story_functions as sf
 import choice_tree as tree
+import audio
 
 def menu():
     sf.story_update("Welcome to The Night", "Case #19981112", "you can always press M to return to the main menu")
@@ -10,18 +11,24 @@ def settings():
     sf.valg_update("screen", "music", "credits", "back")
 
 def music():
-    sf.story_update("music","-","-",)
-    sf.valg_update("-","-","-","back",)
+    sf.story_update("Music",f"Curently playing: {audio.music.current} ",f"Volume: {audio.music.volume}",)
+    sf.valg_update("<- Change music ->",f"<- Volume ->","-","back",)
 
 def credits():
-    sf.story_update("Programer -MaxiBonng"
-                    ,"Art -Maxibonng"
-                    ,"Music -MaxiBonng")
+    sf.story_update("Made by -Maxibonng"
+                    ,"Special thanks: -Engineer_0001   -Likvik   -ArthurR2"
+                    ,"-")
     sf.valg_update("-", "-", "-", "back")
 
 def screen():
-    sf.story_update("The screen is fixed at a 240x320 ratio", f"the screen is  {sf.scaled_height}x{sf.scaled_width}", "-")
-    sf.valg_update(f"scale = {sf.scale}", "scale +", "scale -", "back")
+    if sf.valg == 1:
+        sf.story_update("The screen is fixed at a 240x320 ratio",
+                    f"the screen is  {sf.scaled_height}x{sf.scaled_width}", 
+                    "-")
+    elif sf.valg == 2:
+        sf.story_update("Shaders is recomend ON","for better preformans turn OFF","-")
+
+    sf.valg_update(f"<- scale = {sf.scale} ->", f"shader {sf.shader_on}", "-", "back")
 
 
 def choice():
