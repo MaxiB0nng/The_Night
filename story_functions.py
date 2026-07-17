@@ -195,7 +195,7 @@ def image_make():
     sit_down = pygame.image.load("img/Home/H_sit_down.png").convert()
     room = pygame.image.load("img/Home/H_room.png").convert()
     letter = pygame.image.load("img/Home/H_letter.png").convert()
-    lay_down = pygame.image.load("img\Home\H_lay_down3.png").convert()
+    lay_down = pygame.image.load("img/Home/H_lay_down3.png").convert()
 
 
 def make_canvas():

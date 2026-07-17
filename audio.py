@@ -1,13 +1,15 @@
 import pygame
 
+pygame.mixer.init()
+
 class Music:
     def __init__(self):
         self.current = None
         self.volume = 100
 
         self.track = {
-        "night": "music\ogg_files\The_night_theme.ogg",
-        "home":  "music\ogg_files\Home_theme.ogg",
+        "night": "music/ogg_files/The_night_theme.ogg",
+        "home":  "music/ogg_files/Home_theme.ogg",
         }
 
     def switch(self, track_key):
@@ -42,24 +44,30 @@ class Music:
 
     
 
-
-
-
 class Soundfx:
     def __init__(self):
         self.current = None
         self.volume = 100
-        
-        self.track = {
-        "down": "sound_fx/down.mid",
-        "up": "sound_fx/up.mid",
-        "press": "sound_fx/press.mid",
+
+        self.paths = {
+            "down": "sound_fx/ogg_files/down.ogg",
+            "up": "sound_fx/ogg_files/up.ogg",
+            "press": "sound_fx/ogg_files/press.ogg"
         }
+
+        self.track = {key: pygame.mixer.Sound(path) for key, path in self.paths.items()}
+        self.set_volume(self.volume)
+
+    def play(self, key):
+        self.track[key].play()
 
     def set_volume(self, v):
         self.volume = max(0, min(100, v))
-        pygame.mixer.Sound.set_volume(self.volume/100)
+        for sound in self.track.values():
+            sound.set_volume(self.volume / 100)
 
 
         
 music = Music()
+
+soundfx = Soundfx()

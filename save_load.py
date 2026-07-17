@@ -62,8 +62,13 @@ def load_settings():
     with open("save.tnp", "r") as f:
         lines = f.readlines()
 
-    volume = int(lines[4])
+    musicvolume, soundfxvolume = lines[4].split(":")
+
+    musicvolume = int(musicvolume)
+    soundfxvolume = int(soundfxvolume)
+
     sf.shader_on = lines[5].strip()
+
     if lines[6] == "fullscreen":
         sf.scale = 3
         sf.fullscreen = True
@@ -71,8 +76,8 @@ def load_settings():
         sf.scale = float(lines[6].strip())
 
 
-
-    audio.music.set_volume(volume)
+    audio.music.set_volume(musicvolume)
+    audio.soundfx.set_volume(soundfxvolume)
 
     
 
@@ -139,7 +144,7 @@ def save(chapter,state):
     with open("save.tnp", "r") as f:
         lines = f.readlines()
 
-    lines[4] = f"{audio.music.volume}\n" 
+    lines[4] = f"{audio.music.volume}:{audio.soundfx.volume}\n" 
     lines[5] = f"{sf.shader_on}\n"
     if sf.fullscreen:
         lines[6] = "fullscreen"

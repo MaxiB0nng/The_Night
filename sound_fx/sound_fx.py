@@ -15,7 +15,7 @@ def up():
         )
 
     song = mp.build(
-        mp.track(note,instrument=30, start_time=0),
+        mp.track(note,instrument=82, start_time=0),
         mp.track(bass,instrument=35, start_time=0),
         bpm=100
     )
@@ -39,7 +39,7 @@ def down():
         )
 
     song = mp.build(
-        mp.track(note,instrument=30, start_time=0),
+        mp.track(note,instrument=82, start_time=0),
         mp.track(bass,instrument=35, start_time=0),
         bpm=100
     )
@@ -63,7 +63,7 @@ def press():
         )
 
     song = mp.build(
-        mp.track(note,instrument=30, start_time=0),
+        mp.track(note,instrument=82, start_time=0),
         mp.track(bass,instrument=35, start_time=0),
         bpm=100
     )

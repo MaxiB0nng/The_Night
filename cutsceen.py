@@ -135,9 +135,9 @@ H_search_your_kitchen_cutsceen = [
 ]
 
 H_search_your_kitchen_img = [
-    img(f"img\Home\H_search1.png").convert(),
-    img(f"img\Home\H_search2.png").convert(),
-    img(f"img\Home\H_search3.png").convert()
+    img(f"img/Home/H_search1.png").convert(),
+    img(f"img/Home/H_search2.png").convert(),
+    img(f"img/Home/H_search3.png").convert()
 ]
 
 H_watch_tv_cutseen = [
@@ -148,10 +148,10 @@ H_watch_tv_cutseen = [
 ]
 
 H_watch_tv_img = [
-    img(f"img\Home\H_tv1.png").convert(),
-    img(f"img\Home\H_tv2.png").convert(),
-    img(f"img\Home\H_tv3.png").convert(),
-    img(f"img\Home\H_tv4.png").convert()
+    img(f"img/Home/H_tv1.png").convert(),
+    img(f"img/Home/H_tv2.png").convert(),
+    img(f"img/Home/H_tv3.png").convert(),
+    img(f"img/Home/H_tv4.png").convert()
 ]
 
 H_fall_asleep_cutsceen = [
@@ -164,12 +164,12 @@ H_fall_asleep_cutsceen = [
 ]
 
 H_fall_asleep_img = [
-    img(f"img\Home\H_lay_down1.png").convert(),
-    img(f"img\Home\H_lay_down2.png").convert(),
-    img(f"img\Home\H_lay_down3.png").convert(),
-    img(f"img\Home\H_lay_down4.png").convert(),
-    img(f"img\Home\H_lay_down5.png").convert(),
-    img(f"img\Home\H_lay_down6.png").convert()   
+    img(f"img/Home/H_lay_down1.png").convert(),
+    img(f"img/Home/H_lay_down2.png").convert(),
+    img(f"img/Home/H_lay_down3.png").convert(),
+    img(f"img/Home/H_lay_down4.png").convert(),
+    img(f"img/Home/H_lay_down5.png").convert(),
+    img(f"img/Home/H_lay_down6.png").convert()
 ]
 
 
@@ -181,8 +181,8 @@ H_look_around_cutsceen = [
 ]
 
 H_look_around_img = [
-    img(f"img\Home\H_look_around_letter1.png").convert(),
-    img(f"img\Home\H_look_around_letter2.png").convert(),
-    img(f"img\Home\H_look_around_letter3.png").convert(),
-    img(f"img\Home\H_letter.png").convert()
+    img(f"img/Home/H_look_around_letter1.png").convert(),
+    img(f"img/Home/H_look_around_letter2.png").convert(),
+    img(f"img/Home/H_look_around_letter3.png").convert(),
+    img(f"img/Home/H_letter.png").convert()
 ]

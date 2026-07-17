@@ -4,16 +4,14 @@ import story_functions as sf
 import short_cut as cut
 import choice_tree as tree
 import save_load as sl
-import audio
+
 
 pygame.init()
 pygame.mixer.init()
 sf.setup()
 
 import cutsceen as sceen
-
-
-
+import audio
 
 #alle flag variabler
 need_redraw = True #hvis den er sand så opdatere den skærmen 
@@ -37,6 +35,7 @@ while running:
         if event.type == pygame.KEYDOWN:
                 
                 if event.key == pygame.K_SPACE or event.key == pygame.K_RETURN and sf.allow_input:  # Space/enter tast blev trykke
+                    audio.soundfx.play("press")
                     if not sf.state == "running":
                         sf.text_valg()
                     need_redraw = True
@@ -49,6 +48,7 @@ while running:
                     need_redraw = True
 
                 elif event.key == pygame.K_DOWN and sf.allow_input:
+                    audio.soundfx.play("down")
                     if tree.move_selceted:
                         tree.moveing("s")
                     else:
@@ -58,6 +58,7 @@ while running:
                     need_redraw = True
 
                 elif event.key == pygame.K_UP and sf.allow_input:
+                    audio.soundfx.play("up")
                     if tree.move_selceted:
                         tree.moveing("w")
                     else:
@@ -67,13 +68,17 @@ while running:
                     need_redraw = True
 
                 elif event.key == pygame.K_LEFT and sf.allow_input:
+        
                     if tree.move_selceted:
                         tree.moveing("a")
                     elif left_right:
+                        audio.soundfx.play("down")
                         if sf.state == "music" and sf.valg == 1:
                             audio.music.next(-1)
                         if sf.state == "music" and sf.valg == 2:
                             audio.music.set_volume(audio.music.volume - 5)
+                        if sf.state == "music" and sf.valg == 3:
+                            audio.soundfx.set_volume(audio.soundfx.volume - 5)
                         if sf.state == "screen" and sf.valg == 1:
                             sf.scale -= 0.5
                             if sf.scale <= 1:
@@ -83,13 +88,17 @@ while running:
                     need_redraw = True
 
                 elif event.key == pygame.K_RIGHT and sf.allow_input:
+                    
                     if tree.move_selceted:
                         tree.moveing("d")
                     elif left_right:
+                        audio.soundfx.play("up")
                         if sf.state == "music" and sf.valg == 1:
                             audio.music.next(1)
                         if sf.state == "music" and sf.valg == 2:
                             audio.music.set_volume(audio.music.volume + 5)
+                        if sf.state == "music" and sf.valg == 3:
+                            audio.soundfx.set_volume(audio.soundfx.volume + 5)
                         if sf.state == "screen" and sf.valg == 1:
                             sf.scale += 0.5
                             if sf.scale >= 6:

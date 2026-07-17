@@ -11,8 +11,10 @@ def settings():
     sf.valg_update("screen", "music", "credits", "back")
 
 def music():
-    sf.story_update("Music",f"Curently playing: {audio.music.current} ",f"Volume: {audio.music.volume}",)
-    sf.valg_update("<- Change music ->",f"<- Volume ->","-","back",)
+
+    sf.story_update("Music",f"Curently playing: {audio.music.current} ","-",)
+
+    sf.valg_update("<- Change music ->",f"<- Volume {audio.music.volume} ->",f"<- Sound Fx {audio.soundfx.volume} ->","back",)
 
 def credits():
     sf.story_update("Made by -Maxibonng"
@@ -27,6 +29,8 @@ def screen():
                     "-")
     elif sf.valg == 2:
         sf.story_update("Shaders is recomend ON","for better preformans turn OFF","-")
+    else:
+        sf.story_update("-","-","-")
 
     sf.valg_update(f"<- scale = {sf.scale} ->", f"shader {sf.shader_on}", "-", "back")
 
