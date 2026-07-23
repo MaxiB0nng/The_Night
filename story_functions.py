@@ -13,8 +13,6 @@ red = (162,8, 0) #A20800
 screen_width = 320
 screen_height = 240
 
-
-
 selected_valg_1 = False
 selected_valg_2 = False
 selected_valg_3 = False
@@ -52,7 +50,6 @@ valg = int(1) #de valg som spiler har max 4
 shader_tick = 0
 shader_fps = 20
 shader_rate = 60 // shader_fps
-
 
 def setup():
     sl.load_settings()
@@ -124,7 +121,6 @@ def cutsceen(text_list, img_list, state_to, cut_to):
             state = state_to
             cut_to()
             redraw(state)
-
 
 #     ▄▄▄▄▄▄    ▄▄▄▄                         
 #     ██▀▀▀▀█▄  ▀▀██                  ██     
@@ -289,7 +285,7 @@ def make_screen():
     pygame.display.set_caption("The Night")
     the_night_logo = pygame.image.load("img/logo.png").convert_alpha()  # Indlæs dit ikonbillede
     pygame.display.set_icon(the_night_logo)  # Sæt ikonet for vinduet
-
+    
   
     font_path = "TN_pixel.ttf" 
     pygame.font.init()
@@ -300,9 +296,6 @@ def make_screen():
     canvas.fill(black)
     pygame.draw.rect(canvas, green, (1, 1, 318, 238))  # Grøn kant
 
-
-
-
 #     ▄▄    ▄▄            ▄▄▄▄               
 #     ▀██  ██▀            ▀▀██               
 #      ██  ██    ▄█████▄    ██       ▄███▄██ 
@@ -311,7 +304,6 @@ def make_screen():
 #        ██    ██▄▄▄███    ██▄▄▄   ▀██▄▄███ 
 #        ▀▀     ▀▀▀▀ ▀▀     ▀▀▀▀    ▄▀▀▀ ██ 
 #                                    ▀████▀▀ 
-
 
 def valg_update(v1 ,v2, v3, v4):
 
@@ -381,7 +373,6 @@ def text_valg():
         selected_valg_3 = True
     elif valg == 4:
         selected_valg_4 = True
-
 
 #       ▄▄▄▄                                           
 #     ▄█▀▀▀▀█     ██                                   
@@ -522,7 +513,6 @@ def shader_redraw():
 
   # Skalér det samled e canvas og tegn det på skærmen
     scaled_canvas = pygame.transform.scale(canvas, (scaled_width, scaled_height))
-
 
     if fullscreen:
         if monitor_height >= monitor_width:

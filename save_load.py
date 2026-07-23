@@ -2,11 +2,10 @@ import story_functions as sf
 import short_cut as cut
 import audio
 
-
 def load():
     global visited
 
-    with open("save.tnp", "r") as f:
+    with open("save.tns", "r") as f:
         chapter_line = f.readline().strip()
         listeitem = f.readline().strip()
         listeevent = f.readline().strip()
@@ -55,11 +54,9 @@ def load():
     if cut_fn:
         cut_fn()
 
-
-
 def load_settings():
 
-    with open("save.tnp", "r") as f:
+    with open("save.tns", "r") as f:
         lines = f.readlines()
 
     musicvolume, soundfxvolume = lines[4].split(":")
@@ -79,17 +76,14 @@ def load_settings():
     audio.music.set_volume(musicvolume)
     audio.soundfx.set_volume(soundfxvolume)
 
-    
-
 def save(chapter,state):
 
     if chapter != 0 and state != "quit":
-        with open("save.tnp", "r") as f:
+        with open("save.tns", "r") as f:
             chapter_line = f.readline().strip()
             listeitem = f.readline().strip()
             listeevent = f.readline().strip()
             all_states = f.readline().strip()
-
 
         if ":" in chapter_line:
             chapter_save, state_save = chapter_line.split(":")
@@ -134,14 +128,13 @@ def save(chapter,state):
         all_states = "all:" + ".".join(parts)
 
 
-        with open("save.tnp", "w") as f:
+        with open("save.tns", "w") as f:
             f.write(chapter_line + "\n")
             f.write(listeitem + "\n")
             f.write(listeevent + "\n")
             f.write(all_states + "\n")
 
-
-    with open("save.tnp", "r") as f:
+    with open("save.tns", "r") as f:
         lines = f.readlines()
 
     lines[4] = f"{audio.music.volume}:{audio.soundfx.volume}\n" 
@@ -151,5 +144,5 @@ def save(chapter,state):
     else:
         lines[6] = f"{sf.scale}\n"
 
-    with open("save.tnp", "w") as f:
+    with open("save.tns", "w") as f:
         f.writelines(lines)

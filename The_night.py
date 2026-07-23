@@ -18,8 +18,6 @@ need_redraw = True #hvis den er sand så opdatere den skærmen
 choice = False
 left_right = True
 
-
-
 # Spil-loop
 clock = pygame.time.Clock()
 running = True
@@ -198,7 +196,6 @@ while running:
 #  ██  ▀▀██  ▄██▀▀▀██  ██ ██ ██  ██▀▀▀▀▀▀ 
 #   ██▄▄▄██  ██▄▄▄███  ██ ██ ██  ▀██▄▄▄▄█ 
 #     ▀▀▀▀    ▀▀▀▀ ▀▀  ▀▀ ▀▀ ▀▀    ▀▀▀▀▀  
-
 #        ▄▄▄▄   ▄▄                                                                      ▄▄▄    
 #      ██▀▀▀▀█  ██                              ██                                     █▀██    
 #     ██▀       ██▄████▄   ▄█████▄  ██▄███▄   ███████    ▄████▄    ██▄████               ██    
@@ -281,8 +278,6 @@ while running:
             if not sf.get_plot("plot", "alseep tv"):
                 sf.plot_write("plot", "alseep tv", True)
 
-
-#                                                                
 #     ▄▄▄▄▄▄    ▄▄▄▄▄▄▄▄  ▄▄▄▄▄     ▄▄▄▄▄▄       ▄▄    ▄▄      ▄▄
 #     ██▀▀▀▀██  ██▀▀▀▀▀▀  ██▀▀▀██   ██▀▀▀▀██    ████   ██      ██
 #     ██    ██  ██        ██    ██  ██    ██    ████   ▀█▄ ██ ▄█▀
@@ -290,8 +285,7 @@ while running:
 #     ██  ▀██▄  ██        ██    ██  ██  ▀██▄   ██████   ███▀▀███ 
 #     ██    ██  ██▄▄▄▄▄▄  ██▄▄▄██   ██    ██  ▄██  ██▄  ███  ███ 
 #     ▀▀    ▀▀▀ ▀▀▀▀▀▀▀▀  ▀▀▀▀▀     ▀▀    ▀▀▀ ▀▀    ▀▀  ▀▀▀  ▀▀▀ 
-#                                                                
-#                                                               
+
     if need_redraw:
         if sf.state == "choice":
             tree.choice_tree()
@@ -300,15 +294,11 @@ while running:
         sf.redraw(sf.state)
         need_redraw = False
 
-
     sf.shader_tick += 1
     if sf.shader_tick >= sf.shader_rate:
         sf.shader_redraw()
         sf.shader_tick = 0
-    
-
 
     clock.tick(30)
     
-
 pygame.quit()

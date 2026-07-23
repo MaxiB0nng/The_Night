@@ -2,7 +2,6 @@ import pygame
 
 img = pygame.image.load
 
-
 #       ▄▄▄▄                                           
 #     ▄█▀▀▀▀█     ██                            ██     
 #     ██▄       ███████    ▄█████▄   ██▄████  ███████  
