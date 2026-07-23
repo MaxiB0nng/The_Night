@@ -56,21 +56,21 @@ def load():
 
 def load_settings():
 
-    with open("save.tns", "r") as f:
+    with open("player.tnp", "r") as f:
         lines = f.readlines()
 
-    musicvolume, soundfxvolume = lines[4].split(":")
+    musicvolume, soundfxvolume = lines[0].split(":")
 
     musicvolume = int(musicvolume)
     soundfxvolume = int(soundfxvolume)
 
-    sf.shader_on = lines[5].strip()
+    sf.shader_on = lines[1].strip()
 
-    if lines[6] == "fullscreen":
+    if lines[2] == "fullscreen":
         sf.scale = 3
         sf.fullscreen = True
     else:
-        sf.scale = float(lines[6].strip())
+        sf.scale = float(lines[2].strip())
 
 
     audio.music.set_volume(musicvolume)
@@ -134,15 +134,15 @@ def save(chapter,state):
             f.write(listeevent + "\n")
             f.write(all_states + "\n")
 
-    with open("save.tns", "r") as f:
+    with open("player.tnp", "r") as f:
         lines = f.readlines()
 
-    lines[4] = f"{audio.music.volume}:{audio.soundfx.volume}\n" 
-    lines[5] = f"{sf.shader_on}\n"
+    lines[0] = f"{audio.music.volume}:{audio.soundfx.volume}\n" 
+    lines[1] = f"{sf.shader_on}\n"
     if sf.fullscreen:
-        lines[6] = "fullscreen"
+        lines[2] = "fullscreen"
     else:
-        lines[6] = f"{sf.scale}\n"
+        lines[2] = f"{sf.scale}\n"
 
-    with open("save.tns", "w") as f:
+    with open("player.tnp", "w") as f:
         f.writelines(lines)
