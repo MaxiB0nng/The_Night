@@ -466,6 +466,7 @@ def redraw(state):
 
     elif state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
+        sl.save_settings()
 
     elif state == "H_kitchen":
         if get_plot("item", "knife"):
@@ -496,6 +497,7 @@ def redraw(state):
         if audio.music.current != "home":
             audio.music.switch("home")
 
+    sl.save(chapter,state)
     shader_redraw()
 
 def shader_redraw():
@@ -524,6 +526,6 @@ def shader_redraw():
 
     # Opdater skærmen og gemmer
 
-    sl.save(chapter,state)
+    
 
     pygame.display.flip()

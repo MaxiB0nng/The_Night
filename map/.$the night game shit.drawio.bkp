@@ -223,8 +223,14 @@
         <mxCell id="fWzWxr9jyXVWOb8eHIpt-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" value="dont wake up&lt;br&gt;&lt;div&gt;&amp;nbsp;room&lt;/div&gt;&lt;div&gt;1.1.1.2&lt;/div&gt;&lt;div&gt;but i dont wanna wake up&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="151" x="940" y="840" as="geometry" />
         </mxCell>
-        <mxCell id="fWzWxr9jyXVWOb8eHIpt-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" value="go to the living room&lt;br&gt;&lt;div&gt;living room&lt;/div&gt;&lt;div&gt;1.0.1.0&lt;/div&gt;&lt;div&gt;try finding a diffrent to sleep&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="151" x="-97" y="850" as="geometry" />
+        <mxCell id="fWzWxr9jyXVWOb8eHIpt-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" value="go to the living room&lt;div&gt;&lt;div&gt;living room&lt;/div&gt;&lt;div&gt;1.0.1.0&lt;/div&gt;&lt;div&gt;try standing up&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="151" x="-97" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="fWzWxr9jyXVWOb8eHIpt-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" value="go to the living room&lt;div&gt;&lt;div&gt;living room&lt;/div&gt;&lt;div&gt;1.0.1.0&lt;/div&gt;&lt;div&gt;try standing up&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="151" x="90" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="fWzWxr9jyXVWOb8eHIpt-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" value="go to the living room&lt;div&gt;&lt;div&gt;living room&lt;/div&gt;&lt;div&gt;1.0.1.0&lt;/div&gt;&lt;div&gt;try standing up&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="151" x="-301" y="860" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

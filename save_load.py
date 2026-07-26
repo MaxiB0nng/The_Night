@@ -54,27 +54,6 @@ def load():
     if cut_fn:
         cut_fn()
 
-def load_settings():
-
-    with open("player.tnp", "r") as f:
-        lines = f.readlines()
-
-    musicvolume, soundfxvolume = lines[0].split(":")
-
-    musicvolume = int(musicvolume)
-    soundfxvolume = int(soundfxvolume)
-
-    sf.shader_on = lines[1].strip()
-
-    if lines[2] == "fullscreen":
-        sf.scale = 3
-        sf.fullscreen = True
-    else:
-        sf.scale = float(lines[2].strip())
-
-
-    audio.music.set_volume(musicvolume)
-    audio.soundfx.set_volume(soundfxvolume)
 
 def save(chapter,state):
 
@@ -134,6 +113,40 @@ def save(chapter,state):
             f.write(listeevent + "\n")
             f.write(all_states + "\n")
 
+#       ▄▄▄▄                                     ██                                  
+#     ▄█▀▀▀▀█               ██        ██         ▀▀                                  
+#     ██▄        ▄████▄   ███████   ███████    ████     ██▄████▄   ▄███▄██  ▄▄█████▄ 
+#      ▀████▄   ██▄▄▄▄██    ██        ██         ██     ██▀   ██  ██▀  ▀██  ██▄▄▄▄ ▀ 
+#          ▀██  ██▀▀▀▀▀▀    ██        ██         ██     ██    ██  ██    ██   ▀▀▀▀██▄ 
+#     █▄▄▄▄▄█▀  ▀██▄▄▄▄█    ██▄▄▄     ██▄▄▄   ▄▄▄██▄▄▄  ██    ██  ▀██▄▄███  █▄▄▄▄▄██ 
+#      ▀▀▀▀▀      ▀▀▀▀▀      ▀▀▀▀      ▀▀▀▀   ▀▀▀▀▀▀▀▀  ▀▀    ▀▀   ▄▀▀▀ ██   ▀▀▀▀▀▀  
+#                                                                  ▀████▀▀           
+
+def load_settings():
+
+    with open("player.tnp", "r") as f:
+        lines = f.readlines()
+
+    musicvolume, soundfxvolume = lines[0].split(":")
+
+    musicvolume = int(musicvolume)
+    soundfxvolume = int(soundfxvolume)
+
+    sf.shader_on = lines[1].strip()
+
+    if lines[2] == "fullscreen":
+        sf.scale = 3
+        sf.fullscreen = True
+    else:
+        sf.scale = float(lines[2].strip())
+
+
+    audio.music.set_volume(musicvolume)
+    audio.soundfx.set_volume(soundfxvolume)
+
+    
+def save_settings():
+    
     with open("player.tnp", "r") as f:
         lines = f.readlines()
 
@@ -146,3 +159,4 @@ def save(chapter,state):
 
     with open("player.tnp", "w") as f:
         f.writelines(lines)
+
