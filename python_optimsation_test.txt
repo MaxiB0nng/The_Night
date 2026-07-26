@@ -63,3 +63,34 @@ first test 26-07-26
       119    0.086    0.001    1.830    0.015 C:\Users\max\OneDrive\Skrivebord\The_Night\story_functions.py:457(redraw)
      1230    0.009    0.000    1.649    0.001 C:\Users\max\OneDrive\Skrivebord\The_Night\story_functions.py:69(cutsceen)
 
+3 test 
+
+============================================================
+  RESULTS
+============================================================
+  Wall-clock time : 53.6747 seconds  (real time)
+  CPU time        : 0.8750 seconds  (processor time)
+  Peak memory     : 12.0 MB  (max Python allocated)
+  Process memory  : 68.1 MB  (total, via psutil)
+
+------------------------------------------------------------
+  TOP 12 SLOWEST FUNCTIONS (by total time spent inside them)
+------------------------------------------------------------
+         463754 function calls (460370 primitive calls) in 53.675 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1235 to 12 due to restriction <12>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   53.675   53.675 <frozen runpy>:262(run_path)
+    147/2    0.004    0.000   53.661   26.831 {built-in method builtins.exec}
+        1    0.000    0.000   53.661   53.661 <frozen runpy>:91(_run_module_code)
+        1    0.000    0.000   53.661   53.661 <frozen runpy>:65(_run_code)
+        1    0.112    0.112   53.661   53.661 The_night.py:1(<module>)
+     1496   47.053    0.031   47.053    0.031 {method 'tick' of 'pygame.time.Clock' objects}
+    140/8    0.001    0.000    2.889    0.361 <frozen importlib._bootstrap_external>:934(exec_module)
+    199/9    0.004    0.000    2.883    0.320 <frozen importlib._bootstrap>:1165(_find_and_load)
+    197/7    0.003    0.000    2.883    0.412 <frozen importlib._bootstrap>:1120(_find_and_load_unlocked)
+    195/7    0.002    0.000    2.878    0.411 <frozen importlib._bootstrap>:666(_load_unlocked)
+   483/15    0.001    0.000    2.834    0.189 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
+      617    0.015    0.000    2.746    0.004 C:\Users\max\OneDrive\Skrivebord\The_Night\story_functions.py:503(shader_redraw)

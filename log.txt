@@ -1067,3 +1067,377 @@ log starts at 2026-07-26 17:07:57.
 
 
 
+log starts at 2026-07-26 22:00:39.
+
+2026-07-26 22:00:39: running    1  1
+2026-07-26 22:00:39: running    1  1
+2026-07-26 22:00:40: running    1  1
+2026-07-26 22:00:41: running    1  1
+2026-07-26 22:00:42: running    1  1
+2026-07-26 22:00:42: running    1  1
+2026-07-26 22:00:43: running    1  1
+2026-07-26 22:00:43: running    1  1
+2026-07-26 22:00:43: running    1  1
+2026-07-26 22:00:43: running    1  1
+2026-07-26 22:00:43: running    1  1
+2026-07-26 22:00:44: running    1  1
+2026-07-26 22:00:44: running    1  1
+2026-07-26 22:00:44: running    1  1
+2026-07-26 22:00:44: running    1  1
+2026-07-26 22:00:44: running    1  1
+2026-07-26 22:00:44: running    1  1
+2026-07-26 22:00:44: running    1  1
+2026-07-26 22:00:44: running    1  1
+2026-07-26 22:00:45: running    1  1
+2026-07-26 22:00:45: running    1  1
+2026-07-26 22:00:45: running    1  1
+2026-07-26 22:00:45: running    1  1
+2026-07-26 22:00:45: running    1  1
+2026-07-26 22:00:45: running    1  1
+2026-07-26 22:00:45: running    1  1
+2026-07-26 22:00:45: running    1  1
+2026-07-26 22:00:46: running    1  1
+2026-07-26 22:00:46: running    1  1
+2026-07-26 22:00:46: running    1  1
+2026-07-26 22:00:46: running    1  1
+2026-07-26 22:00:46: running    1  1
+2026-07-26 22:00:46: running    1  1
+2026-07-26 22:00:46: running    1  1
+2026-07-26 22:00:46: running    1  1
+2026-07-26 22:00:46: running    1  1
+2026-07-26 22:00:47: running    1  1
+2026-07-26 22:00:47: running    1  1
+2026-07-26 22:00:47: running    1  1
+2026-07-26 22:00:47: running    1  1
+2026-07-26 22:00:47: running    1  1
+2026-07-26 22:00:47: running    1  1
+2026-07-26 22:00:47: running    1  1
+2026-07-26 22:00:48: running    1  1
+2026-07-26 22:00:48: running    1  1
+2026-07-26 22:00:48: running    1  1
+2026-07-26 22:00:48: running    1  1
+2026-07-26 22:00:48: running    1  1
+2026-07-26 22:00:48: running    1  1
+2026-07-26 22:00:48: running    1  1
+2026-07-26 22:00:48: running    1  1
+2026-07-26 22:00:48: running    1  1
+2026-07-26 22:00:49: running    1  1
+2026-07-26 22:00:49: running    1  1
+2026-07-26 22:00:49: running    1  1
+2026-07-26 22:00:50: running    1  1
+2026-07-26 22:00:52: menu    1  Continue
+2026-07-26 22:00:53: menu    2  Settings
+2026-07-26 22:00:53: menu    1  Continue
+2026-07-26 22:00:54: opening_cutsceen    1  Continue
+2026-07-26 22:00:54: opening_cutsceen    1  Continue
+2026-07-26 22:00:55: opening_cutsceen    1  Continue
+2026-07-26 22:00:56: opening_cutsceen    1  Continue
+2026-07-26 22:00:56: opening_cutsceen    1  Continue
+2026-07-26 22:00:57: opening_cutsceen    1  Continue
+2026-07-26 22:00:57: opening_cutsceen    1  Continue
+2026-07-26 22:00:58: opening_cutsceen    1  Continue
+2026-07-26 22:00:58: opening_cutsceen    1  Continue
+2026-07-26 22:00:59: opening_cutsceen    1  Continue
+2026-07-26 22:00:59: opening_cutsceen    1  Continue
+2026-07-26 22:01:00: opening_cutsceen    1  Continue
+2026-07-26 22:01:00: opening_cutsceen    1  Continue
+2026-07-26 22:01:01: opening_cutsceen    1  Continue
+2026-07-26 22:01:01: opening_cutsceen    1  Continue
+2026-07-26 22:01:02: opening_cutsceen    1  Continue
+2026-07-26 22:01:02: opening_cutsceen    1  Continue
+2026-07-26 22:01:03: opening_cutsceen    1  Continue
+2026-07-26 22:01:03: opening_cutsceen    1  Continue
+2026-07-26 22:01:04: opening_cutsceen    1  Continue
+2026-07-26 22:01:04: opening_cutsceen    1  Continue
+2026-07-26 22:01:05: opening_cutsceen    1  Continue
+2026-07-26 22:01:05: opening_cutsceen    1  Continue
+2026-07-26 22:01:06: opening_cutsceen    1  Continue
+2026-07-26 22:01:06: opening_cutsceen    1  Continue
+2026-07-26 22:01:07: opening_cutsceen    1  Continue
+2026-07-26 22:01:07: opening_cutsceen    1  Continue
+2026-07-26 22:01:08: opening_cutsceen    1  Continue
+2026-07-26 22:01:08: opening_cutsceen    1  Continue
+2026-07-26 22:01:09: opening_cutsceen    1  Continue
+2026-07-26 22:01:09: opening_cutsceen    1  Continue
+2026-07-26 22:01:10: opening_cutsceen    1  Continue
+2026-07-26 22:01:10: opening_cutsceen    1  Continue
+2026-07-26 22:01:11: opening_cutsceen    1  Continue
+2026-07-26 22:01:11: opening_cutsceen    1  Continue
+2026-07-26 22:01:12: opening_cutsceen    1  Continue
+2026-07-26 22:01:12: opening_cutsceen    1  Continue
+2026-07-26 22:01:13: opening_cutsceen    1  Continue
+2026-07-26 22:01:13: opening_cutsceen    1  Continue
+2026-07-26 22:01:14: opening_cutsceen    1  Continue
+2026-07-26 22:01:14: opening_cutsceen    1  Continue
+2026-07-26 22:01:15: opening_cutsceen    1  Continue
+2026-07-26 22:01:15: opening_cutsceen    1  Continue
+2026-07-26 22:01:16: opening_cutsceen    1  Continue
+2026-07-26 22:01:16: opening_cutsceen    1  Continue
+2026-07-26 22:01:17: opening_cutsceen    1  Continue
+2026-07-26 22:01:18: opening_cutsceen    1  Continue
+2026-07-26 22:01:18: opening_cutsceen    1  Continue
+2026-07-26 22:01:20: H_livingroom    1  Sit down in the couch
+2026-07-26 22:01:21: H_livingroom    2  Go to your kitchen
+2026-07-26 22:01:22: H_kitchen    2  Search your kitchen
+2026-07-26 22:01:23: H_kitchen    1  Look for food
+2026-07-26 22:01:23: H_look_for_food    1  Look for food
+2026-07-26 22:01:23: H_look_for_food    1  Look for food
+2026-07-26 22:01:24: H_look_for_food    1  Look for food
+2026-07-26 22:01:24: H_look_for_food    1  Look for food
+2026-07-26 22:01:25: H_look_for_food    1  Look for food
+2026-07-26 22:01:25: H_look_for_food    1  Look for food
+2026-07-26 22:01:26: H_kitchen    1  -
+2026-07-26 22:01:29  log closing
+=============================
+
+
+
+log starts at 2026-07-26 22:07:57.
+
+2026-07-26 22:07:57: running    1  1
+2026-07-26 22:07:57: running    1  1
+2026-07-26 22:07:58: running    1  1
+2026-07-26 22:07:59: running    1  1
+2026-07-26 22:08:00: running    1  1
+2026-07-26 22:08:01: running    1  1
+2026-07-26 22:08:01: running    1  1
+2026-07-26 22:08:02: running    1  1
+2026-07-26 22:08:02: running    1  1
+2026-07-26 22:08:02: running    1  1
+2026-07-26 22:08:02: running    1  1
+2026-07-26 22:08:02: running    1  1
+2026-07-26 22:08:02: running    1  1
+2026-07-26 22:08:02: running    1  1
+2026-07-26 22:08:02: running    1  1
+2026-07-26 22:08:03: running    1  1
+2026-07-26 22:08:03: running    1  1
+2026-07-26 22:08:03: running    1  1
+2026-07-26 22:08:03: running    1  1
+2026-07-26 22:08:03: running    1  1
+2026-07-26 22:08:03: running    1  1
+2026-07-26 22:08:03: running    1  1
+2026-07-26 22:08:03: running    1  1
+2026-07-26 22:08:04: running    1  1
+2026-07-26 22:08:04: running    1  1
+2026-07-26 22:08:04: running    1  1
+2026-07-26 22:08:04: running    1  1
+2026-07-26 22:08:04: running    1  1
+2026-07-26 22:08:04: running    1  1
+2026-07-26 22:08:04: running    1  1
+2026-07-26 22:08:04: running    1  1
+2026-07-26 22:08:05: running    1  1
+2026-07-26 22:08:05: running    1  1
+2026-07-26 22:08:05: running    1  1
+2026-07-26 22:08:05: running    1  1
+2026-07-26 22:08:05: running    1  1
+2026-07-26 22:08:05: running    1  1
+2026-07-26 22:08:05: running    1  1
+2026-07-26 22:08:05: running    1  1
+2026-07-26 22:08:05: running    1  1
+2026-07-26 22:08:06: running    1  1
+2026-07-26 22:08:06: running    1  1
+2026-07-26 22:08:06: running    1  1
+2026-07-26 22:08:06: running    1  1
+2026-07-26 22:08:06: running    1  1
+2026-07-26 22:08:06: running    1  1
+2026-07-26 22:08:06: running    1  1
+2026-07-26 22:08:06: running    1  1
+2026-07-26 22:08:07: running    1  1
+2026-07-26 22:08:07: running    1  1
+2026-07-26 22:08:07: running    1  1
+2026-07-26 22:08:07: running    1  1
+2026-07-26 22:08:07: running    1  1
+2026-07-26 22:08:07: running    1  1
+2026-07-26 22:08:08: running    1  1
+2026-07-26 22:08:09: running    1  1
+2026-07-26 22:08:10: menu    1  Continue
+2026-07-26 22:08:13: opening_cutsceen    1  Continue
+2026-07-26 22:08:13: opening_cutsceen    1  Continue
+2026-07-26 22:08:14: opening_cutsceen    1  Continue
+2026-07-26 22:08:15: opening_cutsceen    1  Continue
+2026-07-26 22:08:16: opening_cutsceen    1  Continue
+2026-07-26 22:08:16: opening_cutsceen    1  Continue
+2026-07-26 22:08:17: opening_cutsceen    1  Continue
+2026-07-26 22:08:17: opening_cutsceen    1  Continue
+2026-07-26 22:08:18: opening_cutsceen    1  Continue
+2026-07-26 22:08:18: opening_cutsceen    1  Continue
+2026-07-26 22:08:19: opening_cutsceen    1  Continue
+2026-07-26 22:08:19: opening_cutsceen    1  Continue
+2026-07-26 22:08:20: opening_cutsceen    1  Continue
+2026-07-26 22:08:20: opening_cutsceen    1  Continue
+2026-07-26 22:08:21: opening_cutsceen    1  Continue
+2026-07-26 22:08:21: opening_cutsceen    1  Continue
+2026-07-26 22:08:22: opening_cutsceen    1  Continue
+2026-07-26 22:08:22: opening_cutsceen    1  Continue
+2026-07-26 22:08:23: opening_cutsceen    1  Continue
+2026-07-26 22:08:23: opening_cutsceen    1  Continue
+2026-07-26 22:08:24: opening_cutsceen    1  Continue
+2026-07-26 22:08:24: opening_cutsceen    1  Continue
+2026-07-26 22:08:25: opening_cutsceen    1  Continue
+2026-07-26 22:08:25: opening_cutsceen    1  Continue
+2026-07-26 22:08:26: opening_cutsceen    1  Continue
+2026-07-26 22:08:26: opening_cutsceen    1  Continue
+2026-07-26 22:08:27: opening_cutsceen    1  Continue
+2026-07-26 22:08:27: opening_cutsceen    1  Continue
+2026-07-26 22:08:28: opening_cutsceen    1  Continue
+2026-07-26 22:08:28: opening_cutsceen    1  Continue
+2026-07-26 22:08:29: opening_cutsceen    1  Continue
+2026-07-26 22:08:29: opening_cutsceen    1  Continue
+2026-07-26 22:08:30: opening_cutsceen    1  Continue
+2026-07-26 22:08:30: opening_cutsceen    1  Continue
+2026-07-26 22:08:31: opening_cutsceen    1  Continue
+2026-07-26 22:08:31: opening_cutsceen    1  Continue
+2026-07-26 22:08:32: opening_cutsceen    1  Continue
+2026-07-26 22:08:32: opening_cutsceen    1  Continue
+2026-07-26 22:08:33: opening_cutsceen    1  Continue
+2026-07-26 22:08:33: opening_cutsceen    1  Continue
+2026-07-26 22:08:34: opening_cutsceen    1  Continue
+2026-07-26 22:08:34: opening_cutsceen    1  Continue
+2026-07-26 22:08:35: opening_cutsceen    1  Continue
+2026-07-26 22:08:35: opening_cutsceen    1  Continue
+2026-07-26 22:08:36: opening_cutsceen    1  Continue
+2026-07-26 22:08:36: opening_cutsceen    1  Continue
+2026-07-26 22:08:37: opening_cutsceen    1  Continue
+2026-07-26 22:08:38: opening_cutsceen    1  Continue
+2026-07-26 22:08:40: H_livingroom    1  Sit down in the couch
+2026-07-26 22:08:41: H_livingroom    2  Go to your kitchen
+2026-07-26 22:08:41: H_kitchen    2  Search your kitchen
+2026-07-26 22:08:42: H_kitchen    1  Look for food
+2026-07-26 22:08:42: H_look_for_food    1  Look for food
+2026-07-26 22:08:43: H_look_for_food    1  Look for food
+2026-07-26 22:08:43: H_look_for_food    1  Look for food
+2026-07-26 22:08:44: H_look_for_food    1  Look for food
+2026-07-26 22:08:44: H_look_for_food    1  Look for food
+2026-07-26 22:08:45: H_look_for_food    1  Look for food
+2026-07-26 22:08:46: H_kitchen    1  -
+2026-07-26 22:08:51  log closing
+=============================
+
+
+
+log starts at 2026-07-26 22:13:49.
+
+2026-07-26 22:13:49: running    1  1
+2026-07-26 22:13:49: running    1  1
+2026-07-26 22:13:50: running    1  1
+2026-07-26 22:13:51: running    1  1
+2026-07-26 22:13:52: running    1  1
+2026-07-26 22:13:53: running    1  1
+2026-07-26 22:13:53: running    1  1
+2026-07-26 22:13:53: running    1  1
+2026-07-26 22:13:53: running    1  1
+2026-07-26 22:13:53: running    1  1
+2026-07-26 22:13:54: running    1  1
+2026-07-26 22:13:54: running    1  1
+2026-07-26 22:13:54: running    1  1
+2026-07-26 22:13:54: running    1  1
+2026-07-26 22:13:54: running    1  1
+2026-07-26 22:13:54  log closing
+=============================
+
+
+
+log starts at 2026-07-26 22:14:06.
+
+log starts at 2026-07-26 22:14:21.
+
+2026-07-26 22:14:21: running    1  1
+2026-07-26 22:14:21: running    1  1
+2026-07-26 22:14:22: running    1  1
+2026-07-26 22:14:23: running    1  1
+2026-07-26 22:14:24: running    1  1
+2026-07-26 22:14:25: running    1  1
+2026-07-26 22:14:25: running    1  1
+2026-07-26 22:14:25: running    1  1
+2026-07-26 22:14:25: running    1  1
+2026-07-26 22:14:25: running    1  1
+2026-07-26 22:14:26: running    1  1
+2026-07-26 22:14:26: running    1  1
+2026-07-26 22:14:26: running    1  1
+2026-07-26 22:14:26: running    1  1
+2026-07-26 22:14:26: running    1  1
+2026-07-26 22:14:26: running    1  1
+2026-07-26 22:14:26: running    1  1
+2026-07-26 22:14:27: running    1  1
+2026-07-26 22:14:27: running    1  1
+2026-07-26 22:14:27: running    1  1
+2026-07-26 22:14:27: running    1  1
+2026-07-26 22:14:27: running    1  1
+2026-07-26 22:14:27: running    1  1
+2026-07-26 22:14:27: running    1  1
+2026-07-26 22:14:27: running    1  1
+2026-07-26 22:14:27: running    1  1
+2026-07-26 22:14:27: running    1  1
+2026-07-26 22:14:28: running    1  1
+2026-07-26 22:14:28: running    1  1
+2026-07-26 22:14:28: running    1  1
+2026-07-26 22:14:28: running    1  1
+2026-07-26 22:14:28: running    1  1
+2026-07-26 22:14:28: running    1  1
+2026-07-26 22:14:28: running    1  1
+2026-07-26 22:14:28: running    1  1
+2026-07-26 22:14:28: running    1  1
+2026-07-26 22:14:28: running    1  1
+2026-07-26 22:14:29: running    1  1
+2026-07-26 22:14:29: running    1  1
+2026-07-26 22:14:29: running    1  1
+2026-07-26 22:14:29: running    1  1
+2026-07-26 22:14:29: running    1  1
+2026-07-26 22:14:29: running    1  1
+2026-07-26 22:14:29: running    1  1
+2026-07-26 22:14:29: running    1  1
+2026-07-26 22:14:29: running    1  1
+2026-07-26 22:14:30: running    1  1
+2026-07-26 22:14:30: running    1  1
+2026-07-26 22:14:30: running    1  1
+2026-07-26 22:14:30: running    1  1
+2026-07-26 22:14:30: running    1  1
+2026-07-26 22:14:30: running    1  1
+2026-07-26 22:14:30: running    1  1
+2026-07-26 22:14:30: running    1  1
+2026-07-26 22:14:31: running    1  1
+2026-07-26 22:14:32: running    1  1
+2026-07-26 22:14:33: menu    1  Continue
+2026-07-26 22:14:34: menu    4  Quit
+2026-07-26 22:14:35: menu    1  Continue
+2026-07-26 22:14:35: menu    2  Settings
+2026-07-26 22:14:45: menu    1  Continue
+2026-07-26 22:14:45: menu    2  Settings
+2026-07-26 22:14:45: menu    1  Continue
+2026-07-26 22:14:46: menu    2  Settings
+2026-07-26 22:14:46: menu    1  Continue
+2026-07-26 22:14:46: menu    2  Settings
+2026-07-26 22:14:46: menu    1  Continue
+2026-07-26 22:14:47: menu    2  Settings
+2026-07-26 22:14:47: menu    1  Continue
+2026-07-26 22:14:47: menu    2  Settings
+2026-07-26 22:14:47: menu    1  Continue
+2026-07-26 22:14:48: menu    2  Settings
+2026-07-26 22:14:48: menu    1  Continue
+2026-07-26 22:14:48: menu    2  Settings
+2026-07-26 22:14:48: menu    1  Continue
+2026-07-26 22:14:48: menu    2  Settings
+2026-07-26 22:14:48: menu    1  Continue
+2026-07-26 22:14:48: menu    2  Settings
+2026-07-26 22:14:49: menu    1  Continue
+2026-07-26 22:14:49: opening_cutsceen    1  Continue
+2026-07-26 22:14:49: opening_cutsceen    1  Continue
+2026-07-26 22:14:50: opening_cutsceen    1  Continue
+2026-07-26 22:14:51: opening_cutsceen    1  Continue
+2026-07-26 22:14:52: opening_cutsceen    1  Continue
+2026-07-26 22:14:52  log closing
+=============================
+
+
+
+log starts at 2026-07-26 22:15:03.
+
+2026-07-26 22:15:03: running    1  1
+2026-07-26 22:15:03: running    1  1
+2026-07-26 22:15:04: running    1  1
+2026-07-26 22:15:05: running    1  1
+2026-07-26 22:15:05  log closing
+=============================
+
+
+
