@@ -1,0 +1,65 @@
+first test 26-07-26
+
+============================================================
+  RESULTS
+============================================================
+  Wall-clock time : 51.1086 seconds  (real time)
+  CPU time        : 2.5312 seconds  (processor time)
+  Peak memory     : 12.0 MB  (max Python allocated)
+  Process memory  : 68.0 MB  (total, via psutil)
+
+------------------------------------------------------------
+  TOP 12 SLOWEST FUNCTIONS (by total time spent inside them)
+------------------------------------------------------------
+         1709997 function calls (1706619 primitive calls) in 51.108 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1233 to 12 due to restriction <12>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   51.108   51.108 <frozen runpy>:262(run_path)
+    147/2    0.003    0.000   51.103   25.551 {built-in method builtins.exec}
+        1    0.000    0.000   51.102   51.102 <frozen runpy>:91(_run_module_code)
+        1    0.000    0.000   51.102   51.102 <frozen runpy>:65(_run_code)
+        1    0.098    0.098   51.102   51.102 The_night.py:1(<module>)
+     1505   43.888    0.029   43.888    0.029 {method 'tick' of 'pygame.time.Clock' objects}
+      624    0.021    0.000    6.136    0.010 C:\Users\max\OneDrive\Skrivebord\The_Night\story_functions.py:503(shader_redraw)
+      624    2.366    0.004    5.366    0.009 C:\Users\max\OneDrive\Skrivebord\The_Night\shader.py:12(noise)
+   166628    0.168    0.000    1.918    0.000 C:\Users\max\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\numpy\_core\fromnumeric.py:3287(prod)
+   166628    0.598    0.000    1.751    0.000 C:\Users\max\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\numpy\_core\fromnumeric.py:66(_wrapreduction)
+      123    0.060    0.000    1.422    0.012 C:\Users\max\OneDrive\Skrivebord\The_Night\story_functions.py:457(redraw)
+     1262    0.007    0.000    1.217    0.001 C:\Users\max\OneDrive\Skrivebord\The_Night\story_functions.py:69(cutsceen)
+
+
+2 test 26-07-26
+
+============================================================
+  RESULTS
+============================================================
+  Wall-clock time : 48.0548 seconds  (real time)
+  CPU time        : 4.3125 seconds  (processor time)
+  Peak memory     : 12.0 MB  (max Python allocated)
+  Process memory  : 67.4 MB  (total, via psutil)
+
+------------------------------------------------------------
+  TOP 12 SLOWEST FUNCTIONS (by total time spent inside them)
+------------------------------------------------------------
+         1486709 function calls (1483326 primitive calls) in 48.055 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1220 to 12 due to restriction <12>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   48.055   48.055 <frozen runpy>:262(run_path)
+    147/2    0.004    0.000   48.046   24.023 {built-in method builtins.exec}
+        1    0.000    0.000   48.045   48.045 <frozen runpy>:91(_run_module_code)
+        1    0.000    0.000   48.045   48.045 <frozen runpy>:65(_run_code)
+        1    0.150    0.150   48.045   48.045 The_night.py:1(<module>)
+     1369   38.019    0.028   38.019    0.028 {method 'tick' of 'pygame.time.Clock' objects}
+      575    0.018    0.000    7.598    0.013 C:\Users\max\OneDrive\Skrivebord\The_Night\story_functions.py:503(shader_redraw)
+      575    2.760    0.005    6.586    0.011 C:\Users\max\OneDrive\Skrivebord\The_Night\shader.py:14(noise)
+   148240    0.222    0.000    2.534    0.000 C:\Users\max\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\numpy\_core\fromnumeric.py:3287(prod)
+   148240    0.791    0.000    2.312    0.000 C:\Users\max\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\numpy\_core\fromnumeric.py:66(_wrapreduction)
+      119    0.086    0.001    1.830    0.015 C:\Users\max\OneDrive\Skrivebord\The_Night\story_functions.py:457(redraw)
+     1230    0.009    0.000    1.649    0.001 C:\Users\max\OneDrive\Skrivebord\The_Night\story_functions.py:69(cutsceen)
+

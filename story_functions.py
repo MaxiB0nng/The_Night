@@ -48,8 +48,8 @@ chapter = 0
 valg = int(1) #de valg som spiler har max 4
 
 shader_tick = 0
-shader_fps = 20
-shader_rate = 60 // shader_fps
+shader_fps = 10
+shader_rate = 30 // shader_fps
 
 def setup():
     sl.load_settings()
