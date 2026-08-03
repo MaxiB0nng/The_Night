@@ -10,6 +10,7 @@ img = pygame.image.load
 #     █▄▄▄▄▄█▀    ██▄▄▄   ██▄▄▄███   ██         ██▄▄▄  
 #      ▀▀▀▀▀       ▀▀▀▀    ▀▀▀▀ ▀▀   ▀▀          ▀▀▀▀  
 startup_sequence = [
+    (0,(0,"-","-","-",15000)),
     (0,(0,"Opening", "The_Night", "Made By MaxiBonng", 1000)),
     (0,(1,"Running simulation", "-", "Made By MaxiBonng", 1000)),
     (0,(2,"Running simulation", "December 12th", "-", 1000)),
@@ -112,9 +113,7 @@ opening_cutsceen = [img(f"img/opening_cutsceen/opening_cutsceen_{i}.png").conver
 
 H_look_for_food_cutsceen = [
     (0,(1,"You look around","-","-",500)),
-    (0,(2,None,"-","-",500)),
-    (0,(3,None,"-","-",500)),
-    (0,(4,None,"-","-",500)),
+    (1,(2,4,500)),
     (0,(5,"You find a bun","-","-",1000)),
 
 ]

@@ -275,7 +275,7 @@ while running:
 
         elif sf.state == "H_fall_asleep":
             sf.cutsceen(sceen.H_fall_asleep_cutsceen, sceen.H_fall_asleep_img, "menu", cut.menu)
-            if not sf.get_plot("plot", "alseep tv"):
+            if not sf.get_plot("plot", "alseep tv"): 
                 sf.plot_write("plot", "alseep tv", True)
 
 #     ▄▄▄▄▄▄    ▄▄▄▄▄▄▄▄  ▄▄▄▄▄     ▄▄▄▄▄▄       ▄▄    ▄▄      ▄▄

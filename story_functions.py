@@ -464,6 +464,7 @@ def redraw(state):
     if allow_input == False:
         text_canvas.fill(green)
 
+
     elif state == "menu" or state == "settings" or state == "screen":
         main_canvas.blit(start_front, (image_x, image_y))
         sl.save_settings()
@@ -489,8 +490,10 @@ def redraw(state):
     elif state == "H_lay_down":
         main_canvas.blit(lay_down, (image_x, image_y))
 
-
-    if state in ("menu", "settings", "screen", "credits", "choice", "opening_cutsceen"):
+    if state in ("running"):
+        if audio.music.current != "start_up":
+             audio.music.switch("start_up")
+    elif state in ("menu", "settings", "screen", "credits", "choice", "opening_cutsceen"):
         if audio.music.current != "night":
             audio.music.switch("night")
     elif state.startswith("H"):

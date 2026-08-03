@@ -8,6 +8,7 @@ class Music:
         self.volume = 100
 
         self.track = {
+        "start_up": "all_sound/music/start_up.ogg",
         "night": "all_sound/music/The_night_theme.ogg",
         "home":  "all_sound/music/Home_theme.ogg",
         }
