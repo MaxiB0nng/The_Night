@@ -5,7 +5,6 @@ import short_cut as cut
 import choice_tree as tree
 import save_load as sl
 
-
 pygame.init()
 pygame.mixer.init()
 sf.setup()
@@ -66,11 +65,10 @@ while running:
                     need_redraw = True
 
                 elif event.key == pygame.K_LEFT and sf.allow_input:
-        
+                    audio.soundfx.play("down")
                     if tree.move_selceted:
                         tree.moveing("a")
                     elif left_right:
-                        audio.soundfx.play("down")
                         if sf.state == "music" and sf.valg == 1:
                             audio.music.next(-1)
                         if sf.state == "music" and sf.valg == 2:
@@ -86,11 +84,10 @@ while running:
                     need_redraw = True
 
                 elif event.key == pygame.K_RIGHT and sf.allow_input:
-                    
+                    audio.soundfx.play("up")
                     if tree.move_selceted:
                         tree.moveing("d")
                     elif left_right:
-                        audio.soundfx.play("up")
                         if sf.state == "music" and sf.valg == 1:
                             audio.music.next(1)
                         if sf.state == "music" and sf.valg == 2:
@@ -114,6 +111,11 @@ while running:
 
                 elif event.key == pygame.K_q:
                     running = False
+
+                elif event.key == pygame.K_s:
+                    if not sf.allow_input:
+                        sf.skip_cutsceen = True
+
 #     ▄▄▄  ▄▄▄                               
 #     ███  ███                               
 #     ████████   ▄████▄   ██▄████▄  ██    ██ 
@@ -121,7 +123,10 @@ while running:
 #     ██ ▀▀ ██  ██▀▀▀▀▀▀  ██    ██  ██    ██ 
 #     ██    ██  ▀██▄▄▄▄█  ██    ██  ██▄▄▄███ 
 #     ▀▀    ▀▀    ▀▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀ 
-    if sf.chapter == 0:
+    if sf.state == "skip":
+        sf.cutsceen(sf.skip_sequence, None, sf.skip_target_state, sf.skip_target_cut)
+
+    elif sf.chapter == 0:
 
         if sf.state == "running":
             sf.cutsceen(sceen.startup_sequence,sceen.glitch,"menu",cut.menu)
@@ -257,7 +262,6 @@ while running:
                             None,None,
                             "H_livingroom",cut.H_livingroom)
 
-
         elif sf.state == "H_look_around":
             if not sf.get_plot("item", "letter"):
                 sf.cutsceen(sceen.H_look_around_cutsceen,sceen.H_look_around_img, "H_room", cut.H_room)
@@ -294,10 +298,11 @@ while running:
         sf.redraw(sf.state)
         need_redraw = False
 
-    sf.shader_tick += 1
-    if sf.shader_tick >= sf.shader_rate:
-        sf.shader_redraw()
-        sf.shader_tick = 0
+    if sf.shader_on == "ON":
+        sf.shader_tick += 1
+        if sf.shader_tick >= sf.shader_rate:
+            sf.shader_redraw()
+            sf.shader_tick = 0
 
     clock.tick(30)
     

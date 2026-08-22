@@ -104,7 +104,7 @@ state_list = [
 #                                                      
 
 """
-2.letter fix "the_night.py 234-253"
+
 
 """
 
@@ -120,10 +120,10 @@ state_list = [
 #                                            
 
 """
-1. lave soundfx
-2. menu
+1. lave soundfx V
+2. menu V
 3. save files
-4.choice_tree hint system
+4.choice_tree rework so it works whit save_file
 5.crt tv shader
-6. make shaders work on the gpu
+6. make shaders work on the gpu: no
 """

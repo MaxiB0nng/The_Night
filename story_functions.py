@@ -36,6 +36,14 @@ cutsceen_img_index = 0
 
 allow_input = True
 
+skip_cutsceen = False
+skip_sequence = [
+    ("frame", (0,"skipping cutsceen","-","it not like i use a lot of time making them",2000)),
+    ("frame",(0,"skipping cutsceen","-","asshole",500))]
+skip_target_state = None
+skip_target_cut = None
+
+
 scale = 1
 
 #player variabler
@@ -67,8 +75,19 @@ def setup():
 #        ▀▀▀▀    ▀▀▀▀ ▀▀     ▀▀▀▀    ▀▀▀▀▀▀     ▀▀▀▀▀     ▀▀▀▀▀     ▀▀▀▀▀   ▀▀    ▀▀ 
 
 def cutsceen(text_list, img_list, state_to, cut_to):
-    global state, cutsceen_index, cutsceen_next_time, cutsceen_img_index, allow_input
+    global state, cutsceen_index, cutsceen_next_time, cutsceen_img_index, allow_input, skip_cutsceen, skip_target_state, skip_target_cut
     allow_input = False
+
+    if skip_cutsceen == True:
+        cutsceen_index = 0
+        cutsceen_next_time = 0
+        cutsceen_img_index = 0
+        skip_cutsceen = False
+        skip_target_state = state_to
+        skip_target_cut = cut_to
+        state = "skip"
+        redraw(state)
+        return
 
     now = pygame.time.get_ticks()
 
@@ -76,7 +95,7 @@ def cutsceen(text_list, img_list, state_to, cut_to):
         if now >= cutsceen_next_time:
             sceen_type, sceen_info = text_list[cutsceen_index]
 
-            if sceen_type == 0:
+            if sceen_type == "frame":
                 img_index, text1, text2, text3, delay = sceen_info
             
                 if img_index == 0:
@@ -90,7 +109,7 @@ def cutsceen(text_list, img_list, state_to, cut_to):
                     delay_ms = delay
                 story_update(text1, text2, text3)
                 redraw(state)
-            if sceen_type == 1:
+            if sceen_type == "from_to":
                 img_index_start, img_index_to, delay = sceen_info
 
                 current_img = img_index_start + cutsceen_img_index
