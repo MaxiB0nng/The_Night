@@ -2,57 +2,61 @@ import story_functions as sf
 import short_cut as cut
 import audio
 
-def load():
+def load(call):
     global visited
 
     with open("save.tns", "r") as f:
-        chapter_line = f.readline().strip()
-        listeitem = f.readline().strip()
-        listeevent = f.readline().strip()
-        all_states_line = f.readline().strip()
+            chapter_line = f.readline().strip()
+            listeitem = f.readline().strip()
+            listeevent = f.readline().strip()
+            all_states_line = f.readline().strip()
 
-    if ":" in chapter_line:
-        chapter, state = chapter_line.split(":")
-        chapter = int(chapter)
-    else:
-        return None
+    if call == "game_load":
+    
 
-    if ":" in listeitem: 
-        _, indexes_str = listeitem.split(":")
-        indexes_str = indexes_str.strip("[] ")
-        if indexes_str:
-            for i in indexes_str.split(","):
-                idx = int(i.strip())
-                name, ending, _ = sf.item_list[idx]
-                sf.item_list[idx] = (name, ending, True)
+        if ":" in chapter_line:
+            chapter, state = chapter_line.split(":")
+            chapter = int(chapter)
+        else:
+            return None
 
-    if ":" in listeevent:
-        _, indexes_str = listeevent.split(":")
-        indexes_str = indexes_str.strip("[] ")
-        if indexes_str:
-            for i in indexes_str.split(","):
-                idx = int(i.strip())
-                name, ending, _ = sf.plot_list[idx]
-                sf.plot_list[idx] = (name, ending, True)
+        if ":" in listeitem: 
+            _, indexes_str = listeitem.split(":")
+            indexes_str = indexes_str.strip("[] ")
+            if indexes_str:
+                for i in indexes_str.split(","):
+                    idx = int(i.strip())
+                    name, ending, _ = sf.item_list[idx]
+                    sf.item_list[idx] = (name, ending, True)
 
-    visited = []
-    if all_states_line.startswith("all:"):
-        raw = all_states_line[4:]
-        for chunk in raw.split("."):
-            if "/" in chunk:
-                _, states_raw = chunk.split("/")
-                visited.extend(states_raw.strip("()").split(","))
+        if ":" in listeevent:
+            _, indexes_str = listeevent.split(":")
+            indexes_str = indexes_str.strip("[] ")
+            if indexes_str:
+                for i in indexes_str.split(","):
+                    idx = int(i.strip())
+                    name, ending, _ = sf.plot_list[idx]
+                    sf.plot_list[idx] = (name, ending, True)
 
-    print()
+        sf.state = state
+        sf.chapter = chapter
 
-    sf.state = state
-    sf.chapter = chapter
+        sf.redraw(sf.state)
 
-    sf.redraw(sf.state)
+        cut_funtion = getattr(cut, sf.state, None)
+        if cut_funtion:
+            cut_funtion()
 
-    cut_fn = getattr(cut, sf.state, None)
-    if cut_fn:
-        cut_fn()
+    if call == "choice_tree":
+
+        visited = {}
+        if all_states_line.startswith("all:"):
+            raw = all_states_line[4:]
+            for chunk in raw.split(":"):
+                if "/" in chunk:
+                    states_chapter, states_raw = chunk.split("/")
+                    visited[states_chapter] = states_raw.strip("()").split(",")
+                    print(visited)
 
 
 def save(chapter,state):
@@ -94,6 +98,7 @@ def save(chapter,state):
                 if "/" in chunk:
                     ch, states_raw = chunk.split("/")
                     visited[ch] = states_raw.strip("()").split(",")
+                    
 
         ch_key = str(chapter)
         if ch_key not in visited:
@@ -112,6 +117,8 @@ def save(chapter,state):
             f.write(listeitem + "\n")
             f.write(listeevent + "\n")
             f.write(all_states + "\n")
+
+        all_states = None
 
 #       ▄▄▄▄                                     ██                                  
 #     ▄█▀▀▀▀█               ██        ██         ▀▀                                  

@@ -38,11 +38,10 @@ allow_input = True
 
 skip_cutsceen = False
 skip_sequence = [
-    ("frame", (0,"skipping cutsceen","-","it not like i use a lot of time making them",2000)),
+    ("frame", (0,"skipping cutsceen","-","it not like i use a lot of time making them",1500)),
     ("frame",(0,"skipping cutsceen","-","asshole",500))]
 skip_target_state = None
 skip_target_cut = None
-
 
 scale = 1
 
@@ -102,7 +101,7 @@ def cutsceen(text_list, img_list, state_to, cut_to):
                     main_canvas.fill(green)
                 else:
                     main_canvas.blit(img_list[img_index - 1], (image_x, image_y))
-                if delay is None:
+                if delay == "random":
                     if state == "running":
                         delay_ms = random.randint(50, 150)
                 else:
@@ -547,7 +546,5 @@ def shader_redraw():
         SCREEN.blit(scaled_canvas, (0, 0))
 
     # Opdater skærmen og gemmer
-
-    
 
     pygame.display.flip()

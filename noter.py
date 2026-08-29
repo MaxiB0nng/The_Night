@@ -37,10 +37,12 @@ state_list = [
     "H_continue",               # after opening cutscene: Kitchen / Livingroom / Room
     "H_kitchen",                # kitchen: Look for food / Search kitchen / Livingroom
     "H_livingroom",             # livingroom: Sit down / Kitchen / Room
-    "H_sit_down",               # cutscene: sitting down, goes back to H_livingroom
-    "H_room",                   # room: Look around / Lay down / Put down / Livingroom
-    "H_look_around",            # cutscene: looking around room, goes back to H_room
-    "H_lay_down",               # cutscene: laying down, goes back to H_room
+    "H_sit_down",               # choice: sit down on couch, Livingroom / watch Tv
+    "H_tv",                     # cutscene: watching tv, sets plot "alseep tv", goes to menu
+    "H_room",                   # room: Look around / Lay down / Livingroom
+    "H_look_around",            # cutscene (once, finds letter item), goes back to H_room
+    "H_lay_down",               # choice: lay in bed, Room / fall asleep
+    "H_fall_asleep",            # cutscene: falling asleep, sets plot "alseep tv", goes to menu
     "H_put_down",               # removed
     "H_look_for_food",          # cutscene: find bun item, goes back to H_kitchen
     "H_search_your_kitchen",    # cutscene: find knife item, goes back to H_kitchen
@@ -57,38 +59,31 @@ state_list = [
 #        ▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀  ██ ▀▀▀       ▀▀▀▀     ▀▀▀▀▀    ▀▀                 ▀▀▀▀▀▀▀▀ 
 
 """
-╔═══════════════════╗
-║ H_livingroom      ║
-║ continue          ║
-║ try starting game!║
-╚═══════════════════╝
-           │
-     ┌─────┼─────┐
-     ▼     ▼     ▼
-╔════════════════╗               ╔═══════════════════╗    ╔═══════════════════╗
-║ H_kitchen      ║               ║ H_livingroom      ║    ║ H_room            ║
-║ go to kitchen  ║               ║ go to living room ║    ║ go to your room   ║
-║ look around    ║               ║ look around       ║    ║ look around       ║
-╚════════════════╝               ╚═══════════════════╝    ╚═══════════════════╝
-   │               │                      │                   │            │
-   ▼               ▼                      ▼                   ▼            ▼
-╔══════════════╗ ╔══════════════╗  ╔══════════════╗  ╔══════════╗      ╔══════════╗
-║ H_look_for   ║ ║ H_search_    ║  ║ H_sit_down   ║  ║H_look_   ║      ║H_lay_    ║
-║ _food        ║ ║ your_kitchen ║  ║ sit down     ║  ║around    ║      ║down      ║
-║ look for bun ║ ║ find knife   ║  ║ couch        ║  ║letter    ║      ║in bed    ║
-╚══════════════╝ ╚══════════════╝  ╚══════════════╝  ╚══════════╝      ╚══════════╝
-                                          │                                 │
-                                          ▼                                 ▼
-                                  ╔══════════════╗                 ╔══════════════╗
-                                  ║ H_tv         ║                 ║ H_lay_down   ║
-                                  ║ watch tv     ║                 ║ do to sleep  ║
-                                  ╚══════════════╝                 ╚══════════════╝
-                                          │                                 │
-                                          ▼                                 ▼
-                                  ╔══════════════╗                 ╔══════════════╗
-                                  ║ asleep couch ║                 ║ asleep bed   ║
-                                  ║ C.0-1.1.0    ║                 ║ C.0-1.1.1    ║
-                                  ╚══════════════╝                 ╚══════════════╝
+H_continue (after opening cutscene) -> H_kitchen / H_livingroom / H_room
+
+H_kitchen
+  - Look for food      -> H_look_for_food (cutscene, sets item:bun)   -> back to H_kitchen
+  - Search kitchen      -> H_search_your_kitchen (cutscene, sets item:knife) -> back to H_kitchen
+  - Livingroom          -> H_livingroom
+  (once bun or knife is found, the two search options are hidden - only Livingroom shows)
+
+H_livingroom
+  - Sit down    -> H_sit_down
+  - Kitchen     -> H_kitchen
+  - Room        -> H_room
+
+H_sit_down
+  - Livingroom  -> H_livingroom
+  - Tv          -> H_tv (cutscene, sets plot:"alseep tv") -> menu
+
+H_room
+  - Look around -> H_look_around (cutscene, once only, sets item:letter) -> back to H_room
+  - Lay down    -> H_lay_down
+  - Livingroom  -> H_livingroom
+
+H_lay_down
+  - Room            -> H_room
+  - Fall asleep     -> H_fall_asleep (cutscene, sets plot:"alseep tv") -> menu
 """
 
 
@@ -122,8 +117,8 @@ state_list = [
 """
 1. lave soundfx V
 2. menu V
-3. save files
-4.choice_tree rework so it works whit save_file
-5.crt tv shader
+3. save files V
+4. choice_tree rework so it works whit save_file - in progress (choice_tree_v2.py, choice_tree.json)
+5. crt tv shader
 6. make shaders work on the gpu: no
 """

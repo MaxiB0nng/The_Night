@@ -21,7 +21,6 @@ def noise(plan, noise):
     n_dark = int(dark_rows.sum())
     shader[:, dark_rows] = rng.integers(dark_noise * 2, dark_noise, (w, n_dark, 3), dtype=np.int16)
 
-
     if buzz:
             random_y = random.randint(h // 18, h // 14)
             if random.randint(0, 10) == 0:

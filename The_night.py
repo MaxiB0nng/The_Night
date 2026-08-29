@@ -37,13 +37,6 @@ while running:
                         sf.text_valg()
                     need_redraw = True
 
-                elif event.key == pygame.K_F11:
-                    sf.fullscreen = not sf.fullscreen
-                    if not sf.fullscreen:
-                        sf.scale = 3
-                    sf.make_screen()
-                    need_redraw = True
-
                 elif event.key == pygame.K_DOWN and sf.allow_input:
                     audio.soundfx.play("down")
                     if tree.move_selceted:
@@ -100,10 +93,15 @@ while running:
                                 sf.scale = 6
                             sf.make_screen()
                             cut.screen
-
-                        
                     need_redraw = True
 
+                elif event.key == pygame.K_F11:
+                    sf.fullscreen = not sf.fullscreen
+                    if not sf.fullscreen:
+                        sf.scale = 3
+                    sf.make_screen()
+                    need_redraw = True
+                    
                 elif event.key == pygame.K_m:
                     sf.state = "menu"
                     cut.menu()

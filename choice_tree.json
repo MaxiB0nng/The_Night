@@ -1,0 +1,95 @@
+{
+    "chapters":
+    [
+        {
+        "chapter_value": "1",
+        "box_list": [
+            {
+                "box_location": "0:0",
+                "box_type": "cutsceen",
+                "box_hint": "Try starting the game!",
+                "arrow_to_boxs": ["-1:1","0:1","2:1"],
+                "box_state": "H_continue"
+            },{
+                "box_location": "-1:1",
+                "box_type": "normal",
+                "box_hint": "look around",
+                "arrow_to_boxs": ["-2:2","-1:2"],
+                "box_state": "H_kitchen"
+            },{
+                "box_location": "0:1",
+                "box_type": "normal",
+                "box_hint": "look around",
+                "arrow_to_boxs": ["0:2"],
+                "box_state": "H_livingroom"
+            },{
+                "box_location": "2:1",
+                "box_type": "normal",
+                "box_hint": "-",
+                "arrow_to_boxs": ["1:2","2:2","3:2"],
+                "box_state": "H_room"
+            },{
+                "box_location": "-2:2",
+                "box_type": "normal",
+                "box_hint": "are you hungry?",
+                "arrow_to_boxs": [],
+                "box_state": "H_look_for_food"
+            },{
+                "box_location": "-1:2",
+                "box_type": "normal",
+                "box_hint": "looking for something?",
+                "arrow_to_boxs": [],
+                "box_state": "H_search_your_kitchen"
+            },{
+                "box_location": "0:2",
+                "box_type": "normal",
+                "box_hint": "maybe take a rest?",
+                "arrow_to_boxs": ["0:3"],
+                "box_state": "H_sit_down"
+            },{
+                "box_location": "1:2",
+                "box_type": "normal",
+                "box_hint": "be curious",
+                "arrow_to_boxs": [],
+                "box_state": "H_look_around"
+            },{
+                "box_location": "2:2",
+                "box_type": "normal",
+                "box_hint": "take a rest dude",
+                "arrow_to_boxs": ["2:3"],
+                "box_state": "H_lay_down"
+            },{
+                "box_location": "3:2",
+                "box_type": "normal",
+                "box_hint": "those dam screens!",
+                "arrow_to_boxs": [],
+                "box_state": "H_put_down"
+            },{
+                "box_location": "0:3",
+                "box_type": "normal",
+                "box_hint": "dont you have better things to do",
+                "arrow_to_boxs": ["0:4"],
+                "box_state": "H_tv"
+            },{
+                "box_location": "2:3",
+                "box_type": "normal",
+                "box_hint": "go to sleep",
+                "arrow_to_boxs": ["2:4"],
+                "box_state": "H_fall_asleep"
+            },{
+                "box_location": "0:4",
+                "box_type": "cutsceen",
+                "box_hint": "arent you tired after work?",
+                "arrow_to_boxs": [],
+                "box_state": "-"
+            },{
+                "box_location": "2:4",
+                "box_type": "cutsceen",
+                "box_hint": "arent you tired after work?",
+                "arrow_to_boxs": [],
+                "box_state": "-"
+            }
+        ]
+        }
+    ]
+}

@@ -56,7 +56,6 @@ def choice():
 #                                █    █ █   █  █ █ █  █▀▀▀▀ 
 #                                █    █ ▀█▄█▀  █ █ █  ▀█▄▄▀ 
 
-
 def H_continue():
     sf.chapter = 1
     sf.story_update("You just got home","Your tired maybe get some sleep","-")
