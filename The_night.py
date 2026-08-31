@@ -95,7 +95,7 @@ while running:
                             cut.screen
                     need_redraw = True
 
-                elif event.key == pygame.K_F11:
+                elif event.key == pygame.K_f:
                     sf.fullscreen = not sf.fullscreen
                     if not sf.fullscreen:
                         sf.scale = 3
@@ -174,10 +174,11 @@ while running:
                             "settings",cut.settings)
         
         elif sf.state == "choice":
-
+            if sf.selected_valg_1:
+                tree.move_selceted =  not tree.move_selceted
 
             if sf.selected_valg_2:
-                sl.load()
+                sl.load("game_load")
               
             
             sf.choice_select(None,cut.choice,
@@ -186,7 +187,7 @@ while running:
                             "menu",cut.menu)
             
         elif sf.state == "opening_cutsceen":
-            sf.cutsceen(sceen.opening_cutsceen_list,sceen.opening_cutsceen,"H_livingroom",cut.H_continue)
+            sf.cutsceen(sceen.opening_cutsceen_list,sceen.opening_cutsceen,"H_continue",cut.H_continue)
 
 #     ▄▄▄▄                                
 #   ██▀▀▀▀█                               
@@ -211,7 +212,10 @@ while running:
 
     elif sf.chapter == 1:
 
-        if sf.state == "H_kitchen":
+        if sf.state == "H_continue":
+            sf.state = "H_livingroom"
+
+        elif sf.state == "H_kitchen":
             if sf.get_plot("item", "knife") or sf.get_plot("item", "bun"):
                 sf.choice_select(None,None,
                                 None,None,

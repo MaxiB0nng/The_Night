@@ -1,0 +1,756 @@
+log starts at 2026-08-31 09:43:07.
+
+2026-08-31 09:43:08: running    1  1
+2026-08-31 09:43:08: running    1  1
+2026-08-31 09:43:09: skip    1  1
+2026-08-31 09:43:09: skip    1  1
+2026-08-31 09:43:10: skip    1  1
+2026-08-31 09:43:11: menu    1  Continue
+2026-08-31 09:43:12: menu    2  Settings
+2026-08-31 09:43:12: menu    3  Choice Tree - saves
+log starts at 2026-08-31 09:44:18.
+
+2026-08-31 09:44:18: running    1  1
+2026-08-31 09:44:18: running    1  1
+2026-08-31 09:44:19: skip    1  1
+2026-08-31 09:44:19: skip    1  1
+2026-08-31 09:44:20: skip    1  1
+2026-08-31 09:44:21: menu    1  Continue
+2026-08-31 09:44:22: menu    2  Settings
+2026-08-31 09:44:22: menu    3  Choice Tree - saves
+log starts at 2026-08-31 09:44:48.
+
+2026-08-31 09:44:48: running    1  1
+2026-08-31 09:44:48: running    1  1
+2026-08-31 09:44:49: skip    1  1
+2026-08-31 09:44:49: skip    1  1
+2026-08-31 09:44:51: skip    1  1
+2026-08-31 09:44:51: menu    1  Continue
+2026-08-31 09:44:52: menu    2  Settings
+2026-08-31 09:44:52: menu    3  Choice Tree - saves
+2026-08-31 09:44:53: choice    3  saves
+2026-08-31 09:45:00  log closing
+=============================
+
+
+
+log starts at 2026-08-31 09:45:30.
+
+2026-08-31 09:45:30: running    1  1
+2026-08-31 09:45:30: running    1  1
+2026-08-31 09:45:32  log closing
+=============================
+
+
+
+log starts at 2026-08-31 09:46:11.
+
+2026-08-31 09:46:11: running    1  1
+2026-08-31 09:46:11: running    1  1
+2026-08-31 09:46:14: skip    1  1
+2026-08-31 09:46:14: skip    1  1
+2026-08-31 09:46:15: skip    1  1
+2026-08-31 09:46:16: menu    1  Continue
+2026-08-31 09:46:16: menu    4  Quit
+2026-08-31 09:46:17: menu    1  Continue
+2026-08-31 09:46:17: opening_cutsceen    1  Continue
+2026-08-31 09:46:17: opening_cutsceen    1  Continue
+2026-08-31 09:46:18: opening_cutsceen    1  Continue
+2026-08-31 09:46:19: opening_cutsceen    1  Continue
+2026-08-31 09:46:20: opening_cutsceen    1  Continue
+2026-08-31 09:46:20: opening_cutsceen    1  Continue
+2026-08-31 09:46:21: opening_cutsceen    1  Continue
+2026-08-31 09:46:21: opening_cutsceen    1  Continue
+2026-08-31 09:46:22: opening_cutsceen    1  Continue
+2026-08-31 09:46:22: opening_cutsceen    1  Continue
+2026-08-31 09:46:23: opening_cutsceen    1  Continue
+2026-08-31 09:46:23: skip    1  Continue
+2026-08-31 09:46:23: skip    1  Continue
+2026-08-31 09:46:25: skip    1  Continue
+2026-08-31 09:46:25: H_livingroom    1  Sit down in the couch
+2026-08-31 09:46:26: H_livingroom    2  Go to your kitchen
+2026-08-31 09:46:27: H_livingroom    1  Sit down in the couch
+2026-08-31 09:46:28  log closing
+=============================
+
+
+
+log starts at 2026-08-31 11:59:51.
+
+2026-08-31 11:59:51: running    1  1
+2026-08-31 11:59:51: running    1  1
+2026-08-31 11:59:52: skip    1  1
+2026-08-31 11:59:52: skip    1  1
+2026-08-31 11:59:53: skip    1  1
+2026-08-31 11:59:54: menu    1  Continue
+2026-08-31 12:00:00: menu    2  Settings
+2026-08-31 12:00:00: menu    3  Choice Tree - saves
+2026-08-31 12:00:00: choice    3  saves
+2026-08-31 12:00:01: choice    2  load
+2026-08-31 12:00:02: choice    1  Move Off
+2026-08-31 12:00:03: choice    1  Move Off
+2026-08-31 12:00:04: choice    1  Move Off
+2026-08-31 12:00:04: choice    2  load
+2026-08-31 12:00:05: choice    1  Move Off
+2026-08-31 12:00:05: choice    1  Move Off
+2026-08-31 12:00:05: choice    1  Move Off
+2026-08-31 12:00:08: choice    1  Move Off
+2026-08-31 12:00:08: choice    1  Move Off
+2026-08-31 12:00:09  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:01:39.
+
+2026-08-31 12:01:39: running    1  1
+2026-08-31 12:01:39: running    1  1
+2026-08-31 12:01:40: running    1  1
+2026-08-31 12:01:40: skip    1  1
+2026-08-31 12:01:40: skip    1  1
+2026-08-31 12:01:42: skip    1  1
+2026-08-31 12:01:42: menu    1  Continue
+2026-08-31 12:01:43: menu    2  Settings
+2026-08-31 12:01:43: menu    3  Choice Tree - saves
+2026-08-31 12:01:43: choice    3  saves
+2026-08-31 12:01:44: choice    2  load
+2026-08-31 12:01:44: choice    1  Move Off
+log starts at 2026-08-31 12:02:25.
+
+2026-08-31 12:02:25: running    1  1
+2026-08-31 12:02:25: running    1  1
+2026-08-31 12:02:27: skip    1  1
+2026-08-31 12:02:27: skip    1  1
+2026-08-31 12:02:28: skip    1  1
+2026-08-31 12:02:29: menu    1  Continue
+2026-08-31 12:02:30: menu    2  Settings
+2026-08-31 12:02:30: menu    3  Choice Tree - saves
+2026-08-31 12:02:31: choice    3  saves
+2026-08-31 12:02:32: choice    2  load
+2026-08-31 12:02:32: choice    1  Move Off
+2026-08-31 12:02:32: choice    1  Move On
+2026-08-31 12:02:33: choice    1  Move On
+2026-08-31 12:02:33: choice    1  Move On
+2026-08-31 12:02:33: choice    1  Move On
+2026-08-31 12:02:34: choice    1  Move On
+2026-08-31 12:02:34: choice    1  Move On
+2026-08-31 12:02:34: choice    1  Move On
+2026-08-31 12:02:35: choice    1  Move On
+2026-08-31 12:02:35: choice    1  Move On
+2026-08-31 12:02:35: choice    1  Move On
+2026-08-31 12:02:35: choice    1  Move On
+2026-08-31 12:02:36: choice    1  Move On
+2026-08-31 12:02:36: choice    1  Move On
+2026-08-31 12:02:36: choice    1  Move On
+2026-08-31 12:02:36: choice    1  Move On
+2026-08-31 12:02:37: choice    1  Move On
+2026-08-31 12:02:37: choice    1  Move On
+2026-08-31 12:02:38: choice    1  Move On
+2026-08-31 12:02:38: choice    1  Move On
+2026-08-31 12:02:38: choice    1  Move On
+2026-08-31 12:02:39: choice    1  Move On
+2026-08-31 12:02:39: choice    1  Move On
+2026-08-31 12:02:39: choice    1  Move On
+2026-08-31 12:02:39: choice    1  Move On
+2026-08-31 12:02:40: choice    1  Move On
+2026-08-31 12:02:40: choice    1  Move On
+2026-08-31 12:02:40: choice    1  Move On
+2026-08-31 12:02:40: choice    1  Move On
+2026-08-31 12:02:41: choice    1  Move On
+2026-08-31 12:02:41: choice    1  Move On
+2026-08-31 12:02:41: choice    1  Move On
+2026-08-31 12:02:41: choice    1  Move On
+2026-08-31 12:02:42: choice    1  Move On
+2026-08-31 12:02:42: choice    1  Move On
+2026-08-31 12:02:42: choice    1  Move On
+2026-08-31 12:02:42: choice    1  Move On
+2026-08-31 12:02:43: choice    1  Move On
+2026-08-31 12:02:43: choice    1  Move On
+2026-08-31 12:02:43: choice    1  Move On
+2026-08-31 12:02:43: choice    1  Move On
+2026-08-31 12:02:44: choice    1  Move On
+2026-08-31 12:02:44: choice    1  Move On
+2026-08-31 12:02:45: choice    1  Move On
+2026-08-31 12:02:45: choice    1  Move On
+2026-08-31 12:02:45: choice    1  Move On
+2026-08-31 12:02:46: choice    1  Move On
+2026-08-31 12:02:46: choice    1  Move On
+2026-08-31 12:02:48: choice    1  Move Off
+2026-08-31 12:02:50  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:50:04.
+
+2026-08-31 12:50:04: running    1  1
+2026-08-31 12:50:04: running    1  1
+2026-08-31 12:50:05: skip    1  1
+2026-08-31 12:50:05: skip    1  1
+2026-08-31 12:50:06: skip    1  1
+2026-08-31 12:50:07: menu    1  Continue
+2026-08-31 12:50:08: menu    2  Settings
+2026-08-31 12:50:08: menu    3  Choice Tree - saves
+2026-08-31 12:50:08: choice    3  saves
+2026-08-31 12:50:10: choice    2  load
+2026-08-31 12:50:18  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:50:46.
+
+2026-08-31 12:50:46: running    1  1
+2026-08-31 12:50:46: running    1  1
+2026-08-31 12:51:00: skip    1  1
+2026-08-31 12:51:00: skip    1  1
+2026-08-31 12:51:02: skip    1  1
+2026-08-31 12:51:02: menu    1  Continue
+2026-08-31 12:51:03: menu    2  Settings
+2026-08-31 12:51:04: menu    3  Choice Tree - saves
+2026-08-31 12:51:04: choice    3  saves
+2026-08-31 12:51:07  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:52:08.
+
+2026-08-31 12:52:08: running    1  1
+2026-08-31 12:52:08: running    1  1
+2026-08-31 12:52:18: skip    1  1
+2026-08-31 12:52:18: skip    1  1
+2026-08-31 12:52:19: skip    1  1
+2026-08-31 12:52:20: menu    1  Continue
+2026-08-31 12:52:20: menu    2  Settings
+2026-08-31 12:52:21: menu    3  Choice Tree - saves
+2026-08-31 12:52:21: choice    3  saves
+2026-08-31 12:52:24  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:52:36.
+
+2026-08-31 12:52:36: running    1  1
+2026-08-31 12:52:36: running    1  1
+2026-08-31 12:52:37: skip    1  1
+2026-08-31 12:52:37: skip    1  1
+2026-08-31 12:52:38: skip    1  1
+2026-08-31 12:52:39: menu    1  Continue
+2026-08-31 12:52:39: menu    2  Settings
+2026-08-31 12:52:39: menu    3  Choice Tree - saves
+2026-08-31 12:52:40: choice    3  saves
+2026-08-31 12:52:41  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:53:11.
+
+2026-08-31 12:53:11: running    1  1
+2026-08-31 12:53:11: running    1  1
+2026-08-31 12:53:19: skip    1  1
+2026-08-31 12:53:19: skip    1  1
+2026-08-31 12:53:21: skip    1  1
+2026-08-31 12:53:21: menu    1  Continue
+2026-08-31 12:53:22: menu    2  Settings
+2026-08-31 12:53:22: menu    3  Choice Tree - saves
+2026-08-31 12:53:22: choice    3  saves
+2026-08-31 12:53:27  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:53:50.
+
+2026-08-31 12:53:50: running    1  1
+2026-08-31 12:53:50: running    1  1
+2026-08-31 12:53:50: skip    1  1
+2026-08-31 12:53:50: skip    1  1
+2026-08-31 12:53:52: skip    1  1
+2026-08-31 12:53:52: menu    1  Continue
+2026-08-31 12:53:54: menu    2  Settings
+2026-08-31 12:53:54: menu    3  Choice Tree - saves
+2026-08-31 12:53:54: choice    3  saves
+2026-08-31 12:53:56  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:54:24.
+
+2026-08-31 12:54:24: running    1  1
+2026-08-31 12:54:24: running    1  1
+2026-08-31 12:54:24: skip    1  1
+2026-08-31 12:54:24: skip    1  1
+2026-08-31 12:54:26: skip    1  1
+2026-08-31 12:54:27: menu    1  Continue
+2026-08-31 12:54:27: menu    2  Settings
+2026-08-31 12:54:27: menu    3  Choice Tree - saves
+2026-08-31 12:54:28: choice    3  saves
+2026-08-31 12:54:30  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:57:18.
+
+2026-08-31 12:57:18: running    1  1
+2026-08-31 12:57:18: running    1  1
+2026-08-31 12:57:19: skip    1  1
+2026-08-31 12:57:19: skip    1  1
+2026-08-31 12:57:20: skip    1  1
+2026-08-31 12:57:21: menu    1  Continue
+2026-08-31 12:57:21: menu    4  Quit
+2026-08-31 12:57:21: menu    1  Continue
+2026-08-31 12:57:21: opening_cutsceen    1  Continue
+2026-08-31 12:57:22: opening_cutsceen    1  Continue
+2026-08-31 12:57:23: opening_cutsceen    1  Continue
+2026-08-31 12:57:24: opening_cutsceen    1  Continue
+2026-08-31 12:57:24: opening_cutsceen    1  Continue
+2026-08-31 12:57:24: skip    1  Continue
+2026-08-31 12:57:24: skip    1  Continue
+2026-08-31 12:57:26: skip    1  Continue
+2026-08-31 12:57:26: H_continue    1  Sit down in the couch
+2026-08-31 12:57:27: H_livingroom    2  Go to your kitchen
+2026-08-31 12:57:28: H_livingroom    1  Sit down in the couch
+2026-08-31 12:57:28: H_livingroom    2  Go to your kitchen
+2026-08-31 12:57:29  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:57:33.
+
+2026-08-31 12:57:33: running    1  1
+2026-08-31 12:57:33: running    1  1
+2026-08-31 12:57:34: skip    1  1
+2026-08-31 12:57:34: skip    1  1
+2026-08-31 12:57:35: skip    1  1
+2026-08-31 12:57:36: menu    1  Continue
+2026-08-31 12:57:37: menu    2  Settings
+2026-08-31 12:57:37: menu    3  Choice Tree - saves
+2026-08-31 12:57:37: choice    3  saves
+2026-08-31 12:57:39  log closing
+=============================
+
+
+
+log starts at 2026-08-31 12:57:50.
+
+2026-08-31 12:57:50: running    1  1
+2026-08-31 12:57:50: running    1  1
+2026-08-31 12:57:51: skip    1  1
+2026-08-31 12:57:51: skip    1  1
+2026-08-31 12:57:53: skip    1  1
+2026-08-31 12:57:53: menu    1  Continue
+log starts at 2026-08-31 12:58:08.
+
+2026-08-31 12:58:08: running    1  1
+2026-08-31 12:58:08: running    1  1
+2026-08-31 12:58:11: skip    1  1
+2026-08-31 12:58:11: skip    1  1
+2026-08-31 12:58:13: skip    1  1
+2026-08-31 12:58:13: menu    1  Continue
+2026-08-31 12:58:22: menu    2  Settings
+2026-08-31 12:58:22: menu    3  Choice Tree - saves
+2026-08-31 12:58:22: choice    3  saves
+2026-08-31 12:58:25: choice    3  saves
+2026-08-31 12:58:26: choice    3  saves
+2026-08-31 12:58:27: choice    4  Back
+2026-08-31 12:58:27: choice    3  saves
+2026-08-31 12:58:27: choice    2  load
+2026-08-31 12:58:28: choice    1  Move Off
+2026-08-31 12:58:28: choice    1  Move On
+log starts at 2026-08-31 12:59:06.
+
+2026-08-31 12:59:06: running    1  1
+2026-08-31 12:59:06: running    1  1
+2026-08-31 12:59:08: skip    1  1
+2026-08-31 12:59:08: skip    1  1
+2026-08-31 12:59:09: skip    1  1
+2026-08-31 12:59:10: menu    1  Continue
+2026-08-31 12:59:11: menu    2  Settings
+2026-08-31 12:59:11: menu    3  Choice Tree - saves
+2026-08-31 12:59:12: choice    3  saves
+2026-08-31 12:59:16  log closing
+=============================
+
+
+
+log starts at 2026-08-31 13:00:04.
+
+2026-08-31 13:00:04: running    1  1
+2026-08-31 13:00:04: running    1  1
+2026-08-31 13:00:05: skip    1  1
+2026-08-31 13:00:05: skip    1  1
+2026-08-31 13:00:07: skip    1  1
+2026-08-31 13:00:07: menu    1  Continue
+2026-08-31 13:00:08: menu    2  Settings
+2026-08-31 13:00:08: menu    3  Choice Tree - saves
+2026-08-31 13:00:08: choice    3  saves
+2026-08-31 13:00:11  log closing
+=============================
+
+
+
+log starts at 2026-08-31 13:01:24.
+
+2026-08-31 13:01:24: running    1  1
+2026-08-31 13:01:24: running    1  1
+2026-08-31 13:01:25: skip    1  1
+2026-08-31 13:01:25: skip    1  1
+2026-08-31 13:01:27: skip    1  1
+2026-08-31 13:01:27: menu    1  Continue
+2026-08-31 13:01:28: menu    2  Settings
+2026-08-31 13:01:28: menu    3  Choice Tree - saves
+2026-08-31 13:01:28: choice    3  saves
+2026-08-31 13:01:30  log closing
+=============================
+
+
+
+log starts at 2026-08-31 13:01:38.
+
+2026-08-31 13:01:38: running    1  1
+2026-08-31 13:01:38: running    1  1
+2026-08-31 13:01:38: skip    1  1
+2026-08-31 13:01:38: skip    1  1
+2026-08-31 13:01:40: skip    1  1
+2026-08-31 13:01:40: menu    1  Continue
+2026-08-31 13:01:41: menu    2  Settings
+2026-08-31 13:01:41: menu    3  Choice Tree - saves
+2026-08-31 13:01:41: choice    3  saves
+2026-08-31 13:01:50  log closing
+=============================
+
+
+
+log starts at 2026-08-31 13:03:12.
+
+2026-08-31 13:03:12: running    1  1
+2026-08-31 13:03:12: running    1  1
+2026-08-31 13:03:13: skip    1  1
+2026-08-31 13:03:13: skip    1  1
+2026-08-31 13:03:15: skip    1  1
+2026-08-31 13:03:15: menu    1  Continue
+2026-08-31 13:03:15: menu    2  Settings
+2026-08-31 13:03:16: menu    3  Choice Tree - saves
+2026-08-31 13:03:16: choice    3  saves
+2026-08-31 13:03:24  log closing
+=============================
+
+
+
+log starts at 2026-08-31 13:03:30.
+
+2026-08-31 13:03:30: running    1  1
+2026-08-31 13:03:30: running    1  1
+2026-08-31 13:03:31: skip    1  1
+2026-08-31 13:03:31: skip    1  1
+2026-08-31 13:03:32: skip    1  1
+2026-08-31 13:03:33: menu    1  Continue
+2026-08-31 13:03:33: menu    2  Settings
+2026-08-31 13:03:33: menu    3  Choice Tree - saves
+2026-08-31 13:03:33: choice    3  saves
+2026-08-31 13:03:36  log closing
+=============================
+
+
+
+log starts at 2026-08-31 13:03:41.
+
+2026-08-31 13:03:41: running    1  1
+2026-08-31 13:03:41: running    1  1
+2026-08-31 13:03:42: skip    1  1
+2026-08-31 13:03:42: skip    1  1
+2026-08-31 13:03:42: skip    1  1
+2026-08-31 13:03:42: skip    1  1
+2026-08-31 13:03:44: skip    1  1
+2026-08-31 13:03:44: menu    1  Continue
+2026-08-31 13:03:44: menu    2  Settings
+2026-08-31 13:03:45: menu    3  Choice Tree - saves
+2026-08-31 13:03:45: choice    3  saves
+2026-08-31 13:03:52: choice    3  saves
+2026-08-31 13:03:58: choice    2  load
+2026-08-31 13:03:59: choice    1  Move Off
+log starts at 2026-08-31 13:06:19.
+
+2026-08-31 13:06:19: running    1  1
+2026-08-31 13:06:19: running    1  1
+2026-08-31 13:06:19: skip    1  1
+2026-08-31 13:06:19: skip    1  1
+2026-08-31 13:06:21: skip    1  1
+2026-08-31 13:06:21: menu    1  Continue
+2026-08-31 13:06:21: menu    2  Settings
+2026-08-31 13:06:22: menu    3  Choice Tree - saves
+2026-08-31 13:06:22: choice    3  saves
+2026-08-31 13:06:26  log closing
+=============================
+
+
+
+log starts at 2026-08-31 13:06:30.
+
+2026-08-31 13:06:30: running    1  1
+2026-08-31 13:06:30: running    1  1
+2026-08-31 13:06:31: skip    1  1
+2026-08-31 13:06:31: skip    1  1
+2026-08-31 13:06:33: skip    1  1
+2026-08-31 13:06:33: menu    1  Continue
+2026-08-31 13:06:34: menu    2  Settings
+2026-08-31 13:06:34: menu    3  Choice Tree - saves
+2026-08-31 13:06:34: choice    3  saves
+2026-08-31 13:08:16  log closing
+=============================
+
+
+
+log starts at 2026-08-31 13:08:21.
+
+2026-08-31 13:08:21: running    1  1
+2026-08-31 13:08:21: running    1  1
+2026-08-31 13:08:22: skip    1  1
+2026-08-31 13:08:22: skip    1  1
+2026-08-31 13:08:23: skip    1  1
+2026-08-31 13:08:24: menu    1  Continue
+2026-08-31 13:08:25: menu    2  Settings
+2026-08-31 13:08:25: menu    3  Choice Tree - saves
+2026-08-31 13:08:25: choice    3  saves
+2026-08-31 13:08:26: choice    2  load
+log starts at 2026-08-31 13:09:00.
+
+2026-08-31 13:09:00: running    1  1
+2026-08-31 13:09:00: running    1  1
+2026-08-31 13:09:01: skip    1  1
+2026-08-31 13:09:01: skip    1  1
+2026-08-31 13:09:02: skip    1  1
+2026-08-31 13:09:03: menu    1  Continue
+2026-08-31 13:09:03: menu    2  Settings
+2026-08-31 13:09:03: menu    3  Choice Tree - saves
+2026-08-31 13:09:04: choice    3  saves
+2026-08-31 13:09:05: choice    2  load
+2026-08-31 13:09:05: H_livingroom    2  load
+2026-08-31 13:09:05: H_livingroom    2  Go to your kitchen
+2026-08-31 13:09:06: H_livingroom    1  Sit down in the couch
+2026-08-31 13:09:07: H_sit_down    1  Stand up
+2026-08-31 13:09:09: H_livingroom    1  Sit down in the couch
+2026-08-31 13:09:09: H_livingroom    2  Go to your kitchen
+2026-08-31 13:09:09: H_livingroom    3  Go to your room
+2026-08-31 13:09:10: H_room    3  -
+2026-08-31 13:09:11: H_room    2  Lay down in your bed
+2026-08-31 13:09:12: H_room    1  Look around your room
+2026-08-31 13:09:14: H_room    2  Lay down in your bed
+2026-08-31 13:09:14: H_room    3  -
+2026-08-31 13:09:14: H_room    4  Go to the living room
+2026-08-31 13:09:15: H_livingroom    4  -
+2026-08-31 13:09:15: H_livingroom    3  Go to your room
+2026-08-31 13:09:17: H_livingroom    4  -
+2026-08-31 13:09:17: H_livingroom    4  -
+2026-08-31 13:09:20: menu    4  Quit
+2026-08-31 13:09:21: menu    3  Choice Tree - saves
+2026-08-31 13:09:21: menu    3  Choice Tree - saves
+2026-08-31 13:09:22: menu    2  Settings
+2026-08-31 13:09:22: menu    3  Choice Tree - saves
+2026-08-31 13:09:23: menu    2  Settings
+2026-08-31 13:09:23: menu    3  Choice Tree - saves
+2026-08-31 13:09:24: menu    3  Choice Tree - saves
+2026-08-31 13:09:25: menu    2  Settings
+2026-08-31 13:09:25: menu    3  Choice Tree - saves
+2026-08-31 13:09:25: menu    3  Choice Tree - saves
+2026-08-31 13:09:26: menu    2  Settings
+2026-08-31 13:09:26: menu    3  Choice Tree - saves
+2026-08-31 13:09:26: menu    3  Choice Tree - saves
+2026-08-31 13:09:27: menu    3  Choice Tree - saves
+2026-08-31 13:09:28: menu    2  Settings
+2026-08-31 13:09:28: menu    2  Settings
+2026-08-31 13:09:28: menu    1  Continue
+2026-08-31 13:09:28: menu    4  Quit
+2026-08-31 13:09:29: menu    1  Continue
+2026-08-31 13:09:29: menu    2  Settings
+2026-08-31 13:09:29: menu    3  Choice Tree - saves
+2026-08-31 13:09:30: menu    2  Settings
+2026-08-31 13:09:30: menu    3  Choice Tree - saves
+log starts at 2026-08-31 13:10:16.
+
+2026-08-31 13:10:16: running    1  1
+2026-08-31 13:10:16: running    1  1
+2026-08-31 13:10:17: skip    1  1
+2026-08-31 13:10:17: skip    1  1
+2026-08-31 13:10:19: skip    1  1
+2026-08-31 13:10:19: menu    1  Continue
+2026-08-31 13:10:19: menu    2  Settings
+2026-08-31 13:10:20: menu    3  Choice Tree - saves
+2026-08-31 13:10:20: choice    3  saves
+2026-08-31 13:11:31  log closing
+=============================
+
+
+
+log starts at 2026-08-31 13:13:09.
+
+2026-08-31 13:13:09: running    1  1
+2026-08-31 13:13:09: running    1  1
+2026-08-31 13:13:10: skip    1  1
+2026-08-31 13:13:10: skip    1  1
+2026-08-31 13:13:11: skip    1  1
+2026-08-31 13:13:12: menu    1  Continue
+2026-08-31 13:13:12: menu    2  Settings
+2026-08-31 13:13:12: menu    3  Choice Tree - saves
+2026-08-31 13:13:13: choice    3  saves
+2026-08-31 13:13:21  log closing
+=============================
+
+
+
+log starts at 2026-08-31 13:13:35.
+
+2026-08-31 13:13:35: running    1  1
+2026-08-31 13:13:35: running    1  1
+2026-08-31 13:13:39: skip    1  1
+2026-08-31 13:13:39: skip    1  1
+2026-08-31 13:13:40: skip    1  1
+2026-08-31 13:13:41: menu    1  Continue
+2026-08-31 13:13:41: menu    2  Settings
+2026-08-31 13:13:41: menu    3  Choice Tree - saves
+2026-08-31 13:13:41: choice    3  saves
+2026-08-31 13:13:49: choice    4  Back
+2026-08-31 13:13:53: menu    4  Quit
+2026-08-31 13:13:54: menu    3  Choice Tree - saves
+2026-08-31 13:13:54: menu    2  Settings
+2026-08-31 13:14:47  log closing
+=============================
+
+
+
+log starts at 2026-08-31 14:33:16.
+
+2026-08-31 14:33:16: running    1  1
+2026-08-31 14:33:16: running    1  1
+2026-08-31 14:33:18: skip    1  1
+2026-08-31 14:33:18: skip    1  1
+2026-08-31 14:33:19: skip    1  1
+2026-08-31 14:33:20: menu    1  Continue
+2026-08-31 14:33:20: menu    2  Settings
+2026-08-31 14:33:21: menu    3  Choice Tree - saves
+2026-08-31 14:33:21: menu    2  Settings
+2026-08-31 14:33:21: menu    1  Continue
+2026-08-31 14:33:21: opening_cutsceen    1  Continue
+2026-08-31 14:33:21: opening_cutsceen    1  Continue
+2026-08-31 14:33:22: skip    1  Continue
+2026-08-31 14:33:22: skip    1  Continue
+2026-08-31 14:33:24: skip    1  Continue
+2026-08-31 14:33:24: H_continue    1  Sit down in the couch
+2026-08-31 14:33:25: H_sit_down    1  Stand up
+2026-08-31 14:33:26: H_sit_down    2  Watch som TV
+2026-08-31 14:33:27: H_sit_down    1  Stand up
+2026-08-31 14:33:27: H_livingroom    1  Sit down in the couch
+2026-08-31 14:33:27: H_livingroom    2  Go to your kitchen
+2026-08-31 14:33:27: H_kitchen    2  Search your kitchen
+2026-08-31 14:33:28: H_kitchen    1  Look for food
+2026-08-31 14:33:28: H_look_for_food    1  Look for food
+2026-08-31 14:33:28: H_look_for_food    1  Look for food
+2026-08-31 14:33:29: H_look_for_food    1  Look for food
+2026-08-31 14:33:29: H_look_for_food    1  Look for food
+2026-08-31 14:33:29: H_look_for_food    1  Look for food
+2026-08-31 14:33:30: H_look_for_food    1  Look for food
+2026-08-31 14:33:30: H_look_for_food    1  Look for food
+2026-08-31 14:33:31: H_kitchen    1  -
+2026-08-31 14:33:32: H_kitchen    2  -
+2026-08-31 14:33:32: H_kitchen    3  Go to the living room
+2026-08-31 14:33:32: H_livingroom    3  Go to your room
+2026-08-31 14:33:33: H_room    3  -
+2026-08-31 14:33:33: H_room    2  Lay down in your bed
+2026-08-31 14:33:33: H_room    1  Look around your room
+2026-08-31 14:33:34: H_look_around    1  put letter down
+2026-08-31 14:33:34: H_look_around    1  put letter down
+2026-08-31 14:34:33  log closing
+=============================
+
+
+
+log starts at 2026-08-31 14:34:37.
+
+2026-08-31 14:34:37: running    1  1
+2026-08-31 14:34:37: running    1  1
+2026-08-31 14:34:52: running    1  1
+2026-08-31 14:34:53: running    1  1
+2026-08-31 14:34:54: running    1  1
+2026-08-31 14:34:55: running    1  1
+2026-08-31 14:34:56: running    1  1
+2026-08-31 14:34:56: running    1  1
+2026-08-31 14:34:56: running    1  1
+2026-08-31 14:34:56: running    1  1
+2026-08-31 14:34:57: running    1  1
+2026-08-31 14:34:57: running    1  1
+2026-08-31 14:34:57: running    1  1
+2026-08-31 14:34:57: running    1  1
+2026-08-31 14:34:57: running    1  1
+2026-08-31 14:34:57: running    1  1
+2026-08-31 14:34:57: running    1  1
+2026-08-31 14:34:57: running    1  1
+2026-08-31 14:34:57: running    1  1
+2026-08-31 14:34:58: running    1  1
+2026-08-31 14:34:58: running    1  1
+2026-08-31 14:34:58: running    1  1
+2026-08-31 14:34:58: running    1  1
+2026-08-31 14:34:58: running    1  1
+2026-08-31 14:34:58: running    1  1
+2026-08-31 14:34:58: running    1  1
+2026-08-31 14:34:58: running    1  1
+2026-08-31 14:34:58: running    1  1
+2026-08-31 14:34:59: running    1  1
+2026-08-31 14:34:59: running    1  1
+2026-08-31 14:34:59: running    1  1
+2026-08-31 14:34:59: running    1  1
+2026-08-31 14:34:59: running    1  1
+2026-08-31 14:34:59: running    1  1
+2026-08-31 14:34:59: running    1  1
+2026-08-31 14:34:59: running    1  1
+2026-08-31 14:34:59: running    1  1
+2026-08-31 14:35:00: running    1  1
+2026-08-31 14:35:00: running    1  1
+2026-08-31 14:35:00: running    1  1
+2026-08-31 14:35:00: running    1  1
+2026-08-31 14:35:00: running    1  1
+2026-08-31 14:35:00: running    1  1
+2026-08-31 14:35:00: running    1  1
+2026-08-31 14:35:00: running    1  1
+2026-08-31 14:35:00: running    1  1
+2026-08-31 14:35:01: running    1  1
+2026-08-31 14:35:01: running    1  1
+2026-08-31 14:35:01: running    1  1
+2026-08-31 14:35:01: running    1  1
+2026-08-31 14:35:01: running    1  1
+2026-08-31 14:35:01: running    1  1
+2026-08-31 14:35:01: running    1  1
+2026-08-31 14:35:01: running    1  1
+2026-08-31 14:35:01: running    1  1
+2026-08-31 14:35:02: running    1  1
+2026-08-31 14:35:03: running    1  1
+2026-08-31 14:35:04: menu    1  Continue
+2026-08-31 14:36:10: menu    2  Settings
+2026-08-31 14:36:10: menu    3  Choice Tree - saves
+2026-08-31 14:36:10: choice    3  saves
+2026-08-31 14:36:36  log closing
+=============================
+
+
+
+log starts at 2026-08-31 14:37:18.
+
+2026-08-31 14:37:18: running    1  1
+2026-08-31 14:37:18: running    1  1
+2026-08-31 14:37:19: skip    1  1
+2026-08-31 14:37:19: skip    1  1
+2026-08-31 14:37:20: skip    1  1
+2026-08-31 14:37:21: menu    1  Continue
+2026-08-31 14:37:21: menu    2  Settings
+2026-08-31 14:37:21: menu    3  Choice Tree - saves
+2026-08-31 14:37:22: choice    3  saves
+2026-08-31 16:24:14  log closing
+=============================
+
+
+

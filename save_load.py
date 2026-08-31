@@ -3,7 +3,7 @@ import short_cut as cut
 import audio
 
 def load(call):
-    global visited
+    global visited,tree_chapter,tree_state
 
     with open("save.tns", "r") as f:
             chapter_line = f.readline().strip()
