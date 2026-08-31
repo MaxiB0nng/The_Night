@@ -49,14 +49,21 @@ def load(call):
 
     if call == "choice_tree":
 
+        if ":" in chapter_line:
+            chapter, tree_state = chapter_line.split(":")
+            tree_chapter = int(chapter)
+        else:
+            return None
+        
         visited = {}
         if all_states_line.startswith("all:"):
             raw = all_states_line[4:]
             for chunk in raw.split(":"):
                 if "/" in chunk:
-                    states_chapter, states_raw = chunk.split("/")
-                    visited[states_chapter] = states_raw.strip("()").split(",")
-                    print(visited)
+                    _, states_raw = chunk.split("/")
+                    visited[tree_chapter] = states_raw.strip("()").split(",")
+
+        return visited,tree_chapter,tree_state
 
 
 def save(chapter,state):

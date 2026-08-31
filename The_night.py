@@ -174,11 +174,7 @@ while running:
                             "settings",cut.settings)
         
         elif sf.state == "choice":
-            if sf.selected_valg_1:
-                if tree.move_selceted:
-                    tree.move_selceted = False
-                else:
-                    tree.move_selceted = True
+
 
             if sf.selected_valg_2:
                 sl.load()
@@ -290,7 +286,12 @@ while running:
 
     if need_redraw:
         if sf.state == "choice":
-            tree.choice_tree()
+            if tree.is_load == True:
+                tree.draw()
+            else:
+                tree.load()
+        elif sf.state != "choice":
+            tree.is_load == False
         if sf.state == "quit":
             running = False
         sf.redraw(sf.state)

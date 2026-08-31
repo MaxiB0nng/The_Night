@@ -65,6 +65,7 @@ def setup():
     redraw(state)
     image_make()
 
+
 #        ▄▄▄▄                                                                        
 #      ██▀▀▀▀█              ██                                                       
 #     ██▀       ██    ██  ███████   ▄▄█████▄   ▄█████▄   ▄████▄    ▄████▄   ██▄████▄ 
@@ -511,6 +512,7 @@ def redraw(state):
     if state in ("running"):
         if audio.music.current != "start_up":
              audio.music.switch("start_up")
+
     elif state in ("menu", "settings", "screen", "credits", "choice", "opening_cutsceen"):
         if audio.music.current != "night":
             audio.music.switch("night")

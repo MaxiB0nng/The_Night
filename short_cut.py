@@ -36,7 +36,7 @@ def screen():
 
 
 def choice():
-    sf.story_update("Here you can see your progress in from of a tree", "-", f"Hint: {tree.hint}")
+    sf.story_update("Here you can see your progress in from of a tree", "-", f"Hint: ")
     if tree.move_selceted:
         sf.valg_update("Move On", "load","saves","Back")
     else:

@@ -2,7 +2,7 @@
     "chapters":
     [
         {
-        "chapter_value": "1",
+        "chapter_value": 1,
         "box_list": [
             {
                 "box_location": "0:0",
