@@ -40,7 +40,7 @@ while running:
                 elif event.key == pygame.K_DOWN and sf.allow_input:
                     audio.soundfx.play("down")
                     if tree.move_selceted:
-                        tree.moveing("s")
+                        tree.move("down")
                     else:
                         sf.valg += 1
                         if sf.valg  == 5:
@@ -50,7 +50,7 @@ while running:
                 elif event.key == pygame.K_UP and sf.allow_input:
                     audio.soundfx.play("up")
                     if tree.move_selceted:
-                        tree.moveing("w")
+                        tree.move("up")
                     else:
                         sf.valg -= 1
                         if sf.valg == 0:
@@ -60,7 +60,7 @@ while running:
                 elif event.key == pygame.K_LEFT and sf.allow_input:
                     audio.soundfx.play("down")
                     if tree.move_selceted:
-                        tree.moveing("a")
+                        tree.move("left")
                     elif left_right:
                         if sf.state == "music" and sf.valg == 1:
                             audio.music.next(-1)
@@ -79,7 +79,7 @@ while running:
                 elif event.key == pygame.K_RIGHT and sf.allow_input:
                     audio.soundfx.play("up")
                     if tree.move_selceted:
-                        tree.moveing("d")
+                        tree.move("right")
                     elif left_right:
                         if sf.state == "music" and sf.valg == 1:
                             audio.music.next(1)

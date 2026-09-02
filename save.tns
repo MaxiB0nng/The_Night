@@ -1,4 +1,4 @@
-1:H_look_around
-item:[0]
+0:choice
+item:[]
 plot:[]
-all:1/(H_livingroom,H_continue,H_sit_down,H_room,menu,H_kitchen,H_look_for_food,H_look_around)
+all:0/(running,skip,menu,choice,quit)

@@ -63,12 +63,16 @@ def load(call):
                     _, states_raw = chunk.split("/")
                     visited[tree_chapter] = states_raw.strip("()").split(",")
 
+        print(tree_chapter,tree_state)
+
         return visited,tree_chapter,tree_state
 
+  
+no_load_state = ["running","quit","settings","screen","credits","music","choice"]
 
 def save(chapter,state):
 
-    if chapter != 0 and state != "quit":
+    if state != no_load_state:
         with open("save.tns", "r") as f:
             chapter_line = f.readline().strip()
             listeitem = f.readline().strip()

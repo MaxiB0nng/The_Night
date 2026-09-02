@@ -25,6 +25,7 @@ def load():
     global  location_list, box_type_list, hint_list, arrows_list, box_state_list, is_load, chapter_load
     sl.load("choice_tree")
 
+
     with open("choice_tree.json", "r") as f:
         data = json.load(f)
 
@@ -34,6 +35,7 @@ def load():
         chapter_needet.append(number["chapter_value"])
 
     for number in chapter_needet:
+
         if sl.tree_chapter == number:
             chapter_load_index = number - 1
             chapter_load = number
@@ -59,6 +61,7 @@ def load():
 
 
 def draw():
+    global visted_list
     sf.main_canvas.fill(sf.black)
     pygame.draw.rect(sf.main_canvas, sf.green, (2,2,310,110)) 
 
@@ -68,9 +71,10 @@ def draw():
     for item,box_type,hint,arrows,box_state in zip(location_list,box_type_list,hint_list,arrows_list,box_state_list): 
 
         visted_list = sl.visited[chapter_load]
+     
 
         for states in visted_list:
-            if  states == box_state:
+            if  box_state == states:
 
                 for arrow in arrows:
         
@@ -103,3 +107,41 @@ def draw():
 
 
     pygame.draw.circle(sf.main_canvas, sf.red, (middel_x,middel_y), 3)
+
+
+
+
+def move(direction):
+    global place
+
+    y_set = 0
+    x_set = 0
+    x_set,y_set = place
+    
+
+    if direction == "down":
+        y_set += 1
+    elif direction == "up":
+        Y_set -= 1
+    elif direction == "right":
+        x_set += 1
+    elif direction == "left":
+        x_set -= 1
+
+    direction = None
+
+    for box, box_state, states in zip(location_list, box_state_list, visted_list):
+        if  box_state == states:
+        
+            x_box, y_box = map(int, box.split(":"))
+            set_loaction = (x_set,y_set)
+            box_loacation = (x_box,y_box)
+
+            if box_loacation == set_loaction:
+                place = set_loaction
+            else:
+                break
+
+
+
+

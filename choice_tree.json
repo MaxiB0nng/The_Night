@@ -2,6 +2,17 @@
     "chapters":
     [
         {
+        "chapter_value": 0,
+        "box_list":[
+            {
+                "box_location": "0:0",
+                "box_type": "normal",
+                "box_hint": "This is the menu.",
+                "arrow_to_boxs": ["0:1"],
+                "box_state": "menu"
+            }
+        ]
+        },{
         "chapter_value": 1,
         "box_list": [
             {
@@ -11,18 +22,19 @@
                 "arrow_to_boxs": ["0:1"],
                 "box_state": "H_continue"
             },{
-                "box_location": "-1:1",
-                "box_type": "normal",
-                "box_hint": "look around",
-                "arrow_to_boxs": ["-2:2","-1:2"],
-                "box_state": "H_kitchen"
-            },{
                 "box_location": "0:1",
                 "box_type": "normal",
                 "box_hint": "look around",
                 "arrow_to_boxs": ["-1:1","2:2","0:2"],
                 "box_state": "H_livingroom"
             },{
+                "box_location": "-1:1",
+                "box_type": "normal",
+                "box_hint": "look around",
+                "arrow_to_boxs": ["-2:2","-1:2"],
+                "box_state": "H_kitchen"
+            },{
+  
                 "box_location": "2:2",
                 "box_type": "normal",
                 "box_hint": "-",
@@ -56,7 +68,7 @@
                 "box_location": "2:3",
                 "box_type": "normal",
                 "box_hint": "take a rest dude",
-                "arrow_to_boxs": ["2:3"],
+                "arrow_to_boxs": ["2:4"],
                 "box_state": "H_lay_down"
             },{
                 "box_location": "3:3",
@@ -74,7 +86,7 @@
                 "box_location": "2:4",
                 "box_type": "normal",
                 "box_hint": "go to sleep",
-                "arrow_to_boxs": ["2:4"],
+                "arrow_to_boxs": ["2:5"],
                 "box_state": "H_fall_asleep"
             },{
                 "box_location": "0:4",
@@ -83,7 +95,7 @@
                 "arrow_to_boxs": [],
                 "box_state": "-"
             },{
-                "box_location": "2:4",
+                "box_location": "2:5",
                 "box_type": "cutsceen",
                 "box_hint": "arent you tired after work?",
                 "arrow_to_boxs": [],
