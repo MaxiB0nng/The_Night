@@ -12,7 +12,6 @@ def load(call):
             all_states_line = f.readline().strip()
 
     if call == "game_load":
-    
 
         if ":" in chapter_line:
             chapter, state = chapter_line.split(":")
@@ -58,16 +57,29 @@ def load(call):
         visited = {}
         if all_states_line.startswith("all:"):
             raw = all_states_line[4:]
-            for chunk in raw.split(":"):
+            for chunk in raw.split("."):
                 if "/" in chunk:
-                    _, states_raw = chunk.split("/")
-                    visited[tree_chapter] = states_raw.strip("()").split(",")
+                    ch, states_raw = chunk.split("/")
+                    visited[int(ch)] = states_raw.strip("()").split(",")
 
-        print(tree_chapter,tree_state)
+
 
         return visited,tree_chapter,tree_state
-
   
+def get_max_chapter():
+    with open("save.tns", "r") as f:
+        f.readline()
+        f.readline()
+        f.readline()
+        all_states_line = f.readline().strip()
+
+    if not all_states_line.startswith("all:"):
+        return 0
+
+    raw = all_states_line[4:]
+    chapters = [int(chunk.split("/")[0]) for chunk in raw.split(".") if "/" in chunk]
+    return max(chapters) if chapters else 0
+
 no_load_state = ["running","quit","settings","screen","credits","music","choice","skip"]
 saveing = False
 
@@ -99,7 +111,6 @@ def save(chapter,state):
             if happened == True:
                 item_index_list.append(i)
         listeitem = f"item:{item_index_list}"
-
         
         plot_index_list = []
         for i, (_, _, happened) in enumerate(sf.plot_list):
@@ -114,8 +125,7 @@ def save(chapter,state):
             for chunk in raw.split("."):
                 if "/" in chunk:
                     ch, states_raw = chunk.split("/")
-                    visited[ch] = states_raw.strip("()").split(",")
-                    
+                    visited[ch] = states_raw.strip("()").split(",")       
 
         ch_key = str(chapter)
         if ch_key not in visited:

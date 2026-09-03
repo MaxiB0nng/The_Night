@@ -21,27 +21,33 @@ place = (x,y)
 
 is_load = False
 
-def load():
-    global  location_list, box_type_list, hint_list, arrows_list, box_state_list, is_load, chapter_load
-    sl.load("choice_tree")
+on_chapter = True
 
+chapter_load = 0
+
+cut_str = "-"
+
+def load():
+    global  location_list, box_type_list, hint_list, arrows_list, box_state_list, is_load, chapter_load, on_chapter
+    sl.load("choice_tree")
 
     with open("choice_tree.json", "r") as f:
         data = json.load(f)
 
     chapter_needet = []
-    
-    for number in data["chapters"]:
-        chapter_needet.append(number["chapter_value"])
 
-    for number in chapter_needet:
+    if on_chapter == True:
 
-        if sl.tree_chapter == number:
-            chapter_load_index = number - 1
-            chapter_load = number
-            continue
+        for number in data["chapters"]:
+            chapter_needet.append(number["chapter_value"])
 
-    chapter_data = data["chapters"][chapter_load_index]
+        for number in chapter_needet:
+            if sl.tree_chapter == number:
+                chapter_load = number
+                continue
+    on_chapter = True
+
+    chapter_data = data["chapters"][chapter_load]
 
     location_list = []
     box_type_list = []
@@ -60,6 +66,7 @@ def load():
     draw()
 
 
+
 def draw():
     global visted_list
     sf.main_canvas.fill(sf.black)
@@ -71,7 +78,6 @@ def draw():
     for item,box_type,hint,arrows,box_state in zip(location_list,box_type_list,hint_list,arrows_list,box_state_list): 
 
         visted_list = sl.visited[chapter_load]
-     
 
         for states in visted_list:
             if  box_state == states:
@@ -79,8 +85,6 @@ def draw():
                 for arrow in arrows:
         
                     x_set_from, y_set_from = map(int, item.split(":"))
-
-                    
                     x_set_to, y_set_to = map(int, arrow.split(":"))
 
                     from_x = int(middel_x+((box_w+margin)*(x_set_from-x)))
@@ -92,10 +96,8 @@ def draw():
                     pygame.draw.lines(sf.main_canvas,sf.black,False,[(from_x,from_y),(to_x,from_y),(to_x,to_y)],4)
                     pygame.draw.circle(sf.main_canvas,sf.black,(to_x,to_y+1),r)
 
-
                 x_set, y_set = map(int, item.split(":"))
-                print(x,y ,x_set,y_set)
-                print(box_state)
+
                 rx = int((middel_x-(box_w/2))+((box_w+margin)*(x_set-x)))
                 ry = int((middel_y-(box_h/2))+((box_h+margin)*(y_set-y)))
                 if box_type == "normal":
@@ -105,11 +107,7 @@ def draw():
                     pygame.draw.ellipse(sf.main_canvas, sf.black,(rx,ry,box_w,box_h),4)
                     pygame.draw.ellipse(sf.main_canvas,sf.green,((rx+2),(ry+2),(box_w-4),(box_h-4)))
 
-
     pygame.draw.circle(sf.main_canvas, sf.red, (middel_x,middel_y), 3)
-
-
-
 
 def move(direction):
     global place
@@ -117,7 +115,6 @@ def move(direction):
     y_set = 0
     x_set = 0
     x_set,y_set = place
-    
 
     if direction == "down":
         y_set += 1
@@ -141,7 +138,3 @@ def move(direction):
                 place = set_loaction
             else:
                 break
-
-
-
-

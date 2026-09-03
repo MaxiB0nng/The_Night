@@ -1,4 +1,5 @@
 import story_functions as sf
+import save_load as sl
 import choice_tree as tree
 import audio
 
@@ -34,13 +35,13 @@ def screen():
 
     sf.valg_update(f"<- scale = {sf.scale} ->", f"shader {sf.shader_on}", "-", "back")
 
-
 def choice():
-    sf.story_update("Here you can see your progress in from of a tree", "-", f"Hint: ")
+    max_chapter = sl.get_max_chapter()
+    sf.story_update("Here you can see your progress in from of a tree", f"Max chapter unlocked {max_chapter}", f"Hint: ")
     if tree.move_selceted:
-        sf.valg_update("Move On", "load","saves","Back")
+        sf.valg_update("Move On", f"<- chapter {tree.chapter_load} ->","saves","Back")
     else:
-        sf.valg_update("Move Off", "load","saves","Back")
+        sf.valg_update("Move Off", f"<- chapter {tree.chapter_load} ->","saves","Back")
 
 #        ▄▄▄▄   ▄▄                                                                      ▄▄▄    
 #      ██▀▀▀▀█  ██                              ██                                     █▀██    

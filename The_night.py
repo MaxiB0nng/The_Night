@@ -61,38 +61,50 @@ while running:
                     audio.soundfx.play("down")
                     if tree.move_selceted:
                         tree.move("left")
-                    elif left_right:
-                        if sf.state == "music" and sf.valg == 1:
-                            audio.music.next(-1)
-                        if sf.state == "music" and sf.valg == 2:
-                            audio.music.set_volume(audio.music.volume - 5)
-                        if sf.state == "music" and sf.valg == 3:
-                            audio.soundfx.set_volume(audio.soundfx.volume - 5)
-                        if sf.state == "screen" and sf.valg == 1:
-                            sf.scale -= 0.5
-                            if sf.scale <= 1:
-                                sf.scale = 1
-                            sf.make_screen()
-                            cut.screen
+                    elif sf.state == "choice" and sf.valg == 2:
+                        tree.chapter_load -= 1
+                        if tree.chapter_load <= -1:
+                            tree.chapter_load = 0
+                        tree.on_chapter = False
+                        tree.load()
+                    elif sf.state == "music" and sf.valg == 1:
+                        audio.music.next(-1)
+                    elif sf.state == "music" and sf.valg == 2:
+                        audio.music.set_volume(audio.music.volume - 5)
+                    elif sf.state == "music" and sf.valg == 3:
+                        audio.soundfx.set_volume(audio.soundfx.volume - 5)
+                    elif sf.state == "screen" and sf.valg == 1:
+                        sf.scale -= 0.5
+                        if sf.scale <= 1:
+                            sf.scale = 1
+                        sf.make_screen()
+                        cut.screen
                     need_redraw = True
 
                 elif event.key == pygame.K_RIGHT and sf.allow_input:
                     audio.soundfx.play("up")
                     if tree.move_selceted:
                         tree.move("right")
-                    elif left_right:
-                        if sf.state == "music" and sf.valg == 1:
-                            audio.music.next(1)
-                        if sf.state == "music" and sf.valg == 2:
-                            audio.music.set_volume(audio.music.volume + 5)
-                        if sf.state == "music" and sf.valg == 3:
-                            audio.soundfx.set_volume(audio.soundfx.volume + 5)
-                        if sf.state == "screen" and sf.valg == 1:
-                            sf.scale += 0.5
-                            if sf.scale >= 6:
-                                sf.scale = 6
-                            sf.make_screen()
-                            cut.screen
+                    elif sf.state == "choice" and sf.valg == 2:
+                        tree.chapter_load += 1
+                        max_chapter = sl.get_max_chapter()
+                        if tree.chapter_load >= max_chapter:
+                            tree.chapter_load = max_chapter
+                        tree.on_chapter = False
+                        print(f"{tree.chapter_load} the night")
+                        tree.load()
+                    elif sf.state == "music" and sf.valg == 1:
+                        audio.music.next(1)
+                    elif sf.state == "music" and sf.valg == 2:
+                        audio.music.set_volume(audio.music.volume + 5)
+                    elif sf.state == "music" and sf.valg == 3:
+                        audio.soundfx.set_volume(audio.soundfx.volume + 5)
+                    elif sf.state == "screen" and sf.valg == 1:
+                        sf.scale += 0.5
+                        if sf.scale >= 6:
+                            sf.scale = 6
+                        sf.make_screen()
+                        cut.screen
                     need_redraw = True
 
                 elif event.key == pygame.K_f:
@@ -104,6 +116,7 @@ while running:
                     
                 elif event.key == pygame.K_m:
                     sf.state = "menu"
+                    tree.is_load = False
                     cut.menu()
                     sf.redraw(sf.state)
 
@@ -152,7 +165,6 @@ while running:
                 
                 elif sf.shader_on == "OFF":
                     sf.shader_on = "ON"
-                    
 
             sf.choice_select(None,None,
                             None,cut.screen,
@@ -174,13 +186,12 @@ while running:
                             "settings",cut.settings)
         
         elif sf.state == "choice":
+            if tree.is_load == False:
+                tree.load()
+
             if sf.selected_valg_1:
                 tree.move_selceted =  not tree.move_selceted
 
-            if sf.selected_valg_2:
-                sl.load("game_load")
-              
-            
             sf.choice_select(None,cut.choice,
                             None,None,
                             None,None,
@@ -290,10 +301,7 @@ while running:
 
     if need_redraw:
         if sf.state == "choice":
-            if tree.is_load == True:
-                tree.draw()
-            else:
-                tree.load()
+            tree.draw()
         elif sf.state != "choice":
             tree.is_load == False
         if sf.state == "quit":

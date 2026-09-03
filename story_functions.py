@@ -2,6 +2,7 @@ import pygame
 import random
 import log as log
 import save_load as sl
+import choice_tree as tree
 import audio
 import shader
 
@@ -64,6 +65,7 @@ def setup():
     make_canvas()
     redraw(state)
     image_make()
+    tree.load()
 
 
 #        ▄▄▄▄                                                                        
