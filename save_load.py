@@ -68,11 +68,17 @@ def load(call):
         return visited,tree_chapter,tree_state
 
   
-no_load_state = ["running","quit","settings","screen","credits","music","choice"]
+no_load_state = ["running","quit","settings","screen","credits","music","choice","skip"]
+saveing = False
 
 def save(chapter,state):
 
-    if state != no_load_state:
+    saveing = True
+    for no_load in no_load_state:
+        if no_load == state:
+            saveing = False
+
+    if saveing == True:
         with open("save.tns", "r") as f:
             chapter_line = f.readline().strip()
             listeitem = f.readline().strip()
@@ -130,6 +136,7 @@ def save(chapter,state):
             f.write(all_states + "\n")
 
         all_states = None
+        saveing = False
 
 #       ▄▄▄▄                                     ██                                  
 #     ▄█▀▀▀▀█               ██        ██         ▀▀                                  

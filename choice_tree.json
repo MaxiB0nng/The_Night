@@ -8,7 +8,7 @@
                 "box_location": "0:0",
                 "box_type": "normal",
                 "box_hint": "This is the menu.",
-                "arrow_to_boxs": ["0:1"],
+                "arrow_to_boxs": ["0:0"],
                 "box_state": "menu"
             }
         ]
