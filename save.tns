@@ -1,4 +1,4 @@
-0:menu
-item:[]
+1:H_look_around
+item:[0, 2]
 plot:[]
-all:0/(menu,opening_cutsceen).1/(H_continue,H_livingroom,H_kitchen,menu)
+all:0/(menu,opening_cutsceen).1/(H_continue,H_livingroom,H_kitchen,menu,H_sit_down,H_room,H_look_around,H_look_for_food)

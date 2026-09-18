@@ -8,8 +8,16 @@
                 "box_location": "0:0",
                 "box_type": "normal",
                 "box_hint": "This is the menu.",
-                "arrow_to_boxs": ["0:0"],
-                "box_state": "menu"
+                "arrow_to_boxs": ["0:1"],
+                "box_state": "menu",
+                "move_to": ["None","None","0:1","None"]
+            },{
+                "box_location": "0:1",
+                "box_type": "next",
+                "box_hint": "chapter 1",
+                "arrow_to_boxs": ["0:1"],
+                "box_state": "menu",
+                "move_to": ["0:1","None","None","None"]
             }
         ]
         },{
@@ -20,86 +28,113 @@
                 "box_type": "cutsceen",
                 "box_hint": "Try starting the game!",
                 "arrow_to_boxs": ["0:1"],
-                "box_state": "H_continue"
+                "box_state": "H_continue",
+                "move_to": ["None","None","0:1","None"]
             },{
                 "box_location": "0:1",
                 "box_type": "normal",
                 "box_hint": "look around",
                 "arrow_to_boxs": ["-1:1","2:2","0:2"],
-                "box_state": "H_livingroom"
+                "box_state": "H_livingroom",
+                "move_to": ["0:0","-1:1","0:2","2:2"]
             },{
                 "box_location": "-1:1",
                 "box_type": "normal",
                 "box_hint": "look around",
                 "arrow_to_boxs": ["-2:2","-1:2"],
-                "box_state": "H_kitchen"
+                "box_state": "H_kitchen",
+                "move_to": ["0:1","-2:2","-1:2","None"]
             },{
-  
                 "box_location": "2:2",
                 "box_type": "normal",
                 "box_hint": "-",
                 "arrow_to_boxs": ["1:3","2:3","3:3"],
-                "box_state": "H_room"
+                "box_state": "H_room",
+                "move_to": ["0:1","1:3","2:3","3:3"]
             },{
                 "box_location": "-2:2",
                 "box_type": "normal",
                 "box_hint": "are you hungry?",
                 "arrow_to_boxs": [],
-                "box_state": "H_look_for_food"
+                "box_state": "H_look_for_food",
+                "move_to": ["-1:1","None","None","None"]
             },{
                 "box_location": "-1:2",
                 "box_type": "normal",
                 "box_hint": "looking for something?",
                 "arrow_to_boxs": [],
-                "box_state": "H_search_your_kitchen"
+                "box_state": "H_search_your_kitchen",
+                "move_to": ["-1:1","None","None","None"]
             },{
                 "box_location": "0:2",
                 "box_type": "normal",
                 "box_hint": "maybe take a rest?",
                 "arrow_to_boxs": ["0:3"],
-                "box_state": "H_sit_down"
+                "box_state": "H_sit_down",
+                "move_to": ["0:1","None","0:3","None"]
             },{
                 "box_location": "1:3",
                 "box_type": "normal",
                 "box_hint": "be curious",
                 "arrow_to_boxs": [],
-                "box_state": "H_look_around"
+                "box_state": "H_look_around",
+                "move_to": ["2:2","None","None","None"]
             },{
                 "box_location": "2:3",
                 "box_type": "normal",
                 "box_hint": "take a rest dude",
                 "arrow_to_boxs": ["2:4"],
-                "box_state": "H_lay_down"
+                "box_state": "H_lay_down",
+                "move_to": ["2:2","None","2:4","None"]
             },{
                 "box_location": "3:3",
                 "box_type": "normal",
                 "box_hint": "those dam screens!",
                 "arrow_to_boxs": [],
-                "box_state": "H_put_down"
+                "box_state": "H_put_down",
+                "move_to": ["2:2","None","None","None"]
             },{
                 "box_location": "0:3",
                 "box_type": "normal",
                 "box_hint": "dont you have better things to do",
                 "arrow_to_boxs": ["0:4"],
-                "box_state": "H_tv"
+                "box_state": "H_tv",
+                "move_to": ["0:2","None","0:4","None"]
             },{
                 "box_location": "2:4",
                 "box_type": "normal",
                 "box_hint": "go to sleep",
                 "arrow_to_boxs": ["2:5"],
-                "box_state": "H_fall_asleep"
+                "box_state": "H_fall_asleep",
+                "move_to": ["2:3","None","2:5","None"]
             },{
                 "box_location": "0:4",
                 "box_type": "cutsceen",
                 "box_hint": "arent you tired after work?",
-                "arrow_to_boxs": [],
-                "box_state": "-"
+                "arrow_to_boxs": ["0:5"],
+                "box_state": "-",
+                "move_to": ["0:3","None","0:5","None"]
+            },{
+                "box_location": "0:5",
+                "box_type": "next",
+                "box_hint": "chapter 2",
+                "arrow_to_boxs": ["0:5"],
+                "box_state": "-",
+                "move_to": ["0:4","None","None","None"]
             },{
                 "box_location": "2:5",
                 "box_type": "cutsceen",
                 "box_hint": "arent you tired after work?",
-                "arrow_to_boxs": [],
-                "box_state": "-"
+                "arrow_to_boxs": ["2:6"],
+                "box_state": "-",
+                "move_to": ["2:4","None","2:6","None"]
+            },{
+                "box_location": "2:6",
+                "box_type": "next",
+                "box_hint": "chapter 2",
+                "arrow_to_boxs": ["2:6"],
+                "box_state": "-",
+                "move_to": ["2:5","None","None","None"]
             }
         ]
         }

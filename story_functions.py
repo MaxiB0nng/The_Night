@@ -151,7 +151,7 @@ def cutsceen(text_list, img_list, state_to, cut_to):
 #     ██          ██▄▄▄   ▀██▄▄██▀    ██▄▄▄  
 #     ▀▀           ▀▀▀▀     ▀▀▀▀       ▀▀▀▀  
 
-item_list= [
+item_list = [
     ("bun",0,False),
     ("knife",6,False),
     ("letter",6,False),

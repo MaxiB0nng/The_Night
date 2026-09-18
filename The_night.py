@@ -1,3 +1,6 @@
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 import pygame
 import log
 import story_functions as sf
@@ -41,6 +44,7 @@ while running:
                     audio.soundfx.play("down")
                     if tree.move_selceted:
                         tree.move("down")
+                        print("down")
                     else:
                         sf.valg += 1
                         if sf.valg  == 5:
@@ -51,6 +55,7 @@ while running:
                     audio.soundfx.play("up")
                     if tree.move_selceted:
                         tree.move("up")
+                        print("up")
                     else:
                         sf.valg -= 1
                         if sf.valg == 0:
@@ -61,11 +66,15 @@ while running:
                     audio.soundfx.play("down")
                     if tree.move_selceted:
                         tree.move("left")
+                        print("left")
                     elif sf.state == "choice" and sf.valg == 2:
                         tree.chapter_load -= 1
                         if tree.chapter_load <= -1:
                             tree.chapter_load = 0
                         tree.on_chapter = False
+                        tree.x = 0
+                        tree.y = 0
+                        tree.place = (tree.x,tree.y)
                         tree.load()
                     elif sf.state == "music" and sf.valg == 1:
                         audio.music.next(-1)
@@ -85,13 +94,16 @@ while running:
                     audio.soundfx.play("up")
                     if tree.move_selceted:
                         tree.move("right")
+                        print("right")
                     elif sf.state == "choice" and sf.valg == 2:
                         tree.chapter_load += 1
                         max_chapter = sl.get_max_chapter()
                         if tree.chapter_load >= max_chapter:
                             tree.chapter_load = max_chapter
                         tree.on_chapter = False
-                        print(f"{tree.chapter_load} the night")
+                        tree.x = 0
+                        tree.y = 0
+                        tree.place = (tree.x,tree.y)
                         tree.load()
                     elif sf.state == "music" and sf.valg == 1:
                         audio.music.next(1)
@@ -126,6 +138,7 @@ while running:
                 elif event.key == pygame.K_s:
                     if not sf.allow_input:
                         sf.skip_cutsceen = True
+                    need_redraw = True
 
 #     ▄▄▄  ▄▄▄                               
 #     ███  ███                               
@@ -138,7 +151,6 @@ while running:
         sf.cutsceen(sf.skip_sequence, None, sf.skip_target_state, sf.skip_target_cut)
 
     elif sf.chapter == 0:
-
         if sf.state == "running":
             sf.cutsceen(sceen.startup_sequence,sceen.glitch,"menu",cut.menu)
 
@@ -157,6 +169,7 @@ while running:
                             "menu",cut.menu)
 
         elif sf.state == "screen":
+
             cut.screen()
 
             if sf.selected_valg_2:
@@ -186,6 +199,7 @@ while running:
                             "settings",cut.settings)
         
         elif sf.state == "choice":
+            cut.choice()
             if tree.is_load == False:
                 tree.load()
 

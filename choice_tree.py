@@ -28,7 +28,9 @@ chapter_load = 0
 cut_str = "-"
 
 def load():
-    global  location_list, box_type_list, hint_list, arrows_list, box_state_list, is_load, chapter_load, on_chapter
+    global  location_list, box_type_list, hint_list, arrows_list, box_state_list, move_to_list
+    global is_load, chapter_load, on_chapter
+    global place
     sl.load("choice_tree")
 
     with open("choice_tree.json", "r") as f:
@@ -45,6 +47,7 @@ def load():
             if sl.tree_chapter == number:
                 chapter_load = number
                 continue
+        
     on_chapter = True
 
     chapter_data = data["chapters"][chapter_load]
@@ -54,6 +57,7 @@ def load():
     hint_list = []
     arrows_list = []
     box_state_list = []
+    move_to_list = []
 
     for box in chapter_data["box_list"]:
         location_list.append(box["box_location"])        # e.g. "0:0"
@@ -61,16 +65,17 @@ def load():
         hint_list.append(box["box_hint"])                # "look around"
         arrows_list.append(box["arrow_to_boxs"])          # ["-1:1", "0:1", "2:1"]
         box_state_list.append(box["box_state"])           # "H_livingroom"
+        move_to_list.append(box["move_to"])               # ["0:0","-1:1","0:2","2:2"] can also exspet None for a blocked way
     is_load = True
 
     draw()
-
-
 
 def draw():
     global visted_list
     sf.main_canvas.fill(sf.black)
     pygame.draw.rect(sf.main_canvas, sf.green, (2,2,310,110)) 
+
+    x ,y = place
 
     rx = int((middel_x-(box_w/2))+((box_w+margin)*x))
     ry = int((middel_y-(box_h/2))+((box_h+margin)*y))
@@ -94,7 +99,7 @@ def draw():
                     to_y = int(middel_y+((box_h+margin)*(y_set_to-y)))
 
                     pygame.draw.lines(sf.main_canvas,sf.black,False,[(from_x,from_y),(to_x,from_y),(to_x,to_y)],4)
-                    pygame.draw.circle(sf.main_canvas,sf.black,(to_x,to_y+1),r)
+                    pygame.draw.circle(sf.main_canvas,sf.black,(to_x+1,to_y+1),r)
 
                 x_set, y_set = map(int, item.split(":"))
 
@@ -106,35 +111,49 @@ def draw():
                 elif box_type == "cutsceen":
                     pygame.draw.ellipse(sf.main_canvas, sf.black,(rx,ry,box_w,box_h),4)
                     pygame.draw.ellipse(sf.main_canvas,sf.green,((rx+2),(ry+2),(box_w-4),(box_h-4)))
+                elif box_type == "next":
+                    pygame.draw.circle(sf.main_canvas,sf.green,(int(rx + box_w/2)+1,int(ry + box_h/2)+1),(box_h/2 - 2))
+                
 
-    pygame.draw.circle(sf.main_canvas, sf.red, (middel_x,middel_y), 3)
+    pygame.draw.circle(sf.main_canvas, sf.red, (middel_x + 1,middel_y), 3)
 
 def move(direction):
     global place
+    move_index = int(0)
 
-    y_set = 0
-    x_set = 0
-    x_set,y_set = place
+    for move_list,item in zip(move_to_list,location_list):
 
-    if direction == "down":
-        y_set += 1
-    elif direction == "up":
-        Y_set -= 1
-    elif direction == "right":
-        x_set += 1
-    elif direction == "left":
-        x_set -= 1
+        x_set, y_set = map(int, item.split(":"))
+        x, y = place
 
-    direction = None
-
-    for box, box_state, states in zip(location_list, box_state_list, visted_list):
-        if  box_state == states:
+        if x == x_set and y == y_set:
+            for moves in move_list[move_index]:
+                print(moves)
+                print(move_list[move_index])
         
-            x_box, y_box = map(int, box.split(":"))
-            set_loaction = (x_set,y_set)
-            box_loacation = (x_box,y_box)
+                if direction == "up" and moves[0] != "None":
+                    x_move,y_move = map(int, move_list[0].split(":"))
+                    move = (x_move,y_move)
+                    place = move
+                elif direction == "left" and moves[1] != "None":
+                    x_move,y_move = map(int, moves[1].split(":"))
+                    move = (x_move,y_move)
+                    place = move
+                elif direction == "down" and moves[2] != "None":
+                    x_move,y_move = map(int, moves[2].split(":"))
+                    move = (x_move,y_move)
+                    place = move
+                elif direction == "right" and moves[3] != "None":
+                    x_move,y_move = map(int, moves[3].split(":"))
+                    move = (x_move,y_move)
+                    place = move
+                else:
+                    return
 
-            if box_loacation == set_loaction:
-                place = set_loaction
-            else:
-                break
+                direction = "-"
+
+        move_index =+ (1 + move_index)
+
+        
+
+
