@@ -118,39 +118,57 @@ def draw():
     pygame.draw.circle(sf.main_canvas, sf.red, (middel_x + 1,middel_y), 3)
 
 def move(direction):
-    global place
+    global place,move_index
     move_index = int(0)
 
-    for move_list,item in zip(move_to_list,location_list):
-
+    for move_list,item in zip(move_to_list,location_list,):
+        
         x_set, y_set = map(int, item.split(":"))
         x, y = place
 
         if x == x_set and y == y_set:
-            for moves in move_list[move_index]:
-                print(moves)
-                print(move_list[move_index])
-        
-                if direction == "up" and moves[0] != "None":
-                    x_move,y_move = map(int, move_list[0].split(":"))
-                    move = (x_move,y_move)
-                    place = move
-                elif direction == "left" and moves[1] != "None":
-                    x_move,y_move = map(int, moves[1].split(":"))
-                    move = (x_move,y_move)
-                    place = move
-                elif direction == "down" and moves[2] != "None":
-                    x_move,y_move = map(int, moves[2].split(":"))
-                    move = (x_move,y_move)
-                    place = move
-                elif direction == "right" and moves[3] != "None":
-                    x_move,y_move = map(int, moves[3].split(":"))
-                    move = (x_move,y_move)
-                    place = move
-                else:
-                    return
 
-                direction = "-"
+            move_index = 0
+            if direction == "up" and move_list[0] != "None":
+                x_move,y_move = map(int, move_list[0].split(":"))
+                move = (x_move,y_move)
+                for item,box_state,states in zip(location_list,box_state_list, visted_list):
+                    move_check_x, move_check_y = map(int, item.split(":"))
+                    move_check = (move_check_x,move_check_y)
+                    if move_check == move and box_state == states:
+                        place = move  
+                    move_index = (1 + move_index)
+            elif direction == "left" and move_list[1] != "None":
+                x_move,y_move = map(int, move_list[1].split(":"))
+                move = (x_move,y_move)
+                for item,box_state,states in zip(location_list,box_state_list, visted_list):
+                    move_check_x, move_check_y = map(int, item.split(":"))
+                    move_check = (move_check_x,move_check_y)
+                    if move_check == move and box_state == states:
+                        place = move  
+                    move_index = (1 + move_index)
+            elif direction == "down" and move_list[2] != "None":
+                x_move,y_move = map(int, move_list[2].split(":"))
+                move = (x_move,y_move)
+                for item,box_state,states in zip(location_list,box_state_list, visted_list):
+                    move_check_x, move_check_y = map(int, item.split(":"))
+                    move_check = (move_check_x,move_check_y)
+                    if move_check == move and box_state == states:
+                        place = move  
+                    move_index = (1 + move_index)
+            elif direction == "right" and move_list[3] != "None":
+                x_move,y_move = map(int, move_list[3].split(":"))
+                move = (x_move,y_move)
+                for item,box_state,states in zip(location_list,box_state_list, visted_list):
+                    move_check_x, move_check_y = map(int, item.split(":"))
+                    move_check = (move_check_x,move_check_y)
+                    if move_check == move and box_state == states:
+                        place = move  
+                    move_index = (1 + move_index)
+            else:
+                return
+
+            direction = "-"
 
         move_index =+ (1 + move_index)
 

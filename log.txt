@@ -424,3 +424,560 @@ log starts at 2026-09-18 12:59:05.
 2026-09-18 13:01:21: H_look_around    1  put letter down
 2026-09-18 13:01:21: H_look_around    1  put letter down
 2026-09-18 13:01:22: H_look_around    1  put letter down
+log starts at 2026-09-21 09:43:37.
+
+2026-09-21 09:43:37: running    1  -
+2026-09-21 09:43:37: running    1  -
+2026-09-21 09:43:40: running    1  -
+2026-09-21 09:43:40: running    1  -
+2026-09-21 09:43:40: running    1  -
+2026-09-21 09:43:41: running    1  -
+2026-09-21 09:43:41: running    1  -
+2026-09-21 09:43:41: running    1  -
+2026-09-21 09:43:41: running    1  -
+2026-09-21 09:43:41: running    1  -
+2026-09-21 09:43:41: running    1  -
+2026-09-21 09:43:41: running    1  -
+2026-09-21 09:43:41: running    1  -
+2026-09-21 09:43:41: running    1  -
+2026-09-21 09:43:49: skip    1  -
+2026-09-21 09:43:49: skip    1  -
+2026-09-21 09:43:49: skip    1  -
+2026-09-21 09:43:51: skip    1  -
+2026-09-21 09:43:51: menu    1  Continue
+2026-09-21 09:43:52: opening_cutsceen    1  Continue
+2026-09-21 09:43:52: opening_cutsceen    1  Continue
+2026-09-21 09:43:53: opening_cutsceen    1  Continue
+2026-09-21 09:43:54: opening_cutsceen    1  Continue
+2026-09-21 09:43:55: opening_cutsceen    1  Continue
+2026-09-21 09:43:55: opening_cutsceen    1  Continue
+2026-09-21 09:43:56: opening_cutsceen    1  Continue
+2026-09-21 09:43:56: opening_cutsceen    1  Continue
+2026-09-21 09:43:57: opening_cutsceen    1  Continue
+2026-09-21 09:43:57: opening_cutsceen    1  Continue
+2026-09-21 09:43:58: opening_cutsceen    1  Continue
+2026-09-21 09:43:58: opening_cutsceen    1  Continue
+2026-09-21 09:43:59: opening_cutsceen    1  Continue
+2026-09-21 09:43:59: opening_cutsceen    1  Continue
+2026-09-21 09:44:00: opening_cutsceen    1  Continue
+2026-09-21 09:44:01: opening_cutsceen    1  Continue
+2026-09-21 09:44:01: opening_cutsceen    1  Continue
+2026-09-21 09:44:02: opening_cutsceen    1  Continue
+2026-09-21 09:44:02: opening_cutsceen    1  Continue
+2026-09-21 09:44:03: opening_cutsceen    1  Continue
+2026-09-21 09:44:03: opening_cutsceen    1  Continue
+2026-09-21 09:44:04: opening_cutsceen    1  Continue
+2026-09-21 09:44:04: opening_cutsceen    1  Continue
+2026-09-21 09:44:05: opening_cutsceen    1  Continue
+2026-09-21 09:44:05: opening_cutsceen    1  Continue
+2026-09-21 09:44:06: opening_cutsceen    1  Continue
+2026-09-21 09:44:06: opening_cutsceen    1  Continue
+2026-09-21 09:44:07: opening_cutsceen    1  Continue
+2026-09-21 09:44:07: opening_cutsceen    1  Continue
+2026-09-21 09:44:08: opening_cutsceen    1  Continue
+2026-09-21 09:44:08: opening_cutsceen    1  Continue
+2026-09-21 09:44:09: opening_cutsceen    1  Continue
+2026-09-21 09:44:09: opening_cutsceen    1  Continue
+2026-09-21 09:44:10: opening_cutsceen    1  Continue
+2026-09-21 09:44:10: opening_cutsceen    1  Continue
+2026-09-21 09:44:11: opening_cutsceen    1  Continue
+2026-09-21 09:44:11: opening_cutsceen    1  Continue
+2026-09-21 09:44:12: opening_cutsceen    1  Continue
+2026-09-21 09:44:12: opening_cutsceen    1  Continue
+2026-09-21 09:44:13: opening_cutsceen    1  Continue
+2026-09-21 09:44:13: opening_cutsceen    1  Continue
+2026-09-21 09:44:14: opening_cutsceen    1  Continue
+2026-09-21 09:44:14: opening_cutsceen    1  Continue
+2026-09-21 09:44:15: opening_cutsceen    1  Continue
+2026-09-21 09:44:15: opening_cutsceen    1  Continue
+2026-09-21 09:44:16: opening_cutsceen    1  Continue
+2026-09-21 09:44:17: opening_cutsceen    1  Continue
+2026-09-21 09:44:17: opening_cutsceen    1  Continue
+2026-09-21 09:44:19: H_continue    1  Sit down in the couch
+2026-09-21 09:44:27: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:27: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:27: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:28: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:28: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:28: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:28: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:28: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:28: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:28: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:28: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:28: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:29: H_livingroom    1  Sit down in the couch
+2026-09-21 09:44:36: H_livingroom    1  Sit down in the couch
+2026-09-21 09:45:17: H_livingroom    1  Sit down in the couch
+2026-09-21 09:45:17: H_livingroom    1  Sit down in the couch
+log starts at 2026-09-21 09:45:19.
+
+2026-09-21 09:45:19: running    1  1
+2026-09-21 09:45:19: running    1  1
+2026-09-21 09:45:27: skip    1  1
+2026-09-21 09:45:27: skip    1  1
+2026-09-21 09:45:27: skip    1  1
+2026-09-21 09:45:28: skip    1  1
+2026-09-21 09:45:29: menu    1  Continue
+2026-09-21 09:45:30: menu    2  Settings
+2026-09-21 09:45:31: menu    3  Choice Tree - saves
+2026-09-21 09:45:31: menu    2  Settings
+2026-09-21 09:45:31: settings    2  music
+2026-09-21 09:45:31: settings    3  credits
+2026-09-21 09:45:32: settings    2  music
+2026-09-21 09:45:32: music    2  <- Volume 0 ->
+2026-09-21 09:45:32: music    3  <- Sound Fx 0 ->
+2026-09-21 09:45:33: music    4  back
+2026-09-21 09:45:33: music    1  <- Change music ->
+2026-09-21 09:45:34: music    4  back
+2026-09-21 09:45:34: settings    4  back
+2026-09-21 09:45:34: settings    3  credits
+2026-09-21 09:45:35: credits    3  -
+2026-09-21 09:45:35: credits    4  back
+2026-09-21 09:45:36: settings    4  back
+2026-09-21 09:45:36: settings    3  credits
+2026-09-21 09:45:42: settings    2  music
+2026-09-21 09:45:42: settings    1  screen
+2026-09-21 09:45:43: screen    1  <- scale = 3.0 ->
+2026-09-21 09:45:44: screen    2  shader OFF
+2026-09-21 09:45:44: screen    2  shader ON
+2026-09-21 09:45:47: screen    2  shader OFF
+2026-09-21 09:45:47: screen    2  shader ON
+2026-09-21 09:45:48: screen    2  shader OFF
+2026-09-21 09:45:48: screen    2  shader ON
+2026-09-21 09:45:48: screen    2  shader OFF
+2026-09-21 09:45:49: screen    2  shader ON
+2026-09-21 09:45:49: screen    2  shader OFF
+2026-09-21 09:45:50: screen    2  shader ON
+2026-09-21 09:45:50: screen    2  shader OFF
+2026-09-21 09:45:51: screen    2  shader ON
+2026-09-21 09:45:52: screen    2  shader OFF
+2026-09-21 09:45:55: screen    3  -
+2026-09-21 09:45:55: screen    4  back
+2026-09-21 09:45:59: screen    3  -
+2026-09-21 09:45:59: screen    2  shader OFF
+2026-09-21 09:46:00: screen    2  shader ON
+2026-09-21 09:46:06: screen    3  -
+2026-09-21 09:46:06: screen    4  back
+2026-09-21 09:46:11: settings    4  back
+2026-09-21 09:46:13: menu    4  Quit
+2026-09-21 09:46:13: menu    3  Choice Tree - saves
+2026-09-21 09:46:13: menu    2  Settings
+2026-09-21 09:46:13: menu    1  Continue
+2026-09-21 09:46:13: opening_cutsceen    1  Continue
+2026-09-21 09:46:14: opening_cutsceen    1  Continue
+2026-09-21 09:46:15: opening_cutsceen    1  Continue
+2026-09-21 09:46:16: opening_cutsceen    1  Continue
+2026-09-21 09:46:16: opening_cutsceen    1  Continue
+2026-09-21 09:46:17: opening_cutsceen    1  Continue
+2026-09-21 09:46:17: opening_cutsceen    1  Continue
+2026-09-21 09:46:18: opening_cutsceen    1  Continue
+2026-09-21 09:46:18: opening_cutsceen    1  Continue
+log starts at 2026-09-21 09:54:31.
+
+2026-09-21 09:54:31: running    1  1
+2026-09-21 09:54:31: running    1  1
+2026-09-21 09:54:32: skip    1  1
+2026-09-21 09:54:32: skip    1  1
+2026-09-21 09:54:32: skip    1  1
+2026-09-21 09:54:32: skip    1  1
+2026-09-21 09:54:32: skip    1  1
+2026-09-21 09:54:32: skip    1  1
+2026-09-21 09:54:33: skip    1  1
+2026-09-21 09:54:34: menu    1  Continue
+2026-09-21 09:54:35: menu    2  Settings
+2026-09-21 09:54:35: menu    3  Choice Tree - saves
+2026-09-21 09:54:35: choice    3  saves
+2026-09-21 09:54:36: choice    2  <- chapter 0 ->
+2026-09-21 09:54:36: choice    1  Move Off
+2026-09-21 09:54:36: choice    1  Move On
+log starts at 2026-09-21 09:55:39.
+
+2026-09-21 09:55:40: running    1  1
+2026-09-21 09:55:40: running    1  1
+2026-09-21 09:55:40: skip    1  1
+2026-09-21 09:55:40: skip    1  1
+2026-09-21 09:55:40: skip    1  1
+2026-09-21 09:55:40: skip    1  1
+2026-09-21 09:55:40: skip    1  1
+2026-09-21 09:55:41: skip    1  1
+2026-09-21 09:55:41: skip    1  1
+2026-09-21 09:55:41: skip    1  1
+2026-09-21 09:55:41: skip    1  1
+2026-09-21 09:55:41: skip    1  1
+2026-09-21 09:55:41: skip    1  1
+2026-09-21 09:55:41: skip    1  1
+2026-09-21 09:55:42: skip    1  1
+2026-09-21 09:55:43: menu    1  Continue
+2026-09-21 09:55:46: menu    2  Settings
+2026-09-21 09:55:46: menu    3  Choice Tree - saves
+2026-09-21 09:55:46: choice    3  saves
+2026-09-21 09:55:47: choice    2  <- chapter 0 ->
+2026-09-21 09:55:47: choice    1  Move Off
+2026-09-21 09:55:58: choice    1  Move On
+log starts at 2026-09-21 10:50:12.
+
+2026-09-21 10:50:12: running    1  1
+2026-09-21 10:50:12: running    1  1
+2026-09-21 10:50:13: skip    1  1
+2026-09-21 10:50:13: skip    1  1
+2026-09-21 10:50:13: skip    1  1
+2026-09-21 10:50:14: skip    1  1
+2026-09-21 10:50:15: menu    1  Continue
+2026-09-21 10:50:16: menu    2  Settings
+2026-09-21 10:50:16: menu    3  Choice Tree - saves
+2026-09-21 10:50:17: choice    3  saves
+2026-09-21 10:50:17: choice    2  <- chapter 0 ->
+2026-09-21 10:50:17: choice    1  Move Off
+2026-09-21 10:50:18: choice    1  Move On
+log starts at 2026-09-21 10:51:36.
+
+2026-09-21 10:51:36: running    1  1
+2026-09-21 10:51:36: running    1  1
+2026-09-21 10:51:37: skip    1  1
+2026-09-21 10:51:37: skip    1  1
+2026-09-21 10:51:37: skip    1  1
+2026-09-21 10:51:39: skip    1  1
+2026-09-21 10:51:39: menu    1  Continue
+2026-09-21 10:51:40: menu    2  Settings
+2026-09-21 10:51:40: menu    3  Choice Tree - saves
+2026-09-21 10:51:40: choice    3  saves
+2026-09-21 10:51:41: choice    2  <- chapter 0 ->
+2026-09-21 10:51:41: choice    1  Move Off
+2026-09-21 10:51:41: choice    1  Move On
+2026-09-21 10:51:41: choice    1  Move On
+2026-09-21 10:51:42: choice    1  Move On
+2026-09-21 10:51:43: choice    1  Move On
+2026-09-21 10:51:43: choice    1  Move On
+2026-09-21 10:51:44: choice    1  Move On
+2026-09-21 10:51:44: choice    1  Move On
+2026-09-21 10:51:44: choice    1  Move On
+2026-09-21 10:51:45: choice    1  Move Off
+2026-09-21 10:51:45: choice    2  <- chapter 0 ->
+2026-09-21 10:51:45: choice    3  saves
+2026-09-21 10:51:46: choice    4  Back
+2026-09-21 10:51:46: menu    4  Quit
+2026-09-21 10:51:46: menu    3  Choice Tree - saves
+2026-09-21 10:51:47: menu    4  Quit
+2026-09-21 10:51:47: quit    4  Quit
+log starts at 2026-09-21 10:52:17.
+
+2026-09-21 10:52:17: running    1  1
+2026-09-21 10:52:17: running    1  1
+2026-09-21 10:52:20: skip    1  1
+2026-09-21 10:52:20: skip    1  1
+2026-09-21 10:52:20: skip    1  1
+2026-09-21 10:52:22: skip    1  1
+2026-09-21 10:52:22: menu    1  Continue
+2026-09-21 10:52:23: menu    2  Settings
+2026-09-21 10:52:23: menu    3  Choice Tree - saves
+2026-09-21 10:52:24: choice    3  saves
+2026-09-21 10:52:24: choice    2  <- chapter 0 ->
+2026-09-21 10:52:25: choice    1  Move Off
+2026-09-21 10:52:25: choice    1  Move On
+2026-09-21 10:52:26: choice    1  Move On
+2026-09-21 10:52:27: choice    1  Move On
+2026-09-21 10:52:28: choice    1  Move On
+2026-09-21 10:52:28: choice    1  Move On
+2026-09-21 10:52:29: choice    1  Move On
+2026-09-21 10:52:29: choice    1  Move On
+2026-09-21 10:52:30: choice    1  Move Off
+2026-09-21 10:52:30: choice    2  <- chapter 0 ->
+2026-09-21 10:52:30: choice    3  saves
+2026-09-21 10:52:30: choice    4  Back
+2026-09-21 10:52:31: menu    4  Quit
+2026-09-21 10:52:31: quit    4  Quit
+log starts at 2026-09-21 10:55:54.
+
+2026-09-21 10:55:54: running    1  1
+2026-09-21 10:55:54: running    1  1
+2026-09-21 10:55:55: skip    1  1
+2026-09-21 10:55:55: skip    1  1
+2026-09-21 10:55:55: skip    1  1
+2026-09-21 10:55:56: skip    1  1
+2026-09-21 10:55:57: menu    1  Continue
+2026-09-21 10:55:57: menu    2  Settings
+2026-09-21 10:55:58: menu    3  Choice Tree - saves
+2026-09-21 10:55:58: choice    3  saves
+2026-09-21 10:55:58: choice    2  <- chapter 0 ->
+2026-09-21 10:55:58: choice    1  Move Off
+2026-09-21 10:55:58: choice    1  Move On
+log starts at 2026-09-21 10:56:14.
+
+2026-09-21 10:56:14: running    1  1
+2026-09-21 10:56:14: running    1  1
+2026-09-21 10:56:26: skip    1  1
+2026-09-21 10:56:26: skip    1  1
+2026-09-21 10:56:26: skip    1  1
+2026-09-21 10:56:27: skip    1  1
+2026-09-21 10:56:28: menu    1  Continue
+2026-09-21 10:56:29: menu    2  Settings
+2026-09-21 10:56:29: menu    3  Choice Tree - saves
+2026-09-21 10:56:30: choice    3  saves
+2026-09-21 10:56:30: choice    2  <- chapter 0 ->
+2026-09-21 10:56:30: choice    1  Move Off
+2026-09-21 10:56:31: choice    1  Move On
+2026-09-21 10:56:32: choice    1  Move On
+2026-09-21 10:56:33: choice    1  Move On
+2026-09-21 10:56:33: choice    1  Move On
+2026-09-21 10:56:34: choice    1  Move Off
+2026-09-21 10:56:34: choice    2  <- chapter 0 ->
+2026-09-21 10:56:34: choice    3  saves
+2026-09-21 10:56:34: choice    4  Back
+2026-09-21 10:56:35: menu    4  Quit
+2026-09-21 10:56:35: quit    4  Quit
+log starts at 2026-09-21 10:57:10.
+
+2026-09-21 10:57:10: running    1  1
+2026-09-21 10:57:10: running    1  1
+2026-09-21 10:57:14: skip    1  1
+2026-09-21 10:57:14: skip    1  1
+2026-09-21 10:57:14: skip    1  1
+2026-09-21 10:57:15: skip    1  1
+2026-09-21 10:57:16: menu    1  Continue
+2026-09-21 10:57:17: menu    2  Settings
+2026-09-21 10:57:17: menu    3  Choice Tree - saves
+2026-09-21 10:57:17: choice    3  saves
+2026-09-21 10:57:17: choice    2  <- chapter 0 ->
+2026-09-21 10:57:18: choice    1  Move Off
+2026-09-21 10:57:18: choice    1  Move On
+2026-09-21 10:57:18: choice    1  Move On
+2026-09-21 10:57:18: choice    1  Move On
+2026-09-21 10:57:19: choice    1  Move On
+2026-09-21 10:57:19: choice    1  Move On
+2026-09-21 10:57:19: choice    1  Move On
+2026-09-21 10:57:19: choice    1  Move On
+2026-09-21 10:57:19: choice    1  Move On
+2026-09-21 10:57:20: choice    1  Move On
+2026-09-21 10:57:21: choice    1  Move Off
+2026-09-21 10:57:21: choice    2  <- chapter 0 ->
+2026-09-21 10:57:21: choice    2  <- chapter 1 ->
+2026-09-21 10:57:22: choice    1  Move Off
+2026-09-21 10:57:22: choice    1  Move On
+2026-09-21 10:57:23: choice    1  Move On
+2026-09-21 10:57:23: choice    1  Move On
+2026-09-21 10:57:24: choice    1  Move On
+2026-09-21 10:57:25: choice    1  Move On
+2026-09-21 10:57:26: choice    1  Move On
+2026-09-21 10:57:26: choice    1  Move On
+2026-09-21 10:57:26: choice    1  Move On
+2026-09-21 10:57:27: choice    1  Move On
+2026-09-21 10:57:27: choice    1  Move On
+2026-09-21 10:57:28: choice    1  Move On
+2026-09-21 10:57:28: choice    1  Move On
+2026-09-21 10:57:28: choice    1  Move On
+2026-09-21 10:57:29: choice    1  Move On
+2026-09-21 10:57:30: choice    1  Move On
+2026-09-21 10:57:30: choice    1  Move On
+2026-09-21 10:57:30: choice    1  Move On
+2026-09-21 10:57:31: choice    1  Move On
+2026-09-21 10:57:31: choice    1  Move On
+2026-09-21 10:57:32: choice    1  Move On
+2026-09-21 10:57:32: choice    1  Move On
+2026-09-21 10:57:32: choice    1  Move On
+2026-09-21 10:57:32: choice    1  Move On
+2026-09-21 10:57:32: choice    1  Move On
+2026-09-21 10:57:33: choice    1  Move On
+2026-09-21 10:57:34: choice    1  Move On
+2026-09-21 10:57:34: choice    1  Move On
+2026-09-21 10:57:34: choice    1  Move On
+2026-09-21 10:57:35: choice    1  Move On
+2026-09-21 10:57:35: choice    1  Move On
+2026-09-21 10:57:36: choice    1  Move On
+2026-09-21 10:57:36: choice    1  Move On
+2026-09-21 10:57:37: choice    1  Move On
+2026-09-21 10:57:37: choice    1  Move On
+2026-09-21 10:57:37: choice    1  Move On
+2026-09-21 10:57:38: choice    1  Move On
+2026-09-21 10:57:38: choice    1  Move On
+2026-09-21 10:57:38: choice    1  Move On
+2026-09-21 10:57:39: choice    1  Move On
+2026-09-21 10:57:39: choice    1  Move On
+2026-09-21 10:57:40: choice    1  Move On
+2026-09-21 10:57:40: choice    1  Move On
+2026-09-21 10:57:40: choice    1  Move On
+2026-09-21 10:57:41: choice    1  Move On
+2026-09-21 10:57:41: choice    1  Move On
+2026-09-21 10:57:41: choice    1  Move On
+2026-09-21 10:57:42: choice    1  Move On
+2026-09-21 10:57:42: choice    1  Move On
+2026-09-21 10:57:42: choice    1  Move On
+2026-09-21 10:57:43: choice    1  Move On
+2026-09-21 10:57:43: choice    1  Move On
+2026-09-21 10:57:43: choice    1  Move On
+2026-09-21 10:57:44: choice    1  Move On
+2026-09-21 10:57:44: choice    1  Move On
+2026-09-21 10:57:44: choice    1  Move On
+2026-09-21 10:57:45: choice    1  Move On
+2026-09-21 10:57:45: choice    1  Move On
+2026-09-21 10:57:46: choice    1  Move On
+2026-09-21 10:57:46: choice    1  Move On
+2026-09-21 10:57:46: choice    1  Move On
+2026-09-21 10:57:46: choice    1  Move On
+2026-09-21 10:58:35: choice    1  Move On
+2026-09-21 10:58:36: choice    1  Move On
+2026-09-21 10:58:37: choice    1  Move On
+2026-09-21 10:58:38: choice    1  Move On
+2026-09-21 10:58:39: choice    1  Move On
+2026-09-21 10:58:40: choice    1  Move On
+2026-09-21 10:58:40: choice    1  Move On
+2026-09-21 10:58:40: choice    1  Move On
+2026-09-21 10:58:40: choice    1  Move On
+2026-09-21 10:58:41: choice    1  Move On
+2026-09-21 10:58:41: choice    1  Move On
+2026-09-21 10:58:41: choice    1  Move On
+2026-09-21 10:58:41: choice    1  Move On
+2026-09-21 10:58:42: choice    1  Move On
+2026-09-21 10:58:42: choice    1  Move On
+2026-09-21 10:58:43: choice    1  Move On
+2026-09-21 10:58:45: choice    1  Move On
+2026-09-21 10:58:46: choice    1  Move On
+2026-09-21 10:58:46: choice    1  Move On
+2026-09-21 10:58:47: choice    1  Move On
+2026-09-21 10:58:47: choice    1  Move On
+2026-09-21 10:58:48: choice    1  Move On
+2026-09-21 10:58:48: choice    1  Move On
+2026-09-21 10:58:48: choice    1  Move On
+2026-09-21 10:58:48: choice    1  Move On
+2026-09-21 10:58:50  log closing
+=============================
+
+
+
+log starts at 2026-09-22 11:35:53.
+
+2026-09-22 11:35:53: running    1  1
+2026-09-22 11:35:53: running    1  1
+2026-09-22 11:36:08: running    1  1
+2026-09-22 11:36:09: running    1  1
+2026-09-22 11:36:10: running    1  1
+2026-09-22 11:36:11: running    1  1
+2026-09-22 11:36:12: running    1  1
+2026-09-22 11:36:12: running    1  1
+2026-09-22 11:36:12: running    1  1
+2026-09-22 11:36:12: skip    1  1
+2026-09-22 11:36:12: skip    1  1
+2026-09-22 11:36:12: skip    1  1
+2026-09-22 11:36:14: skip    1  1
+2026-09-22 11:36:14: menu    1  Continue
+2026-09-22 11:36:15: menu    2  Settings
+2026-09-22 11:36:15: menu    3  Choice Tree - saves
+2026-09-22 11:36:15: choice    3  saves
+2026-09-22 11:36:16: choice    2  <- chapter 0 ->
+2026-09-22 11:36:16: choice    1  Move Off
+2026-09-22 11:36:16: choice    1  Move On
+2026-09-22 11:36:17: choice    1  Move On
+2026-09-22 11:36:17: choice    1  Move On
+2026-09-22 11:36:18: choice    1  Move On
+2026-09-22 11:36:18: choice    1  Move Off
+2026-09-22 11:36:18: choice    2  <- chapter 0 ->
+2026-09-22 11:36:19: choice    2  <- chapter 1 ->
+2026-09-22 11:36:19: choice    1  Move Off
+2026-09-22 11:36:19: choice    1  Move On
+2026-09-22 11:36:20: choice    1  Move On
+2026-09-22 11:36:20: choice    1  Move On
+2026-09-22 11:36:21: choice    1  Move On
+2026-09-22 11:36:21: choice    1  Move On
+2026-09-22 11:36:23: choice    1  Move On
+2026-09-22 11:36:23: choice    1  Move On
+2026-09-22 11:36:23: choice    1  Move On
+2026-09-22 11:36:24: choice    1  Move On
+2026-09-22 11:36:24: choice    1  Move On
+2026-09-22 11:36:24: choice    1  Move On
+2026-09-22 11:36:25: choice    1  Move On
+2026-09-22 11:36:26: choice    1  Move On
+2026-09-22 11:36:26: choice    1  Move On
+2026-09-22 11:36:27: choice    1  Move On
+2026-09-22 11:36:27: choice    1  Move On
+2026-09-22 11:36:27: choice    1  Move On
+2026-09-22 11:36:28: choice    1  Move On
+2026-09-22 11:36:28: choice    1  Move On
+2026-09-22 11:36:29: choice    1  Move On
+2026-09-22 11:36:29: choice    1  Move On
+2026-09-22 11:36:29: choice    1  Move On
+2026-09-22 11:36:30: choice    1  Move On
+2026-09-22 11:36:30: choice    1  Move On
+2026-09-22 11:36:31: choice    1  Move On
+2026-09-22 11:36:32: choice    1  Move On
+2026-09-22 11:36:35: choice    1  Move On
+2026-09-22 11:36:36: choice    1  Move On
+2026-09-22 11:36:36: choice    1  Move On
+2026-09-22 11:36:37: choice    1  Move On
+2026-09-22 11:36:37: choice    1  Move On
+2026-09-22 11:36:37: choice    1  Move On
+2026-09-22 11:36:38: choice    1  Move On
+2026-09-22 11:36:38: choice    1  Move On
+2026-09-22 11:37:09: choice    1  Move On
+2026-09-22 11:37:10: choice    1  Move On
+2026-09-22 11:37:10: choice    1  Move On
+2026-09-22 11:37:10: choice    1  Move On
+2026-09-22 11:37:34: choice    1  Move On
+log starts at 2026-09-24 14:23:17.
+
+2026-09-24 14:23:18: running    1  1
+2026-09-24 14:23:18: running    1  1
+2026-09-24 14:23:18: skip    1  1
+2026-09-24 14:23:18: skip    1  1
+2026-09-24 14:23:18: skip    1  1
+2026-09-24 14:23:20: skip    1  1
+2026-09-24 14:23:20: menu    1  Continue
+2026-09-24 14:23:21: menu    2  Settings
+2026-09-24 14:23:21: menu    3  Choice Tree - saves
+2026-09-24 14:23:22: choice    3  saves
+2026-09-24 14:23:22: choice    2  <- chapter 0 ->
+2026-09-24 14:23:22: choice    1  Move Off
+2026-09-24 14:23:22: choice    1  Move On
+2026-09-24 14:23:23: choice    1  Move On
+2026-09-24 14:23:23: choice    1  Move On
+2026-09-24 14:23:24: choice    1  Move On
+2026-09-24 14:23:24: choice    1  Move On
+2026-09-24 14:23:25: choice    1  Move Off
+2026-09-24 14:23:25: choice    2  <- chapter 0 ->
+2026-09-24 14:23:25: choice    3  saves
+2026-09-24 14:23:26: choice    4  Back
+2026-09-24 14:23:26: menu    4  Quit
+2026-09-24 14:23:26: quit    4  Quit
+log starts at 2026-09-24 14:24:14.
+
+2026-09-24 14:24:14: running    1  1
+2026-09-24 14:24:14: running    1  1
+2026-09-24 14:24:15: skip    1  1
+2026-09-24 14:24:15: skip    1  1
+2026-09-24 14:24:16: skip    1  1
+2026-09-24 14:24:17: skip    1  1
+2026-09-24 14:24:18: menu    1  Continue
+2026-09-24 14:24:18: menu    2  Settings
+2026-09-24 14:24:19: menu    3  Choice Tree - saves
+2026-09-24 14:24:19: choice    3  saves
+2026-09-24 14:24:19: choice    2  <- chapter 0 ->
+2026-09-24 14:24:19: choice    1  Move Off
+2026-09-24 14:24:19: choice    1  Move On
+2026-09-24 14:24:20: choice    1  Move On
+2026-09-24 14:24:21: choice    1  Move On
+2026-09-24 14:24:21: choice    1  Move On
+2026-09-24 14:24:22: choice    1  Move On
+2026-09-24 14:24:22: choice    1  Move Off
+2026-09-24 14:24:22: choice    2  <- chapter 0 ->
+2026-09-24 14:24:22: choice    3  saves
+2026-09-24 14:24:23: choice    2  <- chapter 0 ->
+2026-09-24 14:24:23: choice    2  <- chapter 1 ->
+2026-09-24 14:24:23: choice    1  Move Off
+2026-09-24 14:24:24: choice    1  Move On
+2026-09-24 14:24:24: choice    1  Move On
+2026-09-24 14:24:24: choice    1  Move On
+2026-09-24 14:24:24: choice    1  Move On
+2026-09-24 14:24:25: choice    1  Move On
+2026-09-24 14:24:26: choice    1  Move On
+2026-09-24 14:24:26: choice    1  Move On
+2026-09-24 14:24:27: choice    1  Move On
+2026-09-24 14:24:27: choice    1  Move On
+2026-09-24 14:24:28: choice    1  Move On
+2026-09-24 14:24:28: choice    1  Move On
+2026-09-24 14:24:28: choice    1  Move On
+2026-09-24 14:24:32: choice    1  Move On
+2026-09-24 14:24:32: choice    1  Move Off
+2026-09-24 14:24:32: choice    2  <- chapter 1 ->
+2026-09-24 14:24:32: choice    3  saves
+2026-09-24 14:24:33: choice    4  Back
+2026-09-24 14:24:33: menu    4  Quit
+2026-09-24 14:24:33: quit    4  Quit

@@ -17,7 +17,7 @@
                 "box_hint": "chapter 1",
                 "arrow_to_boxs": ["0:1"],
                 "box_state": "menu",
-                "move_to": ["0:1","None","None","None"]
+                "move_to": ["0:0","None","None","None"]
             }
         ]
         },{
@@ -43,7 +43,7 @@
                 "box_hint": "look around",
                 "arrow_to_boxs": ["-2:2","-1:2"],
                 "box_state": "H_kitchen",
-                "move_to": ["0:1","-2:2","-1:2","None"]
+                "move_to": ["None","-2:2","-1:2","0:1"]
             },{
                 "box_location": "2:2",
                 "box_type": "normal",
