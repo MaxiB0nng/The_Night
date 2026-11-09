@@ -162,18 +162,16 @@ def load_settings():
     with open("player.tnp", "r") as f:
         lines = f.readlines()
 
-    musicvolume, soundfxvolume = lines[0].split(":")
-
-    musicvolume = int(musicvolume)
-    soundfxvolume = int(soundfxvolume)
+    musicvolume, soundfxvolume = map(int,lines[0].strip().split(":"))
 
     sf.shader_on = lines[1].strip()
 
-    if lines[2] == "fullscreen":
+    if lines[2].strip() == "fullscreen":
         sf.scale = 3
         sf.fullscreen = True
     else:
         sf.scale = float(lines[2].strip())
+        sf.fullscreen = False
 
 
     audio.music.set_volume(musicvolume)
@@ -181,17 +179,49 @@ def load_settings():
 
     
 def save_settings():
-    
-    with open("player.tnp", "r") as f:
-        lines = f.readlines()
 
-    lines[0] = f"{audio.music.volume}:{audio.soundfx.volume}\n" 
-    lines[1] = f"{sf.shader_on}\n"
-    if sf.fullscreen:
-        lines[2] = "fullscreen"
-    else:
-        lines[2] = f"{sf.scale}\n"
+    lines = [
+        f"{audio.music.volume}:{audio.soundfx.volume}\n",
+        f"{sf.shader_on}\n",
+        "fullscreen\n" if sf.fullscreen else f"{sf.scale}\n",
+    ]
 
     with open("player.tnp", "w") as f:
         f.writelines(lines)
 
+
+#   default files, used when a save file is missing or broken
+default_save = ["0:menu", "item:[]", "plot:[]", "all:0/(menu)"]
+default_settings = ["100:100", "ON", "3.0"]
+
+def save_ok(lines):
+    return (len(lines) >= 4
+            and ":" in lines[0]
+            and lines[1].startswith("item:")
+            and lines[2].startswith("plot:")
+            and lines[3].startswith("all:"))
+
+def settings_ok(lines):
+    if len(lines) < 3:
+        return False
+    try:
+        music, soundfx = lines[0].split(":")
+        int(music), int(soundfx)
+        if lines[2] != "fullscreen":
+            float(lines[2])
+    except ValueError:
+        return False
+    return lines[1] in ("ON", "OFF")
+
+def make_saves():
+    for file, check, default in (("save.tns", save_ok, default_save),
+                                 ("player.tnp", settings_ok, default_settings)):
+        try:
+            with open(file, "r") as f:
+                lines = [line.strip() for line in f.readlines()]
+        except FileNotFoundError:
+            lines = []
+
+        if not check(lines):
+            with open(file, "w") as f:
+                f.write("\n".join(default) + "\n")

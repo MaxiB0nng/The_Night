@@ -60,6 +60,7 @@ shader_fps = 10
 shader_rate = 30 // shader_fps
 
 def setup():
+    sl.make_saves()
     sl.load_settings()
     make_screen()
     make_canvas()
